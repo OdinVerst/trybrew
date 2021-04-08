@@ -1,3 +1,7 @@
+.detail {
+    margin-bottom: 2em;
+}
+
 .time-line {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
