@@ -1,0 +1,36 @@
+{% macro field(coffeeWeight, water, time, temperature) %}
+    <div class="item__main-info main-info">
+        {% if coffeeWeight %}
+            <div class="main-info__item">
+                <svg class="inline-svg-icon">
+                    <use xlink:href="/img/sprite.svg#coffee"></use>
+                </svg>
+                {{ coffeeWeight }}
+            </div>
+        {% endif %}
+        {% if water %}
+        <div class="main-info__item">
+            <svg class="inline-svg-icon">
+                <use xlink:href="/img/sprite.svg#water"></use>
+            </svg>
+            {{ water }}
+        </div>
+        {% endif %}
+        {% if time %}
+        <div class="main-info__item">
+            <svg class="inline-svg-icon">
+                <use xlink:href="/img/sprite.svg#time"></use>
+            </svg>
+            {{ time }}
+        </div>
+        {% endif %}
+        {% if temperature %}
+        <div class="main-info__item">
+            <svg class="inline-svg-icon">
+                <use xlink:href="/img/sprite.svg#temperature"></use>
+            </svg>
+            {{ temperature }}
+        </div>
+        {% endif %}
+    </div>
+{% endmacro %}

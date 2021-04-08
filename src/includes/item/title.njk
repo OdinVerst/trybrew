@@ -1,0 +1,8 @@
+{% macro field(sort, name) %}
+    <div class="item__name">
+        {% if sort %}
+            <span class="item__desc">Сорт:</span>
+        {% endif %}
+        {{ name }}</div>
+{% endmacro %}
+

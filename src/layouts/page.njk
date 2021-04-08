@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>
+        {{ title }}{% if page.url != '/' %} — VMGR{% endif %}
+    </title>
+
+    <meta name="description" content="{{ description }}">
+
+    {# <meta property="og:type" content="website">
+    <meta property="og:title" content="VMGR">
+    <meta property="og:site_name" content="Дилетантский подкаст про музыку">
+    <meta property="og:url" content="https://3lp.me/">
+    <meta property="og:image" content="https://3lp.me/images/social.jpg"> #}
+
+    {# <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LP">
+    <meta name="twitter:description" content="Дилетантский подкаст про музыку">
+    <meta name="twitter:site" content="https://3lp.me/">
+    <meta name="twitter:image" content="https://3lp.me/images/social.jpg"> #}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {# <link rel="apple-touch-icon" href="/images/icons/152.png"> #}
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/fav16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/fav32.png">
+
+    <link rel="preload" href="/fonts/montserrat.woff2" crossorigin as="font" type="font/woff2">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body class="page__body">
+    {% include 'header.njk' %}
+    {{ content | safe }}
+</body>
+</html>

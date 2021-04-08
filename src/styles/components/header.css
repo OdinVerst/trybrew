@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header__title {
+    font-size: 25px;
+}

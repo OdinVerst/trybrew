@@ -1,0 +1,16 @@
+.category__title {
+    font-size: 18px;
+}
+
+.category__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+@media (max-width: 425px) {
+    .category__list {
+        grid-template-columns: 1fr;
+    }
+}

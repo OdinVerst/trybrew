@@ -1,0 +1,27 @@
+.time-line {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    font-size: 18px;
+    margin-bottom: 1em;
+    max-width: 550px;
+}
+
+.time-line > * {
+    margin: 0;
+}
+
+.info-warm {
+    background: #e7e7e7;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    line-height: 1.4;
+}
+
+.info-warm h2 {
+    margin: 0 0 0.5em;
+}
+
+.info-warm a {
+    color: #4c36bc;;
+}

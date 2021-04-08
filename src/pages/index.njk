@@ -1,0 +1,15 @@
+---
+title: TRY COFFEE
+description: TRY COFFEE
+layout: page.njk
+permalink: index.html
+---
+
+<main class="wrapper">
+    {% import 'list.njk' as pourover %}
+    {{ pourover.field('Пуровер / V60', collections.pourover)}}
+
+{#    {% import 'list.njk' as pourover %}#}
+{#    {{ pourover.field('Cold brew', collections.pourover)}}#}
+</main>
+

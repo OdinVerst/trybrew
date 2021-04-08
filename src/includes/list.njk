@@ -1,0 +1,11 @@
+{% macro field(title, items) %}
+    <section class="category">
+        <h2 class="category__title">{{ title }}</h2>
+        <div class="category__list">
+            {%- for item in items -%}
+                {% import 'item/item.njk' as itemView %}
+                {{ itemView.field(item.data, item.url)}}
+            {%- endfor -%}
+        </div>
+    </section>
+{% endmacro %}
