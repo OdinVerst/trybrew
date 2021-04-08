@@ -5,6 +5,7 @@ const markdown = require('markdown-it')({ html: true });
 module.exports = (config) => {
     config.addPassthroughCopy('src/img/!svg');
     config.addPassthroughCopy('src/fonts');
+    config.addPassthroughCopy('src/robots.txt');
 
     config.addPairedShortcode('markdown', (content) => {
         return markdown.render(content);

@@ -5,7 +5,7 @@
     "11ty": "eleventy",
     "gulp": "gulp",
     "pack": "gulp build",
-    "build": "npm run 11ty && npm run pack",
+    "build": "npm run 11ty && npm run pack"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
