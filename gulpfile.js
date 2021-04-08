@@ -54,7 +54,7 @@ const watchTask = () => {
 
 
 exports.build = series(
-    parallel(jsProd, styles)
+    parallel(jsProd, styles, svgTask)
 );
 
 exports.default = series(
