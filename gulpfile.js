@@ -53,7 +53,7 @@ const watchTask = () => {
 };
 
 
-exports.prod = series(
+exports.build = series(
     parallel(jsProd, styles)
 );
 

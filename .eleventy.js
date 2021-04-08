@@ -41,14 +41,12 @@ module.exports = (config) => {
 
     config.addTransform('htmlmin', (content, outputPath) => {
         if(outputPath && outputPath.endsWith('.html')) {
-            const result = htmlmin.minify(
+            return  htmlmin.minify(
                 content, {
                     removeComments: true,
                     collapseWhitespace: true
                 }
             );
-
-            return result;
         }
 
         return content;
