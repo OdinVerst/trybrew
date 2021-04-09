@@ -1,0 +1,20 @@
+---
+title: TRY COFFEE
+description: TRY COFFEE
+layout: page.njk
+---
+
+<section class="detail wrapper">
+    {% import 'item/title.njk' as titleView %}
+    {{ titleView.field(sort, name)}}
+
+    {% import 'item/main-info.njk' as mainInfoView %}
+    {{ mainInfoView.field(coffeeWeight, water, time, temperature)}}
+
+
+    {{ content | safe }}
+
+    {% import 'item/author.njk' as authorView %}
+    {{ authorView.field(authorImg, author)}}
+
+</section>
