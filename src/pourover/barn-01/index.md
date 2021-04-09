@@ -9,7 +9,7 @@ water: '250 ml'
 temperature: '94'
 coffeeWeight: '16 г.'
 author: 'The Barn'
-authorImg: ''
+authorImg: 'barn'
 ---
 
 ## Рецепт
