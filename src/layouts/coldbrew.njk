@@ -9,7 +9,7 @@ layout: page.njk
     {{ titleView.field(sort, name)}}
 
     {% import 'item/main-info.njk' as mainInfoView %}
-    {{ mainInfoView.field(coffeeWeight, water, time, temperature)}}
+    {{ mainInfoView.field(coffeeWeight, water, time, temperature, ice)}}
 
 
     {{ content | safe }}

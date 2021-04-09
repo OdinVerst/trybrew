@@ -1,4 +1,4 @@
-{% macro field(coffeeWeight, water, time, temperature) %}
+{% macro field(coffeeWeight, water, time, temperature, ice) %}
     <div class="item__main-info main-info">
         {% if coffeeWeight %}
             <div class="main-info__item">
@@ -31,6 +31,14 @@
             </svg>
             {{ temperature }}
         </div>
+        {% endif %}
+        {% if ice %}
+            <div class="main-info__item">
+                <svg class="inline-svg-icon">
+                    <use xlink:href="/img/sprite.svg#ice"></use>
+                </svg>
+                {{ ice }}
+            </div>
         {% endif %}
     </div>
 {% endmacro %}

@@ -5,7 +5,7 @@
         {{ titleView.field(item.sort, item.name)}}
 
         {% import 'item/main-info.njk' as mainInfoView %}
-        {{ mainInfoView.field(item.coffeeWeight, item.water, item.time, item.temperature)}}
+        {{ mainInfoView.field(item.coffeeWeight, item.water, item.time, item.temperature, item.ice)}}
 
         {% import 'item/author.njk' as authorView %}
         {{ authorView.field(item.authorImg, item.author)}}
