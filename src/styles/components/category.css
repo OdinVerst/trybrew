@@ -2,11 +2,40 @@
     font-size: 18px;
 }
 
+.category__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .category__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     gap: 1em;
     margin-bottom: 2em;
+}
+
+.close .category__list {
+    display: none;
+}
+
+.toggle-items {
+    padding: 0;
+    display: flex;
+    background: none;
+    border: none;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-items svg {
+    pointer-events: none;
+}
+
+.close .toggle-items svg {
+    transform: rotate(180deg);
 }
 
 @media (max-width: 425px) {
