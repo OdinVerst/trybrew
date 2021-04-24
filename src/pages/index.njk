@@ -9,10 +9,13 @@ permalink: index.html
     {% import 'list.njk' as pourover %}
     {{ pourover.field('Пуровер / V60', collections.pourover)}}
 
-    {% import 'list.njk' as coldbrew %}
-    {{ coldbrew.field('Cold brew', collections.coldbrew)}}
+    {% import 'list.njk' as aeropress %}
+    {{ aeropress.field('Аэропресс', collections.aeropress)}}
 
     {% import 'list.njk' as cezve %}
     {{ cezve.field('Джезва/Турка', collections.cezve)}}
+
+    {% import 'list.njk' as coldbrew %}
+    {{ coldbrew.field('Cold brew', collections.coldbrew)}}s
 </main>
 
