@@ -16,7 +16,7 @@ document.addEventListener('click', (evt) => {
 const burger = document.querySelector('.header__burger');
 if (burger)
     burger.addEventListener('click', () => {
-        burger.classList.toggle('open');
+        burger.parentElement.classList.toggle('open');
     })
 
 

@@ -25,10 +25,10 @@
     transform: translateY(100%);
 }
 
-.header__burger.open::after {
+.header__wrapper.open .header__burger::after {
     transform: rotate(45deg);
 }
 
-.header__burger.open::before {
+.header__wrapper.open .header__burger::before {
     transform: rotate(-45deg);
 }
