@@ -1,0 +1,34 @@
+.header__burger {
+    position: relative;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.header__burger::before,
+.header__burger::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: black;
+}
+
+.header__burger::before {
+    transform: translateY(-100%);
+}
+
+
+.header__burger::after {
+    transform: translateY(100%);
+}
+
+.header__burger.open::after {
+    transform: rotate(45deg);
+}
+
+.header__burger.open::before {
+    transform: rotate(-45deg);
+}

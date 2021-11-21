@@ -1,6 +1,9 @@
 <header class="header">
-    {% if page.url != '/' %}<a class="header__link" href="/">{% endif %}
-		<h1 class="header__title">TRY COFFEE</h1>
-    {% if page.url != '/' %}</a>{% endif %}
+    <div class="header__wrapper wrapper">
+        {% if page.url != '/' %}<a class="header__link" href="/">{% endif %}
+            <h1 class="header__title">TRY COFFEE</h1>
+        {% if page.url != '/' %}</a>{% endif %}
+        <button class="header__burger" aria-label="Меню"></button>
+    </div>
 </header>
 
