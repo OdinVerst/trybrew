@@ -1,6 +1,7 @@
 .header {
     box-shadow: 0 2px 18px -14px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
+    border-bottom: 1px solid var(--header-border);
 }
 
 .header__wrapper {

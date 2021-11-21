@@ -1,0 +1,29 @@
+:root {
+    --color-background: white;
+    --color-text: black;
+
+    --fill-icons: black;
+
+    --header-border: transparent;
+
+    --color-more-info: #e7e7e7;
+    --color-more-info-link: #27649e;
+
+    --color-item: transparent;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: black;
+        --color-text: white;
+
+        --fill-icons: white;
+
+        --header-border: white;
+
+        --color-more-info: #3e3e3e;
+        --color-more-info-link: #43a3ff;
+
+        --color-item: #3e3e3e;
+    }
+}

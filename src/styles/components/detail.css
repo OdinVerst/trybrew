@@ -16,7 +16,7 @@
 }
 
 .info-warm {
-    background: #e7e7e7;
+    background: var(--color-more-info);
     padding: 1em;
     margin-bottom: 1.5em;
     line-height: 1.4;
@@ -27,5 +27,5 @@
 }
 
 .info-warm a {
-    color: #27649e;
+    color: var(--color-more-info-link);
 }
