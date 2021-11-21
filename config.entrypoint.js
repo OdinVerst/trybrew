@@ -4,12 +4,12 @@ const cssNames = ['main'];
 const jsRoot = './src/scripts/';
 const cssRoot = './src/styles/';
 
-const creareArrayFullSrc = (arr, path, ext) => {
+const createArrayFullSrc = (arr, path, ext) => {
   return arr.map((el) => `${path}${el}.${ext}`);
 };
 
 const webpackJSObj = () => {
-  const filesJS = creareArrayFullSrc(jsNames, jsRoot, 'js');
+  const filesJS = createArrayFullSrc(jsNames, jsRoot, 'js');
   const obj = {};
   jsNames.forEach((file, index) => {
     obj[file] = filesJS[index];
@@ -20,10 +20,10 @@ const webpackJSObj = () => {
 
 module.exports = {
   js: {
-    entry: creareArrayFullSrc(jsNames, jsRoot, 'js'),
+    entry: createArrayFullSrc(jsNames, jsRoot, 'js'),
     output: `${dirName}/js`,
     outputProd: `${dirName}/js`,
-    watch: './src/js/**/*.js',
+    watch: `${jsRoot}*.js`,
     webpack: webpackJSObj(),
   },
   pages: {
@@ -32,7 +32,7 @@ module.exports = {
     watch: './src/**/*.html',
   },
   css: {
-    entry: creareArrayFullSrc(cssNames, cssRoot, 'css'),
+    entry: createArrayFullSrc(cssNames, cssRoot, 'css'),
     output: `${dirName}/css`,
     outputProd: `${dirName}/css`,
     watch: './src/**/*.css',
