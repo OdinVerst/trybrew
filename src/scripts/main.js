@@ -13,10 +13,10 @@ document.addEventListener('click', (evt) => {
     }
 });
 
-const burger = document.querySelector('.header__burger');
-if (burger)
-    burger.addEventListener('click', () => {
-        burger.parentElement.classList.toggle('open');
-    })
+const multiButton = document.querySelector('#multiButton');
+
+multiButton.addEventListener('click', () => {
+    console.log(123);
+});
 
 

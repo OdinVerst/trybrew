@@ -1,7 +1,7 @@
 @import "colors.css";
 @import "fonts.css";
 @import "common.css";
-/*Header*/
+/* Header */
 @import "components/header/header.css";
 @import "components/header/burger.css";
 @import "components/header/menu.css";
@@ -9,5 +9,6 @@
 @import "components/category.css";
 @import "components/item.css";
 @import "components/detail.css";
-
-@import "components/footer.css";
+/* Footer */
+@import "components/footer/footer.css";
+@import "components/footer/multiButton.css";

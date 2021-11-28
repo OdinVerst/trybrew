@@ -4,19 +4,12 @@
     border-bottom: 1px solid var(--header-border);
 }
 
-.header__wrapper {
-    display: grid;
-    grid-template-columns: auto 30px;
-    grid-gap: 15px;
-}
-
 .header__link {
     text-decoration: none;
     color: inherit;
 }
 
 .header__title {
-    padding-left: 30px; /* Hack! */
     font-size: 25px;
     text-align: center;
 }
