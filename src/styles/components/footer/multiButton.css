@@ -1,7 +1,13 @@
-.multiButton {
+.multiButton__wrapper {
     position: fixed;
     right: 1.5em;
     bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.multiButton {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,4 +18,28 @@
     border-radius: 50%;
     border: none;
     fill: white;
+}
+
+.multiButton__menu {
+    display: none;
+}
+
+.multiButton__menu_active {
+    display: block;
+    background: white;
+    padding: 10px;
+    color: black;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.multiButton__menuList {
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.multiButton__menuLabel {
+    display: flex;
+    align-items: center;
 }

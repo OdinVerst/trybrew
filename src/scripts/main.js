@@ -1,3 +1,5 @@
+import {Theme} from "./darkTheme";
+
 document.addEventListener('click', (evt) => {
     const { target } = evt;
     if (!target)
@@ -13,10 +15,13 @@ document.addEventListener('click', (evt) => {
     }
 });
 
-const multiButton = document.querySelector('#multiButton');
+const multiButton = document.querySelector('.multiButton');
+const multiButtonMenu = document.querySelector('.multiButton__menu')
 
 multiButton.addEventListener('click', () => {
-    console.log(123);
+    multiButtonMenu.classList.toggle('multiButton__menu_active')
 });
 
+const darkThemeInput = document.querySelector('#darkTheme');
+new Theme(darkThemeInput);
 
