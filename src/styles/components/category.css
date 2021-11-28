@@ -28,6 +28,7 @@
     height: 32px;
     align-items: center;
     justify-content: center;
+    fill: var(--color-text)
 }
 
 .toggle-items svg {
