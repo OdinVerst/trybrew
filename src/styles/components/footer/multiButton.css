@@ -30,17 +30,19 @@
 
 .multiButton__menu_active {
     display: block;
-    background: white;
+    background: var(--color-menu-tool);
     padding: 10px;
     color: black;
     margin-bottom: 15px;
     border-radius: 10px;
+    box-shadow: 0 2px 18px -14px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 10%);
 }
 
 .multiButton__menuList {
     padding-left: 0;
     margin: 0;
     list-style-type: none;
+    color: var(--color-text);
 }
 
 .multiButton__menuLabel {
