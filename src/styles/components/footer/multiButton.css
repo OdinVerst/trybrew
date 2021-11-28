@@ -20,6 +20,10 @@
     fill: white;
 }
 
+.multiButton svg {
+    width: 100%;
+}
+
 .multiButton__menu {
     display: none;
 }
