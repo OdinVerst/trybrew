@@ -1,0 +1,11 @@
+.timer {
+    width: 0;
+    transition: .2s;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.timer.active {
+    width: auto;
+    opacity: 1;
+}

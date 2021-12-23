@@ -1,4 +1,5 @@
 import {Theme} from "./darkTheme";
+import {Timer} from "./timer";
 
 document.addEventListener('click', (evt) => {
     const { target } = evt;
@@ -24,4 +25,6 @@ multiButton.addEventListener('click', () => {
 
 const darkThemeInput = document.querySelector('#darkTheme');
 new Theme(darkThemeInput);
+
+new Timer('timer', 'timer-display')
 

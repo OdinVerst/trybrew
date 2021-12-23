@@ -3,8 +3,7 @@
 @import "common.css";
 /* Header */
 @import "components/header/header.css";
-@import "components/header/burger.css";
-@import "components/header/menu.css";
+@import "components/header/timer.css";
 
 @import "components/category.css";
 @import "components/item.css";
