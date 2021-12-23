@@ -3,8 +3,12 @@ export class Timer {
         this.button = document.querySelector(`#${buttonSelector}`);
         this.block = document.querySelector(`#${blockSelector}`);
         this.display = this.block.querySelector('span');
+        this.stopButton = this.block.querySelector('button');
+
         this.isStart = false;
+        this.interval;
         this.time = 0;
+
         this.init();
     }
 
@@ -21,9 +25,22 @@ export class Timer {
                return;
            this.isStart = true;
            this.block.classList.add('active');
-           setInterval(() => {
-               this.display.innerHTML = this._parseToTime(this.time++);
+           this.display.innerHTML = this._parseToTime(++this.time);
+           this.interval = setInterval(() => {
+               this.display.innerHTML = this._parseToTime(++this.time);
            }, 1000)
+       });
+
+       this.stopButton.addEventListener('click', () => {
+           this.destroy();
        })
+    }
+
+    destroy() {
+        this.isStart = 0;
+        this.time = 0;
+        this.display.innerHTML = this._parseToTime(this.time);
+        this.block.classList.remove('active');
+        clearInterval(this.interval);
     }
 }

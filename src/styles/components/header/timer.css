@@ -1,4 +1,8 @@
 .timer {
+    display: flex;
+    align-items: center;
+    font-size: 1.56em;
+    gap: 5px;
     width: 0;
     transition: .2s;
     opacity: 0;
