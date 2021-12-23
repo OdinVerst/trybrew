@@ -2,10 +2,16 @@
     font-size: 18px;
 }
 
+.category__link {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
 .category__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 15px;
 }
 
 .category__list {

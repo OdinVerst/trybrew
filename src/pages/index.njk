@@ -7,15 +7,15 @@ permalink: index.html
 
 <main class="wrapper">
     {% import 'list.njk' as pourover %}
-    {{ pourover.field('Пуровер / V60', collections.pourover)}}
+    {{ pourover.field('Пуровер / V60', collections.pourover, 'pourover')}}
 
     {% import 'list.njk' as aeropress %}
-    {{ aeropress.field('Аэропресс', collections.aeropress)}}
+    {{ aeropress.field('Аэропресс', collections.aeropress, 'aeropress')}}
 
     {% import 'list.njk' as cezve %}
-    {{ cezve.field('Джезва/Турка', collections.cezve)}}
+    {{ cezve.field('Джезва/Турка', collections.cezve, 'cezve')}}
 
     {% import 'list.njk' as coldbrew %}
-    {{ coldbrew.field('Cold brew', collections.coldbrew)}}
+    {{ coldbrew.field('Cold brew', collections.coldbrew, 'coldbrew')}}
 </main>
 
