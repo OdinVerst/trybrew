@@ -45,6 +45,25 @@
     color: var(--color-text);
 }
 
+.multiButton__menuItem {
+    width: 100%;
+}
+
+.multiButton__menuItem:not(:last-child) {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--color-text);
+}
+
+.multiButton__timer {
+    padding: 0;
+    color: var(--color-text);
+    background: none;
+    border: none;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
 .multiButton__menuLabel {
     display: flex;
     align-items: center;
