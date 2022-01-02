@@ -26,5 +26,5 @@ multiButton.addEventListener('click', () => {
 const darkThemeInput = document.querySelector('#darkTheme');
 new Theme(darkThemeInput);
 
-new Timer('timer', 'timer-display')
+new Timer('timer', 'timerBlock')
 

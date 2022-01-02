@@ -1,4 +1,19 @@
-<div id="timer-display" class="timer">
-    <span>0:00</span>
-    <button>x</button>
+<div id="timerBlock" class="timer active">
+    <span class="timerDisplay">0:00</span>
+    <button class="timerButton" id="timerPause" aria-label="Остановить таймер">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 473.6 455.5">
+            <path d="M95.5.3c52 0 95 43 95 95.5v264.4c0 52.6-43 95.6-95 95.6A95.8 95.8 0 0 1 0 360.1V95.8A95.8 95.8 0 0 1 95.5.3Z" transform="translate(0 -.3)"/>
+            <path d="M378 .3a95.8 95.8 0 0 1 95.6 95.5v264.4a95.8 95.8 0 0 1-95.5 95.6c-52 0-95-43-95-95.6V95.8c0-52.6 43-95.5 95-95.5Z" transform="translate(0 -.3)"/>
+        </svg>
+    </button>
+    <button class="timerButton" id="timerReset" aria-label="Сбросить таймер">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 323.2 343.5">
+            <path d="M218.9 30.7a11.8 11.8 0 0 0-8.4 22.1 138.7 138.7 0 0 1 89 129 138 138 0 1 1-165-135.2l-2.3 3a11.8 11.8 0 0 0 18.4 14.9l20.2-25a2.3 2.3 0 0 0 .1-.2 10.2 10.2 0 0 0 1-1.5l.3-.6a10.4 10.4 0 0 0 .6-1.4l.2-.8.3-1.3v-1.6a5.2 5.2 0 0 0 0-.6 12.3 12.3 0 0 0-.1-1.3l-.2-1a10.2 10.2 0 0 0-.4-1.3l-.3-.8a9.8 9.8 0 0 0-.8-1.4 6.2 6.2 0 0 0-.3-.5A10.8 10.8 0 0 0 170 24l-.4-.4-.7-.7-25-20.2A11.8 11.8 0 0 0 129 21l2.5 2A162 162 0 0 0 0 181.8C0 271 72.5 343.5 161.6 343.5S323.2 271 323.2 181.8c0-66.7-42-127.5-104.3-151.1Z" />
+        </svg>
+    </button>
+    <button class="timerButton" id="timerRemove" aria-label="Удалить таймер">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 139.2 139.4">
+            <path d="m85.2 70.5 51.8-52A10.4 10.4 0 0 0 122.4 4l-52 51.8L18.7 4A10.4 10.4 0 0 0 2.2 16.8 10.7 10.7 0 0 0 4 18.6l51.9 51.9-52 51.9A10.4 10.4 0 0 0 18.6 137l51.9-51.8 51.9 51.8a10.4 10.4 0 0 0 14.6-14.6Z"/>
+        </svg>
+    </button>
 </div>

@@ -1,15 +1,23 @@
 .timer {
     display: flex;
     align-items: center;
-    font-size: 1.56em;
-    gap: 5px;
+    gap: 7px;
     width: 0;
+    overflow: hidden;
+    font-size: 1.56em;
     transition: .2s;
     opacity: 0;
-    overflow: hidden;
 }
 
 .timer.active {
     width: auto;
     opacity: 1;
+}
+
+.timerButton {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background: transparent;
+    border: none;
 }

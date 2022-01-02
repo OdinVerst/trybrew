@@ -6,7 +6,6 @@ export class Timer {
         this.stopButton = this.block.querySelector('button');
 
         this.isStart = false;
-        this.interval;
         this.time = 0;
 
         this.init();
