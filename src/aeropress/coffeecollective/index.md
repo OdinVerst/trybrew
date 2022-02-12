@@ -1,0 +1,31 @@
+---
+tags: aeropress
+layout: aeropress.njk
+
+name: 'Универсальный'
+
+water: '230 ml'
+coffeeWeight: '16 г.'
+time: '1:00'
+temperature: '93'
+author: 'Coffee Collective'
+---
+
+__Приготовление: (Способ прямой)__
+
+Вливаем __40-50__ мл воды и ждем __15__ секунд.
+
+Затем вливаем остальной объем до __230__ мл.
+
+Через __60__ секунд вставляем поршень и медленно проливаем.
+
+Даем чуть остыть кофе. Наслаждаемся!)
+
+<br>
+
+<div class="info-warm">
+
+## Примечание
+
+[Источник](https://coffeecollective.dk/brew-guides/aeropress/)
+</div>
