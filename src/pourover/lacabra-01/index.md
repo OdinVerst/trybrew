@@ -1,4 +1,7 @@
 ---
+title: Рецепт фильтр кофе Универсальный (La Cabra)
+description: Рецепт V60 (Универсальный) | 210 ml | 14.5 г
+
 tags: pourover
 layout: pourover.njk
 

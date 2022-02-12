@@ -1,4 +1,7 @@
 ---
+title: Рецепт фильтр кофе Универсальный (The Barn)
+description: Рецепт V60 (Универсальный) | 250 ml | 16 г
+
 tags: pourover
 layout: pourover.njk
 

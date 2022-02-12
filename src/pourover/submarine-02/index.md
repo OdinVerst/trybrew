@@ -1,4 +1,7 @@
 ---
+title: Рецепт фильтр кофе Бразилия "Эль Дорадо катукай" (Submarine)
+description: Рецепт V60 (Бразилия "Эль Дорадо катукай") | 250 ml | 15.5 г
+
 tags: pourover
 layout: pourover.njk
 

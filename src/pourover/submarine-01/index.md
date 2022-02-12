@@ -1,4 +1,7 @@
 ---
+title: Рецепт фильтр кофе Кения "Гатомбойя" (Submarine)
+description: Рецепт V60 (Кения "Гатомбойя") | 250 ml | 17 г
+
 tags: pourover
 layout: pourover.njk
 

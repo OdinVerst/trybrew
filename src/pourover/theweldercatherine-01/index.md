@@ -1,4 +1,7 @@
 ---
+title: Рецепт фильтр кофе Бурунди Бузирагухиндва (the Welder Catherine)
+description: Рецепт V60 (Бурунди Бузирагухиндва) | 250 ml | 16,5 г
+
 tags: pourover
 layout: pourover.njk
 

@@ -1,4 +1,7 @@
 ---
+title: Рецепт фильтр кофе Универсальный (Blue Bottle)
+description: Рецепт V60 (Универсальный) | 350 ml | 22 г
+
 tags: pourover
 layout: pourover.njk
 

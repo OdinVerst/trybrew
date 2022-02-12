@@ -1,4 +1,7 @@
 ---
+title: Рецепт фильтр кофе Гватемала "Ла Сенда" (Submarine)
+description: Рецепт V60 (Гватемала "Ла Сенда") | 260 ml | 17 г
+
 tags: pourover
 layout: pourover.njk
 

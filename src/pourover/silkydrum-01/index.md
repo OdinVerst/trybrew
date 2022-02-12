@@ -1,4 +1,7 @@
 ---
+title: Рецепт фильтр кофе Универсальный (Silky Drum | Руслан Шульги)
+description: Рецепт V60 (Универсальный) | 250 ml | 15 г
+
 tags: pourover
 layout: pourover.njk
 
