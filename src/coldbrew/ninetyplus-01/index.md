@@ -1,4 +1,6 @@
 ---
+title: 'Рецепт Cold Brew (Ninety Plus)'
+description: 'Рецепт Cold Brew | 170 ml | Drima Zede | 24 часа'
 tags: coldbrew
 layout: coldbrew.njk
 

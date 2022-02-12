@@ -1,4 +1,6 @@
 ---
+title: 'Рецепт Cold Brew (Tasty coffee)'
+description: 'Рецепт Cold Brew | 1500 ml | Эфиопия Ненсебо | 8 часов'
 tags: coldbrew
 layout: coldbrew.njk
 
