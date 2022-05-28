@@ -12,6 +12,7 @@ coffeeWeight: '16 г.'
 time: '1:00'
 temperature: '93'
 author: 'Coffee Collective'
+authorImg: 'cc'
 ---
 
 __Приготовление: (Способ прямой)__

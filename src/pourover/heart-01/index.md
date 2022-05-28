@@ -12,6 +12,7 @@ water: '360 ml'
 temperature: '96'
 coffeeWeight: '22 г.'
 author: 'Heart roasters'
+authorImg: 'heart'
 ---
 
 ## Рецепт
