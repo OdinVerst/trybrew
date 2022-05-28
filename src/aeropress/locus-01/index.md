@@ -2,8 +2,8 @@
 title: Рецепт AeroPress Эфиопия натуральной обработки (Locus)
 description: Рецепт AeroPress (Эфиопия натуральной обработки) | 220 ml | 20.5 г
 
-tags: pourover
-layout: pourover.njk
+tags: aeropress
+layout: aeropress.njk
 
 name: Эфиопия натуральной обработки
 
