@@ -1,0 +1,9 @@
+---
+title: Рецепты Chemex (Кемекс)
+description: Рецепты Chemex (Кемекс)
+layout: page.njk
+---
+<main class="wrapper">
+    {% import 'category/list.njk' as chemex %}
+    {{ chemex.field('Chemex', collections.chemex, 'chemex')}}
+</main>
