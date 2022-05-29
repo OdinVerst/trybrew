@@ -12,6 +12,7 @@ water: '220 ml'
 temperature: '85'
 coffeeWeight: '30,5 г.'
 author: 'Locus'
+authorImg: 'locus'
 
 ---
 
