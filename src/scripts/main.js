@@ -25,3 +25,7 @@ multiButton.addEventListener('click', () => {
 const darkThemeInput = document.querySelector('#darkTheme');
 new Theme(darkThemeInput);
 
+const menuButton = document.querySelector('#menuButton');
+const header = document.querySelector('#header')
+if (menuButton && header) menuButton.addEventListener('click', () => header.classList.toggle('open'));
+

@@ -4,6 +4,12 @@
     background-color: var(--color-secondary-background);
 }
 
+.header__wrapper {
+    display: grid;
+    grid-template-columns: 30px auto 30px;
+    gap: 10px;
+}
+
 .header__link {
     text-decoration: none;
     color: inherit;
