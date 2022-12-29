@@ -4,27 +4,32 @@
 
     --fill-icons: black;
 
-    --header-border: transparent;
 
     --color-more-info: #e7e7e7;
-    --color-more-info-link: #27649e;
+    --color-link-text: #27649e;
 
-    --color-item: transparent;
+    --color-secondary-background: transparent;
 
     --color-menu-tool: white;
+
+    --color-author-text: gray;
+
+    --color-footer-boder: #c6c6c6;
 }
 
 html[data-theme='dark'] {
-    --color-background: black;
+    --color-background: #514f4f;
     --color-text: white;
 
     --fill-icons: white;
 
-    --header-border: white;
-
     --color-more-info: #3e3e3e;
-    --color-more-info-link: #43a3ff;
-    --color-item: #3e3e3e;
+    --color-link-text: #43a3ff;
+    --color-secondary-background: #3e3e3e;
 
     --color-menu-tool: #7b7b7b;
+
+    --color-author-text: --color-text;
+
+    --color-footer-boder: transparent;
 }
