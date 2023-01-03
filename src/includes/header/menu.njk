@@ -1,5 +1,19 @@
-NOT USED <button class="header__burger" aria-label="Меню"></button>
+<button class="header__burger" id="menuButton" aria-label="Меню"></button>
 
 <div class="header__menu">
-    <button>Темная тема</button>
+    <nav class="header__nav">
+        <p class="header__separatorText">Разделы</p>
+        <ul class="header__navList">
+            <li><a href="/pourover/">Пуровер / V60</a></li>
+            <li><a href="/aeropress/">Аэропресс</a></li>
+            <li><a href="/cezve/">Джезва/Турка</a></li>
+            <li><a href="/coldbrew/">Cold brew</a></li>
+            <li><a href="/chemex/">Chemex</a></li>
+        </ul>
+        <a href="/about.html">О проекте</a>
+        <label class='header__darkTheme'>
+            Темная тема
+            <input id='darkTheme' type='checkbox' />
+        </label>
+    </nav>
 </div>

@@ -14,6 +14,7 @@
     width: 100%;
     height: 3px;
     background: var(--color-text);
+    transition: 0.2s;
 }
 
 .header__burger::before {
@@ -31,4 +32,8 @@
 
 .header__wrapper.open .header__burger::before {
     transform: rotate(-45deg);
+}
+
+.header__darkTheme {
+    text-decoration: underline;
 }
