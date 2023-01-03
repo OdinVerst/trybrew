@@ -12,6 +12,7 @@ coffeeWeight: '150 г.'
 ice: '1500 г.'
 author: 'Tasty Coffee'
 authorImg: 'tastycoffee'
+linkRecipe: 'https://shop.tastycoffee.ru/blog/cold-brew-recepti'
 ---
 
 ## Рецепт
@@ -52,14 +53,6 @@ __Ингредиенты:__
 __Приготовление:__
 
 Отмерить каждый ингредиент в отдельную тару, затем тщательно перемешать в общей таре. Перелить в бутылку.
-
-
-
-<div class="info-warm">
-
-## Примечание
-
-[Источник](https://shop.tastycoffee.ru/blog/cold-brew-recepti)
-</div>
+<br/>
 
 

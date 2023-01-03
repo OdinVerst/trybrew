@@ -13,6 +13,7 @@ time: '1:00'
 temperature: '93'
 author: 'Coffee Collective'
 authorImg: 'cc'
+linkRecipe: 'https://coffeecollective.dk/brew-guides/aeropress/'
 ---
 
 __Приготовление: (Способ прямой)__
@@ -26,10 +27,3 @@ __Приготовление: (Способ прямой)__
 Даем чуть остыть кофе. Наслаждаемся!)
 
 <br>
-
-<div class="info-warm">
-
-## Примечание
-
-[Источник](https://coffeecollective.dk/brew-guides/aeropress/)
-</div>

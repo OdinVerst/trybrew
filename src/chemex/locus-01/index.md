@@ -13,6 +13,7 @@ temperature: '85'
 coffeeWeight: '30,5 г.'
 author: 'Locus'
 authorImg: 'locus'
+linkRecipe: 'https://www.instagram.com/locus.coffee/'
 
 ---
 
@@ -35,11 +36,4 @@ authorImg: 'locus'
 7. Затем 120 г, затем 100 и 150
 
 <br>
-<div class="info-warm">
-
-## Примечание
-
-[Источник](https://www.instagram.com/locus.coffee/)
-</div>
-
 

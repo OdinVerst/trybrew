@@ -13,6 +13,7 @@ time: '1:40'
 temperature: '90'
 author: 'Tasty Coffee'
 authorImg: 'tastycoffee'
+linkRecipe: 'https://shop.tastycoffee.ru/blog/guide-aeropress'
 ---
 
 __Приготовление: (Способ прямой)__
@@ -28,10 +29,3 @@ __Приготовление: (Способ прямой)__
 После заваривания, нужно снять поршень, перемешать кофе, установить поршень обратно и с постоянным давлением плавно опускать его в течение __20–30__ секунд.
 
 <br>
-
-<div class="info-warm">
-
-## Примечание
-
-[Источник](https://shop.tastycoffee.ru/blog/guide-aeropress)
-</div>
