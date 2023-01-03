@@ -18,6 +18,7 @@ document.addEventListener('click', (evt) => {
 const multiButton = document.querySelector('.multiButton');
 const multiButtonMenu = document.querySelector('.multiButton__menu')
 
+if (multiButtonMenu && multiButton)
 multiButton.addEventListener('click', () => {
     multiButtonMenu.classList.toggle('multiButton__menu_active')
 });

@@ -33,3 +33,7 @@
 .header__wrapper.open .header__burger::before {
     transform: rotate(-45deg);
 }
+
+.header__darkTheme {
+    text-decoration: underline;
+}
