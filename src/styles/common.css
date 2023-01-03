@@ -29,3 +29,7 @@ body {
     margin: 0 auto;
     padding: 0 1em;
 }
+
+.about a {
+    color: var(--color-link-text);
+}
