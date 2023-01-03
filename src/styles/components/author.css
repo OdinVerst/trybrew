@@ -1,0 +1,36 @@
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author__logo {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    background: var(--color-author-icon-background);
+    padding: 2px;
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+.author__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.author__desc {
+    font-size: 14px;
+    color: var(--color-author-text);
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+.author__sourceIcon {
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
+    fill: var(--color-link-text);
+    flex-shrink: 0;
+}

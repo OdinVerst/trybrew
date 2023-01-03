@@ -14,7 +14,6 @@ layout: page.njk
 
     {{ content | safe }}
 
-    {% import 'item/author.njk' as authorView %}
-    {{ authorView.field(authorImg, author)}}
-
+    {% import 'item/authorDetail.njk' as authorView %}
+    {{ authorView.field(authorImg, author, linkRecipe)}}
 </section>

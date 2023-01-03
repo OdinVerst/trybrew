@@ -13,6 +13,7 @@ temperature: '93'
 coffeeWeight: '10 г.'
 author: 'Ninety Plus'
 authorImg: 'ninety-plus'
+linkRecipe: 'https://www.instagram.com/tv/CGPivSzHbez/'
 ---
 
 ## Рецепт
@@ -76,11 +77,4 @@ authorImg: 'ninety-plus'
 Общее время экстракции __1:50 - 2:00__
 
 <br>
-<div class="info-warm">
-
-## Примечание
-
-[Источник](https://www.instagram.com/tv/CGPivSzHbez/)
-</div>
-
 

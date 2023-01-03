@@ -13,6 +13,7 @@ temperature: '94'
 coffeeWeight: '16 г.'
 author: 'The Barn'
 authorImg: 'barn'
+linkRecipe: 'https://thebarn.de/blogs/the-barn-blog/v60-drip'
 ---
 
 ## Рецепт
@@ -87,11 +88,5 @@ authorImg: 'barn'
 Общее время экстракции __2:00 - 2:30__
 
 <br>
-<div class="info-warm">
-
-## Примечание
-
-[Источник](https://thebarn.de/pages/brew-guide-v60)
-</div>
 
 

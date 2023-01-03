@@ -12,6 +12,7 @@ water: '210 ml'
 temperature: '96'
 coffeeWeight: '14,5 г.'
 author: 'La Cabra'
+linkRecipe: 'https://www.lacabra.dk/pages/v60-brew-guide'
 
 ---
 
@@ -73,11 +74,5 @@ author: 'La Cabra'
 Общее время экстракции __3:30__
 
 <br>
-<div class="info-warm">
-
-## Примечание
-
-[Источник](https://www.lacabra.dk/pages/v60-brew-guide)
-</div>
 
 

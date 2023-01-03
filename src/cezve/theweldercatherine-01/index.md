@@ -11,6 +11,7 @@ water: '110 ml'
 coffeeWeight: '11 г.'
 author: 'the Welder Catherine (Сергей Блинников)'
 authorImg: 'thewelder'
+linkRecipe: 'https://www.youtube.com/watch?v=H2WI9vpwOWA'
 ---
 
 ## Рецепт
@@ -38,10 +39,4 @@ __Приготовление:__
 
 Переливаем в кружку и ждем 3-4 минуты (Для остывания и погружения осадка)
 
-<div class="info-warm">
-
-## Примечание
-
-
-[Источник](https://www.youtube.com/watch?v=H2WI9vpwOWA)
-</div>
+<br/>

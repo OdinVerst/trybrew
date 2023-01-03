@@ -13,6 +13,7 @@ temperature: '95'
 coffeeWeight: '15.5 г.'
 author: 'Submarine'
 authorImg: 'submarine'
+linkRecipe: 'https://sbmrne.ru/product-card/Brazil_El_Dorado_catucai'
 ---
 
 ## Рецепт
@@ -83,8 +84,6 @@ authorImg: 'submarine'
 Помол на Timemore C2: 19 кликов
 
 Помол на ЕК (turkish): 8,2
-
-[Источник](https://rb.coffee/product-card/Brazil_El_Dorado_catucai)
 </div>
 
 

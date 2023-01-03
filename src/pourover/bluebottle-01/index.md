@@ -13,6 +13,7 @@ temperature: '~95'
 coffeeWeight: '22 г.'
 author: 'Blue Bottle'
 authorImg: 'bluebottel'
+linkRecipe: 'https://bluebottlecoffee.com/us/eng/brew-guides/pour-over'
 ---
 
 ## Рецепт
@@ -73,11 +74,5 @@ authorImg: 'bluebottel'
 Общее время экстракции __2:35 - 3:10__
 
 <br>
-<div class="info-warm">
-
-## Примечание
-
-[Источник](https://bluebottlecoffee.com/preparation-guides/pour-over)
-</div>
 
 

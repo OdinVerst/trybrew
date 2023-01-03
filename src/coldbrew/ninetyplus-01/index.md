@@ -11,6 +11,7 @@ water: '170 ml'
 coffeeWeight: '10 г.'
 author: 'Ninety Plus'
 authorImg: 'ninety-plus'
+linkRecipe: 'https://www.instagram.com/tv/CE9PX3QBh2E/'
 ---
 
 ## Рецепт
@@ -23,14 +24,6 @@ authorImg: 'ninety-plus'
 
 4. Достаем банку и фильтруем все через фильтр (v60) Дополнительно можно добавить лед.
 
-
-
-
-<div class="info-warm">
-
-## Примечание
-
-[Источник](https://www.instagram.com/tv/CE9PX3QBh2E/)
-</div>
+<br/>
 
 

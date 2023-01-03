@@ -13,6 +13,7 @@ temperature: '96'
 coffeeWeight: '22 г.'
 author: 'Heart roasters'
 authorImg: 'heart'
+linkRecipe: 'https://www.heartroasters.com/pages/v60'
 ---
 
 ## Рецепт
@@ -61,7 +62,6 @@ authorImg: 'heart'
 
 ## Примечание
 После каждого вливания перемешайте ложкой или палочкой для размешивания. Это необходимо для того, чтобы весь кофе был равномерно насыщен.
-[Источник](https://www.heartroasters.com/pages/v60)
 </div>
 
 

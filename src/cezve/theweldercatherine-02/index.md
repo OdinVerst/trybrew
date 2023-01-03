@@ -11,6 +11,7 @@ water: '110 ml'
 coffeeWeight: '11 г.'
 author: 'the Welder Catherine (Сергей Блинников)'
 authorImg: 'thewelder'
+linkRecipe: 'https://www.youtube.com/watch?v=3kyp0cDkOWU'
 ---
 
 ## Рецепт
@@ -37,11 +38,3 @@ __Приготовление:__
 Переливаем в аэропресс и фильтруем (необязательно)
 
 Переливаем в чашку
-
-<div class="info-warm">
-
-## Примечание
-
-
-[Источник](https://www.youtube.com/watch?v=3kyp0cDkOWU)
-</div>

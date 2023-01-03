@@ -13,7 +13,7 @@ temperature: '96'
 coffeeWeight: '17,5 г.'
 author: 'the Welder Catherine'
 authorImg: 'thewelder'
-
+linkRecipe: 'https://theweldercatherine.ru/catalog/dlya_filtra/ruanda_ubumve_viski/'
 ---
 
 ## Рецепт
@@ -63,11 +63,4 @@ authorImg: 'thewelder'
 270 г.
 
 </div>
-
-
-<div class="info-warm">
-
-## Примечание
-
-[Источник](https://theweldercatherine.ru/catalog/dlya_filtra/ruanda_ubumve_viski/)
-</div>
+<br/>

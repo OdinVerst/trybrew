@@ -13,6 +13,7 @@ temperature: '95'
 coffeeWeight: '17 г.'
 author: 'Submarine'
 authorImg: 'submarine'
+linkRecipe: 'https://sbmrne.ru/product-card/guatemala-la-senda'
 ---
 
 ## Рецепт
@@ -83,8 +84,6 @@ authorImg: 'submarine'
 Помол на Timemore C2: 21 клик
 
 Помол на ЕК (turkish): 8,5
-
-[Источник](https://rb.coffee/product-card/guatemala-la-senda)
 </div>
 
 

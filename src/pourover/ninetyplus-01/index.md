@@ -13,6 +13,7 @@ temperature: '92'
 coffeeWeight: '10 г.'
 author: 'Ninety Plus'
 authorImg: 'ninety-plus'
+linkRecipe: 'https://www.instagram.com/tv/CJ6E3gznh39/'
 ---
 
 ## Рецепт
@@ -74,8 +75,6 @@ authorImg: 'ninety-plus'
 Вода __60ppm__
 
 Помол: __Сomandante 20-22__
-
-[Источник](https://www.instagram.com/tv/CJ6E3gznh39/)
 </div>
 
 

@@ -13,6 +13,7 @@ temperature: '95'
 coffeeWeight: '16.5 г.'
 author: 'the Welder Catherine'
 authorImg: 'thewelder'
+linkRecipe: 'https://www.youtube.com/watch?v=-msoGbvpr7U'
 ---
 
 ## Рецепт
@@ -64,6 +65,4 @@ __Второе вливание разбито по этапам:__
 Второй шаг - на 70 граммах начинаем делать круговые движения, чтобы потопить кофейную шапку
 
 __Важно не заходить на стенки воронки__
-
-[Источник](https://www.youtube.com/watch?v=-msoGbvpr7U)
 </div>

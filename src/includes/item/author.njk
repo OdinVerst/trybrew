@@ -1,8 +1,11 @@
 {% macro field(svgName, name) %}
-    <div class="item__author"><span class="item__desc">Автор:</span>
-        <svg class="inline-svg-icon">
-            <use xlink:href="/img/sprite.svg#{{ svgName }}"></use>
-        </svg>
+    <div class="author">
+        <span class="author__desc">Автор:</span>
+        {% if svgName %}
+            <svg class="inline-svg-icon author__logo">
+                <use xlink:href="/img/sprite.svg#{{ svgName }}"></use>
+            </svg>
+        {% endif %}
         {{ name }}
     </div>
 {% endmacro %}

@@ -13,6 +13,7 @@ time: '1:25'
 temperature: '91'
 author: 'the Welder Catherine'
 authorImg: 'thewelder'
+linkRecipe: 'https://theweldercatherine.ru/catalog/dlya_filtra/ruanda_ubumve_viski/'
 ---
 
 __Приготовление: (Способ перевернутый)__
@@ -37,6 +38,4 @@ __Помол__:
 - ЕК43(turkish) -6,5-6,75/11;
 
 - Comandante(red clix) - 31-33 щелчка.
-
-[Источник](https://theweldercatherine.ru/catalog/dlya_filtra/ruanda_ubumve_viski/)
 </div>

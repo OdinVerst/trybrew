@@ -8,31 +8,31 @@
     "build": "npm run 11ty && npm run pack"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
-    "@babel/core": "^7.11.6",
-    "@babel/preset-env": "^7.11.5",
-    "autoprefixer": "^10.2.5",
-    "babel-loader": "^8.1.0",
-    "browser-sync": "^2.26.12",
-    "concurrently": "^5.3.0",
+    "@11ty/eleventy": "^1.0.2",
+    "@babel/core": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "autoprefixer": "^10.4.13",
+    "babel-loader": "^9.1.0",
+    "browser-sync": "^2.27.11",
+    "concurrently": "^7.6.0",
     "gulp": "^4.0.2",
-    "gulp-postcss": "^9.0.0",
+    "gulp-postcss": "^9.0.1",
     "gulp-rename": "^2.0.0",
-    "gulp-replace": "^1.0.0",
+    "gulp-replace": "^1.1.4",
     "gulp-svgo": "^2.2.1",
-    "gulp-svgstore": "^7.0.1",
+    "gulp-svgstore": "^9.0.0",
     "gulp-uglify": "^3.0.2",
     "html-minifier": "^4.0.0",
-    "postcss": "^8.2.9",
-    "postcss-color-hex-alpha": "^7.0.0",
-    "postcss-csso": "^5.0.1",
-    "postcss-import": "^12.0.1",
-    "ts-loader": "^8.0.4",
-    "typescript": "^4.0.3",
-    "webpack": "^4.44.2",
-    "webpack-stream": "^6.1.0"
+    "postcss": "^8.4.20",
+    "postcss-color-hex-alpha": "^8.0.4",
+    "postcss-csso": "^6.0.1",
+    "postcss-import": "^15.1.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.4",
+    "webpack": "^5.75.0",
+    "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "markdown-it": "^10.0.0"
+    "markdown-it": "^13.0.1"
   }
 }
