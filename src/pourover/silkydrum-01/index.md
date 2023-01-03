@@ -13,6 +13,7 @@ temperature: '97'
 coffeeWeight: '15 г.'
 author: 'Silky Drum (Руслан Шульги)'
 authorImg: 'silky'
+linkRecipe: 'https://www.silkydrum.ru/recipes'
 ---
 
 ## Рецепт
@@ -81,14 +82,6 @@ authorImg: 'silky'
 
 250 г.
 
-</div>
-
-
-<div class="info-warm">
-
-## Примечание
-
-[Источник](https://www.silkydrum.ru/recipes)
 </div>
 
 

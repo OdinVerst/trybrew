@@ -13,6 +13,7 @@ temperature: '95'
 coffeeWeight: '17 г.'
 author: 'Submarine'
 authorImg: 'submarine'
+linkRecipe: 'https://sbmrne.ru/product-card/kenya_gatomboya'
 ---
 
 ## Рецепт
@@ -83,8 +84,6 @@ authorImg: 'submarine'
 Помол на Timemore C2: 19 кликов
 
 Помол на ЕК (turkish): 8,3
-
-[Источник](https://rb.coffee/product-card/kenya_gatomboya)
 </div>
 
 

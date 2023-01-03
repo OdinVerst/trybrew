@@ -12,6 +12,7 @@ water: '260 ml'
 temperature: '96'
 coffeeWeight: '15 г.'
 author: 'Nomad'
+linkRecipe: 'https://nomadcoffee.es/en/producto/red-plum/'
 ---
 
 ## Рецепт
@@ -62,7 +63,6 @@ author: 'Nomad'
 ## Примечание
 
 Вода: 93 ppm
-[Источник](https://nomadcoffee.es/en/producto/red-plum/)
 </div>
 
 
