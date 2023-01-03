@@ -33,24 +33,6 @@
     margin-bottom: 1.2em;
 }
 
-.item__desc {
-    font-size: 14px;
-    color: var(--color-author-text);
-    margin-right: 10px;
-    font-weight: normal;
-}
-
-.item__author {
-    display: flex;
-    align-items: center;
-}
-
-.item__author svg {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-}
-
 @media (max-width: 410px) {
     .item__main-info {
         grid-template-columns: repeat(2, 1fr);

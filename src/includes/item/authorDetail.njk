@@ -1,0 +1,16 @@
+{% macro field(svgName, name, link) %}
+    <div class="author">
+        <span class="author__desc">Источник:</span>
+        <a class="author__link" href="{{link}}">
+            {% if svgName %}
+                <svg class="inline-svg-icon author__logo">
+                    <use xlink:href="/img/sprite.svg#{{ svgName }}"></use>
+                </svg>
+            {% endif %}
+            {{ name }}
+            <svg class="inline-svg-icon author__sourceIcon">
+                <use xlink:href="/img/sprite.svg#source-link"></use>
+            </svg>
+        </a>
+    </div>
+{% endmacro %}

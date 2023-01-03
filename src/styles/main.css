@@ -8,6 +8,7 @@
 
 @import "components/category.css";
 @import "components/item.css";
+@import "components/author.css";
 @import "components/detail.css";
 /* Footer */
 @import "components/footer/footer.css";
