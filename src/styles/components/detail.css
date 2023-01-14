@@ -15,6 +15,13 @@
     margin: 0;
 }
 
+.time-note {
+    margin-left: 8px;
+    opacity: 0.75;
+    margin-top: -5px;
+    font-size: 0.95em;
+}
+
 .info-warm {
     background: var(--color-more-info);
     padding: 1em;
