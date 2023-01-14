@@ -1,6 +1,6 @@
 ---
-title: Рецепт фильтр кофе Универсальный (The Barn)
-description: Рецепт V60 (Универсальный) | 250 ml | 16 г
+title: Рецепт фильтр кофе Универсальный (Aeroplan.Coffee)
+description: Рецепт V60 (Тайланд Бинспаер Дои Пагхонг) | 309 ml | 21 г
 
 tags: pourover
 layout: pourover.njk
