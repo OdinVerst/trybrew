@@ -4,6 +4,6 @@ description: Рецепты Джезва (Турка) классические �
 layout: page.njk
 ---
 <main class="wrapper">
-    {% import 'category/list.njk' as cezve %}
-    {{ cezve.field('Джезва/Турка', collections.cezve, 'cezve')}}
+    {% import 'list.njk' as cezve %}
+    {{ cezve.field('Джезва/Турка', collections.cezve, 'cezve', page)}}
 </main>

@@ -4,6 +4,6 @@ description: Рецепты AeroPress (Аэропресс) прямые и пе�
 layout: page.njk
 ---
 <main class="wrapper">
-    {% import 'category/list.njk' as aeropress %}
-    {{ aeropress.field('Аэропресс', collections.aeropress, 'aeropress')}}
+    {% import 'list.njk' as aeropress %}
+    {{ aeropress.field('Аэропресс', collections.aeropress, 'aeropress', page)}}
 </main>
