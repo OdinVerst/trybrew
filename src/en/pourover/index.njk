@@ -5,6 +5,6 @@ description: Рецепты фильтр кофе V60 от обжарщиков 
 layout: page.njk
 ---
 <main class="wrapper">
-    {% import 'category/list.njk' as pourover %}
-    {{ pourover.field('Пуровер / V60', collections.pourover)}}
+    {% import 'list.njk' as pourover %}
+    {{ pourover.field('Пуровер / V60', collections.pourover, 'pourover', page)}}
 </main>
