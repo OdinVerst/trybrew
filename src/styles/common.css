@@ -30,6 +30,6 @@ body {
     padding: 0 1em;
 }
 
-.about a {
+.about a:not(.bmc-btn) {
     color: var(--color-link-text);
 }
