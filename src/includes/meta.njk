@@ -1,27 +1,21 @@
 <meta charset="utf-8">
 <title>
-    {{ title }}{% if page.url != '/' %} — Try brew{% endif %}
+    {{ title }}{% if page.url != '/' %} — {{site.name_site}}{% endif %}
 </title>
 
 <meta name="description" content="{{ description }}">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Try brew">
-<meta property="og:site_name" content="Рецепты для заваривания альтернативы">
-<meta property="og:url" content="https://trycoffee.vercel.app">
-{# <meta property="og:image" content="https://3lp.me/images/social.jpg"> #}
+<meta property="og:title" content="{{site.name_site}}">
+<meta property="og:site_name" content="{{site.description}}">
+<meta property="og:url" content="{{site.url}}">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Try brew">
-<meta name="twitter:description" content="Рецепты для заваривания альтернативы">
-<meta name="twitter:site" content="https://trycoffee.vercel.app">
-{# <meta name="twitter:image" content="https://trycoffee.vercel.app/social.jpg"> #}
+<meta name="twitter:title" content="{{site.name_site}}">
+<meta name="twitter:description" content="{{site.description}}">
+<meta name="twitter:site" content="{{site.url}}">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-{# <link rel="apple-touch-icon" href="/images/icons/152.png"> #}
-<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/fav16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/fav32.png">
 
 <link rel="preload" href="/fonts/montserrat.woff2" crossorigin as="font" type="font/woff2">
 <link rel="stylesheet" href="/css/main.css">
