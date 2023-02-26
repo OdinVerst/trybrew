@@ -8,7 +8,8 @@ module.exports = {
     aeropress: 'Aeropress',
     cezve: 'Cezve',
     coldbrew: 'Cold brew',
-    chemex: 'Chemex'
+    chemex: 'Chemex',
+    rollup: 'roll up section'
   },
   ru: {
     theme: 'Темная тема',
@@ -19,6 +20,7 @@ module.exports = {
     aeropress: 'Аэропресс',
     cezve: 'Джезва/Турка',
     coldbrew: 'Cold brew',
-    chemex: 'Кемекс'
+    chemex: 'Кемекс',
+    rollup: 'Свернуть раздел'
   },
 };
