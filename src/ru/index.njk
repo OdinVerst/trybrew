@@ -1,0 +1,24 @@
+---
+title: Try brew
+description: Try brew
+layout: page.njk
+permalink: ru/index.html
+---
+
+<main class="wrapper">
+    {% import 'list.njk' as pourover %}
+    {{ pourover.field({{ languages.ru.pourover }}, collections.pourover, "/pourover/" | locale_url, page) }}
+
+    {% import 'list.njk' as aeropress %}
+    {{ aeropress.field({{ languages.ru.aeropress }}, collections.aeropress, "/aeropress/" | locale_url, page) }}
+
+    {% import 'list.njk' as cezve %}
+    {{ cezve.field({{ languages.ru.cezve }}, collections.cezve, "/cezve/" | locale_url, page) }}
+
+    {% import 'list.njk' as coldbrew %}
+    {{ coldbrew.field({{ languages.ru.coldbrew }}, collections.coldbrew, "/coldbrew/" | locale_url, page) }}
+
+    {% import 'list.njk' as chemex %}
+    {{ chemex.field({{ languages.ru.chemex }}, collections.chemex, "/chemex/" | locale_url, page) }}
+</main>
+

@@ -7,18 +7,18 @@ permalink: index.html
 
 <main class="wrapper">
     {% import 'list.njk' as pourover %}
-    {{ pourover.field('Пуровер / V60', collections.pourover, "/pourover/" | locale_url, page) }}
+    {{ pourover.field(languages[page.lang].pourover, collections.pourover, "/pourover/" | locale_url, page) }}
 
     {% import 'list.njk' as aeropress %}
-    {{ aeropress.field('Аэропресс', collections.aeropress, "/aeropress/" | locale_url, page) }}
+    {{ aeropress.field(languages[page.lang].aeropress, collections.aeropress, "/aeropress/" | locale_url, page) }}
 
     {% import 'list.njk' as cezve %}
-    {{ cezve.field('Джезва/Турка', collections.cezve, "/cezve/" | locale_url, page) }}
+    {{ cezve.field(languages[page.lang].cezve, collections.cezve, "/cezve/" | locale_url, page) }}
 
     {% import 'list.njk' as coldbrew %}
-    {{ coldbrew.field('Cold brew', collections.coldbrew, "/coldbrew/" | locale_url, page) }}
+    {{ coldbrew.field(languages[page.lang].coldbrew, collections.coldbrew, "/coldbrew/" | locale_url, page) }}
 
     {% import 'list.njk' as chemex %}
-    {{ chemex.field('Chemex', collections.chemex, "/chemex/" | locale_url, page) }}
+    {{ chemex.field(languages[page.lang].chemex, collections.chemex, "/chemex/" | locale_url, page) }}
 </main>
 
