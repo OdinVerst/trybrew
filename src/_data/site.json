@@ -1,4 +1,6 @@
 {
     "name": "trybrew",
-    "url": "https://trybrew.app"
+    "url": "https://trybrew.app",
+    "description": "Рецепты для заваривания альтернативы",
+    "name_site": "Try brew"
 }
