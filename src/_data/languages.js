@@ -15,6 +15,11 @@ module.exports = {
       works_on: 'Works on',
       source_code: 'Source code',
       suggestions: 'Wishes and suggestions can be sent to:',
+    },
+    page_notFound: {
+      title: 'Page not found',
+      subtitle: 'Perhaps this recipe hasn\'t been created yet or something has happened...',
+      link: 'Go to Home',
     }
   },
   ru: {
@@ -33,6 +38,11 @@ module.exports = {
       works_on: 'Работает на',
       source_code: 'Source code',
       suggestions: 'Пожелания и предложения можно отправить на:',
+    },
+    page_notFound: {
+      title: 'Страница не найдена',
+      subtitle: 'Возможно, данный рецепт ещё не создан или что-то случилось...',
+      link: 'Перейти на главную',
     }
   },
 };
