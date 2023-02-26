@@ -8,7 +8,7 @@
     "build": "npm run 11ty && npm run pack"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "^2.0.0",
     "@babel/core": "^7.20.7",
     "@babel/preset-env": "^7.20.2",
     "autoprefixer": "^10.4.13",
