@@ -24,7 +24,7 @@ multiButton.addEventListener('click', () => {
 });
 
 const darkThemeInput = document.querySelector('#darkTheme');
-new Theme(darkThemeInput);
+if (darkThemeInput) new Theme(darkThemeInput);
 
 const menuButton = document.querySelector('#menuButton');
 const header = document.querySelector('#header')
