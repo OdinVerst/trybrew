@@ -3,7 +3,7 @@ title: 'Рецепт джезва с апельсиновым соком и сп
 description: 'Рецепт джезва с апельсиновым соком и специями | 110 ml | 11 г.'
 
 tags: cezve
-layout: cezve.njk
+layout: category.njk
 
 name: 'C апельсиновым соком и специями'
 

@@ -3,7 +3,7 @@ title: 'Рецепт AeroPress (Tasty Coffee)'
 description: 'Рецепт AeroPress | Универсальный | 180 ml | 18 г'
 
 tags: aeropress
-layout: aeropress.njk
+layout: category.njk
 
 name: 'Универсальный'
 

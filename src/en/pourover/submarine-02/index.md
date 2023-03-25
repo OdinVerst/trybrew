@@ -3,7 +3,7 @@ title: Рецепт фильтр кофе Бразилия "Эль Дорадо 
 description: Рецепт V60 (Бразилия "Эль Дорадо катукай") | 250 ml | 15.5 г
 
 tags: pourover
-layout: pourover.njk
+layout: category.njk
 
 name: Бразилия (Эль Дорадо катукай)
 

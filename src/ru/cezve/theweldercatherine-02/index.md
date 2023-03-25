@@ -3,7 +3,7 @@ title: 'Рецепт джезва с малиновым вареньем и сп
 description: 'Рецепт джезва с малиновым вареньем и специями | 110 ml | 11 г.'
 
 tags: cezve
-layout: cezve.njk
+layout: category.njk
 
 name: 'С малиновым вареньем и специями'
 

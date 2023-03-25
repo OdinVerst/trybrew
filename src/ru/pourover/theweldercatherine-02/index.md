@@ -3,7 +3,7 @@ title: Рецепт фильтр кофе Руанда Убумве Виски (
 description: Рецепт V60 (Руанда Убумве Виски) | 270 ml | 17,5 г
 
 tags: pourover
-layout: pourover.njk
+layout: category.njk
 
 name: 'Руанда Убумве Виски'
 

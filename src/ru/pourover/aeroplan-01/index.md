@@ -3,7 +3,7 @@ title: Рецепт фильтр кофе Универсальный (Aeroplan.C
 description: Рецепт V60 (Тайланд Бинспаер Дои Пагхонг) | 309 ml | 21 г
 
 tags: pourover
-layout: pourover.njk
+layout: category.njk
 
 name: Тайланд Бинспаер Дои Пагхонг
 
