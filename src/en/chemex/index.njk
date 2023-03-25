@@ -4,6 +4,6 @@ description: Рецепты Chemex (Кемекс)
 layout: page.njk
 ---
 <main class="wrapper">
-    {% import 'category/list.njk' as chemex %}
-    {{ chemex.field('Chemex', collections.chemex, 'chemex')}}
+    {% import 'list.njk' as chemex %}
+    {{ chemex.field('Chemex', collections.chemex, 'chemex', page)}}
 </main>

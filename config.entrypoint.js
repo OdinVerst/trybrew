@@ -26,11 +26,6 @@ module.exports = {
     watch: `${jsRoot}*.js`,
     webpack: webpackJSObj(),
   },
-  pages: {
-    entry: './src/pages/**/*.html',
-    output: `${dirName}/`,
-    watch: './src/**/*.html',
-  },
   css: {
     entry: createArrayFullSrc(cssNames, cssRoot, 'css'),
     output: `${dirName}/css`,
@@ -57,15 +52,5 @@ module.exports = {
   favicon: {
     entry: './src/favicon.ico',
     output: `${dirName}/`,
-  },
-  csscommon: {
-    entry: './src/css-common/*.css',
-    watch: './src/css-common/*.css',
-    output: `${dirName}/css/`,
-  },
-  php: {
-    entry: './src/backend-api/**/*.php',
-    watch: './src/backend-api/**/*.php',
-    output: `${dirName}/backend-api/`,
   },
 };

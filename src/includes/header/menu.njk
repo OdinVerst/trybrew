@@ -1,18 +1,18 @@
-<button class="header__burger" id="menuButton" aria-label="Меню"></button>
+<button class="header__burger" id="menuButton" aria-label="{{ languages[page.lang].menu }}""></button>
 
 <div class="header__menu">
     <nav class="header__nav">
-        <p class="header__separatorText">Разделы</p>
+        <p class="header__separatorText">{{ languages[page.lang].sections }}</p>
         <ul class="header__navList">
-            <li><a href="/pourover/">Пуровер / V60</a></li>
-            <li><a href="/aeropress/">Аэропресс</a></li>
-            <li><a href="/cezve/">Джезва/Турка</a></li>
-            <li><a href="/coldbrew/">Cold brew</a></li>
-            <li><a href="/chemex/">Chemex</a></li>
+            <li><a href="/pourover/">{{ languages[page.lang].pourover }}</a></li>
+            <li><a href="/aeropress/">{{ languages[page.lang].aeropress }}</a></li>
+            <li><a href="/cezve/">{{ languages[page.lang].cezve }}</a></li>
+            <li><a href="/coldbrew/">{{ languages[page.lang].coldbrew }}</a></li>
+            <li><a href="/chemex/">{{ languages[page.lang].chemex }}</a></li>
         </ul>
-        <a href="/about.html">О проекте</a>
+        <a href="/about.html">{{ languages[page.lang].about }}</a>
         <label class='header__darkTheme'>
-            Темная тема
+            {{ languages[page.lang].theme }}
             <input id='darkTheme' type='checkbox' />
         </label>
     </nav>
