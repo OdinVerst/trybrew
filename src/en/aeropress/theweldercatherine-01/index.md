@@ -3,7 +3,7 @@ title: 'Рецепт AeroPress (the Welder Catherine)'
 description: 'Рецепт AeroPress | Руанда Убумве Виски | 210 ml | 16.5 г'
 
 tags: aeropress
-layout: aeropress.njk
+layout: category.njk
 
 name: 'Руанда Убумве Виски'
 

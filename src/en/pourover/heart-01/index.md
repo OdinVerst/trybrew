@@ -3,7 +3,7 @@ title: Рецепт фильтр кофе Универсальный (Heart roas
 description: Рецепт V60 (Универсальный) | 360 ml | 22 г
 
 tags: pourover
-layout: pourover.njk
+layout: category.njk
 
 name: Универсальный
 

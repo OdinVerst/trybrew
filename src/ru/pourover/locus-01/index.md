@@ -3,7 +3,7 @@ title: Рецепт фильтр кофе Эфиопия натуральной 
 description: Рецепт V60 (Эфиопия натуральной обработки) | 220 ml | 20.5 г
 
 tags: pourover
-layout: pourover.njk
+layout: category.njk
 
 name: Эфиопия натуральной обработки
 

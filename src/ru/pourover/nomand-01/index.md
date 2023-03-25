@@ -3,7 +3,7 @@ title: Рецепт фильтр кофе Colombia El Paraíso (Nomad)
 description: Рецепт V60 (Colombia El Paraíso) | 260 ml | 15 г
 
 tags: pourover
-layout: pourover.njk
+layout: category.njk
 
 name: Colombia El Paraíso
 

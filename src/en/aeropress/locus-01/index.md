@@ -3,7 +3,7 @@ title: Рецепт AeroPress Эфиопия натуральной обрабо
 description: Рецепт AeroPress (Эфиопия натуральной обработки) | 220 ml | 30.5 г
 
 tags: aeropress
-layout: aeropress.njk
+layout: category.njk
 
 name: Эфиопия натуральной обработки
 

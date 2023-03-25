@@ -3,7 +3,7 @@ title: 'Рецепт AeroPress (Coffee Collective)'
 description: 'Рецепт AeroPress | Универсальный | 230 ml | 16 г'
 
 tags: aeropress
-layout: aeropress.njk
+layout: category.njk
 
 name: 'Универсальный'
 
