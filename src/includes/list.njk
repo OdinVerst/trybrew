@@ -1,4 +1,4 @@
-{% macro field(title, items, url, page) %}
+{% macro field(title, items, url, page, languages) %}
     <section class="category">
         <div class="category__top">
             {% set langS = ['/', page.lang, '/']  %}
@@ -19,7 +19,7 @@
             {%- for item in items -%}
                 {% import 'item/item.njk' as itemView %}
                 {% if item.data.locale == page.lang %}
-                    {{ itemView.field(item.data, item.url)}}
+                    {{ itemView.field(item.data, item.url, languages[page.lang])}}
                 {% endif %}
             {%- endfor -%}
         </div>
