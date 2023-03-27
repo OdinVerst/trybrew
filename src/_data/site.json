@@ -2,5 +2,6 @@
     "name": "trybrew",
     "url": "https://trybrew.app",
     "description": "Рецепты для заваривания альтернативы",
-    "name_site": "Try brew"
+    "name_site": "Try brew",
+    "categories": ["pourover", "aeropress", "cezve", "coldbrew", "chemex"]
 }
