@@ -1,0 +1,37 @@
+---
+title: Recipe AeroPress Ethiopia natural processing (Locus)
+description: Recipe AeroPress (Ethiopia natural processing) | 220 ml | 30.5 gr
+
+tags: aeropress
+layout: category.njk
+
+name: Ethiopia natural processing
+
+time: ''
+water: '220 ml'
+temperature: '85'
+coffeeWeight: '30,5 gr.'
+author: 'Locus'
+authorImg: 'locus'
+linkRecipe: 'https://www.instagram.com/locus.coffee/'
+---
+
+## Recipe
+
+0. Heat the water for the cups.
+
+1. Put the kettle on 85.
+
+2. Put the filter in the sieve.
+
+3. Weigh 30.5 g coffee, wet, grind to 6.5, remove excess.
+
+4. Moisten the filters.
+
+5. Pour the coffee into the upside down aeropress, pour in 100 g water, stir 20 times, put on the filter.
+
+6. Strain, add 120 g of water from the kettle.
+
+<br>
+
+
