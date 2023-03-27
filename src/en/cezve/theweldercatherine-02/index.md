@@ -1,0 +1,40 @@
+---
+title: 'Recipe for cezve with raspberry jam and spices (Sergey Blinnikov)'
+description: 'Recipe for cezve with raspberry jam and spices | 110 ml | 11 gr.'
+
+tags: cezve
+layout: category.njk
+
+name: 'With raspberry jam and spices'
+
+water: '110 ml'
+coffeeWeight: '11 gr.'
+author: 'the Welder Catherine (Sergey Blinnikov)'
+authorImg: 'thewelder'
+linkRecipe: 'https://www.youtube.com/watch?v=3kyp0cDkOWU'
+---
+
+## Recipe
+
+
+__Ingredients:__
+
+- Coffee (Costa Rica La Torre) - 11 gr. (Finely grind into powder)
+
+- Dried juniper berries - 3 pcs. (You can crush it a bit, not necessary)
+
+- Raspberry jam - 11g.
+
+- Water - 110g (room temperature)
+
+__Cooking:__
+
+We mix in stages, first dry ingredients, then wet.
+
+Put on the fire and stir (a few times).
+
+Cook for 3-4 minutes until foamy foam forms.
+
+Pour into an airpress and strain (optional).
+
+Pour into a cup
