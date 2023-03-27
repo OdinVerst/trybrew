@@ -23,9 +23,9 @@ __Ingredients:__
 
 - Dried juniper berries - 3 pcs. (You can crush it a bit, not necessary)
 
-- Raspberry jam - 11g.
+- Raspberry jam - 11gr.
 
-- Water - 110g (room temperature)
+- Water - 110gr (room temperature)
 
 __Cooking:__
 

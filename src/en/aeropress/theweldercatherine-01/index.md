@@ -20,7 +20,7 @@ __Preparation: (Method reversed)__
 
 __2__ paper filters.
 
-Pour in __210g__ water and stir until __0:45__.
+Pour in __210ml__ water and stir until __0:45__.
 
 Then screw in filter, invert aeropress and squeeze evenly until __1:25__.
 
