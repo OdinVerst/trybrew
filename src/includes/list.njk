@@ -1,4 +1,5 @@
 {% macro field(title, items, url, page) %}
+    {% if items.length %}
     <section class="category">
         <div class="category__top">
             {% set langS = ['/', page.lang, '/']  %}
@@ -24,4 +25,5 @@
             {%- endfor -%}
         </div>
     </section>
+    {% endif %}
 {% endmacro %}
