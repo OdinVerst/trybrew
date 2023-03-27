@@ -24,13 +24,13 @@ linkRecipe: 'https://www.instagram.com/locus.coffee/'
 
 2. Put the filter in the sieve.
 
-3. Weigh 30.5 g coffee, wet, grind to 6.5, remove excess.
+3. Weigh 30.5 gr coffee, wet, grind to 6.5, remove excess.
 
 4. Moisten the filters.
 
-5. Pour the coffee into the upside down aeropress, pour in 100 g water, stir 20 times, put on the filter.
+5. Pour the coffee into the upside down aeropress, pour in 100 gr water, stir 20 times, put on the filter.
 
-6. Strain, add 120 g of water from the kettle.
+6. Strain, add 120 gr of water from the kettle.
 
 <br>
 
