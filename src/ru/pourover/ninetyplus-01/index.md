@@ -72,7 +72,7 @@ linkRecipe: 'https://www.instagram.com/tv/CJ6E3gznh39/'
 
 ## Примечание
 
-Вода __60ppm__
+Вода: __60ppm__
 
 Помол: __Сomandante 20-22__
 </div>
