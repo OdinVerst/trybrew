@@ -1,4 +1,4 @@
-import {Theme} from "./darkTheme";
+import {ThemeController} from "./darkTheme";
 
 document.addEventListener('click', (evt) => {
     const { target } = evt;
@@ -23,8 +23,8 @@ multiButton.addEventListener('click', () => {
     multiButtonMenu.classList.toggle('multiButton__menu_active')
 });
 
-const darkThemeInput = document.querySelector('#darkTheme');
-if (darkThemeInput) new Theme(darkThemeInput);
+const themeInput = document.querySelector('#theme');
+new ThemeController(themeInput);
 
 const menuButton = document.querySelector('#menuButton');
 const header = document.querySelector('#header')

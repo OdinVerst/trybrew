@@ -5,6 +5,7 @@
     "name_site": "Try brew",
     "settings": [{
       "name": "Тема",
+      "value": "theme",
       "list": [
         {
           "name": "Авто",
@@ -22,6 +23,7 @@
     },
       {
         "name": "Язык",
+        "value": "lang",
         "list": [
           {
             "name": "Русский",
