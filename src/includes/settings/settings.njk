@@ -2,7 +2,7 @@
     <div class="settings">
         {%- for item in items -%}
             {% import 'settings/settingsItem.njk' as settingsItem %}
-            {{ settingsItem.field(item.name, item.list)}}
+            {{ settingsItem.field(item.name, item.list, item.value) }}
         {%- endfor -%}
     </div>
 {% endmacro %}
