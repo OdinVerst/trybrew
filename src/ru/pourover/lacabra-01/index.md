@@ -25,7 +25,7 @@ linkRecipe: 'https://www.lacabra.dk/pages/v60-brew-guide'
 
 Вес
 
-Итого(г)
+Итого (гр)
 
 </div>
 

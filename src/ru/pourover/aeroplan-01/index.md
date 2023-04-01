@@ -25,7 +25,7 @@ linkRecipe: 'https://www.instagram.com/aeroplancoffee/'
 
 Вес
 
-Итого(г)
+Итого (гр)
 
 </div>
 

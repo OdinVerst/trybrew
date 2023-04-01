@@ -25,7 +25,7 @@ linkRecipe: 'https://www.youtube.com/watch?v=-msoGbvpr7U'
 
 Вес
 
-Итого(г)
+Итого (гр)
 
 </div>
 
