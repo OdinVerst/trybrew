@@ -37,7 +37,7 @@ linkRecipe: 'https://www.heartroasters.com/pages/v60'
 
 45 гр
 
-45 г.
+45 гр
 
 </div>
 
@@ -48,9 +48,9 @@ linkRecipe: 'https://www.heartroasters.com/pages/v60'
 
 0:20 - 1:50
 
-315 г.
+315 гр
 
-360 г.
+360 гр
 
 </div>
 <br>
