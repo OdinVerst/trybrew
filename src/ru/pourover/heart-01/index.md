@@ -25,7 +25,7 @@ linkRecipe: 'https://www.heartroasters.com/pages/v60'
 
 Вес
 
-Итого(г)
+Итого (гр)
 
 </div>
 

@@ -25,7 +25,7 @@ linkRecipe: 'https://bluebottlecoffee.com/us/eng/brew-guides/pour-over'
 
 Вес
 
-Итого(г)
+Итого (гр)
 
 </div>
 

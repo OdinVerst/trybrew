@@ -25,7 +25,7 @@ linkRecipe: 'https://sbmrne.ru/product-card/Brazil_El_Dorado_catucai'
 
 Вес
 
-Итого(г)
+Итого (гр)
 
 </div>
 

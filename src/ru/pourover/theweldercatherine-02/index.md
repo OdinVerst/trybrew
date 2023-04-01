@@ -25,7 +25,7 @@ linkRecipe: 'https://theweldercatherine.ru/catalog/dlya_filtra/ruanda_ubumve_vis
 
 Вес
 
-Итого(г)
+Итого (гр)
 
 </div>
 

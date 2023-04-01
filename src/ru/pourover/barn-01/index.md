@@ -25,7 +25,7 @@ linkRecipe: 'https://thebarn.de/blogs/the-barn-blog/v60-drip'
 
 Вес
 
-Итого(г)
+Итого (гр)
 
 </div>
 

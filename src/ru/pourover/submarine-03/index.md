@@ -25,7 +25,7 @@ linkRecipe: 'https://sbmrne.ru/product-card/guatemala-la-senda'
 
 Вес
 
-Итого(г)
+Итого (гр)
 
 </div>
 

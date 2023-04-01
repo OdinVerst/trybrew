@@ -25,7 +25,7 @@ linkRecipe: 'https://www.silkydrum.ru/recipes'
 
 Вес
 
-Итого(г)
+Итого (гр)
 
 </div>
 

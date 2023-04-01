@@ -24,7 +24,7 @@ linkRecipe: 'https://nomadcoffee.es/en/producto/red-plum/'
 
 Вес
 
-Итого(г)
+Итого (гр)
 
 </div>
 

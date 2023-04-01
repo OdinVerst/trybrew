@@ -25,7 +25,7 @@ linkRecipe: 'https://sbmrne.ru/product-card/kenya_gatomboya'
 
 Вес
 
-Итого(г)
+Итого (гр)
 
 </div>
 
