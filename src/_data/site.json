@@ -2,5 +2,23 @@
     "name": "trybrew",
     "url": "https://trybrew.app",
     "description": "Рецепты для заваривания альтернативы",
-    "name_site": "Try brew"
+    "name_site": "Try brew",
+    "settings": [{
+      "name": "Тема",
+      "list": [
+        {
+          "name": "Светлая",
+          "value": "light"
+        }
+      ]
+    },
+      {
+        "name": "Язык",
+        "list": [
+          {
+            "name": "Светлая",
+            "value": "light"
+          }
+        ]
+      }]
 }
