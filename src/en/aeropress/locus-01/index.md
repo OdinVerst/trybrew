@@ -1,36 +1,36 @@
 ---
-title: Рецепт AeroPress Эфиопия натуральной обработки (Locus)
-description: Рецепт AeroPress (Эфиопия натуральной обработки) | 220 ml | 30.5 г
+title: Recipe AeroPress Ethiopia natural processing (Locus)
+description: Recipe AeroPress (Ethiopia natural processing) | 220 ml | 30.5 gr
 
 tags: aeropress
 layout: category.njk
 
-name: Эфиопия натуральной обработки
+name: Ethiopia natural processing
 
 time: ''
 water: '220 ml'
 temperature: '85'
-coffeeWeight: '30,5 г.'
+coffeeWeight: '30,5 gr.'
 author: 'Locus'
 authorImg: 'locus'
 linkRecipe: 'https://www.instagram.com/locus.coffee/'
 ---
 
-## Рецепт
+## Recipe
 
-0. Нагреть воду для чашек.
+0. Heat the water for the cups.
 
-1. Поставить чайник на 85.
+1. Put the kettle on 85.
 
-2. Заложить фильтр в сито.
+2. Put the filter in the sieve.
 
-3. Взвесить 30.5 г кофе, смочить, смолоть на 6.5, убрать лишнее.
+3. Weigh 30.5 gr coffee, wet, grind to 6.5, remove excess.
 
-4. Смочить фильтры.
+4. Moisten the filters.
 
-5. Засыпать кофе в перевернутый аэропресс, налить 100 г воды, перемешать 20 раз, надеть фильтр.
+5. Pour the coffee into the upside down aeropress, pour in 100 gr water, stir 20 times, put on the filter.
 
-6. Продавить, добавить 120 г воды из чайника.
+6. Strain, add 120 gr of water from the kettle.
 
 <br>
 

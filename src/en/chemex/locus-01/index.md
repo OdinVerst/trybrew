@@ -1,39 +1,39 @@
 ---
-title: Рецепт chemex Эфиопия натуральной обработки (Locus)
-description: Рецепт chemex (Эфиопия натуральной обработки) | 450 ml | 30.5 г
+title: Recipe chemex Ethiopia natural processing (Locus)
+description: Recipe chemex (Ethiopia natural processing) | 450 ml | 30.5 gr
 
 tags: chemex
 layout: detail.njk
 
-name: Эфиопия натуральной обработки
+name: Ethiopia natural processing
 
 time: ''
 water: '450 ml'
 temperature: '85'
-coffeeWeight: '30,5 г.'
+coffeeWeight: '30,5 gr.'
 author: 'Locus'
 authorImg: 'locus'
 linkRecipe: 'https://www.instagram.com/locus.coffee/'
 
 ---
 
-## Рецепт
+## Recipe
 
-0. Нагреть воду для чашек.
+0. Heat the water for the cups.
 
-1. Поставить чайник на 85.
+1. Put the kettle on 85.
 
-2. Заложить фильтр в кемекс.
+2. Put the filter in the Kemex.
 
-3. Взвесить 30.5 г кофе, смочить, смолоть на 7, убрать лишнее.
+3. Weigh 30.5gr coffee, wet, grind for 7, remove excess.
 
-4. Смочить фильтр.
+4. Moisten the filter.
 
-5. Засыпать кофе в кемекс.
+5. Pour the coffee into the Chemex.
 
-6. Залить 80 г воды, интенсивно размешать вращением.
+6. Pour in 80gr of water, stirring vigorously with a swirling motion.
 
-7. Затем 120 г, затем 100 и 150
+7. Then 120gr, then 100gr and 150gr.
 
 <br>
 

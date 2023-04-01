@@ -1,14 +1,14 @@
 ---
-title: 'Рецепт AeroPress (the Welder Catherine)'
-description: 'Рецепт AeroPress | Руанда Убумве Виски | 210 ml | 16.5 г'
+title: 'Recipe AeroPress (the Welder Catherine)'
+description: 'Recipe AeroPress | Rwanda Ubumwe Whisky | 210 ml | 16.5 gr'
 
 tags: aeropress
 layout: category.njk
 
-name: 'Руанда Убумве Виски'
+name: 'Rwanda Ubumwe Whisky'
 
 water: '210 ml'
-coffeeWeight: '16.5 г.'
+coffeeWeight: '16.5 gr.'
 time: '1:25'
 temperature: '91'
 author: 'the Welder Catherine'
@@ -16,26 +16,26 @@ authorImg: 'thewelder'
 linkRecipe: 'https://theweldercatherine.ru/catalog/dlya_filtra/ruanda_ubumve_viski/'
 ---
 
-__Приготовление: (Способ перевернутый)__
+__Preparation: (Method reversed)__
 
-__2__ бумажных фильтра
+__2__ paper filters.
 
-Влить __210г__ воды и мешать до __0:45__.
+Pour in __210ml__ water and stir until __0:45__.
 
-Затем закрутить фильтр, перевернуть аэропресс и равномерно продавливать до __1:25__.
+Then screw in filter, invert aeropress and squeeze evenly until __1:25__.
 
 <br>
 
 <div class="info-warm">
 
-## Примечание
+## Note
 
 
 
-__Помол__:
+__Grinding__:
 - Mahlkönig Tanzania: 6;
 
 - ЕК43(turkish) -6,5-6,75/11;
 
-- Comandante(red clix) - 31-33 щелчка.
+- Comandante(red clix) - 31-33 click.
 </div>

@@ -1,40 +1,40 @@
 ---
-title: 'Рецепт джезва с малиновым вареньем и специями (Сергей Блинников)'
-description: 'Рецепт джезва с малиновым вареньем и специями | 110 ml | 11 г.'
+title: 'Recipe for cezve with raspberry jam and spices (Sergey Blinnikov)'
+description: 'Recipe for cezve with raspberry jam and spices | 110 ml | 11 gr.'
 
 tags: cezve
 layout: category.njk
 
-name: 'С малиновым вареньем и специями'
+name: 'With raspberry jam and spices'
 
 water: '110 ml'
-coffeeWeight: '11 г.'
-author: 'the Welder Catherine (Сергей Блинников)'
+coffeeWeight: '11 gr.'
+author: 'the Welder Catherine (Sergey Blinnikov)'
 authorImg: 'thewelder'
 linkRecipe: 'https://www.youtube.com/watch?v=3kyp0cDkOWU'
 ---
 
-## Рецепт
+## Recipe
 
 
-__Ингредиенты:__
+__Ingredients:__
 
-- Кофе (Коста-Рика Ла Торре) — 11 г. (Мелкий помол в пудру)
+- Coffee (Costa Rica La Torre) - 11 gr. (Finely grind into powder)
 
-- Сушеные ягоды можжевельника — 3 шт. (Можно чуть раздавить, необязательно)
+- Dried juniper berries - 3 pcs. (You can crush it a bit, not necessary)
 
-- Малиновое варенье — 11г.
+- Raspberry jam - 11gr.
 
-- Вода — 110 г. (Комнатной температуры)
+- Water - 110gr (room temperature)
 
-__Приготовление:__
+__Cooking:__
 
-Смешиваем поэтапно, сначала сухие ингредиенты потом влажные.
+We mix in stages, first dry ingredients, then wet.
 
-Ставим на огонь и перемешиваем (несколько раз)
+Put on the fire and stir (a few times).
 
-Ждем 3-4 минуты до поднятия пенки
+Cook for 3-4 minutes until foamy foam forms.
 
-Переливаем в аэропресс и фильтруем (необязательно)
+Pour into an airpress and strain (optional).
 
-Переливаем в чашку
+Pour into a cup

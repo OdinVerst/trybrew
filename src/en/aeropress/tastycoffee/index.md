@@ -1,14 +1,14 @@
 ---
-title: 'Рецепт AeroPress (Tasty Coffee)'
-description: 'Рецепт AeroPress | Универсальный | 180 ml | 18 г'
+title: 'Recipe AeroPress (Tasty Coffee)'
+description: 'Recipe AeroPress | Universal | 180 ml | 18 gr'
 
 tags: aeropress
 layout: category.njk
 
-name: 'Универсальный'
+name: 'Universal'
 
 water: '180 ml'
-coffeeWeight: '18 г.'
+coffeeWeight: '18 gr.'
 time: '1:40'
 temperature: '90'
 author: 'Tasty Coffee'
@@ -16,16 +16,16 @@ authorImg: 'tastycoffee'
 linkRecipe: 'https://shop.tastycoffee.ru/blog/guide-aeropress'
 ---
 
-__Приготовление: (Способ прямой)__
+__Cooking: (Direct method)__
 
-Сначала нужно влить треть от всего объёма воды по отношению кофе.
+First you need to pour in one-third of the total volume of water in relation to the coffee.
 
-То есть  __50–60__ мл воды и подождать __30__ секунд.
+That is, __50-60__ ml of water and wait __30__ seconds.
 
-Влить остаток — __120–130__ мл воды и установить поршень сверху на место, но сделать небольшое обратное вытягивающее движение, чтобы вода не протекала через фильтр вниз.
+Pour the rest - __120-130__ ml of water and set the piston on top in place, but make a small reverse pulling motion so that water does not flow down through the filter.
 
-В таком положении аэропресс нужно оставить на еще __40__ секунд.
+Leave the aeropress in this position for another __40__ seconds.
 
-После заваривания, нужно снять поршень, перемешать кофе, установить поршень обратно и с постоянным давлением плавно опускать его в течение __20–30__ секунд.
+After brewing, you should remove the piston, stir the coffee, put the piston back in and with constant pressure gently lower it for __20-30__ seconds.
 
 <br>

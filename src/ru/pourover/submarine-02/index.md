@@ -1,6 +1,6 @@
 ---
 title: Рецепт фильтр кофе Бразилия "Эль Дорадо катукай" (Submarine)
-description: Рецепт V60 (Бразилия "Эль Дорадо катукай") | 250 ml | 15.5 г
+description: Рецепт V60 (Бразилия "Эль Дорадо катукай") | 250 мл | 15.5 г
 
 tags: pourover
 layout: category.njk
@@ -8,9 +8,9 @@ layout: category.njk
 name: Бразилия (Эль Дорадо катукай)
 
 time: '3:10'
-water: '250 ml'
+water: '250 мл'
 temperature: '95'
-coffeeWeight: '15.5 г.'
+coffeeWeight: '15.5 г'
 author: 'Submarine'
 authorImg: 'submarine'
 linkRecipe: 'https://sbmrne.ru/product-card/Brazil_El_Dorado_catucai'
@@ -25,7 +25,7 @@ linkRecipe: 'https://sbmrne.ru/product-card/Brazil_El_Dorado_catucai'
 
 Вес
 
-Итого(г)
+Итого
 
 </div>
 
@@ -35,9 +35,9 @@ linkRecipe: 'https://sbmrne.ru/product-card/Brazil_El_Dorado_catucai'
 
 0:00 по 0:30
 
-60 г.
+60 г
 
-60 г.
+60 г
 
 </div>
 
@@ -48,9 +48,9 @@ linkRecipe: 'https://sbmrne.ru/product-card/Brazil_El_Dorado_catucai'
 
 1:10
 
-70 г.
+70 г
 
-130 г.
+130 г
 
 </div>
 
@@ -58,9 +58,9 @@ linkRecipe: 'https://sbmrne.ru/product-card/Brazil_El_Dorado_catucai'
 
 1:45
 
-60 г.
+60 г
 
-190 г.
+190 г
 
 </div>
 
@@ -68,9 +68,9 @@ linkRecipe: 'https://sbmrne.ru/product-card/Brazil_El_Dorado_catucai'
 
 2:15
 
-60 г.
+60 г
 
-250 г.
+250 г
 
 </div>
 

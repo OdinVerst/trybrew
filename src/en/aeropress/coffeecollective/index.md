@@ -1,13 +1,14 @@
 ---
-title: 'Рецепт AeroPress (Coffee Collective)'
-description: 'Рецепт AeroPress | Универсальный | 230 ml | 16 г'
+title: 'Recipe AeroPress (Coffee Collective)'
+description: 'Recipe AeroPress | Universal | 230 ml | 16 gr'
 
 tags: aeropress
 layout: category.njk
-name: 'Универсальный'
+
+name: 'Universal'
 
 water: '230 ml'
-coffeeWeight: '16 г.'
+coffeeWeight: '16 gr.'
 time: '1:00'
 temperature: '93'
 author: 'Coffee Collective'
@@ -15,14 +16,14 @@ authorImg: 'cc'
 linkRecipe: 'https://coffeecollective.dk/brew-guides/aeropress/'
 ---
 
-__Приготовление: (Способ прямой)__
+__Preparation: (Direct method)__
 
-Вливаем __40-50__ мл воды и ждем __15__ секунд.
+Pour in __40-50__ ml of water and wait __15__ seconds.
 
-Затем вливаем остальной объем до __230__ мл.
+Then pour in the remaining volume up to __230__ ml.
 
-Через __60__ секунд вставляем поршень и медленно проливаем.
+After __60__ seconds, insert piston and slowly pour in.
 
-Даем чуть остыть кофе. Наслаждаемся!)
+Let the coffee cool a little. Enjoy!)
 
 <br>

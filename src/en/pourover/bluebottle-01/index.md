@@ -1,43 +1,43 @@
 ---
-title: Рецепт фильтр кофе Универсальный (Blue Bottle)
-description: Рецепт V60 (Универсальный) | 350 ml | 22 г
+title: Recipe for coffee filter Universal (Blue Bottle)
+description: Recipe V60 (Universal) | 350 ml | 22 gr
 
 tags: pourover
 layout: category.njk
 
-name: Универсальный
+name: Universal
 
 time: '2:30'
 water: '350 ml'
 temperature: '~95'
-coffeeWeight: '22 г.'
+coffeeWeight: '22 gr'
 author: 'Blue Bottle'
-authorImg: 'bluebottel'
+authorImg: 'bluebottle'
 linkRecipe: 'https://bluebottlecoffee.com/us/eng/brew-guides/pour-over'
 ---
 
-## Рецепт
+## Recipe
 
 
 <div class="time-line">
 
-Время
+Time
 
-Вес
+Weight
 
-Итого(г)
+Total
 
 </div>
 
-### Вливания
+### Infusions
 
 <div class="time-line">
 
 0:00
 
-60 г.
+60 gr
 
-60 г.
+60 gr
 
 </div>
 
@@ -45,9 +45,9 @@ linkRecipe: 'https://bluebottlecoffee.com/us/eng/brew-guides/pour-over'
 
 0:40
 
-90 г.
+90 gr
 
-150 г.
+150 gr
 
 </div>
 
@@ -55,23 +55,23 @@ linkRecipe: 'https://bluebottlecoffee.com/us/eng/brew-guides/pour-over'
 
 1:25
 
-100 г.
+100 gr
 
-250 г.
+250 gr
 
 </div>
 <div class="time-line">
 
 1:45
 
-100 г.
+100 gr
 
-350 г.
+350 gr.
 
 </div>
 <br>
 
-Общее время экстракции __2:35 - 3:10__
+Total extraction time __2:35 - 3:10__
 
 <br>
 

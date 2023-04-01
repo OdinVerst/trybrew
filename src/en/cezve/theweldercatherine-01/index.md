@@ -1,42 +1,42 @@
 ---
-title: 'Рецепт джезва с апельсиновым соком и специями (Сергей Блинников)'
-description: 'Рецепт джезва с апельсиновым соком и специями | 110 ml | 11 г.'
+title: 'Recipe for cezve with orange juice and spices (Sergey Blinnikov)'
+description: 'Recipe for orange juice and spices jesvah | 110 ml | 11 gr.'
 
 tags: cezve
 layout: category.njk
 
-name: 'C апельсиновым соком и специями'
+name: 'With orange juice and spices'
 
 water: '110 ml'
-coffeeWeight: '11 г.'
-author: 'the Welder Catherine (Сергей Блинников)'
+coffeeWeight: '11 gr.'
+author: 'the Welder Catherine (Sergey Blinnikov)'
 authorImg: 'thewelder'
 linkRecipe: 'https://www.youtube.com/watch?v=H2WI9vpwOWA'
 ---
 
-## Рецепт
+## Recipe
 
 
-__Ингредиенты:__
+__Ingredients:__
 
-- Кофе (Эфиопия) — 11 г. (Мелкий помол в пудру)
+- Coffee (Ethiopia) - 11 gr. (Finely grind into powder)
 
-- Сахар (Тростниковый) — 3 г.
+- Sugar (Cane) - 3 gr.
 
-- Бутон гвоздики (пряность) — 1шт.
+- Clove bud (spice) - 1 unit.
 
-- Апельсиновый сок — 30 г. (Обычный из магазина)
+- Orange juice - 30 gr. (Normal from the store)
 
-- Вода — 80 г. (Комнатной температуры)
+- Water - 80 gr (room temperature)
 
-__Приготовление:__
+__Preparation:__
 
-Смешиваем поэтапно, сначала сухие ингредиенты потом влажные.
+You have to mix the ingredients stage by stage, firstly the dry ingredients, then the wet ones.
 
-Ставим на огонь и перемешиваем (несколько раз)
+Put on the fire and stir (a few times).
 
-Ждем 3-4 минуты до поднятия пенки
+We wait 3-4 minutes until foam rising.
 
-Переливаем в кружку и ждем 3-4 минуты (Для остывания и погружения осадка)
+Pour it into a mug and wait 3-4 minutes (for cooling down and sedimentation)
 
 <br/>
