@@ -8,6 +8,7 @@
 @import "components/header/menu.css";
 
 @import "components/settings/settings.css";
+@import "components/heading.css";
 @import "components/category.css";
 @import "components/item.css";
 @import "components/author.css";
