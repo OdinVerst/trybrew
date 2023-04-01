@@ -15,16 +15,8 @@ document.addEventListener('click', (evt) => {
     }
 });
 
-const multiButton = document.querySelector('.multiButton');
-const multiButtonMenu = document.querySelector('.multiButton__menu')
-
-if (multiButtonMenu && multiButton)
-multiButton.addEventListener('click', () => {
-    multiButtonMenu.classList.toggle('multiButton__menu_active')
-});
-
-const themeInput = document.querySelector('#theme');
-new ThemeController(themeInput);
+const darkThemeInput = document.querySelector('#darkTheme');
+new Theme(darkThemeInput);
 
 const langInput = document.querySelector('#lang');
 if (langInput) {
