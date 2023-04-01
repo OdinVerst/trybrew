@@ -1,6 +1,6 @@
 ---
 title: Рецепт фильтр кофе Универсальный (Ninety Plus)
-description: Рецепт V60 (Универсальный) | 160 ml | 10 г
+description: Рецепт V60 (Универсальный) | 160 мл | 10 г
 
 tags: pourover
 layout: category.njk
@@ -8,7 +8,7 @@ layout: category.njk
 name: Универсальный
 
 time: '1:50'
-water: '160 ml'
+water: '160 мл'
 temperature: '93'
 coffeeWeight: '10 г.'
 author: 'Ninety Plus'

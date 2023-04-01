@@ -1,6 +1,6 @@
 ---
 title: Рецепт фильтр кофе Гватемала "Ла Сенда" (Submarine)
-description: Рецепт V60 (Гватемала "Ла Сенда") | 260 ml | 17 г
+description: Рецепт V60 (Гватемала "Ла Сенда") | 260 мл | 17 г
 
 tags: pourover
 layout: category.njk
@@ -8,9 +8,9 @@ layout: category.njk
 name: Гватемала (Ла Сенда)
 
 time: '3:10'
-water: '260 ml'
+water: '260 мл'
 temperature: '95'
-coffeeWeight: '17 г.'
+coffeeWeight: '17 гр'
 author: 'Submarine'
 authorImg: 'submarine'
 linkRecipe: 'https://sbmrne.ru/product-card/guatemala-la-senda'
@@ -35,9 +35,9 @@ linkRecipe: 'https://sbmrne.ru/product-card/guatemala-la-senda'
 
 0:00
 
-40 г.
+40 гр
 
-40 г.
+40 гр
 
 </div>
 
@@ -48,9 +48,9 @@ linkRecipe: 'https://sbmrne.ru/product-card/guatemala-la-senda'
 
 0:40
 
-100 г.
+100 гр
 
-140 г.
+140 гр
 
 </div>
 
@@ -58,9 +58,9 @@ linkRecipe: 'https://sbmrne.ru/product-card/guatemala-la-senda'
 
 1:30
 
-60 г.
+60 гр
 
-200 г.
+200 гр
 
 </div>
 
@@ -68,7 +68,7 @@ linkRecipe: 'https://sbmrne.ru/product-card/guatemala-la-senda'
 
 2:00
 
-60 г.
+60 гр
 
 260 г.
 

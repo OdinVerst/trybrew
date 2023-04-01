@@ -8,9 +8,9 @@ layout: category.njk
 name: Эфиопия натуральной обработки
 
 time: ''
-water: '220 ml'
+water: '220 мл'
 temperature: '85'
-coffeeWeight: '20,5 г.'
+coffeeWeight: '20,5 гр'
 author: 'Locus'
 authorImg: 'locus'
 linkRecipe: 'https://www.instagram.com/locus.coffee/'
@@ -27,11 +27,11 @@ linkRecipe: 'https://www.instagram.com/locus.coffee/'
 
 3. Взвесить 20.5 г кофе, смочить, смолоть на 6.5, убрать лишнее.
 
-4. Смочить фильтр 100 г воды.
+4. Смочить фильтр 100 мл воды.
 
-5. Насыпать помол, залить 60 г воды, интенсивно размешать вращением.
+5. Насыпать помол, залить 60 мл воды, интенсивно размешать вращением.
 
-6. Затем по 60 г вливаем.
+6. Затем по 60 мл вливаем.
 
 <br>
 
