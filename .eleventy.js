@@ -1,6 +1,7 @@
 const fs = require('fs');
 const htmlmin = require('html-minifier');
 const markdown = require('markdown-it')({ html: true });
+const { EleventyI18nPlugin } = require("@11ty/eleventy");
 
 module.exports = (config) => {
     config.addPassthroughCopy('src/img/!svg');
@@ -50,6 +51,19 @@ module.exports = (config) => {
         }
 
         return content;
+    });
+
+    config.addPlugin(EleventyI18nPlugin, {
+        // any valid BCP 47-compatible language tag is supported
+        defaultLanguage: "en", // Required, this site uses "en"
+        filters: {
+          // transform a URL with the current page’s locale code
+          url: "locale_url",
+
+          // find the other localized content for a specific input file
+          links: "locale_links",
+        },
+        errorMode: "never",
     });
 
     return {
