@@ -10,7 +10,7 @@ name: Тайланд Бинспаер Дои Пагхонг
 time: '3:25'
 water: '309 мл'
 temperature: '95'
-coffeeWeight: '21 гр'
+coffeeWeight: '21 г'
 author: 'Aeroplan.Coffee'
 authorImg: 'aeroplan'
 linkRecipe: 'https://www.instagram.com/aeroplancoffee/'
@@ -25,7 +25,7 @@ linkRecipe: 'https://www.instagram.com/aeroplancoffee/'
 
 Вес
 
-Итого (гр)
+Итого
 
 </div>
 
@@ -35,9 +35,9 @@ linkRecipe: 'https://www.instagram.com/aeroplancoffee/'
 
 0:00
 
-50 гр
+50 г
 
-50 гр
+50 г
 
 </div>
 
@@ -49,9 +49,9 @@ linkRecipe: 'https://www.instagram.com/aeroplancoffee/'
 
 0:50
 
-70 гр
+70 г
 
-120 гр
+120 г
 
 </div>
 
@@ -62,9 +62,9 @@ linkRecipe: 'https://www.instagram.com/aeroplancoffee/'
 
 1:20
 
-60 гр
+60 г
 
-180 гр
+180 г
 
 </div>
 
@@ -74,9 +74,9 @@ linkRecipe: 'https://www.instagram.com/aeroplancoffee/'
 
 2:00
 
-129 гр
+129 г
 
-309 гр
+309 г
 
 </div>
 

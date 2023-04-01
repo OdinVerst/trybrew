@@ -10,7 +10,7 @@ name: Универсальный
 time: '2:30'
 water: '250 мл'
 temperature: '97'
-coffeeWeight: '15 гр'
+coffeeWeight: '15 г'
 author: 'Silky Drum (Руслан Шульги)'
 authorImg: 'silky'
 linkRecipe: 'https://www.silkydrum.ru/recipes'
@@ -25,7 +25,7 @@ linkRecipe: 'https://www.silkydrum.ru/recipes'
 
 Вес
 
-Итого (гр)
+Итого
 
 </div>
 
@@ -35,9 +35,9 @@ linkRecipe: 'https://www.silkydrum.ru/recipes'
 
 0:00
 
-50 гр
+50 г
 
-50 гр
+50 г
 
 </div>
 
@@ -48,9 +48,9 @@ linkRecipe: 'https://www.silkydrum.ru/recipes'
 
 0:25
 
-50 гр
+50 г
 
-100 гр
+100 г
 
 </div>
 
@@ -58,9 +58,9 @@ linkRecipe: 'https://www.silkydrum.ru/recipes'
 
 0:50
 
-50 гр
+50 г
 
-150 гр
+150 г
 
 </div>
 
@@ -68,9 +68,9 @@ linkRecipe: 'https://www.silkydrum.ru/recipes'
 
 1:15
 
-50 гр
+50 г
 
-200 гр
+200 г
 
 </div>
 
@@ -78,9 +78,9 @@ linkRecipe: 'https://www.silkydrum.ru/recipes'
 
 1:40
 
-50 гр
+50 г
 
-250 гр
+250 г
 
 </div>
 

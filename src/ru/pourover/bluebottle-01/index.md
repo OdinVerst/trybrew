@@ -10,7 +10,7 @@ name: Универсальный
 time: '2:30'
 water: '350 мл'
 temperature: '~95'
-coffeeWeight: '22 гр'
+coffeeWeight: '22 г'
 author: 'Blue Bottle'
 authorImg: 'bluebottle'
 linkRecipe: 'https://bluebottlecoffee.com/us/eng/brew-guides/pour-over'
@@ -25,7 +25,7 @@ linkRecipe: 'https://bluebottlecoffee.com/us/eng/brew-guides/pour-over'
 
 Вес
 
-Итого (гр)
+Итого
 
 </div>
 
@@ -35,9 +35,9 @@ linkRecipe: 'https://bluebottlecoffee.com/us/eng/brew-guides/pour-over'
 
 0:00
 
-60 гр
+60 г
 
-60 гр
+60 г
 
 </div>
 
@@ -45,9 +45,9 @@ linkRecipe: 'https://bluebottlecoffee.com/us/eng/brew-guides/pour-over'
 
 0:40
 
-90 гр
+90 г
 
-150 гр
+150 г
 
 </div>
 
@@ -55,18 +55,18 @@ linkRecipe: 'https://bluebottlecoffee.com/us/eng/brew-guides/pour-over'
 
 1:25
 
-100 гр
+100 г
 
-250 гр
+250 г
 
 </div>
 <div class="time-line">
 
 1:45
 
-100 гр
+100 г
 
-350 гр
+350 г
 
 </div>
 <br>

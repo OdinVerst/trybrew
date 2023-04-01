@@ -10,7 +10,7 @@ name: Универсальный
 time: '1:30'
 water: '170 мл'
 temperature: '92'
-coffeeWeight: '10 гр'
+coffeeWeight: '10 г'
 author: 'Ninety Plus'
 authorImg: 'ninety-plus'
 linkRecipe: 'https://www.instagram.com/tv/CJ6E3gznh39/'
@@ -25,7 +25,7 @@ linkRecipe: 'https://www.instagram.com/tv/CJ6E3gznh39/'
 
 Вес
 
-Итого (гр)
+Итого
 
 </div>
 
@@ -35,9 +35,9 @@ linkRecipe: 'https://www.instagram.com/tv/CJ6E3gznh39/'
 
 0:00
 
-30 гр
+30 г
 
-30 гр
+30 г
 
 </div>
 
@@ -48,9 +48,9 @@ linkRecipe: 'https://www.instagram.com/tv/CJ6E3gznh39/'
 
 0:30
 
-70 гр
+70 г
 
-100 гр
+100 г
 
 </div>
 
@@ -58,9 +58,9 @@ linkRecipe: 'https://www.instagram.com/tv/CJ6E3gznh39/'
 
 1:15
 
-70 гр
+70 г
 
-170 гр
+170 г
 
 </div>
 <br>

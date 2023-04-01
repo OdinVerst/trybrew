@@ -10,7 +10,7 @@ name: Кения (Гатомбойя)
 time: '2:50'
 water: '250 мл'
 temperature: '95'
-coffeeWeight: '17 гр'
+coffeeWeight: '17 г'
 author: 'Submarine'
 authorImg: 'submarine'
 linkRecipe: 'https://sbmrne.ru/product-card/kenya_gatomboya'
@@ -25,7 +25,7 @@ linkRecipe: 'https://sbmrne.ru/product-card/kenya_gatomboya'
 
 Вес
 
-Итого (гр)
+Итого
 
 </div>
 
@@ -35,9 +35,9 @@ linkRecipe: 'https://sbmrne.ru/product-card/kenya_gatomboya'
 
 0:00
 
-60 гр
+60 г
 
-60 гр
+60 г
 
 </div>
 
@@ -48,9 +48,9 @@ linkRecipe: 'https://sbmrne.ru/product-card/kenya_gatomboya'
 
 0:30
 
-60 гр
+60 г
 
-120 гр
+120 г
 
 </div>
 
@@ -58,9 +58,9 @@ linkRecipe: 'https://sbmrne.ru/product-card/kenya_gatomboya'
 
 1:45
 
-70 гр
+70 г
 
-190 гр
+190 г
 
 </div>
 
@@ -68,9 +68,9 @@ linkRecipe: 'https://sbmrne.ru/product-card/kenya_gatomboya'
 
 2:15
 
-60 гр
+60 г
 
-250 гр
+250 г
 
 </div>
 

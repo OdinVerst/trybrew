@@ -10,7 +10,7 @@ name: Универсальный
 time: '2:30'
 water: '360 мл'
 temperature: '96'
-coffeeWeight: '22 гр'
+coffeeWeight: '22 г'
 author: 'Heart roasters'
 authorImg: 'heart'
 linkRecipe: 'https://www.heartroasters.com/pages/v60'
@@ -25,7 +25,7 @@ linkRecipe: 'https://www.heartroasters.com/pages/v60'
 
 Вес
 
-Итого (гр)
+Итого
 
 </div>
 
@@ -35,9 +35,9 @@ linkRecipe: 'https://www.heartroasters.com/pages/v60'
 
 0:00
 
-45 гр
+45 г
 
-45 гр
+45 г
 
 </div>
 
@@ -48,9 +48,9 @@ linkRecipe: 'https://www.heartroasters.com/pages/v60'
 
 0:20 - 1:50
 
-315 гр
+315 г
 
-360 гр
+360 г
 
 </div>
 <br>

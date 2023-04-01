@@ -8,7 +8,7 @@ layout: category.njk
 name: 'Универсальный'
 
 water: '180 мл'
-coffeeWeight: '18 гр'
+coffeeWeight: '18 г'
 time: '1:40'
 temperature: '90'
 author: 'Tasty Coffee'

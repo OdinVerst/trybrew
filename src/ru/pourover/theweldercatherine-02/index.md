@@ -10,7 +10,7 @@ name: 'Руанда Убумве Виски'
 time: '2:45'
 water: '270 мл'
 temperature: '96'
-coffeeWeight: '17,5 гр'
+coffeeWeight: '17,5 г'
 author: 'the Welder Catherine'
 authorImg: 'thewelder'
 linkRecipe: 'https://theweldercatherine.ru/catalog/dlya_filtra/ruanda_ubumve_viski/'
@@ -25,7 +25,7 @@ linkRecipe: 'https://theweldercatherine.ru/catalog/dlya_filtra/ruanda_ubumve_vis
 
 Вес
 
-Итого (гр)
+Итого
 
 </div>
 
@@ -35,9 +35,9 @@ linkRecipe: 'https://theweldercatherine.ru/catalog/dlya_filtra/ruanda_ubumve_vis
 
 0:00
 
-50 гр
+50 г
 
-50 гр
+50 г
 
 </div>
 
@@ -45,9 +45,9 @@ linkRecipe: 'https://theweldercatherine.ru/catalog/dlya_filtra/ruanda_ubumve_vis
 
 0:30
 
-50 гр
+50 г
 
-100 гр
+100 г
 
 </div>
 
@@ -58,9 +58,9 @@ linkRecipe: 'https://theweldercatherine.ru/catalog/dlya_filtra/ruanda_ubumve_vis
 
 1:00 по 1:40
 
-170 гр
+170 г
 
-270 гр
+270 г
 
 </div>
 <br/>
