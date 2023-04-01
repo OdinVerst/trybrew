@@ -10,7 +10,7 @@ name: Universal
 time: '2:30'
 water: '250 ml'
 temperature: '97'
-coffeeWeight: '15 gr.'
+coffeeWeight: '15 gr'
 author: 'Silky Drum (Ruslan Shulgi)'
 authorImg: 'silky'
 linkRecipe: 'https://www.silkydrum.ru/recipes'
@@ -35,9 +35,9 @@ Total(gr)
 
 0:00
 
-50 gr.
+50 gr
 
-50 gr.
+50 gr
 
 </div>
 
@@ -48,9 +48,9 @@ Total(gr)
 
 0:25
 
-50 gr.
+50 gr
 
-100 gr.
+100 gr
 
 </div>
 
@@ -58,9 +58,9 @@ Total(gr)
 
 0:50
 
-50 gr.
+50 gr
 
-150 gr.
+150 gr
 
 </div>
 
@@ -68,9 +68,9 @@ Total(gr)
 
 1:15
 
-50 gr.
+50 gr
 
-200 gr.
+200 gr
 
 </div>
 
@@ -78,9 +78,9 @@ Total(gr)
 
 1:40
 
-50 gr.
+50 gr
 
-250 gr.
+250 gr
 
 </div>
 

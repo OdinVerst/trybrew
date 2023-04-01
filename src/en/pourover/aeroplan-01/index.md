@@ -10,7 +10,7 @@ name: Thailand Binspaer Doi Paghong
 time: '3:25'
 water: '309 ml'
 temperature: '95'
-coffeeWeight: '21 gr.'
+coffeeWeight: '21 gr'
 author: 'Aeroplan.Coffee'
 authorImg: 'aeroplan'
 linkRecipe: 'https://www.instagram.com/aeroplancoffee/'

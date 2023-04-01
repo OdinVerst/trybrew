@@ -10,7 +10,7 @@ name: 'Rwanda Ubumwe Whiskey'
 time: '2:45'
 water: '270 ml'
 temperature: '96'
-coffeeWeight: '17,5 gr.'
+coffeeWeight: '17,5 gr'
 author: 'the Welder Catherine'
 authorImg: 'thewelder'
 linkRecipe: 'https://theweldercatherine.ru/catalog/dlya_filtra/ruanda_ubumve_viski/'
@@ -35,9 +35,9 @@ Total(gr)
 
 0:00
 
-50 gr.
+50 gr
 
-50 gr.
+50 gr
 
 </div>
 
@@ -45,9 +45,9 @@ Total(gr)
 
 0:30
 
-50 gr.
+50 gr
 
-100 gr.
+100 gr
 
 </div>
 
@@ -58,9 +58,9 @@ Total(gr)
 
 1:00 to 1:40
 
-170 gr.
+170 gr
 
-270 gr.
+270 gr
 
 </div>
 <br/>

@@ -10,7 +10,7 @@ name: Universal
 time: '1:30'
 water: '170 ml'
 temperature: '92'
-coffeeWeight: '10 gr.'
+coffeeWeight: '10 gr'
 author: 'Ninety Plus'
 authorImg: 'ninety-plus'
 linkRecipe: 'https://www.instagram.com/tv/CJ6E3gznh39/'
@@ -35,9 +35,9 @@ Total(gr)
 
 0:00
 
-30 gr.
+30 gr
 
-30 gr.
+30 gr
 
 </div>
 
@@ -48,9 +48,9 @@ Total(gr)
 
 0:30
 
-70 gr.
+70 gr
 
-100 gr.
+100 gr
 
 </div>
 
@@ -58,9 +58,9 @@ Total(gr)
 
 1:15
 
-70 gr.
+70 gr
 
-170 gr.
+170 gr
 
 </div>
 <br>

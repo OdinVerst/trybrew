@@ -10,7 +10,7 @@ name: Kenya (Gatomboya)
 time: '2:50'
 water: '250 ml'
 temperature: '95'
-coffeeWeight: '17 gr.'
+coffeeWeight: '17 gr'
 author: 'Submarine'
 authorImg: 'submarine'
 linkRecipe: 'https://sbmrne.ru/product-card/kenya_gatomboya'
@@ -35,9 +35,9 @@ Total(gr)
 
 0:00
 
-60 gr.
+60 gr
 
-60 gr.
+60 gr
 
 </div>
 
@@ -48,9 +48,9 @@ Total(gr)
 
 0:30
 
-60 gr.
+60 gr
 
-120 gr.
+120 gr
 
 </div>
 
@@ -58,9 +58,9 @@ Total(gr)
 
 1:45
 
-70 gr.
+70 gr
 
-190 gr.
+190 gr
 
 </div>
 
@@ -68,9 +68,9 @@ Total(gr)
 
 2:15
 
-60 gr.
+60 gr
 
-250 gr.
+250 gr
 
 </div>
 

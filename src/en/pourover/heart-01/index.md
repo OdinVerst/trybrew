@@ -10,7 +10,7 @@ name: Universal
 time: '2:30'
 water: '360 ml'
 temperature: '96'
-coffeeWeight: '22 gr.'
+coffeeWeight: '22 gr'
 author: 'Heart roasters'
 authorImg: 'heart'
 linkRecipe: 'https://www.heartroasters.com/pages/v60'
@@ -35,9 +35,9 @@ Total(gr)
 
 0:00
 
-45 gr.
+45 gr
 
-45 gr.
+45 gr
 
 </div>
 
@@ -48,9 +48,9 @@ Total(gr)
 
 0:20 - 1:50
 
-315 gr.
+315 gr
 
-360 gr.
+360 gr
 
 </div>
 <br>

@@ -10,7 +10,7 @@ name: Universal
 time: '2:30'
 water: '250 ml'
 temperature: '94'
-coffeeWeight: '16 gr.'
+coffeeWeight: '16 gr'
 author: 'The Barn'
 authorImg: 'barn'
 linkRecipe: 'https://thebarn.de/blogs/the-barn-blog/v60-drip'
@@ -35,9 +35,9 @@ Total(gr)
 
 0:00
 
-35 gr.
+35 gr
 
-35 gr.
+35 gr
 
 </div>
 
@@ -47,9 +47,9 @@ Total(gr)
 
 0:30
 
-65 gr.
+65 gr
 
-100 gr.
+100 gr
 
 </div>
 

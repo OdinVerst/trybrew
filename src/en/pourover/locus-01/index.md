@@ -10,7 +10,7 @@ name: Ethiopia Natural Processing
 time: ''
 water: '220 ml'
 temperature: '85'
-coffeeWeight: '20,5 gr.'
+coffeeWeight: '20,5 gr'
 author: 'Locus'
 authorImg: 'locus'
 linkRecipe: 'https://www.instagram.com/locus.coffee/'
