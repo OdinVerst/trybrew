@@ -1,4 +1,4 @@
-import {Theme} from "./darkTheme";
+import {ThemeController} from "./themeController";
 
 document.addEventListener('click', (evt) => {
     const { target } = evt;
@@ -23,8 +23,17 @@ multiButton.addEventListener('click', () => {
     multiButtonMenu.classList.toggle('multiButton__menu_active')
 });
 
-const darkThemeInput = document.querySelector('#darkTheme');
-new Theme(darkThemeInput);
+const themeInput = document.querySelector('#theme');
+new ThemeController(themeInput);
+
+const langInput = document.querySelector('#lang');
+if (langInput) {
+    langInput.addEventListener('change', (e) => {
+        const lastDirectoryUrl = location.pathname.replace(/.*\/(\w+)\/?$/, '$1')
+        const value = e.target.value;
+        location.href = `${value}${lastDirectoryUrl}`
+    })
+}
 
 const menuButton = document.querySelector('#menuButton');
 const header = document.querySelector('#header')

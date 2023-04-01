@@ -1,0 +1,14 @@
+---
+title: Настройки - Try brew
+description: Try brew
+layout: page.njk
+permalink: settings.html
+---
+
+<main class="wrapper">
+    {% import 'heading.njk' as heading %}
+    {{ heading.field('Настройки') }}
+
+    {% import 'settings/settings.njk' as settings %}
+    {{ settings.field(site.settings) }}
+</main>
