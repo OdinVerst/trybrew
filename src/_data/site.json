@@ -34,5 +34,6 @@
             "value": "en"
           }
         ]
-      }]
+      }],
+    "categories": ["pourover", "aeropress", "cezve", "coldbrew", "chemex"]
 }
