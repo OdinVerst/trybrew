@@ -7,8 +7,16 @@
       "name": "Тема",
       "list": [
         {
+          "name": "Авто",
+          "value": "auto"
+        },
+        {
           "name": "Светлая",
           "value": "light"
+        },
+        {
+          "name": "Teмная",
+          "value": "dark"
         }
       ]
     },
@@ -16,8 +24,12 @@
         "name": "Язык",
         "list": [
           {
-            "name": "Светлая",
-            "value": "light"
+            "name": "Русский",
+            "value": "ru"
+          },
+          {
+            "name": "Английский",
+            "value": "en"
           }
         ]
       }]
