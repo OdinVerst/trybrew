@@ -70,7 +70,7 @@ linkRecipe: 'https://sbmrne.ru/product-card/guatemala-la-senda'
 
 60 гр
 
-260 г.
+260 гр
 
 </div>
 

@@ -10,7 +10,7 @@ name: Бурунди Бузирагухиндва (Бочки)
 time: '2:00'
 water: '250 мл'
 temperature: '95'
-coffeeWeight: '16.5 г.'
+coffeeWeight: '16.5 гр'
 author: 'the Welder Catherine'
 authorImg: 'thewelder'
 linkRecipe: 'https://www.youtube.com/watch?v=-msoGbvpr7U'
@@ -35,9 +35,9 @@ linkRecipe: 'https://www.youtube.com/watch?v=-msoGbvpr7U'
 
 0:00 по 0:10
 
-40 г.
+40 гр
 
-40 г.
+40 гр
 
 </div>
 
@@ -45,9 +45,9 @@ linkRecipe: 'https://www.youtube.com/watch?v=-msoGbvpr7U'
 
 0:25 по 1:15
 
-210 г.
+210 гр
 
-250 г.
+250 гр
 
 </div>
 

@@ -80,7 +80,7 @@ linkRecipe: 'https://www.silkydrum.ru/recipes'
 
 50 гр
 
-250 г.
+250 гр
 
 </div>
 

@@ -10,7 +10,7 @@ name: Эфиопия натуральной обработки
 time: ''
 water: '220 мл'
 temperature: '85'
-coffeeWeight: '30,5 г.'
+coffeeWeight: '30,5 гр'
 author: 'Locus'
 authorImg: 'locus'
 linkRecipe: 'https://www.instagram.com/locus.coffee/'
