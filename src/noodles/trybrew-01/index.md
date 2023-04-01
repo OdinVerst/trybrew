@@ -1,8 +1,8 @@
 ---
-title: 'Рецепт Cold Brew (Ninety Plus)'
-description: 'Рецепт Cold Brew | 170 ml | Drima Zede | 24 часа'
+title: 'Рецепт "Доширак" Чачжан Мён'
+description: 'Рецепт "Доширак" Чачжан Мён | 24 часа'
 tags: noodles
-layout: category.njk
+layout: coldbrew.njk
 
 name: '"Доширак" Чачжан Мён'
 
