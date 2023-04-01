@@ -1,43 +1,43 @@
 ---
-title: Рецепт фильтр кофе Руанда Убумве Виски (the Welder Catherine)
-description: Рецепт V60 (Руанда Убумве Виски) | 270 ml | 17,5 г
+title: Rwanda Ubumwe Whiskey filter coffee recipe (the Welder Catherine)
+description: Recipe V60 (Rwanda Ubumwe Whiskey) | 270 ml | 17,5 gr
 
 tags: pourover
 layout: category.njk
 
-name: 'Руанда Убумве Виски'
+name: 'Rwanda Ubumwe Whiskey'
 
 time: '2:45'
 water: '270 ml'
 temperature: '96'
-coffeeWeight: '17,5 г.'
+coffeeWeight: '17,5 gr'
 author: 'the Welder Catherine'
 authorImg: 'thewelder'
 linkRecipe: 'https://theweldercatherine.ru/catalog/dlya_filtra/ruanda_ubumve_viski/'
 ---
 
-## Рецепт
+## Recipe
 
 
 <div class="time-line">
 
-Время
+Time
 
-Вес
+Weight
 
-Итого(г)
+Total
 
 </div>
 
-### Предсмачивание
+### Pre-wetting
 
 <div class="time-line">
 
 0:00
 
-50 г.
+50 gr
 
-50 г.
+50 gr
 
 </div>
 
@@ -45,22 +45,22 @@ linkRecipe: 'https://theweldercatherine.ru/catalog/dlya_filtra/ruanda_ubumve_vis
 
 0:30
 
-50 г.
+50 gr
 
-100 г.
+100 gr
 
 </div>
 
 
-### Вливания
+### Infusions
 
 <div class="time-line">
 
-1:00 по 1:40
+1:00 to 1:40
 
-170 г.
+170 gr
 
-270 г.
+270 gr
 
 </div>
 <br/>

@@ -6,19 +6,10 @@ permalink: en/index.html
 ---
 
 <main class="wrapper">
-    {% import 'list.njk' as pourover %}
-    {{ pourover.field(languages.en.pourover, collections.pourover, "/pourover/" | locale_url, page, languages)}}
-
-    {% import 'list.njk' as aeropress %}
-    {{ aeropress.field(languages.en.aeropress, collections.aeropress, "/aeropress/" | locale_url, page, languages)}}
-
-    {% import 'list.njk' as cezve %}
-    {{ cezve.field(languages.en.cezve, collections.cezve, "/cezve/" | locale_url, page, languages)}}
-
-    {% import 'list.njk' as coldbrew %}
-    {{ coldbrew.field(languages.en.coldbrew, collections.coldbrew, "/coldbrew/" | locale_url, page, languages)}}
-
-    {% import 'list.njk' as chemex %}
-    {{ chemex.field(languages.en.chemex, collections.chemex, "/chemex/" | locale_url, page, languages)}}
+    {% import 'list.njk' as listCategory %}
+    {% for category in site.categories %}
+        {% set urlCategory = ['/', category, '/'] | join  %}
+        {{ listCategory.field(languages[page.lang][category], collections[category], urlCategory | locale_url, page, languages) }}
+    {% endfor %}
 </main>
 

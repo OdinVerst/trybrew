@@ -1,37 +1,37 @@
 ---
-title: Рецепт фильтр кофе Эфиопия натуральной обработки (Locus)
-description: Рецепт V60 (Эфиопия натуральной обработки) | 220 ml | 20.5 г
+title: Ethiopian Natural Coffee Filter Recipe (Locus)
+description: Recipe V60 (Ethiopia Natural Processing) | 220 ml | 20.5 gr
 
 tags: pourover
 layout: category.njk
 
-name: Эфиопия натуральной обработки
+name: Ethiopia Natural Processing
 
 time: ''
 water: '220 ml'
 temperature: '85'
-coffeeWeight: '20,5 г.'
+coffeeWeight: '20,5 gr'
 author: 'Locus'
 authorImg: 'locus'
 linkRecipe: 'https://www.instagram.com/locus.coffee/'
 
 ---
 
-## Рецепт
+## Recipe
 
-0. Нагреть воду для чашек.
+0. Heat the water for the cups.
 
-1. Поставить чайник на 85.
+1. Put the kettle on 85.
 
-2. Заложить фильтр в воронку.
+2. Put the filter in the funnel.
 
-3. Взвесить 20.5 г кофе, смочить, смолоть на 6.5, убрать лишнее.
+3. Weigh 20.5 gr coffee, wet, grind to 6.5, remove excess.
 
-4. Смочить фильтр 100 г воды.
+4. Moisten the filter with 100 ml water.
 
-5. Насыпать помол, залить 60 г воды, интенсивно размешать вращением.
+5. Pour in the grind, pour in 60 ml of water, stir vigorously by swirling.
 
-6. Затем по 60 г вливаем.
+6. Then pour in 60 ml of water.
 
 <br>
 
