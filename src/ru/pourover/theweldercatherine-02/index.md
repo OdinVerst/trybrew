@@ -1,6 +1,6 @@
 ---
 title: Рецепт фильтр кофе Руанда Убумве Виски (the Welder Catherine)
-description: Рецепт V60 (Руанда Убумве Виски) | 270 ml | 17,5 г
+description: Рецепт V60 (Руанда Убумве Виски) | 270 мл | 17,5 г
 
 tags: pourover
 layout: category.njk
@@ -8,7 +8,7 @@ layout: category.njk
 name: 'Руанда Убумве Виски'
 
 time: '2:45'
-water: '270 ml'
+water: '270 мл'
 temperature: '96'
 coffeeWeight: '17,5 г.'
 author: 'the Welder Catherine'

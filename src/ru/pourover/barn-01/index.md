@@ -1,6 +1,6 @@
 ---
 title: Рецепт фильтр кофе Универсальный (The Barn)
-description: Рецепт V60 (Универсальный) | 250 ml | 16 г
+description: Рецепт V60 (Универсальный) | 250 мл | 16 г
 
 tags: pourover
 layout: category.njk
@@ -8,9 +8,9 @@ layout: category.njk
 name: Универсальный
 
 time: '2:30'
-water: '250 ml'
+water: '250 мл'
 temperature: '94'
-coffeeWeight: '16 г.'
+coffeeWeight: '16 гр'
 author: 'The Barn'
 authorImg: 'barn'
 linkRecipe: 'https://thebarn.de/blogs/the-barn-blog/v60-drip'
@@ -35,9 +35,9 @@ linkRecipe: 'https://thebarn.de/blogs/the-barn-blog/v60-drip'
 
 0:00
 
-35 г.
+35 гр
 
-35 г.
+35 гр
 
 </div>
 
@@ -47,9 +47,9 @@ linkRecipe: 'https://thebarn.de/blogs/the-barn-blog/v60-drip'
 
 0:30
 
-65 г.
+65 гр
 
-100 г.
+100 гр
 
 </div>
 
@@ -57,9 +57,9 @@ linkRecipe: 'https://thebarn.de/blogs/the-barn-blog/v60-drip'
 
 1:00
 
-50 г.
+50 гр
 
-150 г.
+150 гр
 
 </div>
 
@@ -67,9 +67,9 @@ linkRecipe: 'https://thebarn.de/blogs/the-barn-blog/v60-drip'
 
 1:20
 
-50 г.
+50 гр
 
-200 г.
+200 гр
 
 </div>
 
@@ -77,9 +77,9 @@ linkRecipe: 'https://thebarn.de/blogs/the-barn-blog/v60-drip'
 
 1:45
 
-50 г.
+50 гр
 
-250 г.
+250 гр
 
 </div>
 
