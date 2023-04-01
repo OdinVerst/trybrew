@@ -10,6 +10,8 @@ module.exports = {
     coldbrew: 'Cold brew',
     chemex: 'Chemex',
     rollup: 'roll up section',
+    source: 'Source',
+    author: 'Author',
     page_about: {
       title: 'Try brew - open source project created by coffee lovers to get new taste emotions.',
       works_on: 'Works on',
@@ -33,6 +35,8 @@ module.exports = {
     coldbrew: 'Cold brew',
     chemex: 'Кемекс',
     rollup: 'Свернуть раздел',
+    source: 'Источник',
+    author: 'Автор',
     page_about: {
       title: 'Try brew - Это open source проект созданный любителями кофе для получения новых вкусовых эмоций.',
       works_on: 'Работает на',
