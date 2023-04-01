@@ -15,8 +15,8 @@ document.addEventListener('click', (evt) => {
     }
 });
 
-const darkThemeInput = document.querySelector('#darkTheme');
-new Theme(darkThemeInput);
+const themeInput = document.querySelector('#theme');
+new ThemeController(themeInput);
 
 const langInput = document.querySelector('#lang');
 if (langInput) {
