@@ -2,7 +2,7 @@
     <div class="settingsItem">
         <label class="settingsItem__label">
             {{ name }}:
-            <select class="select">
+            <select class="settingsItem__select">
                 {%- for item in list -%}
                     <option value={{ item.value }}>{{ item.name }}</option>
                 {%- endfor -%}

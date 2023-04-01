@@ -6,8 +6,8 @@
 @import "components/header/header.css";
 @import "components/header/burger.css";
 @import "components/header/menu.css";
-@import "components/select.css";
 
+@import "components/settings/settings.css";
 @import "components/category.css";
 @import "components/item.css";
 @import "components/author.css";
