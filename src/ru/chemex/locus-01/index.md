@@ -1,6 +1,6 @@
 ---
 title: Рецепт chemex Эфиопия натуральной обработки (Locus)
-description: Рецепт chemex (Эфиопия натуральной обработки) | 450 ml | 30.5 г
+description: Рецепт chemex (Эфиопия натуральной обработки) | 450 мл | 30.5 г
 
 tags: chemex
 layout: detail.njk
@@ -8,9 +8,9 @@ layout: detail.njk
 name: Эфиопия натуральной обработки
 
 time: ''
-water: '450 ml'
+water: '450 мл'
 temperature: '85'
-coffeeWeight: '30,5 г.'
+coffeeWeight: '30,5 г'
 author: 'Locus'
 authorImg: 'locus'
 linkRecipe: 'https://www.instagram.com/locus.coffee/'
@@ -31,9 +31,9 @@ linkRecipe: 'https://www.instagram.com/locus.coffee/'
 
 5. Засыпать кофе в кемекс.
 
-6. Залить 80 г воды, интенсивно размешать вращением.
+6. Залить 80 мл воды, интенсивно размешать вращением.
 
-7. Затем 120 г, затем 100 и 150
+7. Затем 120 мл, затем 100 и 150
 
 <br>
 

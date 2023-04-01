@@ -1,6 +1,6 @@
 ---
 title: Рецепт фильтр кофе Универсальный (Silky Drum | Руслан Шульги)
-description: Рецепт V60 (Универсальный) | 250 ml | 15 г
+description: Рецепт V60 (Универсальный) | 250 мл | 15 г
 
 tags: pourover
 layout: category.njk
@@ -8,9 +8,9 @@ layout: category.njk
 name: Универсальный
 
 time: '2:30'
-water: '250 ml'
+water: '250 мл'
 temperature: '97'
-coffeeWeight: '15 г.'
+coffeeWeight: '15 г'
 author: 'Silky Drum (Руслан Шульги)'
 authorImg: 'silky'
 linkRecipe: 'https://www.silkydrum.ru/recipes'
@@ -25,7 +25,7 @@ linkRecipe: 'https://www.silkydrum.ru/recipes'
 
 Вес
 
-Итого(г)
+Итого
 
 </div>
 
@@ -35,9 +35,9 @@ linkRecipe: 'https://www.silkydrum.ru/recipes'
 
 0:00
 
-50 г.
+50 г
 
-50 г.
+50 г
 
 </div>
 
@@ -48,9 +48,9 @@ linkRecipe: 'https://www.silkydrum.ru/recipes'
 
 0:25
 
-50 г.
+50 г
 
-100 г.
+100 г
 
 </div>
 
@@ -58,9 +58,9 @@ linkRecipe: 'https://www.silkydrum.ru/recipes'
 
 0:50
 
-50 г.
+50 г
 
-150 г.
+150 г
 
 </div>
 
@@ -68,9 +68,9 @@ linkRecipe: 'https://www.silkydrum.ru/recipes'
 
 1:15
 
-50 г.
+50 г
 
-200 г.
+200 г
 
 </div>
 
@@ -78,9 +78,9 @@ linkRecipe: 'https://www.silkydrum.ru/recipes'
 
 1:40
 
-50 г.
+50 г
 
-250 г.
+250 г
 
 </div>
 

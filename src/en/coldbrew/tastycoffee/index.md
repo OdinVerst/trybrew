@@ -1,58 +1,58 @@
 ---
-title: 'Рецепт Cold Brew (Tasty coffee)'
-description: 'Рецепт Cold Brew | 1500 ml | Эфиопия Ненсебо | 8 часов'
+title: 'Recipe Cold Brew (Tasty coffee)'
+description: 'Recipe Cold Brew | 1500 ml | Ethiopia Nensebo | 8 hours'
 tags: coldbrew
 layout: category.njk
 
-name: 'Эфиопия Ненсебо'
+name: 'Ethiopia Nensebo'
 
 time: '8 hrs'
 water: '1500 ml'
-coffeeWeight: '150 г.'
-ice: '1500 г.'
+coffeeWeight: '150 gr'
+ice: '1500 gr'
 author: 'Tasty Coffee'
 authorImg: 'tastycoffee'
 linkRecipe: 'https://shop.tastycoffee.ru/blog/cold-brew-recepti'
 ---
 
-## Рецепт
+## Recipe
 
-### Этап 1. Приготовление чистого колд брю
-__Ингредиенты:__
+### Step 1: Preparing a clean cold brew
+__Ingredients:__
 
-- Эфиопия Ненсебо — 150 г.
+- Ethiopia Nensebo - 150 gr
 
-- Вода питьевая холодная минерализации 100 мг/л — 1500 мл.
+- Cold drinking water with mineralization of 100 mg/l - 1500 ml.
 
-- Лёд — 1500 г.
+- Ice - 1500 gr
 
-__Приготовление:__
+__Preparation:__
 
-1. Намолоть зёрна в грубый помол.
+1. Grind grain to a coarse grind.
 
-2. В тару положить лёд, насыпать молотый кофе, залить водой и перемешать. Избегать попадания прямых солнечных лучей.
+2. In a container put ice, pour the ground coffee, pour water and stir. Avoid direct sunlight.
 
-3. По истечении 8 часов перемешать.
+3. Stir after 8 hours.
 
-4. Отфильтровать крупную фракцию кофе через сито.
+4. Filter out the coarse fraction through a sieve.
 
-5. Отфильтровать мелкую фракцию через аэропресс: заливаем колд брю в цилиндр аэропресс и продавливаем до первых пшиков.
+5. Filter the fine fraction through an aeropress: pour the cold brew into the aeropressing cylinder and squeeze until the first splash.
 
-6. Отфильтровать ещё раз через фильтр харио.
+6. Filter again through a hario filter.
 
 
-### Этап 2. Добавка соусов и розлив в бутылки
-__Ингредиенты:__
+### Step 2: Adding sauces and bottling
+__Ingredients:__
 
-- Чистый колд брю — 280 г.
-- Приготовленный в кофейне сироп «Цветы апельсина» — 2 г.
-- Приготовленный в кофейне сироп «Цветы жасмина» — 4 г.
-- Приготовленный в кофейне сироп «Абрикос» — 20 г.
-- Лимонная кислота — 0,2 г.
+- Cold brew - 280 ml
+- Coffee syrup  "Orange blossom" - 2 gr
+- Coffee syrup "Jasmine flowers" - 4 gr
+- Coffee syrup "Apricot" - 20 gr
+- Citric acid - 0,2 gr
 
-__Приготовление:__
+__Preparation:__
 
-Отмерить каждый ингредиент в отдельную тару, затем тщательно перемешать в общей таре. Перелить в бутылку.
+Measure each ingredient into a separate container, then mix thoroughly in a common container. Pour into a bottle.
 <br/>
 
 

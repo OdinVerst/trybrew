@@ -1,98 +1,98 @@
 ---
-title: Рецепт фильтр кофе Универсальный (Aeroplan.Coffee)
-description: Рецепт V60 (Тайланд Бинспаер Дои Пагхонг) | 309 ml | 21 г
+title: Recipe for coffee filter Universal (Aeroplan.Coffee)
+description: Recipe V60 (Thailand Binspaer Doi Paghong) | 309 ml | 21 gr
 
 tags: pourover
 layout: category.njk
 
-name: Тайланд Бинспаер Дои Пагхонг
+name: Thailand Binspaer Doi Paghong
 
 time: '3:25'
 water: '309 ml'
 temperature: '95'
-coffeeWeight: '21 г.'
+coffeeWeight: '21 gr'
 author: 'Aeroplan.Coffee'
 authorImg: 'aeroplan'
 linkRecipe: 'https://www.instagram.com/aeroplancoffee/'
 ---
 
-## Рецепт
+## Recipe
 
 
 <div class="time-line">
 
-Время
+Time
 
-Вес
+Weight
 
-Итого(г)
+Total
 
 </div>
 
-### Предсмачивание
+### Pre-wetting
 
 <div class="time-line">
 
 0:00
 
-50 г.
+50 gr.
 
-50 г.
+50 gr.
 
 </div>
 
-<p class="time-note">по спирали и интенсивно</p>
+<p class="time-note">in a spiral and intensely</p>
 
-### Вливания
+### Infusions
 
 <div class="time-line">
 
 0:50
 
-70 г.
+70 gr.
 
-120 г.
+120 gr.
 
 </div>
 
-<p class="time-note">от центра к краям кофейной таблетки</p>
+<p class="time-note">from the center to the edges of the coffee tablet</p>
 
 
 <div class="time-line">
 
 1:20
 
-60 г.
+60 gr.
 
-180 г.
+180 gr.
 
 </div>
 
-<p class="time-note">в центр и возвращаемся к завариванию по спирали</p>
+<p class="time-note">to the center and back to spiral brewing</p>
 
 <div class="time-line">
 
 2:00
 
-129 г.
+129 gr.
 
-309 г.
+309 gr.
 
 </div>
 
-<p class="time-note">в центр воронки</p>
+<p class="time-note">into the center of the funnel</p>
 
 <br>
 
-Общее время экстракции __3:25__
+Total extraction time __3:25__
 
 <br>
 
 <div class="info-warm">
 
-## Примечание
-Кофе получился с очень ягодным профилем, напоминающий кенийские сорта кофе, с легкой приятной горчинкой терпкой  клюквы, которая прослеживается от горячей чашки, до остывания и ощущается  на послевкусии.
-По мере остывания появляются нотки черного чая, специй и цедры лимона.
+## Note
+The coffee has a very berry profile, reminiscent of Kenyan coffees, with a slight pleasant bitterness of tart cranberry, which can be traced from the hot cup, to cooling and is felt on the aftertaste.
+As it cools, notes of black tea, spices and lemon zest appear.
 </div>
 
 

@@ -1,56 +1,56 @@
 ---
-title: Рецепт фильтр кофе Кения "Гатомбойя" (Submarine)
-description: Рецепт V60 (Кения "Гатомбойя") | 250 ml | 17 г
+title: Kenya "Gatomboya" coffee filter recipe (Submarine)
+description: Recipe V60 (Kenya "Gatomboya") | 250 ml | 17 gr
 
 tags: pourover
 layout: category.njk
 
-name: Кения (Гатомбойя)
+name: Kenya (Gatomboya)
 
 time: '2:50'
 water: '250 ml'
 temperature: '95'
-coffeeWeight: '17 г.'
+coffeeWeight: '17 gr'
 author: 'Submarine'
 authorImg: 'submarine'
 linkRecipe: 'https://sbmrne.ru/product-card/kenya_gatomboya'
 ---
 
-## Рецепт
+## Recipe
 
 
 <div class="time-line">
 
-Время
+Time
 
-Вес
+Weight
 
-Итого(г)
+Total
 
 </div>
 
-### Предсмачивание
+### Pre-wetting
 
 <div class="time-line">
 
 0:00
 
-60 г.
+60 gr
 
-60 г.
+60 gr
 
 </div>
 
 
-### Вливания
+### Infusions
 
 <div class="time-line">
 
 0:30
 
-60 г.
+60 gr
 
-120 г.
+120 gr
 
 </div>
 
@@ -58,9 +58,9 @@ linkRecipe: 'https://sbmrne.ru/product-card/kenya_gatomboya'
 
 1:45
 
-70 г.
+70 gr
 
-190 г.
+190 gr
 
 </div>
 
@@ -68,22 +68,22 @@ linkRecipe: 'https://sbmrne.ru/product-card/kenya_gatomboya'
 
 2:15
 
-60 г.
+60 gr
 
-250 г.
+250 gr
 
 </div>
 
 
 <div class="info-warm">
 
-## Примечание
+## Note
 
-Помол на Comandante: 23 клика
+Grinding on Comandante: 23 clicks
 
-Помол на Timemore C2: 19 кликов
+Grinding on Timemore C2: 19 clicks
 
-Помол на ЕК (turkish): 8,3
+Pulse on EC (turkish): 8,3
 </div>
 
 
