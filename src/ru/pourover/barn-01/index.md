@@ -10,7 +10,7 @@ name: Универсальный
 time: '2:30'
 water: '250 мл'
 temperature: '94'
-coffeeWeight: '16 гр'
+coffeeWeight: '16 г'
 author: 'The Barn'
 authorImg: 'barn'
 linkRecipe: 'https://thebarn.de/blogs/the-barn-blog/v60-drip'
@@ -25,7 +25,7 @@ linkRecipe: 'https://thebarn.de/blogs/the-barn-blog/v60-drip'
 
 Вес
 
-Итого (гр)
+Итого
 
 </div>
 
@@ -35,9 +35,9 @@ linkRecipe: 'https://thebarn.de/blogs/the-barn-blog/v60-drip'
 
 0:00
 
-35 гр
+35 г
 
-35 гр
+35 г
 
 </div>
 
@@ -47,9 +47,9 @@ linkRecipe: 'https://thebarn.de/blogs/the-barn-blog/v60-drip'
 
 0:30
 
-65 гр
+65 г
 
-100 гр
+100 г
 
 </div>
 
@@ -57,9 +57,9 @@ linkRecipe: 'https://thebarn.de/blogs/the-barn-blog/v60-drip'
 
 1:00
 
-50 гр
+50 г
 
-150 гр
+150 г
 
 </div>
 
@@ -67,9 +67,9 @@ linkRecipe: 'https://thebarn.de/blogs/the-barn-blog/v60-drip'
 
 1:20
 
-50 гр
+50 г
 
-200 гр
+200 г
 
 </div>
 
@@ -77,9 +77,9 @@ linkRecipe: 'https://thebarn.de/blogs/the-barn-blog/v60-drip'
 
 1:45
 
-50 гр
+50 г
 
-250 гр
+250 г
 
 </div>
 

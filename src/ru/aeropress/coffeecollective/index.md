@@ -1,6 +1,6 @@
 ---
 title: 'Рецепт AeroPress (Coffee Collective)'
-description: 'Рецепт AeroPress | Универсальный | 230 мл | 16 гр'
+description: 'Рецепт AeroPress | Универсальный | 230 мл | 16 г'
 
 tags: aeropress
 layout: category.njk
@@ -8,7 +8,7 @@ layout: category.njk
 name: 'Универсальный'
 
 water: '230 мл'
-coffeeWeight: '16 гр'
+coffeeWeight: '16 г'
 time: '1:00'
 temperature: '93'
 author: 'Coffee Collective'

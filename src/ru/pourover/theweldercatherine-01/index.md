@@ -10,7 +10,7 @@ name: Бурунди Бузирагухиндва (Бочки)
 time: '2:00'
 water: '250 мл'
 temperature: '95'
-coffeeWeight: '16.5 гр'
+coffeeWeight: '16.5 г'
 author: 'the Welder Catherine'
 authorImg: 'thewelder'
 linkRecipe: 'https://www.youtube.com/watch?v=-msoGbvpr7U'
@@ -25,7 +25,7 @@ linkRecipe: 'https://www.youtube.com/watch?v=-msoGbvpr7U'
 
 Вес
 
-Итого (гр)
+Итого
 
 </div>
 
@@ -35,9 +35,9 @@ linkRecipe: 'https://www.youtube.com/watch?v=-msoGbvpr7U'
 
 0:00 по 0:10
 
-40 гр
+40 г
 
-40 гр
+40 г
 
 </div>
 
@@ -45,9 +45,9 @@ linkRecipe: 'https://www.youtube.com/watch?v=-msoGbvpr7U'
 
 0:25 по 1:15
 
-210 гр
+210 г
 
-250 гр
+250 г
 
 </div>
 
@@ -62,7 +62,7 @@ __Второе вливание разбито по этапам:__
 
 Первый шаг - вливаем в центр поднимая кофейную шапку
 
-Второй шаг - на 70 граммах начинаем делать круговые движения, чтобы потопить кофейную шапку
+Второй шаг - на 70 гаммах начинаем делать круговые движения, чтобы потопить кофейную шапку
 
 __Важно не заходить на стенки воронки__
 </div>

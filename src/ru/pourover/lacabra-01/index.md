@@ -10,7 +10,7 @@ name: Универсальный
 time: '3:30'
 water: '210 мл'
 temperature: '96'
-coffeeWeight: '14,5 гр'
+coffeeWeight: '14,5 г'
 author: 'La Cabra'
 linkRecipe: 'https://www.lacabra.dk/pages/v60-brew-guide'
 
@@ -25,7 +25,7 @@ linkRecipe: 'https://www.lacabra.dk/pages/v60-brew-guide'
 
 Вес
 
-Итого (гр)
+Итого
 
 </div>
 
@@ -35,9 +35,9 @@ linkRecipe: 'https://www.lacabra.dk/pages/v60-brew-guide'
 
 0:00
 
-60 гр
+60 г
 
-60 гр
+60 г
 
 </div>
 
@@ -45,9 +45,9 @@ linkRecipe: 'https://www.lacabra.dk/pages/v60-brew-guide'
 
 0:45
 
-55 гр
+55 г
 
-115 гр
+115 г
 
 </div>
 
@@ -55,18 +55,18 @@ linkRecipe: 'https://www.lacabra.dk/pages/v60-brew-guide'
 
 1:30
 
-55 гр
+55 г
 
-170 гр
+170 г
 
 </div>
 <div class="time-line">
 
 2:15
 
-40 гр
+40 г
 
-210 гр
+210 г
 
 </div>
 <br>

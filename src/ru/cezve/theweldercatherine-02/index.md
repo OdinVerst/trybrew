@@ -1,6 +1,6 @@
 ---
 title: 'Рецепт джезва с малиновым вареньем и специями (Сергей Блинников)'
-description: 'Рецепт джезва с малиновым вареньем и специями | 110 мл | 11 гр'
+description: 'Рецепт джезва с малиновым вареньем и специями | 110 мл | 11 г'
 
 tags: cezve
 layout: category.njk
@@ -8,7 +8,7 @@ layout: category.njk
 name: 'С малиновым вареньем и специями'
 
 water: '110 мл'
-coffeeWeight: '11 гр'
+coffeeWeight: '11 г'
 author: 'the Welder Catherine (Сергей Блинников)'
 authorImg: 'thewelder'
 linkRecipe: 'https://www.youtube.com/watch?v=3kyp0cDkOWU'
@@ -19,7 +19,7 @@ linkRecipe: 'https://www.youtube.com/watch?v=3kyp0cDkOWU'
 
 __Ингредиенты:__
 
-- Кофе (Коста-Рика Ла Торре) — 11 гр (Мелкий помол в пудру)
+- Кофе (Коста-Рика Ла Торре) — 11 г (Мелкий помол в пудру)
 
 - Сушеные ягоды можжевельника — 3 шт. (Можно чуть раздавить, необязательно)
 

@@ -10,7 +10,7 @@ name: Бразилия (Эль Дорадо катукай)
 time: '3:10'
 water: '250 мл'
 temperature: '95'
-coffeeWeight: '15.5 гр'
+coffeeWeight: '15.5 г'
 author: 'Submarine'
 authorImg: 'submarine'
 linkRecipe: 'https://sbmrne.ru/product-card/Brazil_El_Dorado_catucai'
@@ -25,7 +25,7 @@ linkRecipe: 'https://sbmrne.ru/product-card/Brazil_El_Dorado_catucai'
 
 Вес
 
-Итого (гр)
+Итого
 
 </div>
 
@@ -35,9 +35,9 @@ linkRecipe: 'https://sbmrne.ru/product-card/Brazil_El_Dorado_catucai'
 
 0:00 по 0:30
 
-60 гр
+60 г
 
-60 гр
+60 г
 
 </div>
 
@@ -48,9 +48,9 @@ linkRecipe: 'https://sbmrne.ru/product-card/Brazil_El_Dorado_catucai'
 
 1:10
 
-70 гр
+70 г
 
-130 гр
+130 г
 
 </div>
 
@@ -58,9 +58,9 @@ linkRecipe: 'https://sbmrne.ru/product-card/Brazil_El_Dorado_catucai'
 
 1:45
 
-60 гр
+60 г
 
-190 гр
+190 г
 
 </div>
 
@@ -68,9 +68,9 @@ linkRecipe: 'https://sbmrne.ru/product-card/Brazil_El_Dorado_catucai'
 
 2:15
 
-60 гр
+60 г
 
-250 гр
+250 г
 
 </div>
 

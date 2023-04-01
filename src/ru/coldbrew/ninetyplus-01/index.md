@@ -8,7 +8,7 @@ name: 'Drima Zede'
 
 time: '24 hrs'
 water: '170 мл'
-coffeeWeight: '10 гр'
+coffeeWeight: '10 г'
 author: 'Ninety Plus'
 authorImg: 'ninety-plus'
 linkRecipe: 'https://www.instagram.com/tv/CE9PX3QBh2E/'
@@ -16,7 +16,7 @@ linkRecipe: 'https://www.instagram.com/tv/CE9PX3QBh2E/'
 
 ## Рецепт
 
-1. Добавляем 10 грамм кофе в банку (любая банка с крышкой)
+1. Добавляем 10 гамм кофе в банку (любая банка с крышкой)
 
 2. Заливаем кофе 170 мл воды (комнатной температуры) и закрываем крышку
 

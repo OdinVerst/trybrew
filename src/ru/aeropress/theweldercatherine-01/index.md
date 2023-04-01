@@ -8,7 +8,7 @@ layout: category.njk
 name: 'Руанда Убумве Виски'
 
 water: '210 мл'
-coffeeWeight: '16.5 гр'
+coffeeWeight: '16.5 г'
 time: '1:25'
 temperature: '91'
 author: 'the Welder Catherine'

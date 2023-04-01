@@ -10,7 +10,7 @@ name: Colombia El Paraíso
 time: '3:00'
 water: '260 мл'
 temperature: '96'
-coffeeWeight: '15 гр'
+coffeeWeight: '15 г'
 author: 'Nomad'
 linkRecipe: 'https://nomadcoffee.es/en/producto/red-plum/'
 ---
@@ -24,7 +24,7 @@ linkRecipe: 'https://nomadcoffee.es/en/producto/red-plum/'
 
 Вес
 
-Итого (гр)
+Итого
 
 </div>
 
@@ -34,9 +34,9 @@ linkRecipe: 'https://nomadcoffee.es/en/producto/red-plum/'
 
 0:00
 
-50 гр
+50 г
 
-50 гр
+50 г
 
 </div>
 
@@ -47,9 +47,9 @@ linkRecipe: 'https://nomadcoffee.es/en/producto/red-plum/'
 
 0:30
 
-210 гр
+210 г
 
-260 гр
+260 г
 
 </div>
 

@@ -10,7 +10,7 @@ name: Гватемала (Ла Сенда)
 time: '3:10'
 water: '260 мл'
 temperature: '95'
-coffeeWeight: '17 гр'
+coffeeWeight: '17 г'
 author: 'Submarine'
 authorImg: 'submarine'
 linkRecipe: 'https://sbmrne.ru/product-card/guatemala-la-senda'
@@ -25,7 +25,7 @@ linkRecipe: 'https://sbmrne.ru/product-card/guatemala-la-senda'
 
 Вес
 
-Итого (гр)
+Итого
 
 </div>
 
@@ -35,9 +35,9 @@ linkRecipe: 'https://sbmrne.ru/product-card/guatemala-la-senda'
 
 0:00
 
-40 гр
+40 г
 
-40 гр
+40 г
 
 </div>
 
@@ -48,9 +48,9 @@ linkRecipe: 'https://sbmrne.ru/product-card/guatemala-la-senda'
 
 0:40
 
-100 гр
+100 г
 
-140 гр
+140 г
 
 </div>
 
@@ -58,9 +58,9 @@ linkRecipe: 'https://sbmrne.ru/product-card/guatemala-la-senda'
 
 1:30
 
-60 гр
+60 г
 
-200 гр
+200 г
 
 </div>
 
@@ -68,9 +68,9 @@ linkRecipe: 'https://sbmrne.ru/product-card/guatemala-la-senda'
 
 2:00
 
-60 гр
+60 г
 
-260 гр
+260 г
 
 </div>
 

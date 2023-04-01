@@ -1,6 +1,6 @@
 ---
 title: 'Рецепт джезва с апельсиновым соком и специями (Сергей Блинников)'
-description: 'Рецепт джезва с апельсиновым соком и специями | 110 мл | 11 гр'
+description: 'Рецепт джезва с апельсиновым соком и специями | 110 мл | 11 г'
 
 tags: cezve
 layout: category.njk
@@ -8,7 +8,7 @@ layout: category.njk
 name: 'C апельсиновым соком и специями'
 
 water: '110 мл'
-coffeeWeight: '11 гр'
+coffeeWeight: '11 г'
 author: 'the Welder Catherine (Сергей Блинников)'
 authorImg: 'thewelder'
 linkRecipe: 'https://www.youtube.com/watch?v=H2WI9vpwOWA'
@@ -19,9 +19,9 @@ linkRecipe: 'https://www.youtube.com/watch?v=H2WI9vpwOWA'
 
 __Ингредиенты:__
 
-- Кофе (Эфиопия) — 11 гр (Мелкий помол в пудру)
+- Кофе (Эфиопия) — 11 г (Мелкий помол в пудру)
 
-- Сахар (Тростниковый) — 3 гр
+- Сахар (Тростниковый) — 3 г
 
 - Бутон гвоздики (пряность) — 1шт.
 

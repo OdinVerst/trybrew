@@ -25,7 +25,7 @@ Time
 
 Weight
 
-Total(gr)
+Total
 
 </div>
 
