@@ -8,5 +8,7 @@ permalink: settings.html
 <main class="wrapper">
     {% import 'heading.njk' as heading %}
     {{ heading.field('Настройки') }}
-    {% include 'settings/lang.njk' %}
+
+    {% import 'settings/settings.njk' as settings %}
+    {{ settings.field(site.settings) }}
 </main>
