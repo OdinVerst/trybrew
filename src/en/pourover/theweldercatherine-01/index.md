@@ -1,43 +1,43 @@
 ---
-title: Рецепт фильтр кофе Бурунди Бузирагухиндва (the Welder Catherine)
-description: Рецепт V60 (Бурунди Бузирагухиндва) | 250 ml | 16,5 г
+title: Burundi Buziraguhindwa coffee filter recipe (the Welder Catherine)
+description: Recipe V60 (Burundi Buziraguhindwa) | 250 ml | 16,5 gr
 
 tags: pourover
 layout: category.njk
 
-name: Бурунди Бузирагухиндва (Бочки)
+name: Burundi Buziraguhindwa (Barrels)
 
 time: '2:00'
 water: '250 ml'
 temperature: '95'
-coffeeWeight: '16.5 г.'
+coffeeWeight: '16.5 gr'
 author: 'the Welder Catherine'
 authorImg: 'thewelder'
 linkRecipe: 'https://www.youtube.com/watch?v=-msoGbvpr7U'
 ---
 
-## Рецепт
+## Recipe
 
 
 <div class="time-line">
 
-Время
+Time
 
-Вес
+Weight
 
-Итого(г)
+Total
 
 </div>
 
-### Вливания
+### Infusions
 
 <div class="time-line">
 
 0:00 по 0:10
 
-40 г.
+40 gr
 
-40 г.
+40 gr
 
 </div>
 
@@ -45,24 +45,24 @@ linkRecipe: 'https://www.youtube.com/watch?v=-msoGbvpr7U'
 
 0:25 по 1:15
 
-210 г.
+210 gr
 
-250 г.
+250 gr
 
 </div>
 
 
 <div class="info-warm">
 
-## Примечание
+## Note
 
-Второе вливание стараемся растянуть до 1:15 - 1:20
+Try to stretch the second infusion to 1:15 to 1:20
 
-__Второе вливание разбито по этапам:__
+__The second infusion is broken down in stages:__
 
-Первый шаг - вливаем в центр поднимая кофейную шапку
+First step - pour into the center lifting the coffee cap
 
-Второй шаг - на 70 граммах начинаем делать круговые движения, чтобы потопить кофейную шапку
+The second step - at 70 grams start making circular motions to sink the coffee cap
 
-__Важно не заходить на стенки воронки__
+__It is important not to reach the wall of the funnel__
 </div>

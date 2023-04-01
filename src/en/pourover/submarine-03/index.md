@@ -1,56 +1,56 @@
 ---
-title: Рецепт фильтр кофе Гватемала "Ла Сенда" (Submarine)
-description: Рецепт V60 (Гватемала "Ла Сенда") | 260 ml | 17 г
+title: Guatemala "La Senda" coffee filter recipe (Submarine)
+description: Recipe V60 (Guatemala "La Senda") | 260 ml | 17 gr
 
 tags: pourover
 layout: category.njk
 
-name: Гватемала (Ла Сенда)
+name: Guatemala (La Senda)
 
 time: '3:10'
 water: '260 ml'
 temperature: '95'
-coffeeWeight: '17 г.'
+coffeeWeight: '17 gr'
 author: 'Submarine'
 authorImg: 'submarine'
 linkRecipe: 'https://sbmrne.ru/product-card/guatemala-la-senda'
 ---
 
-## Рецепт
+## Recipe
 
 
 <div class="time-line">
 
-Время
+Time
 
-Вес
+Weight
 
-Итого(г)
+Total
 
 </div>
 
-### Предсмачивание
+### Pre-wetting
 
 <div class="time-line">
 
 0:00
 
-40 г.
+40 gr
 
-40 г.
+40 gr
 
 </div>
 
 
-### Вливания
+### Infusions
 
 <div class="time-line">
 
 0:40
 
-100 г.
+100 gr
 
-140 г.
+140 gr
 
 </div>
 
@@ -58,9 +58,9 @@ linkRecipe: 'https://sbmrne.ru/product-card/guatemala-la-senda'
 
 1:30
 
-60 г.
+60 gr
 
-200 г.
+200 gr
 
 </div>
 
@@ -68,22 +68,22 @@ linkRecipe: 'https://sbmrne.ru/product-card/guatemala-la-senda'
 
 2:00
 
-60 г.
+60 gr
 
-260 г.
+260 gr
 
 </div>
 
 
 <div class="info-warm">
 
-## Примечание
+## Note
 
-Помол на Comandante: 24 клика
+Grinding on Comandante: 24 clicks
 
-Помол на Timemore C2: 21 клик
+Timemore C2 grinding: 21 clicks
 
-Помол на ЕК (turkish): 8,5
+Grinding on EC (turkish): 8,5
 </div>
 
 

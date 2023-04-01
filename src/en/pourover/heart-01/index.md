@@ -1,67 +1,67 @@
 ---
-title: Рецепт фильтр кофе Универсальный (Heart roasters)
-description: Рецепт V60 (Универсальный) | 360 ml | 22 г
+title: Recipe for coffee filter Universal (Heart roasters)
+description: Recipe V60 (Universal) | 360 ml | 22 gr
 
 tags: pourover
 layout: category.njk
 
-name: Универсальный
+name: Universal
 
 time: '2:30'
 water: '360 ml'
 temperature: '96'
-coffeeWeight: '22 г.'
+coffeeWeight: '22 gr'
 author: 'Heart roasters'
 authorImg: 'heart'
 linkRecipe: 'https://www.heartroasters.com/pages/v60'
 ---
 
-## Рецепт
+## Recipe
 
 
 <div class="time-line">
 
-Время
+Time
 
-Вес
+Weight
 
-Итого(г)
+Total
 
 </div>
 
-### Предсмачивание
+### Pre-wetting
 
 <div class="time-line">
 
 0:00
 
-45 г.
+45 gr
 
-45 г.
+45 gr
 
 </div>
 
 
-### Вливания
+### Infusions
 
 <div class="time-line">
 
 0:20 - 1:50
 
-315 г.
+315 gr
 
-360 г.
+360 gr
 
 </div>
 <br>
 
-Общее время экстракции __2:20 - 2:30__
+Total extraction time __2:20 - 2:30__
 
 <br>
 <div class="info-warm">
 
-## Примечание
-После каждого вливания перемешайте ложкой или палочкой для размешивания. Это необходимо для того, чтобы весь кофе был равномерно насыщен.
+## Note
+After each infusion, stir with a spoon or stirring stick. This is to ensure that all the coffee is evenly saturated.
 </div>
 
 

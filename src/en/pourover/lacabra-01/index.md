@@ -1,43 +1,43 @@
 ---
-title: Рецепт фильтр кофе Универсальный (La Cabra)
-description: Рецепт V60 (Универсальный) | 210 ml | 14.5 г
+title: Recipe for coffee filter Universal (La Cabra)
+description: Recipe V60 (Universal) | 210 ml | 14.5 gr
 
 tags: pourover
 layout: category.njk
 
-name: Универсальный
+name: Universal
 
 time: '3:30'
 water: '210 ml'
 temperature: '96'
-coffeeWeight: '14,5 г.'
+coffeeWeight: '14,5 gr'
 author: 'La Cabra'
 linkRecipe: 'https://www.lacabra.dk/pages/v60-brew-guide'
 
 ---
 
-## Рецепт
+## Recipe
 
 
 <div class="time-line">
 
-Время
+Time
 
-Вес
+Weight
 
-Итого(г)
+Total
 
 </div>
 
-### Вливания
+### Infusions
 
 <div class="time-line">
 
 0:00
 
-60 г.
+60 gr
 
-60 г.
+60 gr
 
 </div>
 
@@ -45,9 +45,9 @@ linkRecipe: 'https://www.lacabra.dk/pages/v60-brew-guide'
 
 0:45
 
-55 г.
+55 gr
 
-115 г.
+115 gr
 
 </div>
 
@@ -55,23 +55,23 @@ linkRecipe: 'https://www.lacabra.dk/pages/v60-brew-guide'
 
 1:30
 
-55 г.
+55 gr
 
-170 г.
+170 gr
 
 </div>
 <div class="time-line">
 
 2:15
 
-40 г.
+40 gr
 
-210 г.
+210 gr
 
 </div>
 <br>
 
-Общее время экстракции __3:30__
+Total extraction time __3:30__
 
 <br>
 
