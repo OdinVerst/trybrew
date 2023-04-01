@@ -10,7 +10,7 @@ name: Colombia El Paraíso
 time: '3:00'
 water: '260 ml'
 temperature: '96'
-coffeeWeight: '15 gr.'
+coffeeWeight: '15 gr'
 author: 'Nomad'
 linkRecipe: 'https://nomadcoffee.es/en/producto/red-plum/'
 ---
@@ -34,9 +34,9 @@ Total(gr)
 
 0:00
 
-50 gr.
+50 gr
 
-50 gr.
+50 gr
 
 </div>
 
@@ -47,9 +47,9 @@ Total(gr)
 
 0:30
 
-210 gr.
+210 gr
 
-260 gr.
+260 gr
 
 </div>
 

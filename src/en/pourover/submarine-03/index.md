@@ -10,7 +10,7 @@ name: Guatemala (La Senda)
 time: '3:10'
 water: '260 ml'
 temperature: '95'
-coffeeWeight: '17 gr.'
+coffeeWeight: '17 gr'
 author: 'Submarine'
 authorImg: 'submarine'
 linkRecipe: 'https://sbmrne.ru/product-card/guatemala-la-senda'
@@ -35,9 +35,9 @@ Total(gr)
 
 0:00
 
-40 gr.
+40 gr
 
-40 gr.
+40 gr
 
 </div>
 
@@ -48,9 +48,9 @@ Total(gr)
 
 0:40
 
-100 gr.
+100 gr
 
-140 gr.
+140 gr
 
 </div>
 
@@ -58,9 +58,9 @@ Total(gr)
 
 1:30
 
-60 gr.
+60 gr
 
-200 gr.
+200 gr
 
 </div>
 
@@ -68,9 +68,9 @@ Total(gr)
 
 2:00
 
-60 gr.
+60 gr
 
-260 gr.
+260 gr
 
 </div>
 

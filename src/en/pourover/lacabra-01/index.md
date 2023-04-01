@@ -10,7 +10,7 @@ name: Universal
 time: '3:30'
 water: '210 ml'
 temperature: '96'
-coffeeWeight: '14,5 gr.'
+coffeeWeight: '14,5 gr'
 author: 'La Cabra'
 linkRecipe: 'https://www.lacabra.dk/pages/v60-brew-guide'
 
@@ -35,9 +35,9 @@ Total(gr)
 
 0:00
 
-60 gr.
+60 gr
 
-60 gr.
+60 gr
 
 </div>
 
@@ -45,9 +45,9 @@ Total(gr)
 
 0:45
 
-55 gr.
+55 gr
 
-115 gr.
+115 gr
 
 </div>
 
@@ -55,18 +55,18 @@ Total(gr)
 
 1:30
 
-55 gr.
+55 gr
 
-170 gr.
+170 gr
 
 </div>
 <div class="time-line">
 
 2:15
 
-40 gr.
+40 gr
 
-210 gr.
+210 gr
 
 </div>
 <br>

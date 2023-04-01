@@ -10,7 +10,7 @@ name: Universal
 time: '2:30'
 water: '350 ml'
 temperature: '~95'
-coffeeWeight: '22 gr.'
+coffeeWeight: '22 gr'
 author: 'Blue Bottle'
 authorImg: 'bluebottle'
 linkRecipe: 'https://bluebottlecoffee.com/us/eng/brew-guides/pour-over'
@@ -35,9 +35,9 @@ Total(gr)
 
 0:00
 
-60 gr.
+60 gr
 
-60 gr.
+60 gr
 
 </div>
 
@@ -45,9 +45,9 @@ Total(gr)
 
 0:40
 
-90 gr.
+90 gr
 
-150 gr.
+150 gr
 
 </div>
 
@@ -55,16 +55,16 @@ Total(gr)
 
 1:25
 
-100 gr.
+100 gr
 
-250 gr.
+250 gr
 
 </div>
 <div class="time-line">
 
 1:45
 
-100 gr.
+100 gr
 
 350 gr.
 

@@ -10,7 +10,7 @@ name: Brazil (El Dorado Catucay)
 time: '3:10'
 water: '250 ml'
 temperature: '95'
-coffeeWeight: '15.5 gr.'
+coffeeWeight: '15.5 gr'
 author: 'Submarine'
 authorImg: 'submarine'
 linkRecipe: 'https://sbmrne.ru/product-card/Brazil_El_Dorado_catucai'
@@ -35,9 +35,9 @@ Total(gr)
 
 0:00 по 0:30
 
-60 gr.
+60 gr
 
-60 gr.
+60 gr
 
 </div>
 
@@ -48,9 +48,9 @@ Total(gr)
 
 1:10
 
-70 gr.
+70 gr
 
-130 gr.
+130 gr
 
 </div>
 
@@ -58,9 +58,9 @@ Total(gr)
 
 1:45
 
-60 gr.
+60 gr
 
-190 gr.
+190 gr
 
 </div>
 
@@ -68,9 +68,9 @@ Total(gr)
 
 2:15
 
-60 gr.
+60 gr
 
-250 gr.
+250 gr
 
 </div>
 
