@@ -9,7 +9,7 @@ permalink: en/index.html
     {% import 'list.njk' as listCategory %}
     {% for category in site.categories %}
         {% set urlCategory = ['/', category, '/'] | join  %}
-        {{ listCategory.field(languages[page.lang][category], collections[category], urlCategory | locale_url, page) }}
+        {{ listCategory.field(languages[page.lang][category], collections[category], urlCategory | locale_url, page, languages) }}
     {% endfor %}
 </main>
 
