@@ -1,13 +1,12 @@
 {
   "routes": [
     { "handle": "filesystem" },
-    {
-      "src": "/",
-      "headers": {
-        "destination": "/ru/$1"
-      },
-      "status": 302
-    },
     { "src": "/(.*)", "status": 404, "dest": "/404.html" }
+  ],
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/ru/"
+    }
   ]
 }
