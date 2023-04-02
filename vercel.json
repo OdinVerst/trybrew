@@ -5,7 +5,7 @@
       "src": "/",
       "headers": {
         "Accept-Language": {"regex": ".*"},
-        "Location": "/ru/"
+        "dest": "/ru/"
       },
       "status": 302
     },
