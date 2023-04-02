@@ -1,8 +1,9 @@
 {
-  "rewrites": [
+  "redirects" : [
     {
       "source": "/:path((?:ru|eng)).*)",
-      "destination": "/ru/:path*"
+      "destination": "/ru/:path*",
+      "permanent" : true
     },
     {
       "source": "/:all*(/)?",
