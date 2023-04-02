@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "/ru/"
+      "destination": "/en/"
     },
     {
       "source": "/:all*(/)?",
