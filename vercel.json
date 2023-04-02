@@ -4,6 +4,31 @@
       "src": "/aeropress/(.*)",
       "headers": { "Location": "/ru/aeropress/$1" },
       "status": 302
+    },
+    {
+      "src": "/cezve/(.*)",
+      "headers": { "Location": "/ru/cezve/$1" },
+      "status": 302
+    },
+    {
+      "src": "/chemex/(.*)",
+      "headers": { "Location": "/ru/chemex/$1" },
+      "status": 302
+    },
+    {
+      "src": "/coldbrew/(.*)",
+      "headers": { "Location": "/ru/coldbrew/$1" },
+      "status": 302
+    },
+    {
+      "src": "/pourover/(.*)",
+      "headers": { "Location": "/ru/pourover/$1" },
+      "status": 302
+    },
+    {
+      "src": "/",
+      "headers": { "Location": "/ru/$1" },
+      "status": 302
     }
   ]
 }
