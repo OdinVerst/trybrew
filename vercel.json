@@ -27,7 +27,7 @@
     },
     {
       "src": "/",
-      "headers": { "Location": "/ru/$1" },
+      "headers": { "Location": "/ru/" },
       "status": 302
     }
   ]
