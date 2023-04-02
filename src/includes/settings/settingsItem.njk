@@ -1,10 +1,10 @@
-{% macro field(name, list, id) %}
+{% macro settingsItem(name, list, id) %}
     <div class="settingsItem">
         <label class="settingsItem__label">
             {{ name }}:
             <select id={{ id }} class="settingsItem__select">
                 {%- for item in list -%}
-                    <option value={{ item.value }}>{{ item.name }}</option>
+                    <option value={{ item.value }}>{{ languages[page.lang][id][item.value] }}</option>
                 {%- endfor -%}
             </select>
         </label>

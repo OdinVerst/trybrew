@@ -4,33 +4,26 @@
     "description": "Рецепты для заваривания альтернативы",
     "name_site": "Try brew",
     "settings": [{
-      "name": "Тема",
       "value": "theme",
       "list": [
         {
-          "name": "Авто",
           "value": "auto"
         },
         {
-          "name": "Светлая",
           "value": "light"
         },
         {
-          "name": "Teмная",
           "value": "dark"
         }
       ]
     },
       {
-        "name": "Язык",
         "value": "lang",
         "list": [
           {
-            "name": "Русский",
             "value": "ru"
           },
           {
-            "name": "Английский",
             "value": "en"
           }
         ]
