@@ -1,6 +1,7 @@
 <meta charset="utf-8">
 <title>
-    {{ title }}{% if page.url != '/' %} — {{site.name_site}}{% endif %}
+    {% set mainPage = ['/', page.lang, '/'] | join %}
+    {{ title }}{% if page.url != mainPage %} — {{site.name_site}}{% endif %}
 </title>
 
 <meta name="description" content="{{ description }}">
