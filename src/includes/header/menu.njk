@@ -1,16 +1,14 @@
-<button class="header__burger" id="menuButton" aria-label="{{ languages[page.lang].menu }}""></button>
+<button class="header__burger" id="menuButton" aria-label="{{ languages[page.lang].menu }}"></button>
 
 <div class="header__menu">
     <nav class="header__nav">
         <p class="header__separatorText">{{ languages[page.lang].sections }}</p>
         <ul class="header__navList">
-            <li><a href="/pourover/">{{ languages[page.lang].pourover }}</a></li>
-            <li><a href="/aeropress/">{{ languages[page.lang].aeropress }}</a></li>
-            <li><a href="/cezve/">{{ languages[page.lang].cezve }}</a></li>
-            <li><a href="/coldbrew/">{{ languages[page.lang].coldbrew }}</a></li>
-            <li><a href="/chemex/">{{ languages[page.lang].chemex }}</a></li>
+            {%- for item in site.categories -%}
+                <li><a href="{{ ['/', page.lang, '/', item, '/'] | join }}">{{ languages[page.lang][item] }}</a></li>
+            {%- endfor -%}
         </ul>
-        <a href="/settings.html">Настройки</a>
-        <a href="/about.html">{{ languages[page.lang].about }}</a>
+        <a href="{{ ['/', page.lang, '/settings/'] | join }}">{{ languages[page.lang].settings }}</a>
+        <a href="{{ ['/', page.lang, '/about/'] | join }}">{{ languages[page.lang].about }}</a>
     </nav>
 </div>
