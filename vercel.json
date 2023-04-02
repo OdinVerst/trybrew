@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "^(?!.*(?:ru|eng)).*$",
+      "source": "/:path((?:ru|eng)).*)",
       "destination": "/ru/:path*"
     },
     {
