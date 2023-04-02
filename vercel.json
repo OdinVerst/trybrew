@@ -6,8 +6,7 @@
     },
     {
       "source": "/:all*(/)?",
-      "destination": "/404.html",
-      "statusCode": 404
+      "destination": "/404.html"
     }
   ]
 }
