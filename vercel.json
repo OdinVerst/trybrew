@@ -1,6 +1,14 @@
 {
   "routes": [
     { "handle": "filesystem" },
+    {
+      "src": "/",
+      "headers": {
+        "Accept-Language": {"regex": ".*"},
+        "Location": "/ru/"
+      },
+      "status": 302
+    },
     { "src": "/(.*)", "status": 404, "dest": "/404.html" }
   ]
 }

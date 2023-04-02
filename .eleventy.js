@@ -55,7 +55,7 @@ module.exports = (config) => {
 
     config.addPlugin(EleventyI18nPlugin, {
         // any valid BCP 47-compatible language tag is supported
-        defaultLanguage: "en", // Required, this site uses "en"
+        defaultLanguage: "ru", // Required, this site uses "en"
         filters: {
           // transform a URL with the current page’s locale code
           url: "locale_url",
