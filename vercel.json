@@ -1,13 +1,9 @@
 {
-  "redirects" : [
+  "redirects": [
     {
-      "source": "/aeropress/:match*",
-      "destination": "/ru/:path*",
-      "permanent" : true
-    },
-    {
-      "source": "/:all*(/)?",
-      "destination": "/404.html"
+      "source": "/aeropress/:path",
+      "destination": "/ru/aeropress/:path",
+      "permanent": true
     }
   ]
 }
