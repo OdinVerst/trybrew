@@ -1,13 +1,16 @@
 {
+  "redirects": [
+    {
+      "source": "/:all*(/)?",
+      "destination": "/404.html",
+      "statusCode": 404
+    }
+  ],
+
   "rewrites": [
     {
       "source": "/",
       "destination": "/ru/"
-    },
-    {
-      "source": "/:all*(/)?",
-      "destination": "/404.html",
-      "status": 404
     }
   ]
 }
