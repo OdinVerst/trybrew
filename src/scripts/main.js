@@ -20,10 +20,11 @@ new ThemeController(themeInput);
 
 const langInput = document.querySelector('#lang');
 if (langInput) {
+    const currentLang = document.documentElement.lang;
+    langInput.value = currentLang;
     langInput.addEventListener('change', (e) => {
-        const lastDirectoryUrl = location.pathname.replace(/.*\/(\w+)\/?$/, '$1')
         const value = e.target.value;
-        location.href = `${value}${lastDirectoryUrl}`
+        location.href = location.pathname.replace(currentLang, value);
     })
 }
 

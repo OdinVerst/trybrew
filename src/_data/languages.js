@@ -1,6 +1,5 @@
 module.exports = {
   en: {
-    theme: 'Dark theme',
     about: 'About',
     menu: 'Menu',
     sections: 'Sections',
@@ -12,6 +11,7 @@ module.exports = {
     rollup: 'roll up section',
     source: 'Source',
     author: 'Author',
+    settings: 'Settings',
     page_about: {
       title: 'Try brew - open source project created by coffee lovers to get new taste emotions.',
       works_on: 'Works on',
@@ -22,10 +22,20 @@ module.exports = {
       title: 'Page not found',
       subtitle: 'Perhaps this recipe hasn\'t been created yet or something has happened...',
       link: 'Go to Home',
+    },
+    theme: {
+      title: 'Theme',
+      auto: 'System',
+      dark: 'Dark',
+      light: 'Light'
+    },
+    lang: {
+      title: 'Language',
+      ru: 'Russian',
+      en: 'English'
     }
   },
   ru: {
-    theme: 'Темная тема',
     about: 'О проекте',
     menu: 'Меню',
     sections: 'Разделы',
@@ -37,6 +47,7 @@ module.exports = {
     rollup: 'Свернуть раздел',
     source: 'Источник',
     author: 'Автор',
+    settings: 'Настройка',
     page_about: {
       title: 'Try brew - Это open source проект созданный любителями кофе для получения новых вкусовых эмоций.',
       works_on: 'Работает на',
@@ -47,6 +58,17 @@ module.exports = {
       title: 'Страница не найдена',
       subtitle: 'Возможно, данный рецепт ещё не создан или что-то случилось...',
       link: 'Перейти на главную',
+    },
+    theme: {
+      title: 'Тема',
+      auto: 'Системная',
+      dark: 'Темная',
+      light: 'Светлая'
+    },
+    lang: {
+      title: 'Язык',
+      ru: 'Русский',
+      en: 'Английский'
     }
   },
 };

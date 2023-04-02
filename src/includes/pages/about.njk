@@ -1,10 +1,4 @@
----
-title: О нас - Try brew
-description: Try brew
-layout: page.njk
-permalink: about.html
----
-
+{% macro about() %}
 <main class="wrapper about">
     <span>{{languages[page.lang].page_about.title}}
     <br/>
@@ -17,3 +11,4 @@ permalink: about.html
     <br/>
     <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="trybrew" data-color="#FFDD00" data-emoji="" data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
 </main>
+{% endmacro %}

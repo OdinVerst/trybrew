@@ -5,11 +5,5 @@ layout: page.njk
 permalink: ru/index.html
 ---
 
-<main class="wrapper">
-    {% import 'list.njk' as listCategory %}
-    {% for category in site.categories %}
-        {% set urlCategory = ['/', category, '/'] | join  %}
-        {{ listCategory.field(languages[page.lang][category], collections[category], urlCategory | locale_url, page, languages) }}
-    {% endfor %}
-</main>
-
+{% from 'pages/index.njk' import index with context %}
+{{ index() }}
