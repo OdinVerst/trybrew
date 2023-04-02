@@ -1,9 +1,9 @@
 {
-  "redirects": [
+  "routes": [
     {
-      "source": "/aeropress/:path",
-      "destination": "/ru/aeropress/:path",
-      "permanent": true
+      "src": "/aeropress/(.*)",
+      "headers": { "Location": "/ru/aeropress/$1" },
+      "status": 302
     }
   ]
 }
