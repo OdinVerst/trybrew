@@ -27,8 +27,12 @@
     },
     {
       "src": "/",
-      "headers": { "Location": "/ru/" },
+      "headers": {
+        "Location": "/ru/"
+      },
       "status": 302
-    }
+    },
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "status": 404, "dest": "/404.html" }
   ]
 }
