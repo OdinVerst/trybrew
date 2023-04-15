@@ -1,9 +1,10 @@
 <header class="header">
     <div id="header" class="header__wrapper wrapper">
         <div></div>
-        {% if page.url != '/' %}<a class="header__link" href="/">{% endif %}
+        {% set mainPage = ['/', page.lang, '/'] | join %}
+        {% if page.url != mainPage %}<a class="header__link" href="{{ mainPage }}">{% endif %}
             <h1 class="header__title">TRY BREW</h1>
-        {% if page.url != '/' %}</a>{% endif %}
+        {% if page.url != mainPage %}</a>{% endif %}
         {% include 'header/menu.njk' %}
     </div>
 </header>

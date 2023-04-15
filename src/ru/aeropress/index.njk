@@ -1,0 +1,9 @@
+---
+title: Рецепты AeroPress (Аэропресс)
+description: Рецепты AeroPress (Аэропресс) прямые и перевернутые методы заваривания
+layout: page.njk
+---
+<main class="wrapper">
+    {% import 'list.njk' as aeropress %}
+    {{ aeropress.field('Аэропресс', collections.aeropress, 'aeropress', page, languages)}}
+</main>

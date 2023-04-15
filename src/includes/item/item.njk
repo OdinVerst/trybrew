@@ -1,4 +1,4 @@
-{% macro field(item, url) %}
+{% macro field(item, url, languages) %}
 <article class="item">
     <a class="item__link" href="{{url}}">
         {% import 'item/title.njk' as titleView %}
@@ -8,7 +8,7 @@
         {{ mainInfoView.field(item.coffeeWeight, item.water, item.time, item.temperature, item.ice)}}
 
         {% import 'item/author.njk' as authorView %}
-        {{ authorView.field(item.authorImg, item.author)}}
+        {{ authorView.field(item.authorImg, item.author, languages)}}
     </a>
 </article>
 {% endmacro %}

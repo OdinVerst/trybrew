@@ -1,0 +1,9 @@
+{% macro settings(items) %}
+    <div class="settings">
+        {%- for item in items -%}
+            {% from 'settings/settingsItem.njk' import settingsItem with context %}
+            {{ settingsItem(languages[page.lang][item.value].title, item.list, item.value) }}
+        {%- endfor -%}
+    </div>
+{% endmacro %}
+

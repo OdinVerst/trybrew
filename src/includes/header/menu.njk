@@ -1,19 +1,14 @@
-<button class="header__burger" id="menuButton" aria-label="Меню"></button>
+<button class="header__burger" id="menuButton" aria-label="{{ languages[page.lang].menu }}"></button>
 
 <div class="header__menu">
     <nav class="header__nav">
-        <p class="header__separatorText">Разделы</p>
+        <p class="header__separatorText">{{ languages[page.lang].sections }}</p>
         <ul class="header__navList">
-            <li><a href="/pourover/">Пуровер / V60</a></li>
-            <li><a href="/aeropress/">Аэропресс</a></li>
-            <li><a href="/cezve/">Джезва/Турка</a></li>
-            <li><a href="/coldbrew/">Cold brew</a></li>
-            <li><a href="/chemex/">Chemex</a></li>
+            {%- for item in site.categories -%}
+                <li><a href="{{ ['/', page.lang, '/', item, '/'] | join }}">{{ languages[page.lang][item] }}</a></li>
+            {%- endfor -%}
         </ul>
-        <a href="/about.html">О проекте</a>
-        <label class='header__darkTheme'>
-            Темная тема
-            <input id='darkTheme' type='checkbox' />
-        </label>
+        <a href="{{ ['/', page.lang, '/settings/'] | join }}">{{ languages[page.lang].settings }}</a>
+        <a href="{{ ['/', page.lang, '/about/'] | join }}">{{ languages[page.lang].about }}</a>
     </nav>
 </div>
