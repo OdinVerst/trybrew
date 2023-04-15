@@ -1,0 +1,9 @@
+---
+title: Recipes cezve
+description: Recipes cezve - classic and unusual recipes
+layout: page.njk
+---
+<main class="wrapper">
+    {% import 'list.njk' as cezve %}
+    {{ cezve.field('Джезва/Турка', collections.cezve, 'cezve', page, languages)}}
+</main>

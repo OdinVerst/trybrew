@@ -1,9 +1,15 @@
 <meta charset="utf-8">
 <title>
-    {{ title }}{% if page.url != '/' %} — {{site.name_site}}{% endif %}
+    {% set mainPage = ['/', page.lang, '/'] | join %}
+    {{ title }}{% if page.url != mainPage %} — {{site.name_site}}{% endif %}
 </title>
 
 <meta name="description" content="{{ description }}">
+{% if page.url | locale_links %}
+{% for link in page.url | locale_links %}
+    <link rel="alternate" hreflang="{{link.lang}}" href="{{sile.url}}{{link.url}}">
+{% endfor %}
+{% endif %}
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{site.name_site}}">

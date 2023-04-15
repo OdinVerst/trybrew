@@ -1,4 +1,4 @@
-import {Theme} from "./darkTheme";
+import {ThemeController} from "./themeController";
 
 document.addEventListener('click', (evt) => {
     const { target } = evt;
@@ -15,16 +15,18 @@ document.addEventListener('click', (evt) => {
     }
 });
 
-const multiButton = document.querySelector('.multiButton');
-const multiButtonMenu = document.querySelector('.multiButton__menu')
+const themeInput = document.querySelector('#theme');
+new ThemeController(themeInput);
 
-if (multiButtonMenu && multiButton)
-multiButton.addEventListener('click', () => {
-    multiButtonMenu.classList.toggle('multiButton__menu_active')
-});
-
-const darkThemeInput = document.querySelector('#darkTheme');
-new Theme(darkThemeInput);
+const langInput = document.querySelector('#lang');
+if (langInput) {
+    const currentLang = document.documentElement.lang;
+    langInput.value = currentLang;
+    langInput.addEventListener('change', (e) => {
+        const value = e.target.value;
+        location.href = location.pathname.replace(currentLang, value);
+    })
+}
 
 const menuButton = document.querySelector('#menuButton');
 const header = document.querySelector('#header')
