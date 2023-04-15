@@ -13,7 +13,7 @@
 
     --color-menu-tool: white;
 
-    --color-author-text: gray;
+    --color-author-text: #505050;
 
     --color-footer-boder: #c6c6c6;
 
@@ -27,7 +27,7 @@ html[data-theme='dark'] {
     --fill-icons: white;
 
     --color-more-info: #3e3e3e;
-    --color-link-text: #43a3ff;
+    --color-link-text: #b4daff;
     --color-secondary-background: #3e3e3e;
 
     --color-menu-tool: #7b7b7b;
