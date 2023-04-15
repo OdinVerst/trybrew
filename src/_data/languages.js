@@ -47,7 +47,7 @@ module.exports = {
     rollup: 'Свернуть раздел',
     source: 'Источник',
     author: 'Автор',
-    settings: 'Настройка',
+    settings: 'Настройки',
     page_about: {
       title: 'Try brew - Это open source проект созданный любителями кофе для получения новых вкусовых эмоций.',
       works_on: 'Работает на',
