@@ -5,6 +5,11 @@
 </title>
 
 <meta name="description" content="{{ description }}">
+{% if page.url | locale_links %}
+{% for link in page.url | locale_links %}
+    <link rel="alternate" hreflang="{{link.lang}}" href="{{sile.url}}{{link.url}}">
+{% endfor %}
+{% endif %}
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{site.name_site}}">
