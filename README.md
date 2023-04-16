@@ -15,6 +15,9 @@ https://trybrew.app/
 1. Форкнуть проект
 1. Открыть PR в основной репозиторий
 
+### Figma
+
+[Ссылка на макет](https://www.figma.com/file/nbwp4On8Yu2T4AZlwpcO4i/Untitled?node-id=0%3A1&t=rmxgR6cqTsxXY973-1)
 
 ---
 Работает на [Eleventy](https://www.11ty.io/).

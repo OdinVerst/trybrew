@@ -2,8 +2,7 @@
     {% if items.length %}
     <section class="category">
         <div class="category__top">
-            {% set langS = ['/', page.lang, '/']  %}
-            {% if page.url == '/' or page.url == langS | join %}
+            {% if page.url == '/' or page.url == ['/', page.lang, '/'] | join %}
                 <h2 class="category__title">
                     <a class="category__link" href="{{url}}">{{ title }}</a>
                 </h2>
