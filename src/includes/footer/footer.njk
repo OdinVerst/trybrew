@@ -1,14 +1,14 @@
 <footer class="footer">
     {% if page.lang === 'en'%}
-    <span lang="ru">Переключиться <a href="{{ page.url.replace('en','ru') }}">на русский</a></span>
+    <p lang="ru">Переключиться <a href="{{ page.url.replace('en','ru') }}">на русский</a></p>
     {% else %}
-    <span lang="en">Switch <a href="{{ page.url.replace('en','ru') }}">to English</a></span>
+    <p lang="en">Switch <a href="{{ page.url.replace('en','ru') }}">to English</a></p>
     {% endif %}
     {% if page.lang === 'ru'%}
-    <span lang="en">
+    <p lang="en">
     {% else %}
-    <span>
+    <p>
     {% endif %}
         Source code <a href="https://github.com/OdinVerst/trycoffee">GitHub</a>
-    <span>
+    </p>
 </footer>
