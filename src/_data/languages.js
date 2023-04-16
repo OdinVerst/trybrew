@@ -33,7 +33,9 @@ module.exports = {
       title: 'Language',
       ru: 'Russian',
       en: 'English'
-    }
+    },
+    switch: 'Switch',
+    switchTo: 'to English'
   },
   ru: {
     about: 'О проекте',
@@ -69,6 +71,8 @@ module.exports = {
       title: 'Язык',
       ru: 'Русский',
       en: 'Английский'
-    }
+    },
+    switch: 'Переключиться',
+    switchTo: 'на русский'
   },
 };
