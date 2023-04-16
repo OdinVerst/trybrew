@@ -2,7 +2,7 @@
     {% if page.lang === 'en'%}
     <p lang="ru">Переключиться <a href="{{ page.url.replace('en','ru') }}">на русский</a></p>
     {% else %}
-    <p lang="en">Switch <a href="{{ page.url.replace('en','ru') }}">to English</a></p>
+    <p lang="en">Switch <a href="{{ page.url.replace('ru','en') }}">to English</a></p>
     {% endif %}
     {% if page.lang === 'ru'%}
     <p lang="en">
