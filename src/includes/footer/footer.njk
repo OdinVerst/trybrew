@@ -1,3 +1,14 @@
 <footer class="footer">
-    Source code <a href="https://github.com/OdinVerst/trycoffee">GitHub</a>
+    {% if page.lang === 'en'%}
+    <span lang="ru">Переключиться <a href="{{ page.url.replace('en','ru') }}">на русский</a></span>
+    {% else %}
+    <span lang="en">Switch <a href="{{ page.url.replace('en','ru') }}">to English</a></span>
+    {% endif %}
+    {% if page.lang === 'ru'%}
+    <span lang="en">
+    {% else %}
+    <span>
+    {% endif %}
+        Source code <a href="https://github.com/OdinVerst/trycoffee">GitHub</a>
+    <span>
 </footer>
