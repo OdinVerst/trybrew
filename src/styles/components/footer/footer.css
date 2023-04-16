@@ -1,4 +1,8 @@
 .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background-color: var(--color-secondary-background);
     text-align: center;
     padding: 1em;
@@ -7,4 +11,17 @@
 
 .footer a {
     color: var(--color-link-text);
+}
+
+.footer p:not(:last-of-type) {
+    margin-right: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        display: block;
+    }
+    .footer p:not(:last-of-type) {
+        margin-right: 0;
+    }
 }
