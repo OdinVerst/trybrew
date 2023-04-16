@@ -4,11 +4,7 @@
     {% else %}
     <p lang="en">Switch <a href="{{ page.url.replace('ru','en') }}">to English</a></p>
     {% endif %}
-    {% if page.lang === 'ru'%}
-    <p lang="en">
-    {% else %}
-    <p>
-    {% endif %}
+    <p {{ 'lang=en' if page.lang == 'ru' }} >
         Source code <a href="https://github.com/OdinVerst/trycoffee">GitHub</a>
     </p>
 </footer>
