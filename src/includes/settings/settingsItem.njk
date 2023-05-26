@@ -4,7 +4,7 @@
             {{ name }}:
             <select id={{ id }} class="settingsItem__select">
                 {%- for item in list -%}
-                    <option value={{ item.value }}>{{ languages[page.lang][id][item.value] }}</option>
+                    <option value={{ item.value }} class="settingsItem__selectOption">{{ languages[page.lang][id][item.value] }}</option>
                 {%- endfor -%}
             </select>
         </label>
