@@ -18,6 +18,7 @@
     --color-footer-boder: #c6c6c6;
 
     --color-author-icon-background: transparent;
+    --color-focus: black;
 }
 
 html[data-theme='dark'] {
@@ -36,4 +37,5 @@ html[data-theme='dark'] {
 
     --color-footer-boder: transparent;
     --color-author-icon-background: white;
+    --color-focus: white;
 }
