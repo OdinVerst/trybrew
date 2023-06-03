@@ -1,0 +1,10 @@
+---
+title: Summer coffee recipes
+description: Summer coffee recipes from roasters around the world
+
+layout: page.njk
+---
+<main class="wrapper">
+    {% import 'list.njk' as summer %}
+    {{ summer.field('Summer', collections.summer, 'summer', page, languages)}}
+</main>
