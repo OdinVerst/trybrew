@@ -1,4 +1,8 @@
-{% macro field(sort, name) %}
-    <div class="item__name">{{ name }}</div>
+{% macro titleView(sort, name, isMainHeading) %}
+    {% if isMainHeading %}
+        <h1 class="item__name">{{ name }}</h1>
+    {% else %}
+        <h3 class="item__name">{{ name }}</h3>
+    {% endif %}
 {% endmacro %}
 
