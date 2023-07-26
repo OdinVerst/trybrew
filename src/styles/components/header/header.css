@@ -6,16 +6,18 @@
 
 .header__wrapper {
     display: grid;
+    justify-content: space-between;
     grid-template-columns: 30px auto 30px;
     gap: 10px;
+    padding: 1em;
 }
 
 .header__link {
+    display: flex;
     text-decoration: none;
     color: inherit;
 }
 
-.header__title {
-    font-size: 25px;
-    text-align: center;
+.header__logo {
+    fill: currentColor;
 }

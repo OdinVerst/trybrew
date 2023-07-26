@@ -6,7 +6,7 @@ const { EleventyI18nPlugin } = require("@11ty/eleventy");
 module.exports = (config) => {
     config.addPassthroughCopy('src/img/!svg');
     config.addPassthroughCopy('src/fonts');
-    config.addPassthroughCopy('src/robots.txt');
+    config.addPassthroughCopy({ 'src/public': "/" });
 
     config.addPairedShortcode('markdown', (content) => {
         return markdown.render(content);
