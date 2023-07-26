@@ -5,8 +5,8 @@ layout: page.njk
 ---
 
 <section class="detail wrapper">
-    {% import 'item/title.njk' as titleView %}
-    {{ titleView.field(sort, name)}}
+    {% from 'item/title.njk' import titleView with context %}
+    {{ titleView(sort, name, true)}}
 
     {% import 'item/main-info.njk' as mainInfoView %}
     {{ mainInfoView.field(coffeeWeight, water, time, temperature, ice)}}
