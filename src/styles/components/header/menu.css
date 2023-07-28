@@ -4,7 +4,7 @@
 
 .header__wrapper.open .header__menu {
     display: block;
-    grid-column: 1/ 4;
+    grid-column: 1/ 2;
 }
 
 .header__nav {
