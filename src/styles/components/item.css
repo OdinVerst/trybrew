@@ -28,7 +28,8 @@
     fill: var(--fill-icons)
 }
 
-.item__name{
+.item__name {
+    margin-top: 0;
     font-weight: bold;
     margin-bottom: 1.2em;
 }
