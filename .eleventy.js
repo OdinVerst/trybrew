@@ -18,16 +18,6 @@ module.exports = (config) => {
         return stats.size;
     });
 
-
-    config.addFilter('htmlmin', (value) => {
-        return htmlmin.minify(
-            value, {
-                removeComments: true,
-                collapseWhitespace: true
-            }
-        );
-    });
-
     config.addFilter('filterIndexArticles', (array) => {
         return array.sort((a, b) => {
               if (a.data.featured > b.data.featured) {
@@ -54,13 +44,9 @@ module.exports = (config) => {
     });
 
     config.addPlugin(EleventyI18nPlugin, {
-        // any valid BCP 47-compatible language tag is supported
-        defaultLanguage: "ru", // Required, this site uses "en"
+        defaultLanguage: "ru",
         filters: {
-          // transform a URL with the current page’s locale code
           url: "locale_url",
-
-          // find the other localized content for a specific input file
           links: "locale_links",
         },
         errorMode: "never",
