@@ -5,11 +5,13 @@
 </title>
 
 <meta name="description" content="{{ description }}">
+<!-- TODO: Fix me
 {% if page.url | locale_links %}
 {% for link in page.url | locale_links %}
     <link rel="alternate" hreflang="{{link.lang}}" href="{{sile.url}}{{link.url}}">
 {% endfor %}
 {% endif %}
+-->
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -28,5 +30,5 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="preload" href="/fonts/montserrat.woff2" crossorigin as="font" type="font/woff2">
-<link rel="stylesheet" href="/css/main.css">
-<script src="/js/main.js" defer></script>
+<link rel="stylesheet" href="/styles/main.css">
+<script type="module" src="/scripts/main.js"></script>
