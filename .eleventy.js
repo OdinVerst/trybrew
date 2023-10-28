@@ -2,6 +2,7 @@ const fs = require('fs');
 const htmlmin = require('html-minifier');
 const markdown = require('markdown-it')({ html: true });
 const { EleventyI18nPlugin } = require("@11ty/eleventy");
+const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite")
 
 module.exports = (config) => {
     config.addPassthroughCopy('src/img/!svg');
@@ -41,6 +42,14 @@ module.exports = (config) => {
         }
 
         return content;
+    });
+
+    // TODO vite config
+    config.addPassthroughCopy("src/styles");
+    config.addPassthroughCopy("src/scripts");
+    config.addPlugin(EleventyVitePlugin, {
+        viteOptions: {
+        },
     });
 
     config.addPlugin(EleventyI18nPlugin, {
