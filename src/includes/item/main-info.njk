@@ -2,41 +2,31 @@
     <div class="item__main-info main-info">
         {% if coffeeWeight %}
             <div class="main-info__item">
-                <svg class="inline-svg-icon">
-                    <use xlink:href="/img/sprite.svg#coffee"></use>
-                </svg>
+                {% svg "coffee", "inline-svg-icon" %}
                 {{ coffeeWeight }}
             </div>
         {% endif %}
         {% if water %}
         <div class="main-info__item">
-            <svg class="inline-svg-icon">
-                <use xlink:href="/img/sprite.svg#water"></use>
-            </svg>
+            {% svg "water", "inline-svg-icon" %}
             {{ water }}
         </div>
         {% endif %}
         {% if time %}
         <div class="main-info__item">
-            <svg class="inline-svg-icon">
-                <use xlink:href="/img/sprite.svg#time"></use>
-            </svg>
+            {% svg "time", "inline-svg-icon" %}
             {{ time }}
         </div>
         {% endif %}
         {% if temperature %}
         <div class="main-info__item">
-            <svg class="inline-svg-icon">
-                <use xlink:href="/img/sprite.svg#temperature"></use>
-            </svg>
+            {% svg "temperature", "inline-svg-icon" %}
             {{ temperature }}
         </div>
         {% endif %}
         {% if ice %}
             <div class="main-info__item">
-                <svg class="inline-svg-icon">
-                    <use xlink:href="/img/sprite.svg#ice"></use>
-                </svg>
+                {% svg "ice", "inline-svg-icon" %}
                 {{ ice }}
             </div>
         {% endif %}

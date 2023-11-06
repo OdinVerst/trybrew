@@ -1,8 +1,10 @@
 const fs = require('fs');
 const htmlmin = require('html-minifier');
 const markdown = require('markdown-it')({ html: true });
+
 const { EleventyI18nPlugin } = require("@11ty/eleventy");
 const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite")
+const SvgSpritePlugin = require("eleventy-plugin-svg-sprite");
 
 module.exports = (config) => {
     config.addPassthroughCopy('src/img/!svg');
@@ -51,6 +53,10 @@ module.exports = (config) => {
         viteOptions: {
         },
     });
+
+    config.addPlugin(SvgSpritePlugin, {
+        path: "./src/img/svg"
+    })
 
     config.addPlugin(EleventyI18nPlugin, {
         defaultLanguage: "ru",
