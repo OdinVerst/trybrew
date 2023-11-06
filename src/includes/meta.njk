@@ -7,7 +7,7 @@
 <meta name="description" content="{{ description }}">
 {% if page.url | locale_links %}
 {% for link in page.url | locale_links %}
-    <link rel="alternate" hreflang="{{link.lang}}" href="{{sile.url}}{{link.url}}">
+    <link rel="alternate" hreflang="{{link.lang}}" href="{{site.url}}{{link.url}}">
 {% endfor %}
 {% endif %}
 
@@ -28,5 +28,5 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="preload" href="/fonts/montserrat.woff2" crossorigin as="font" type="font/woff2">
-<link rel="stylesheet" href="/css/main.css">
-<script src="/js/main.js" defer></script>
+<link rel="stylesheet" href="/styles/main.css">
+<script type="module" src="/scripts/main.js"></script>
