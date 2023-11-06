@@ -4,6 +4,7 @@
     {% include 'meta.njk' %}
 </head>
 <body class="page__body">
+    {% svgsprite %}
     {% include 'header/header.njk' %}
     {{ content | safe }}
     {% include 'footer/footer.njk' %}
