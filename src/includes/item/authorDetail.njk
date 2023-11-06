@@ -1,7 +1,7 @@
 {% macro field(svgName, name, link, languages) %}
     <div class="author">
         <span class="author__desc">{{languages.source}}:</span>
-        <a class="author__link" href="{{link}}">
+        <a class="author__link" target="_blank" href="{{link}}">
             {% if svgName %}
                 {% svg svgName, "inline-svg-icon author__logo" %}
             {% endif %}
