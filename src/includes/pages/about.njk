@@ -1,5 +1,7 @@
 {% macro about() %}
 <main class="wrapper about">
+    {% import 'heading.njk' as heading %}
+    {{ heading.field(languages[page.lang].about) }}
     <span>{{languages[page.lang].page_about.title}}
     <br/>
     <br/>
@@ -9,6 +11,11 @@
     {{languages[page.lang].page_about.suggestions}} <a href="mailto:trycoffee.app@gmail.com">trycoffee.app@gmail.com</a>
     <br/>
     <br/>
+    {% import 'heading.njk' as heading %}
+    {{ heading.field("Contributors", "2") }}
+    {% include 'contributors/contributors.njk' %}
+    {% import 'heading.njk' as heading %}
+    {{ heading.field(languages[page.lang].support, "2") }}
     <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="trybrew" data-color="#FFDD00" data-emoji="" data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
 </main>
 {% endmacro %}
