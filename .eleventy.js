@@ -46,11 +46,15 @@ module.exports = (config) => {
         return content;
     });
 
-    // TODO vite config
     config.addPassthroughCopy("src/styles");
     config.addPassthroughCopy("src/scripts");
     config.addPlugin(EleventyVitePlugin, {
-        viteOptions: {
+        appType: "custom",
+        server: {
+            mode: "development",
+        },
+        build: {
+            mode: "production",
         },
     });
 
