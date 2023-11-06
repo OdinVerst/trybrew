@@ -37,7 +37,8 @@ module.exports = {
       en: 'English'
     },
     switch: 'Switch',
-    switchTo: 'to English'
+    switchTo: 'to English',
+    support: "Support us"
   },
   ru: {
     about: 'О проекте',
@@ -77,6 +78,7 @@ module.exports = {
       en: 'Английский'
     },
     switch: 'Переключиться',
-    switchTo: 'на русский'
+    switchTo: 'на русский',
+    support: "Поддержите нас"
   },
 };

@@ -1,3 +1,9 @@
-{% macro field(title) %}
-    <h1 class="heading">{{title}}</h1>
+{% macro field(title, level) %}
+    {% if level == "3" %}
+        <h3 class="heading">{{title}}</h3>
+    {% elif level == "2" %}
+         <h2 class="heading">{{title}}</h2>
+    {% else %}
+        <h1 class="heading">{{title}}</h1>
+    {% endif %}
 {% endmacro %}

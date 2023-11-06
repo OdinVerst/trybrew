@@ -13,5 +13,6 @@
 @import "components/item.css";
 @import "components/author.css";
 @import "components/detail.css";
+@import "components/contributors/contributors.css";
 /* Footer */
 @import "components/footer/footer.css";
