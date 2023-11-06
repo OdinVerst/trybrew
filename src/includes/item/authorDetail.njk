@@ -3,14 +3,10 @@
         <span class="author__desc">{{languages.source}}:</span>
         <a class="author__link" href="{{link}}">
             {% if svgName %}
-                <svg class="inline-svg-icon author__logo">
-                    <use xlink:href="/img/sprite.svg#{{ svgName }}"></use>
-                </svg>
+                {% svg svgName, "inline-svg-icon author__logo" %}
             {% endif %}
             {{ name }}
-            <svg class="inline-svg-icon author__sourceIcon">
-                <use xlink:href="/img/sprite.svg#source-link"></use>
-            </svg>
+            {% svg "source-link", "inline-svg-icon author__sourceIcon" %}
         </a>
     </div>
 {% endmacro %}
