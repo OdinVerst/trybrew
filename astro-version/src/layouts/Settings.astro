@@ -1,0 +1,101 @@
+---
+import {params} from "@nanostores/i18n";
+import {t} from "../i18n/utils";
+import Layout from "./Layout.astro";
+
+const description = "Try brew"
+
+const messages = t(Astro.currentLocale, 'settings', {
+	en: {
+		title: "Settings - Try brew",
+		header: 'Settings',
+		theme: 'Theme',
+		language: 'Language',
+		'theme.system': "System",
+		'theme.dark': "Dark",
+		'theme.light': "Light",
+	},
+	ru: {
+		title: "Настройки - Try brew",
+		header: 'Настройки',
+		theme: 'Тема',
+		language: 'Язык',
+		'theme.system': "Системная",
+		'theme.dark': "Темная",
+		'theme.light': "Светлая",
+	},
+})
+---
+<Layout title={messages.title}>
+	<h1>{messages.header}</h1>
+	<div class="settings">
+		<label class="setting">
+			<span>{messages.theme}</span>
+			<select name="theme" class="select">
+				<option class="selectOption">{messages['theme.system']}</option>
+				<option class="selectOption">{messages['theme.dark']}</option>
+				<option class="selectOption">{messages['theme.light']}</option>
+			</select>
+		</label>
+		<label class="setting">
+			<span>{messages.language}</span>
+			<select name="language" class="select" id="language-select">
+				<option value="ru" selected={Astro.currentLocale === 'ru'} class="selectOption">Русский</option>
+				<option value="en" selected={Astro.currentLocale === 'en'} class="selectOption">English</option>
+			</select>
+		</label>
+	</div>
+</Layout>
+
+<style>
+	.settings {
+		display: flex;
+		gap: 12px;
+	}
+
+	.setting {
+		padding: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--common-box-shadow);
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	.select {
+		position: relative;
+		font-size: 1.2em;
+		text-align: right;
+		border: none;
+		border-radius: 4px;
+		background-color: inherit;
+		background-image: url("data:image/svg+xml,%3Csvg fill='black' aria-hidden='true' width='28' height='28' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' viewBox='0 0 847 847'%3E%3Cpath d='M242 298l181 185 182-185c24-25 65 16 40 41L440 550c-9 9-24 9-32 0L201 339c-24-25 17-66 41-41z'/%3E%3C/svg%3E");
+		background-size: 16px;
+		background-position: right 5px;
+		background-repeat: no-repeat;
+		appearance: none;
+		padding: 0 20px 0 0;
+		color: var(--color-text);
+		outline: none;
+	}
+
+	.select:focus-visible {
+		outline: 2px solid var(--color-focus);
+	}
+
+	/* Seems there is no other way to change colors inside bg-image */
+	:root[data-theme='dark'] .select {
+		background-image: url("data:image/svg+xml,%3Csvg fill='white' aria-hidden='true' width='28' height='28' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' viewBox='0 0 847 847'%3E%3Cpath d='M242 298l181 185 182-185c24-25 65 16 40 41L440 550c-9 9-24 9-32 0L201 339c-24-25 17-66 41-41z'/%3E%3C/svg%3E");
+	}
+
+	.selectOption {
+		background-color: var(--color-menu-tool);
+	}
+</style>
+
+<script>
+	document.getElementById("language-select").addEventListener('change', (event) => {
+		document.location.href = `/${event.target.value}/settings`
+	})
+</script>
+
