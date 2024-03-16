@@ -1,0 +1,46 @@
+---
+interface Props {
+	baseId: string;
+}
+
+const {baseId} = Astro.props;
+const sectionId = `${baseId}__section`
+const buttonId = `${baseId}__btn`
+---
+
+<div>
+	<h3>
+		<button class='btn' type="button" aria-expanded="true" aria-controls={sectionId} id={buttonId}
+				data-accordion-toggle>
+			<slot name="title"></slot>
+		</button>
+	</h3>
+	<div id={sectionId} role="region" aria-labelledby={buttonId}>
+		<slot/>
+	</div>
+</div>
+
+<style>
+	.btn {
+		appearance: none;
+		border: none;
+		background: none;
+		display: block;
+	}
+</style>
+
+<script>
+	const buttons = document.querySelectorAll(`button[data-accordion-toggle]`);
+	buttons.forEach(button => {
+		button.addEventListener('click', () => {
+			const isOpen = button.getAttribute('aria-expanded') === 'true'
+			button.setAttribute('aria-expanded', isOpen ? 'false' : 'true')
+			if (isOpen) {
+				document.querySelector(`#${button.getAttribute('aria-controls')}`).setAttribute('hidden', '')
+			} else {
+				document.querySelector(`#${button.getAttribute('aria-controls')}`).removeAttribute('hidden')
+			}
+		});
+	})
+</script>
+

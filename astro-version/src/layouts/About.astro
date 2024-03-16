@@ -1,0 +1,44 @@
+---
+import Layout from './Layout.astro'
+import Contributors from "../components/Contributors.astro";
+import {params} from "@nanostores/i18n";
+import {t} from "../i18n/utils";
+
+const messages = t(Astro.currentLocale, 'about', {
+	en: {
+		header: 'About',
+		about: params('Try brew - open source project created by coffee lovers to get new taste emotions. Works on {platform}.' +
+			'<br/><br/> Source code is on {source}.' +
+			'<br/><br/> Wishes and suggestions can be sent to: {suggestions}'),
+		'contributors.header': 'Contributors',
+		'support.header': 'Support'
+	},
+	ru: {
+		header: 'О проекте',
+		about: 'Try brew - Это открытый проект созданный любителями кофе для получения новых вкусовых эмоций. Работает на {platform}.' +
+			'<br/><br/> Исходный код {source}.' +
+			'<br/><br/> Пожелания и предложения можно отправить на: {suggestions}',
+		'contributors.header': 'Участники проекта',
+		'support.header': 'Поддержите нас'
+	},
+})
+---
+
+<Layout>
+	<h1>{messages.header}</h1>
+	<p set:html={messages.about({
+		platform: '<a href="https://astro.build" target="_blank">astro</a>',
+		source: '<a href="https://github.com/OdinVerst/trybrew" target="_blank">GitHub</a>',
+		suggestions: '<a href="mailto:trycoffee.app@gmail.com">trycoffee.app@gmail.com</a>'
+	})}/>
+	<h2>{messages['contributors.header']}</h2>
+	<Contributors/>
+	<h2>{messages['support.header']}</h2>
+	<script
+		is:inline
+		src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+		data-name="bmc-button" data-slug="trybrew" data-color="#FFDD00" data-emoji="" data-font="Cookie"
+		data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000"
+		data-coffee-color="#ffffff">
+	</script>
+</Layout>
