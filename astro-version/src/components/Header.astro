@@ -33,7 +33,7 @@ const globalMessages = globalTranslations(Astro.currentLocale)
 			<p class="separatorText">{globalMessages.sections}</p>
 			<ul class="navList">
 				{categories.map(category => (
-					<li><a href={`/${Astro.currentLocale}/${category}/`}>{globalMessages[category]}</a></li>
+					<li><a href={`/${Astro.currentLocale}/recipes/${category}/`}>{globalMessages[category]}</a></li>
 				))}
 			</ul>
 			<a href={`/${Astro.currentLocale}/settings`}>{globalMessages.settings}</a>

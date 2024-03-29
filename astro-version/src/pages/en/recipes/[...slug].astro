@@ -1,20 +1,52 @@
 ---
-import { getCollection } from 'astro:content';
+import {getCollection} from 'astro:content';
 import Layout from "../../../layouts/Layout.astro";
+import RecipeCard from "../../../components/RecipeCard.astro";
 
 export async function getStaticPaths() {
 	const recipes = await getCollection('recipes');
-	return recipes.map(entry => ({
-		params: { slug: entry.slug }, props: { entry },
-	}));
+
+	const byMethod = new Map()
+	recipes.forEach(recipe => {
+		// Folders inside recipes mean method
+		const method = recipe.slug.split('/')[0];
+		if (!method) {
+			return
+		}
+		const collection = byMethod.get(method) ?? [];
+		collection.push(recipe);
+		byMethod.set(method, collection)
+	})
+
+	return [
+		...[...byMethod.entries()].map(([key, value]) => {
+			return {
+				params: {slug: key}, props: {entries: value, method: key},
+			}
+		}),
+		...recipes.map(entry => ({
+			params: {slug: entry.slug}, props: {entry},
+		}))
+	];
 }
 
-const { entry } = Astro.props;
-const { Content } = await entry.render();
+const {entry, entries, method} = Astro.props;
+const {Content} = (await entry?.render()) ?? {};
 ---
 <Layout>
-	<h1>{entry.data.name}</h1>
-	<Content />
+	{Content ?
+		<>
+			<h1>{entry.data.name}</h1>
+			<Content/>
+		</> :
+		<>
+			<h1>{method}</h1>
+			<div>
+				{entries.map(p => (
+					<RecipeCard recipe={p} link={`recipes/${p.slug}`}/>
+				))}
+			</div>
+		</>}
 </Layout>
 
 
