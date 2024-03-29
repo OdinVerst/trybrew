@@ -8,24 +8,141 @@ interface Props {
 
 const {href, title, body} = Astro.props;
 const locale = Astro.currentLocale;
+
+import {getCollection} from "astro:content";
+import {globalTranslations} from "../i18n/global";
+
+const categories = [...new Set((await getCollection('recipes')).map(recipe => recipe.slug.split('/')[0])).values()]
+
+const globalMessages = globalTranslations(Astro.currentLocale)
 ---
 
-<header class="root">
-	<a href={getRelativeLocaleUrl(locale, '/')}>
-		<svg class="logo" xmlns="http://www.w3.org/2000/svg" width="130" height="25" role="img"
-			 aria-label="Try brew logo" viewBox="0 0 120.1 23">
-			<path
-				d="M72 6.3c0-2.7-1.2-4.4-3.7-5.2-2-.7-4.5-.7-7.2-.7h-7V22h2.8v-9.7H62.2l5.4 9.7h3.1l-5.4-9.8c1.1 0 2.1-.2 3-.5C70.8 10.8 72 9 72 6.3ZM57 9.5V3.2H61c6.3 0 8.2.4 8.2 3.1 0 2.5-1.1 3.2-8.2 3.2h-4.2ZM92.6 11.5C92.6 5 89.1 0 84.6 0s-8 5-8 11.5 3.6 11.5 8 11.5c2.3 0 4.4-1.3 5.9-3.6L88 18c-.5.9-1.7 2.3-3.5 2.3-2.5 0-5.2-3.5-5.2-8.8h13.2Zm-8-8.8c2 0 4.2 2.3 5 6l-.2.1H80c-.1 0-.2 0-.2-.2.8-3.6 3-6 5-6ZM44.7 13.5c-2-.4-4.3-.4-7.1-.4h-4.2V9.2h4.2c2.8 0 5.2 0 7-.4 3.3-.7 4-2.6 4-4s-.7-3.4-4-4.2c-1.8-.4-4.2-.4-7-.4h-7v21.9h7c2.8 0 5.2 0 7-.4 3.3-.7 4-2.6 4-4s-.7-3.4-4-4.2Zm1-8.8c0 1.5-2.3 1.7-8.1 1.7h-4.2V3h4.2c5.8 0 8.2.2 8.2 1.7Zm-8.1 14.6h-4.2V16h4.2c5.8 0 8.2.2 8.2 1.7s-2.4 1.7-8.2 1.7ZM15.1.2c-.8-.2-2-.2-3.3-.2H8.6v10.1h1.3V4.3h2l3 5.8h1.5l-3-5.9 1.7-.1c1.5-.4 1.9-1.3 1.9-2S16.6.6 15 .2ZM11.8 3h-2V1.3h2c2.7 0 3.9.2 3.9.9s-1.2.8-3.9.8ZM0 1.3h2.4v8.8h1.3V1.3h2.4V.1H0v1.2zM22.5 3.9 20.1 0h-1.4l3 5.2-2.8 4.9h1.6L26.3 0h-1.6l-2.2 3.9zM117.2.2 114.7 16c-1.2-3-3.2-6-6-6.2s-.2 0-.2 0h-.2c-3 .2-4.9 3.1-6.1 6.2L99.7.2h-2.9l3.6 22.6h2.8c.7-4 2.8-10 5.2-10 2.4 0 4.6 6 5.3 10h2.8L120 .2h-3Z"/>
-		</svg>
-	</a>
+<header class="root" id="header">
+	<div class="wrapper">
+		<a class="link" href={getRelativeLocaleUrl(locale, '/')}>
+			<svg class="logo" xmlns="http://www.w3.org/2000/svg" width="130" height="25" role="img"
+				 aria-label="Try brew logo" viewBox="0 0 120.1 23">
+				<path
+					d="M72 6.3c0-2.7-1.2-4.4-3.7-5.2-2-.7-4.5-.7-7.2-.7h-7V22h2.8v-9.7H62.2l5.4 9.7h3.1l-5.4-9.8c1.1 0 2.1-.2 3-.5C70.8 10.8 72 9 72 6.3ZM57 9.5V3.2H61c6.3 0 8.2.4 8.2 3.1 0 2.5-1.1 3.2-8.2 3.2h-4.2ZM92.6 11.5C92.6 5 89.1 0 84.6 0s-8 5-8 11.5 3.6 11.5 8 11.5c2.3 0 4.4-1.3 5.9-3.6L88 18c-.5.9-1.7 2.3-3.5 2.3-2.5 0-5.2-3.5-5.2-8.8h13.2Zm-8-8.8c2 0 4.2 2.3 5 6l-.2.1H80c-.1 0-.2 0-.2-.2.8-3.6 3-6 5-6ZM44.7 13.5c-2-.4-4.3-.4-7.1-.4h-4.2V9.2h4.2c2.8 0 5.2 0 7-.4 3.3-.7 4-2.6 4-4s-.7-3.4-4-4.2c-1.8-.4-4.2-.4-7-.4h-7v21.9h7c2.8 0 5.2 0 7-.4 3.3-.7 4-2.6 4-4s-.7-3.4-4-4.2Zm1-8.8c0 1.5-2.3 1.7-8.1 1.7h-4.2V3h4.2c5.8 0 8.2.2 8.2 1.7Zm-8.1 14.6h-4.2V16h4.2c5.8 0 8.2.2 8.2 1.7s-2.4 1.7-8.2 1.7ZM15.1.2c-.8-.2-2-.2-3.3-.2H8.6v10.1h1.3V4.3h2l3 5.8h1.5l-3-5.9 1.7-.1c1.5-.4 1.9-1.3 1.9-2S16.6.6 15 .2ZM11.8 3h-2V1.3h2c2.7 0 3.9.2 3.9.9s-1.2.8-3.9.8ZM0 1.3h2.4v8.8h1.3V1.3h2.4V.1H0v1.2zM22.5 3.9 20.1 0h-1.4l3 5.2-2.8 4.9h1.6L26.3 0h-1.6l-2.2 3.9zM117.2.2 114.7 16c-1.2-3-3.2-6-6-6.2s-.2 0-.2 0h-.2c-3 .2-4.9 3.1-6.1 6.2L99.7.2h-2.9l3.6 22.6h2.8c.7-4 2.8-10 5.2-10 2.4 0 4.6 6 5.3 10h2.8L120 .2h-3Z"/>
+			</svg>
+		</a>
+		<button class="burger" id="menuButton" aria-label={globalMessages.menu} />
+	</div>
+	<div class="menu">
+		<nav class="nav">
+			<p class="separatorText">{globalMessages.sections}</p>
+			<ul class="navList">
+				{categories.map(category => (
+					<li><a href={`/${Astro.currentLocale}/${category}/`}>{globalMessages[category]}</a></li>
+				))}
+			</ul>
+			<a href={`/${Astro.currentLocale}/settings`}>{globalMessages.settings}</a>
+			<a href={`/${Astro.currentLocale}/about`}>{globalMessages.about}</a>
+		</nav>
+	</div>
 </header>
 
 <style>
 	.root {
 		padding: 12px 24px;
+		box-shadow: var(--common-box-shadow);
+		margin-bottom: 30px;
+		background-color: var(--color-secondary-background);
+	}
+
+	.wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.link {
+		display: flex;
+		text-decoration: none;
+		color: inherit;
 	}
 
 	.logo {
 		fill: currentColor;
 	}
+
+	.burger {
+		position: relative;
+		background: transparent;
+		border: none;
+		padding: 6px;
+		width: 48px;
+		height: 48px;
+	}
+
+	.burger::before,
+	.burger::after {
+		position: absolute;
+		content: '';
+		top: 50%;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background: var(--color-text);
+		transition: 0.2s;
+	}
+
+	.burger::before {
+		transform: translateY(-100%);
+	}
+
+	.burger::after {
+		transform: translateY(100%);
+	}
+
+	.root.open .burger::after {
+		transform: rotate(45deg);
+	}
+
+	.root.open .burger::before {
+		transform: rotate(-45deg);
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.root.open .menu {
+		display: block;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+		font-size: 1.1em;
+		font-weight: bold;
+		padding: 15px 10px 35px;
+		position: relative;
+		gap: 18px;
+		color: var(--color-text);
+	}
+
+	.nav a {
+		color: var(--color-text);
+	}
+
+	.navList {
+		list-style-type: none;
+		margin: 0;
+		padding-left: 20px;
+	}
+
+	.navList > li:not(:first-child) {
+		margin-block-start: 12px;
+	}
+
+	.separatorText {
+		margin: 0;
+	}
 </style>
+
+<script>
+	const menuButton = document.querySelector('#menuButton');
+	const header = document.querySelector('#header')
+	if (menuButton && header) menuButton.addEventListener('click', () => header.classList.toggle('open'));
+</script>
