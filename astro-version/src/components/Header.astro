@@ -12,9 +12,11 @@ const locale = Astro.currentLocale;
 import {getCollection} from "astro:content";
 import {globalTranslations} from "../i18n/global";
 
+if (!locale) return;
+
 const categories = [...new Set((await getCollection('recipes')).map(recipe => recipe.slug.split('/')[0])).values()]
 
-const globalMessages = globalTranslations(Astro.currentLocale)
+const globalMessages = globalTranslations(locale)
 ---
 
 <header class="root" id="header">
@@ -33,11 +35,11 @@ const globalMessages = globalTranslations(Astro.currentLocale)
 			<p class="separatorText">{globalMessages.sections}</p>
 			<ul class="navList">
 				{categories.map(category => (
-					<li><a href={`/${Astro.currentLocale}/recipes/${category}/`}>{globalMessages[category]}</a></li>
+					<li><a href={`/${locale}/recipes/${category}/`}>{globalMessages[category]}</a></li>
 				))}
 			</ul>
-			<a href={`/${Astro.currentLocale}/settings`}>{globalMessages.settings}</a>
-			<a href={`/${Astro.currentLocale}/about`}>{globalMessages.about}</a>
+			<a href={`/${locale}/settings`}>{globalMessages.settings}</a>
+			<a href={`/${locale}/about`}>{globalMessages.about}</a>
 		</nav>
 	</div>
 </header>
