@@ -14,6 +14,7 @@ const recipesCollection = defineCollection(
 			author: z.string(),
 			authorImg: z.string().optional(),
 			recipeLink: z.string().optional(),
+			steps: z.array(z.any()).optional()
 		}),
 	});
 

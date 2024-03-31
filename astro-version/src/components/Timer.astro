@@ -1,0 +1,217 @@
+---
+interface Props {
+	steps: {
+		description: string | null;
+		time: number;
+		water: number;
+	}
+}
+
+const {steps} = Astro.props
+---
+
+<div data-steps={JSON.stringify(steps)} id="timer-root">
+	<div class="wrapper">
+		<svg viewBox="0 0 200 200">
+			<!-- Background Circle -->
+			<circle cx="100" cy="100" r="90" fill="none" class="baseArc" stroke-width="8"></circle>
+			<!-- Progress Arc -->
+			<circle id="progressArc" cx="100" cy="100" r="90" fill="none" class="progressArc" stroke-width="8"
+					stroke-linecap="round"
+			></circle>
+		</svg>
+		<div class="time segmented-1" id="time"></div>
+		<div class="steps">
+			<div class="step" id="step">
+				<div id="description"></div>
+				<div id="totalWeight"></div>
+			</div>
+			<!--<div class="nextStep" id="nextStep">-->
+			<!--</div>-->
+		</div>
+	</div>
+	<div>
+		<button id="startTimer">Start</button>
+		<button id="stopTimer">Stop</button>
+		<button id="stopBrew">Reset</button>
+	</div>
+</div>
+
+
+<style>
+	.wrapper {
+		position: relative;
+		width: 500px;
+		height: 500px;
+	}
+
+	.time {
+		position: absolute;
+		left: 50%;
+		top: 70%;
+		transform: translate(-50%, -50%);
+		font-family: 'Segmented', sans-serif;
+		font-variant-numeric: tabular-nums;
+		font-size: 50px;
+	}
+
+	@font-palette-values --segmented-1 {
+		font-family: Segmented;
+		override-colors: 0 oklch(0 0 0), 1 oklch(0 0 0 / 0.08);
+	}
+
+	.segmented-1 {
+		font-family: Segmented;
+		font-palette: --segmented-1;
+		/*font-feature-settings: 'ss${formattedCurrentStyleNumber}' on;*/
+		font-variation-settings: 'wght' 600, 'wdth' 100, 'slnt' 5;
+	}
+
+	.steps {
+		position: absolute;
+		left: 50%;
+		top: 40%;
+		transform: translate(-50%, -50%);
+	}
+
+	.step {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		text-align: center;
+		gap: 12px;
+		font-size: 30px;
+		color: var(--text-primary);
+	}
+
+	.nextStep {
+		margin-block-start: 12px;
+		color: var(--text-secondary);
+	}
+
+	.baseArc {
+		stroke: oklch(0 0 0 / 0.08);
+	}
+
+	.progressArc {
+		stroke: oklch(0 0 0);
+	}
+</style>
+
+<script>
+	let startTime: number;
+	let elapsedTime = 0;
+	let isRunning = false;
+	let stepIndex = 0
+	let reverseTimer = true;
+
+	const root = document.getElementById("timer-root")
+	const timeSlot = document.getElementById("time")
+	const descriptionSlot = document.getElementById("description")
+	const totalWeightSlot = document.getElementById("totalWeight")
+	const nextStepSlot = document.getElementById("nextStep")
+	const progressArc = document.getElementById("progressArc")
+
+	const steps = JSON.parse(root.dataset.steps).map(it => ({
+		...it,
+		time: it.time * 1000
+	}))
+
+	let step = steps[stepIndex]
+	let nextStep = steps[stepIndex + 1]
+	let timeLeft = 0
+
+	function updateStep(index: number) {
+		stepIndex = index
+		step = steps[stepIndex]
+		nextStep = steps[stepIndex + 1]
+		descriptionSlot.textContent = step.description
+		totalWeightSlot.textContent = `${step.water}g`
+		// nextStepSlot.textContent = nextStep ? nextStep.description : "";
+	}
+
+	function updateTime(time: number) {
+		elapsedTime = time
+		timeLeft = step.time - time
+		const displayTime = reverseTimer ? timeLeft: elapsedTime
+		timeSlot.textContent = formatTime(displayTime)
+		progressArc.setAttribute("stroke-dasharray", getDashArray((displayTime / step.time) * 100))
+	}
+
+	function startTimer() {
+		isRunning = true;
+		startTime = performance.now() - elapsedTime;
+		requestAnimationFrame(updateTimer);
+	}
+
+	function stopTimer() {
+		isRunning = false;
+	}
+
+	function resetTimer() {
+		stopTimer();
+		updateTime(0);
+	}
+
+	function updateTimer(currentTime: number) {
+		if (!isRunning) return;
+
+		updateTime(currentTime - startTime);
+
+		if (elapsedTime > step.time) {
+			resetTimer()
+			if (stepIndex + 1 >= steps.length) {
+				console.debug("stopping brew", stepIndex, steps.length)
+				stopBrew()
+			} else {
+				updateStep(stepIndex + 1)
+				startTimer()
+			}
+		}
+
+		requestAnimationFrame(updateTimer);
+	}
+
+	function formatTime(time: number) {
+		const totalMilliseconds = Math.floor(time);
+		const minutes = Math.floor((totalMilliseconds % 3600_000) / 60_000);
+		const seconds = Math.floor((totalMilliseconds % 60_000) / 1000);
+		// const milliseconds = totalMilliseconds % 1000;
+
+		return pad(minutes) + ":" + pad(seconds);
+		// + ":" + milliseconds.toString().padStart(3, "0");
+	}
+
+	function getDashArray(percent) {
+		const circumference = 2 * Math.PI * 90;
+		const dashArray = circumference * (percent / 100);
+		return `${dashArray} ${circumference}`;
+	}
+
+	function pad(value: number) {
+		return value < 10 ? "0" + value : value;
+	}
+
+	function stopBrew() {
+		updateStep(0)
+		resetTimer()
+	}
+
+	const startTimerBtn = document.getElementById("startTimer")
+	const stopTimerBtn = document.getElementById("stopTimer")
+	const stopBrewBtn = document.getElementById("stopBrew")
+
+	startTimerBtn.addEventListener('click', () => {
+		startTimer()
+	})
+
+	stopTimerBtn.addEventListener('click', () => {
+		stopTimer()
+	})
+
+	stopBrewBtn.addEventListener('click', () => {
+		stopBrew()
+	})
+
+	stopBrew()
+</script>

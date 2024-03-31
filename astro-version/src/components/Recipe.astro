@@ -1,0 +1,43 @@
+---
+import {Icon} from "astro-icon/components";
+interface Props {
+	recipe: CollectionEntry<'pourover'>
+}
+
+const { recipe } = Astro.props
+
+const properties = [
+	{name: 'coffeeWeight', icon: 'coffee'},
+	{name: 'water', icon: 'water'},
+	{name: 'time', icon: 'time'},
+	{name: 'temperature', icon: 'temperature'}
+]
+---
+
+<div>
+	<div class="properties">
+		{properties.map(it => {
+			const value = recipe[it.name]
+			if (!value) {
+				return
+			}
+			return <div class="property">
+				<Icon name={it.icon}/>
+				{recipe[it.name]}
+			</div>
+		})}
+	</div>
+	<div>
+		{recipe.steps.map(it => {
+			return it.description
+		})}
+	</div>
+</div>
+
+<style>
+	.properties {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+	}
+</style>

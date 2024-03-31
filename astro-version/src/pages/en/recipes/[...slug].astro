@@ -2,6 +2,8 @@
 import {getCollection} from 'astro:content';
 import Layout from "../../../layouts/Layout.astro";
 import RecipeCard from "../../../components/RecipeCard.astro";
+import Timer from "../../../components/Timer.astro";
+import {consoleLogDestination} from "astro/dist/core/logger/console";
 
 export async function getStaticPaths() {
 	const recipes = await getCollection('recipes');
@@ -31,13 +33,19 @@ export async function getStaticPaths() {
 }
 
 const {entry, entries, method} = Astro.props;
+
 const {Content} = (await entry?.render()) ?? {};
 ---
 <Layout>
 	{Content ?
 		<>
 			<h1>{entry.data.name}</h1>
-			<Content/>
+			<div class="wrapper">
+				<div>
+					<Content/>
+				</div>
+				<Timer steps={entry.data.steps} />
+			</div>
 		</> :
 		<>
 			<h1>{method}</h1>
@@ -48,5 +56,11 @@ const {Content} = (await entry?.render()) ?? {};
 			</div>
 		</>}
 </Layout>
+
+<style>
+	.wrapper {
+		display: flex;
+	}
+</style>
 
 

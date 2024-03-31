@@ -1,6 +1,8 @@
 :root {
     --color-background: white;
     --color-text: black;
+    --text-primary: black;
+    --text-secondary: #505050;
 
     --fill-icons: black;
 
@@ -24,6 +26,8 @@
 html[data-theme='dark'] {
     --color-background: #514f4f;
     --color-text: white;
+    --text-primary: white;
+    --text-secondary: #cccccc;
 
     --fill-icons: white;
 
