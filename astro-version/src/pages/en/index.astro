@@ -3,11 +3,13 @@ import {getCollection} from "astro:content";
 import Layout from '../../layouts/Layout.astro';
 import Section from "../../components/Section.astro";
 import RecipeCard from "../../components/RecipeCard.astro";
+import {globalTranslations} from "../../i18n/global";
 
 const title = "Try brew"
 
 const recipes = await getCollection('recipes');
 const byMethod = new Map()
+const locale = Astro.currentLocale;
 recipes.forEach(recipe => {
 	// Folders inside recipes mean method
 	const method = recipe.slug.split('/')[0];
@@ -18,29 +20,38 @@ recipes.forEach(recipe => {
 	collection.push(recipe);
 	byMethod.set(method, collection)
 })
+const messages = globalTranslations(locale)
 ---
 
 <Layout title={title}>
 	{Array.from(byMethod.entries()).map(([method, recipes]) => {
-		return <Section baseId={`${method}-section`}>
-			<div class="title" slot="title">{method}</div>
-			<div class="section">
-				{recipes.map(p => (
-					<RecipeCard recipe={p} link={`recipes/${p.slug}`} />
-				))}
-			</div>
-		</Section>
+		return <div class="section">
+			<Section baseId={`${method}-section`}>
+				<div class="title" slot="title">{messages[method]}</div>
+				<div class="recipes">
+					{recipes.map(p => (
+						<RecipeCard recipe={p} link={`recipes/${p.slug}`}/>
+					))}
+				</div>
+			</Section>
+		</div>
 	})}
 </Layout>
 
 <style>
-	.title {
-		font-size: 32px;
+	.section {
+		margin-block-end: 36px;
 	}
 
-	.section {
+	.title {
+		font-size: 24px;
+		text-transform: capitalize;
+		padding-inline-start: 16px;
+	}
+
+	.recipes {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, 400px);
+		grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
 		gap: 32px;
 	}
 </style>

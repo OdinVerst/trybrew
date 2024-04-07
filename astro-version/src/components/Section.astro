@@ -1,4 +1,6 @@
 ---
+import {Icon} from "astro-icon/components";
+
 interface Props {
 	baseId: string;
 }
@@ -9,12 +11,13 @@ const buttonId = `${baseId}__btn`
 ---
 
 <div>
-	<h3>
+	<h2>
 		<button class='btn' type="button" aria-expanded="true" aria-controls={sectionId} id={buttonId}
 				data-accordion-toggle>
 			<slot name="title"></slot>
+			<Icon name="chevron-down" class="chevron" />
 		</button>
-	</h3>
+	</h2>
 	<div id={sectionId} role="region" aria-labelledby={buttonId}>
 		<slot/>
 	</div>
@@ -25,7 +28,20 @@ const buttonId = `${baseId}__btn`
 		appearance: none;
 		border: none;
 		background: none;
-		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		cursor: pointer;
+	}
+
+	.btn[aria-expanded="false"] .chevron {
+		transform: rotate(180deg);
+	}
+
+	.chevron {
+		width: 32px;
+		height: 32px;
 	}
 </style>
 

@@ -3,15 +3,19 @@ import {getCollection} from 'astro:content';
 import Layout from "../../../layouts/Layout.astro";
 import RecipeCard from "../../../components/RecipeCard.astro";
 import Timer from "../../../components/Timer.astro";
-import {consoleLogDestination} from "astro/dist/core/logger/console";
+import {getRelativeLocaleUrl} from "astro:i18n";
 
 export async function getStaticPaths() {
 	const recipes = await getCollection('recipes');
 
+	function extractMethod(slug: string) {
+		// Folders inside recipes mean method
+		return slug.split('/')[0]
+	}
+
 	const byMethod = new Map()
 	recipes.forEach(recipe => {
-		// Folders inside recipes mean method
-		const method = recipe.slug.split('/')[0];
+		const method = extractMethod(recipe.slug);
 		if (!method) {
 			return
 		}
@@ -27,7 +31,7 @@ export async function getStaticPaths() {
 			}
 		}),
 		...recipes.map(entry => ({
-			params: {slug: entry.slug}, props: {entry},
+			params: {slug: entry.slug}, props: {entry, method: extractMethod(entry.slug)},
 		}))
 	];
 }
@@ -38,17 +42,9 @@ const {Content} = (await entry?.render()) ?? {};
 ---
 <Layout>
 	{Content ?
+		<Content/> :
 		<>
-			<h1>{entry.data.name}</h1>
-			<div class="wrapper">
-				<div>
-					<Content/>
-				</div>
-				<Timer steps={entry.data.steps} />
-			</div>
-		</> :
-		<>
-			<h1>{method}</h1>
+			<h1 class="title">{method}</h1>
 			<div>
 				{entries.map(p => (
 					<RecipeCard recipe={p} link={`recipes/${p.slug}`}/>

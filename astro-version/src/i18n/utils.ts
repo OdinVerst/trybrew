@@ -1,7 +1,7 @@
 import {createI18n, type Translations} from "@nanostores/i18n";
 import {atom} from "nanostores";
 
-export function t<T extends Translations>(locale: string, componentName: string, translations: { en: T, ru: any }) {
+export function t<T extends Translations>(locale: string, componentName: string, translations: { en: T, ru: Record<keyof T, string> }) {
 	const i18n = createI18n(atom(locale), {
 		async get() {
 			return {}

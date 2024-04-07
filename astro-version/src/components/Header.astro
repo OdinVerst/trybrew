@@ -69,12 +69,14 @@ const globalMessages = globalTranslations(locale)
 	}
 
 	.burger {
+		--padding: 8px;
 		position: relative;
 		background: transparent;
 		border: none;
-		padding: 6px;
+		padding: var(--padding);
 		width: 48px;
 		height: 48px;
+		cursor: pointer;
 	}
 
 	.burger::before,
@@ -82,8 +84,8 @@ const globalMessages = globalTranslations(locale)
 		position: absolute;
 		content: '';
 		top: 50%;
-		left: 0;
-		width: 100%;
+		left: var(--padding);
+		width: calc(100% - var(--padding) * 2);
 		height: 3px;
 		background: var(--color-text);
 		transition: 0.2s;
