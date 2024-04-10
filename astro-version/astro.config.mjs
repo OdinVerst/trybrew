@@ -1,16 +1,22 @@
-import { defineConfig } from 'astro/config';
-import mdx from '@astrojs/mdx';
-import icon from "astro-icon";
+import mdx from '@astrojs/mdx'
+import icon from 'astro-icon'
+import { defineConfig } from 'astro/config'
 
-// https://astro.build/config
 export default defineConfig({
-  output: 'static',
+  devToolbar: {
+    enabled: false
+  },
   i18n: {
-    defaultLocale: "en",
-    locales: ["en", "ru"],
+    defaultLocale: 'en',
+    locales: ['en', 'ru'],
     routing: {
-      prefixDefaultLocale: true
+      prefixDefaultLocale: true,
+      redirectToDefaultLocale: true
     }
   },
-  integrations: [icon(), mdx()]
-});
+  integrations: [
+    icon(),
+    mdx()
+  ],
+  output: 'static'
+})

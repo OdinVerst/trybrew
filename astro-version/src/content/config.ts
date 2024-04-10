@@ -1,23 +1,24 @@
-import {defineCollection, z} from 'astro:content';
+import { defineCollection, z } from 'astro:content'
 
-const recipesCollection = defineCollection(
-	{
-		type: 'content', schema: z.object({
-			title: z.string(),
-			description: z.string(),
-			tags: z.array(z.string()).or(z.string()),
-			name: z.string(),
-			time: z.string().optional(),
-			water: z.string(),
-			temperature: z.string().optional(),
-			coffeeWeight: z.string(),
-			author: z.string(),
-			authorImg: z.string().optional(),
-			recipeLink: z.string().optional(),
-			steps: z.array(z.any()).optional()
-		}),
-	});
+const recipesCollection = defineCollection({
+  schema: z.object({
+    author: z.string(),
+    authorImg: z.string().optional(),
+    coffeeWeight: z.string(),
+    description: z.string(),
+    method: z.string(),
+    name: z.string(),
+    recipeLink: z.string().optional(),
+    steps: z.array(z.any()).optional(),
+    tags: z.array(z.string()).or(z.string()),
+    temperature: z.string().optional(),
+    time: z.string().optional(),
+    title: z.string(),
+    water: z.string()
+  }),
+  type: 'content'
+})
 
 export const collections = {
-	'recipes': recipesCollection,
-};
+  recipes: recipesCollection
+}

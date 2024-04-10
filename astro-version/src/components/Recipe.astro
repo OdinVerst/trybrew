@@ -1,75 +1,89 @@
 ---
-import {Icon} from "astro-icon/components";
-import {getRelativeLocaleUrl} from "astro:i18n";
-interface Props {
-	frontmatter: CollectionEntry<'pourover'>
-}
+import type { MDXLayoutProps } from 'astro'
+import type { CollectionEntry } from 'astro:content'
 
-const {frontmatter: recipe} = Astro.props
+import { Icon } from 'astro-icon/components'
+import { getRelativeLocaleUrl } from 'astro:i18n'
+
+type Entry = CollectionEntry<'recipes'>
+type Props = MDXLayoutProps<Omit<Entry, 'data'> & Entry['data']>
+
+const { frontmatter: recipe } = Astro.props
+
+const locale = Astro.currentLocale || 'en'
 
 const properties = [
-	{name: 'coffeeWeight', icon: 'coffee'},
-	{name: 'water', icon: 'water'},
-	{name: 'time', icon: 'time'},
-	{name: 'temperature', icon: 'temperature'}
-]
+  { icon: 'coffee', name: 'coffeeWeight' },
+  { icon: 'water', name: 'water' },
+  { icon: 'time', name: 'time' },
+  { icon: 'temperature', name: 'temperature' }
+] as const
 ---
 
 <div class="root">
-	<h1 class="title">
-		<a href={getRelativeLocaleUrl(Astro.currentLocale, `/recipes/${recipe.method}`)}>{recipe.method}</a>
-		/ {recipe.name}</h1>
-	<div class="properties">
-		{properties.map(it => {
-			const value = recipe[it.name]
-			if (!value) {
-				return
-			}
-			return	<div class="property">
-				<Icon name={it.icon}/>
-				{recipe[it.name]}
-			</div>
-		})}
-	</div>
-	<div>
-		{recipe.steps ?
-			<>
-				<h2>Recipe</h2>
-				<table>
-					<thead>
-					<tr>
-						<th>Time</th>
-						<th>Weight</th>
-						<th>Notes</th>
-					</tr>
-					</thead>
-					<tbody>
-					{recipe.steps.map(it => {
-						return <tr>
-							<td>{it.time}</td>
-							<td>{it.water} gr.</td>
-							<td>{it.description}</td>
-						</tr>
-					})}
-					</tbody>
-				</table>
-			</> : null}
-		<slot />
-	</div>
+  <h1 class="title">
+    <a href={getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)}>{recipe.method}</a>
+    / {recipe.name}
+  </h1>
+  <div class="properties">
+    {
+      properties
+        .filter(it => recipe[it.name])
+        .map(it => (
+          <div class="property">
+            <Icon name={it.icon} />
+            {recipe[it.name]}
+          </div>
+        ))
+    }
+  </div>
+  <div>
+    {
+      recipe.steps
+        ? (
+        <>
+          <h2>Recipe</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Weight</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              {recipe.steps.map(it => {
+                return (
+                  <tr>
+                    <td>{it.time}</td>
+                    <td>{it.water} gr.</td>
+                    <td>{it.description}</td>
+                  </tr>
+                )
+              })}
+            </tbody>
+          </table>
+        </>
+          )
+        : null
+    }
+    <slot />
+  </div>
 </div>
 
 <style>
-	.title {
-		text-transform: capitalize;
-	}
+  .title {
+    text-transform: capitalize;
+  }
 
-	.properties {
-		display: flex;
-		align-items: center;
-		gap: 12px;
-	}
+  .properties {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
 
-	th, td {
-		padding: 6px 12px;
-	}
+  th,
+  td {
+    padding: 6px 12px;
+  }
 </style>

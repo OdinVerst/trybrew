@@ -1,0 +1,9 @@
+{
+  "title": "Настройки - Try brew",
+  "header": "Настройки",
+  "theme": "Тема",
+  "language": "Язык",
+  "theme.system": "Системная",
+  "theme.dark": "Темная",
+  "theme.light": "Светлая"
+}

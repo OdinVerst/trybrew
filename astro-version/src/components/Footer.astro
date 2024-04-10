@@ -1,45 +1,35 @@
----
-interface Props {
-	title: string;
-	body: string;
-	href: string;
-}
-
-const { href, title, body } = Astro.props;
----
-
 <footer class="footer">
-	<p>
-		Source code <a href="https://github.com/OdinVerst/trybrew" target="_blank">GitHub</a>
-	</p>
+  <p>
+    Source code <a href="https://github.com/OdinVerst/trybrew" target="_blank">GitHub</a>
+  </p>
 </footer>
 
 <style>
-	.footer {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-		background-color: var(--color-secondary-background);
-		text-align: center;
-		padding: 12px;
-		border-top: 1px solid var(--color-footer-boder);
-	}
+    background-color: var(--color-secondary-background);
+    text-align: center;
+    padding: 12px;
+    border-top: 1px solid var(--color-footer-boder);
+  }
 
-	.footer a {
-		color: var(--color-link-text);
-	}
+  .footer a {
+    color: var(--color-link-text);
+  }
 
-	.footer p:not(:last-of-type) {
-		margin-right: 1em;
-	}
+  .footer p:not(:last-of-type) {
+    margin-right: 1em;
+  }
 
-	@media screen and (max-width: 600px) {
-		.footer {
-			display: block;
-		}
-		.footer p:not(:last-of-type) {
-			margin-right: 0;
-		}
-	}
+  @media screen and (max-width: 600px) {
+    .footer {
+      display: block;
+    }
+    .footer p:not(:last-of-type) {
+      margin-right: 0;
+    }
+  }
 </style>

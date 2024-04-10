@@ -1,62 +1,58 @@
 ---
-import {getCollection} from 'astro:content';
-import Layout from "../../../layouts/Layout.astro";
-import RecipeCard from "../../../components/RecipeCard.astro";
-import Timer from "../../../components/Timer.astro";
-import {getRelativeLocaleUrl} from "astro:i18n";
+import type { CollectionEntry } from 'astro:content'
 
-export async function getStaticPaths() {
-	const recipes = await getCollection('recipes');
+import { getCollection } from 'astro:content'
 
-	function extractMethod(slug: string) {
-		// Folders inside recipes mean method
-		return slug.split('/')[0]
-	}
+import RecipeCard from '../../../components/RecipeCard.astro'
+import Layout from '../../../layouts/Layout.astro'
+import { extractMethod, getRecipesByMethod } from '../../../utils'
 
-	const byMethod = new Map()
-	recipes.forEach(recipe => {
-		const method = extractMethod(recipe.slug);
-		if (!method) {
-			return
-		}
-		const collection = byMethod.get(method) ?? [];
-		collection.push(recipe);
-		byMethod.set(method, collection)
-	})
-
-	return [
-		...[...byMethod.entries()].map(([key, value]) => {
-			return {
-				params: {slug: key}, props: {entries: value, method: key},
-			}
-		}),
-		...recipes.map(entry => ({
-			params: {slug: entry.slug}, props: {entry, method: extractMethod(entry.slug)},
-		}))
-	];
+interface Props {
+  entries: CollectionEntry<'recipes'>[]
+  entry: CollectionEntry<'recipes'>
+  method: string
 }
 
-const {entry, entries, method} = Astro.props;
+const { entries, entry, method } = Astro.props
 
-const {Content} = (await entry?.render()) ?? {};
+const { Content } = (await entry?.render()) ?? {}
+
+export async function getStaticPaths () {
+  const recipes = await getCollection('recipes')
+  const recipesByMethod = await getRecipesByMethod()
+
+  return [
+    ...recipesByMethod.map(([key, value]) => {
+      return {
+        params: { slug: key },
+        props: { entries: value, method: key }
+      }
+    }),
+    ...recipes.map(entry => ({
+      params: { slug: entry.slug },
+      props: { entry, method: extractMethod(entry.slug) }
+    }))
+  ]
+}
 ---
+
 <Layout>
-	{Content ?
-		<Content/> :
-		<>
-			<h1 class="title">{method}</h1>
-			<div>
-				{entries.map(p => (
-					<RecipeCard recipe={p} link={`recipes/${p.slug}`}/>
-				))}
-			</div>
-		</>}
+  {
+    Content
+      ? <Content />
+      : (
+          <h1 class="title">{method}</h1>
+          <div>
+            {entries.map(recipe => (
+              <RecipeCard {recipe} />
+            ))}
+          </div>
+        )
+  }
 </Layout>
 
 <style>
-	.wrapper {
-		display: flex;
-	}
+  .wrapper {
+    display: flex;
+  }
 </style>
-
-

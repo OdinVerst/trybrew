@@ -1,62 +1,69 @@
 ---
-import {Icon} from "astro-icon/components";
+import { Icon } from 'astro-icon/components'
 
 interface Props {
-	baseId: string;
+  baseId: string
 }
 
-const {baseId} = Astro.props;
+const { baseId } = Astro.props
 const sectionId = `${baseId}__section`
 const buttonId = `${baseId}__btn`
 ---
 
 <div>
-	<h2>
-		<button class='btn' type="button" aria-expanded="true" aria-controls={sectionId} id={buttonId}
-				data-accordion-toggle>
-			<slot name="title"></slot>
-			<Icon name="chevron-down" class="chevron" />
-		</button>
-	</h2>
-	<div id={sectionId} role="region" aria-labelledby={buttonId}>
-		<slot/>
-	</div>
+  <h2>
+    <button
+      aria-controls={sectionId}
+      aria-expanded="true"
+      class="btn"
+      data-accordion-toggle
+      id={buttonId}
+      type="button"
+    >
+      <slot name="title" />
+      <Icon class="chevron" name="chevron-down" />
+    </button>
+  </h2>
+  <div aria-labelledby={buttonId} id={sectionId} role="region">
+    <slot />
+  </div>
 </div>
 
 <style>
-	.btn {
-		appearance: none;
-		border: none;
-		background: none;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		width: 100%;
-		cursor: pointer;
-	}
+  .btn {
+    appearance: none;
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+  }
 
-	.btn[aria-expanded="false"] .chevron {
-		transform: rotate(180deg);
-	}
+  .btn[aria-expanded='false'] .chevron {
+    transform: rotate(180deg);
+  }
 
-	.chevron {
-		width: 32px;
-		height: 32px;
-	}
+  .chevron {
+    width: 32px;
+    height: 32px;
+  }
 </style>
 
 <script>
-	const buttons = document.querySelectorAll(`button[data-accordion-toggle]`);
-	buttons.forEach(button => {
-		button.addEventListener('click', () => {
-			const isOpen = button.getAttribute('aria-expanded') === 'true'
-			button.setAttribute('aria-expanded', isOpen ? 'false' : 'true')
-			if (isOpen) {
-				document.querySelector(`#${button.getAttribute('aria-controls')}`).setAttribute('hidden', '')
-			} else {
-				document.querySelector(`#${button.getAttribute('aria-controls')}`).removeAttribute('hidden')
-			}
-		});
-	})
+const buttons = document.querySelectorAll('button[data-accordion-toggle]')
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    const el = document.querySelector(`#${button.getAttribute('aria-controls')}`)
+    if (!el) return
+    const isOpen = button.getAttribute('aria-expanded') === 'true'
+    button.setAttribute('aria-expanded', isOpen ? 'false' : 'true')
+    if (isOpen) {
+      el.setAttribute('hidden', '')
+    } else {
+      el.removeAttribute('hidden')
+    }
+  })
+})
 </script>
-

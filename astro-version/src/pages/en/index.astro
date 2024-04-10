@@ -1,57 +1,54 @@
 ---
-import {getCollection} from "astro:content";
-import Layout from '../../layouts/Layout.astro';
-import Section from "../../components/Section.astro";
-import RecipeCard from "../../components/RecipeCard.astro";
-import {globalTranslations} from "../../i18n/global";
+import RecipeCard from '../../components/RecipeCard.astro'
+import Section from '../../components/Section.astro'
+import { commonMessages } from '../../i18n/locales/common/en'
+import Layout from '../../layouts/Layout.astro'
+import { getRecipesByMethod } from '../../utils'
 
-const title = "Try brew"
+// TODO: move to i18n
+const title = 'Try brew'
 
-const recipes = await getCollection('recipes');
-const byMethod = new Map()
-const locale = Astro.currentLocale;
-recipes.forEach(recipe => {
-	// Folders inside recipes mean method
-	const method = recipe.slug.split('/')[0];
-	if (!method) {
-		return
-	}
-	const collection = byMethod.get(method) ?? [];
-	collection.push(recipe);
-	byMethod.set(method, collection)
-})
-const messages = globalTranslations(locale)
+const recipes = await getRecipesByMethod()
+
+const locale = Astro.currentLocale
+const messages = commonMessages(locale)
 ---
 
 <Layout title={title}>
-	{Array.from(byMethod.entries()).map(([method, recipes]) => {
-		return <div class="section">
-			<Section baseId={`${method}-section`}>
-				<div class="title" slot="title">{messages[method]}</div>
-				<div class="recipes">
-					{recipes.map(p => (
-						<RecipeCard recipe={p} link={`recipes/${p.slug}`}/>
-					))}
-				</div>
-			</Section>
-		</div>
-	})}
+  {
+    recipes.map(([method, recipesList]) => {
+      return (
+        <div class="section">
+          <Section baseId={`${method}-section`}>
+            <div class="title" slot="title">
+              {messages[method]}
+            </div>
+            <div class="recipes">
+              {recipesList.map(recipe => (
+                <RecipeCard {recipe} />
+              ))}
+            </div>
+          </Section>
+        </div>
+      )
+    })
+  }
 </Layout>
 
 <style>
-	.section {
-		margin-block-end: 36px;
-	}
+  .section {
+    margin-block-end: 36px;
+  }
 
-	.title {
-		font-size: 24px;
-		text-transform: capitalize;
-		padding-inline-start: 16px;
-	}
+  .title {
+    font-size: 24px;
+    text-transform: capitalize;
+    padding-inline-start: 16px;
+  }
 
-	.recipes {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-		gap: 32px;
-	}
+  .recipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 32px;
+  }
 </style>
