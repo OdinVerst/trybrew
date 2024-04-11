@@ -2,18 +2,20 @@
 title: Recipe for coffee filter Universal (Ninety Plus)
 description: Recipe V60 (Universal) | 170 ml | 10 gr
 
+name: Universal
+method: pourover
+
+properties:
+  time: '1:30'
+  water: '170 ml'
+  temperature: '92'
+  coffeeWeight: '10 gr'
+
+recipeLink: 'https://www.instagram.com/tv/CJ6E3gznh39/'
 tags: ['pourover']
 
-
-name: Universal
-
-time: '1:30'
-water: '170 ml'
-temperature: '92'
-coffeeWeight: '10 gr'
 author: 'Ninety Plus'
 authorImg: 'ninety-plus'
-recipeLink: 'https://www.instagram.com/tv/CJ6E3gznh39/'
 ---
 
 ## Recipe

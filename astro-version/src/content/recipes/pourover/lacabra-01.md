@@ -2,18 +2,19 @@
 title: Recipe for coffee filter Universal (La Cabra)
 description: Recipe V60 (Universal) | 210 ml | 14.5 gr
 
+name: Universal
+method: pourover
+
+properties:
+  time: '3:30'
+  water: '210 ml'
+  temperature: '96'
+  coffeeWeight: '14,5 gr'
+
+link: 'https://www.lacabra.dk/pages/v60-brew-guide'
 tags: ['pourover']
 
-
-name: Universal
-
-time: '3:30'
-water: '210 ml'
-temperature: '96'
-coffeeWeight: '14,5 gr'
 author: 'La Cabra'
-recipeLink: 'https://www.lacabra.dk/pages/v60-brew-guide'
-
 ---
 
 ## Recipe

@@ -2,18 +2,20 @@
 title: Recipe AeroPress Ethiopia natural processing (Locus)
 description: Recipe AeroPress (Ethiopia natural processing) | 220 ml | 30.5 gr
 
-tags: aeropress
-
-
 name: Ethiopia natural processing
+method: aeropress
 
-time: ''
-water: '220 ml'
-temperature: '85'
-coffeeWeight: '30,5 gr.'
+properties:
+  coffeeWeight: '30,5 gr.'
+  water: '220 ml'
+  time: ''
+  temperature: '85'
+
+link: 'https://www.instagram.com/locus.coffee/'
+tags: ['aeropress']
+
 author: 'Locus'
 authorImg: 'locus'
-linkRecipe: 'https://www.instagram.com/locus.coffee/'
 ---
 
 ## Recipe

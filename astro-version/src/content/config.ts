@@ -1,20 +1,23 @@
+/* eslint-disable perfectionist/sort-objects */
 import { defineCollection, z } from 'astro:content'
 
 const recipesCollection = defineCollection({
   schema: z.object({
-    author: z.string(),
-    authorImg: z.string().optional(),
-    coffeeWeight: z.string(),
-    description: z.string(),
-    method: z.string(),
-    name: z.string(),
-    recipeLink: z.string().optional(),
-    steps: z.array(z.any()).optional(),
-    tags: z.array(z.string()).or(z.string()),
-    temperature: z.string().optional(),
-    time: z.string().optional(),
     title: z.string(),
-    water: z.string()
+    description: z.string(),
+    name: z.string(),
+    method: z.string(),
+    properties: z.object({
+      coffeeWeight: z.string(),
+      water: z.string(),
+      time: z.string().optional(),
+      temperature: z.string().optional()
+    }),
+    tags: z.array(z.string()).or(z.string()),
+    link: z.string().optional(),
+    steps: z.array(z.any()).optional(),
+    author: z.string(),
+    authorImg: z.string().optional()
   }),
   type: 'content'
 })

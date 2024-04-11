@@ -2,18 +2,20 @@
 title: 'Recipe AeroPress (Coffee Collective)'
 description: 'Recipe AeroPress | Universal | 230 ml | 16 gr'
 
-tags: aeropress
-
-
 name: 'Universal'
+method: aeropress
 
-water: '230 ml'
-coffeeWeight: '16 gr.'
-time: '1:00'
-temperature: '93'
+properties:
+  coffeeWeight: '16 gr.'
+  water: '230 ml'
+  time: '1:00'
+  temperature: '93'
+
+link: 'https://coffeecollective.dk/brew-guides/aeropress/'
+tags: ['aeropress']
+
 author: 'Coffee Collective'
 authorImg: 'cc'
-linkRecipe: 'https://coffeecollective.dk/brew-guides/aeropress/'
 ---
 
 __Preparation: (Direct method)__

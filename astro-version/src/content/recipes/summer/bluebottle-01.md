@@ -2,18 +2,20 @@
 title: New Orleans-style iced coffee recipe (Blue Bottle)
 description: New Orleans-Style Iced Coffee | 2l | 340 gr
 
-tags: summer
-layout: category.njk
-
 name: New Orleans-Style Iced Coffee
+method: summer
 
-time: '12 h'
-water: '2 l'
-temperature: 'cold'
-coffeeWeight: '340 gr'
+properties:
+  time: '12 h'
+  water: '2 l'
+  temperature: 'cold'
+  coffeeWeight: '340 gr'
+
+link: 'https://bluebottlecoffee.com/us/eng/brew-guides/new-orleans-style-iced-coffee'
+tags: ['summer']
+
 author: 'Blue Bottle'
 authorImg: 'bluebottle'
-linkRecipe: 'https://bluebottlecoffee.com/us/eng/brew-guides/new-orleans-style-iced-coffee'
 ---
 
 ## Recipe

@@ -1,17 +1,21 @@
 ---
 title: 'Recipe Cold Brew (Tasty coffee)'
 description: 'Recipe Cold Brew | 1500 ml | Ethiopia Nensebo | 8 hours'
-tags: coldbrew
 
 name: 'Ethiopia Nensebo'
+method: coldbrew
 
-time: '8 hrs'
-water: '1500 ml'
-coffeeWeight: '150 gr'
-ice: '1500 gr'
+properties:
+  time: '8 hrs'
+  water: '1500 ml'
+  coffeeWeight: '150 gr'
+  ice: '1500 gr'
+
+link: 'https://shop.tastycoffee.ru/blog/cold-brew-recepti'
+tags: ['coldbrew']
+
 author: 'Tasty Coffee'
 authorImg: 'tastycoffee'
-linkRecipe: 'https://shop.tastycoffee.ru/blog/cold-brew-recepti'
 ---
 
 ## Recipe

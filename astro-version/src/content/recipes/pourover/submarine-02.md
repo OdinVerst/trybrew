@@ -2,18 +2,20 @@
 title: Recipe for filter coffee Brazil "El Dorado Catucay" (Submarine)
 description: Recipe V60 (Brazil "El Dorado Catucay") | 250 ml | 15.5 gr
 
+name: Brazil (El Dorado Catucay)
+method: pourover
+
+properties:
+  time: '3:10'
+  water: '250 ml'
+  temperature: '95'
+  coffeeWeight: '15.5 gr'
+
+link: 'https://sbmrne.ru/product-card/Brazil_El_Dorado_catucai'
 tags: ['pourover']
 
-
-name: Brazil (El Dorado Catucay)
-
-time: '3:10'
-water: '250 ml'
-temperature: '95'
-coffeeWeight: '15.5 gr'
 author: 'Submarine'
 authorImg: 'submarine'
-recipeLink: 'https://sbmrne.ru/product-card/Brazil_El_Dorado_catucai'
 ---
 
 ## Recipe

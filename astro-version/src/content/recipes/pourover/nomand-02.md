@@ -2,17 +2,19 @@
 title: Filter coffee recipe Rwanda Ngororero (Nomad)
 description: Recipe V60 (Rwanda Ngororero) | 250 мл | 17 г
 
+name: Rwanda Ngororero
+method: pourover
+
+properties:
+  time: '3:10'
+  water: '250 ml'
+  temperature: '96'
+  coffeeWeight: '17 gr'
+
+link: 'https://nomadcoffee.es/en/producto/ngororero/'
 tags: ['pourover']
 
-
-name: Rwanda Ngororero
-
-time: '3:10'
-water: '250 ml'
-temperature: '96'
-coffeeWeight: '17 gr'
 author: 'Nomad'
-recipeLink: 'https://nomadcoffee.es/en/producto/ngororero/'
 ---
 
 ## Recipe

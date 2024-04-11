@@ -2,19 +2,20 @@
 title: Recipe chemex Ethiopia natural processing (Locus)
 description: Recipe chemex (Ethiopia natural processing) | 450 ml | 30.5 gr
 
-tags: chemex
-layout: detail.njk
-
 name: Ethiopia natural processing
+method: chemex
 
-time: ''
-water: '450 ml'
-temperature: '85'
-coffeeWeight: '30,5 gr.'
+properties:
+  time: ''
+  water: '450 ml'
+  temperature: '85'
+  coffeeWeight: '30,5 gr.'
+
+tags: ['chemex']
+link: 'https://www.instagram.com/locus.coffee/'
+
 author: 'Locus'
 authorImg: 'locus'
-linkRecipe: 'https://www.instagram.com/locus.coffee/'
-
 ---
 
 ## Recipe

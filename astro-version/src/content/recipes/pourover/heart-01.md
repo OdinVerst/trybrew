@@ -2,18 +2,20 @@
 title: Recipe for coffee filter Universal (Heart roasters)
 description: Recipe V60 (Universal) | 360 ml | 22 gr
 
+name: Universal
+method: pourover
+
+properties:
+  time: '2:30'
+  water: '360 ml'
+  temperature: '96'
+  coffeeWeight: '22 gr'
+
+link: 'https://www.heartroasters.com/pages/v60'
 tags: ['pourover']
 
-
-name: Universal
-
-time: '2:30'
-water: '360 ml'
-temperature: '96'
-coffeeWeight: '22 gr'
 author: 'Heart roasters'
 authorImg: 'heart'
-recipeLink: 'https://www.heartroasters.com/pages/v60'
 ---
 
 ## Recipe

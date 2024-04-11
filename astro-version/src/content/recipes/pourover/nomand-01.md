@@ -2,17 +2,19 @@
 title: Filter coffee recipe Colombia El Paraíso (Nomad)
 description: Recipe V60 (Colombia El Paraíso) | 260 ml | 15 gr
 
+name: Colombia El Paraíso
+method: pourover
+
+properties:
+  time: '3:00'
+  water: '260 ml'
+  temperature: '96'
+  coffeeWeight: '15 gr'
+
+link: 'https://nomadcoffee.es/en/producto/red-plum/'
 tags: ['pourover']
 
-
-name: Colombia El Paraíso
-
-time: '3:00'
-water: '260 ml'
-temperature: '96'
-coffeeWeight: '15 gr'
 author: 'Nomad'
-recipeLink: 'https://nomadcoffee.es/en/producto/red-plum/'
 ---
 
 ## Recipe
