@@ -2,7 +2,6 @@
 title: Recipe for coffee filter Universal (The Barn)
 description: Recipe V60 (Universal) | 250 ml | 16 gr
 
-
 name: Universal
 method: pourover
 
