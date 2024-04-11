@@ -28,11 +28,11 @@ const properties = [
   <div class="properties">
     {
       properties
-        .filter(it => recipe[it.name])
+        .filter(it => recipe.properties[it.name])
         .map(it => (
           <div class="property">
             <Icon name={it.icon} />
-            {recipe[it.name]}
+            {recipe.properties[it.name]}
           </div>
         ))
     }

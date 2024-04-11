@@ -25,11 +25,11 @@ const href = getRelativeLocaleUrl(locale, `recipes/${recipe.slug}`)
   <div class="properties">
     {
       properties
-        .filter(it => recipe.data[it.name])
+        .filter(it => recipe.data.properties[it.name])
         .map(it => (
           <div class="property">
             <Icon name={it.icon} />
-            {recipe.data[it.name]}
+            {recipe.data.properties[it.name]}
           </div>
         ))
     }
