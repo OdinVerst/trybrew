@@ -72,6 +72,16 @@ const messages = t(Astro.currentLocale, 'settings', {
 
   const selectThemeEl = document.getElementById('theme-select') as HTMLSelectElement
   if (selectThemeEl) {
+    const theme = localStorage.getItem('theme') || 'auto'
+    const selectedOptionsEl = selectThemeEl.getElementsByTagName('option')
+    if (selectedOptionsEl) {
+      for (const option of selectedOptionsEl) {
+        if (option.value === theme) {
+          option.selected = true
+        }
+      }
+    }
+
     selectThemeEl.addEventListener('change', event => {
       const selectedTheme = (event.target as HTMLSelectElement).value
       const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
