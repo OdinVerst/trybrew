@@ -2,18 +2,20 @@
 title: Kenya "Gatomboya" coffee filter recipe (Submarine)
 description: Recipe V60 (Kenya "Gatomboya") | 250 ml | 17 gr
 
+name: Kenya (Gatomboya)
+method: pourover
+
+properties:
+  time: '2:50'
+  water: '250 ml'
+  temperature: '95'
+  coffeeWeight: '17 gr'
+
+link: 'https://sbmrne.ru/product-card/kenya_gatomboya'
 tags: ['pourover']
 
-
-name: Kenya (Gatomboya)
-
-time: '2:50'
-water: '250 ml'
-temperature: '95'
-coffeeWeight: '17 gr'
 author: 'Submarine'
 authorImg: 'submarine'
-recipeLink: 'https://sbmrne.ru/product-card/kenya_gatomboya'
 ---
 
 ## Recipe

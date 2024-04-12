@@ -7,14 +7,34 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "test:lint": "astro check && eslint .",
+    "format": "prettier --write ."
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.5",
+    "@astrojs/check": "^0.5.10",
+    "@astrojs/mdx": "^2.2.2",
     "@nanostores/i18n": "^0.12.1",
-    "astro": "^4.4.4",
+    "astro": "^4.5.12",
     "astro-icon": "^1.1.0",
     "nanostores": "^0.10.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.4"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.0.2",
+    "@typescript-eslint/parser": "^7.6.0",
+    "eslint": "^9.0.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-define-config": "^2.1.0",
+    "eslint-plugin-astro": "^0.34.0",
+    "eslint-plugin-perfectionist": "^2.8.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0",
+    "typescript-eslint": "^7.6.0"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "allowAny": ["eslint"]
+    }
   }
 }

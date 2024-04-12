@@ -2,18 +2,20 @@
 title: Ethiopian Natural Coffee Filter Recipe (Locus)
 description: Recipe V60 (Ethiopia Natural Processing) | 220 ml | 20.5 gr
 
+name: Ethiopia Natural Processing
+method: pourover
+
+properties:
+  time: ''
+  water: '220 ml'
+  temperature: '85'
+  coffeeWeight: '20,5 gr'
+
+link: 'https://www.instagram.com/locus.coffee/'
 tags: ['pourover']
 
-
-name: Ethiopia Natural Processing
-
-time: ''
-water: '220 ml'
-temperature: '85'
-coffeeWeight: '20,5 gr'
 author: 'Locus'
 authorImg: 'locus'
-recipeLink: 'https://www.instagram.com/locus.coffee/'
 
 ---
 

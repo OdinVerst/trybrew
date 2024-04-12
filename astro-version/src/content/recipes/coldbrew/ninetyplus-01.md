@@ -1,17 +1,20 @@
 ---
 title: 'Recipe Cold Brew (Ninety Plus)'
 description: 'Recipe Cold Brew | 170 ml | Drima Zede | 24 hours'
-tags: coldbrew
-
 
 name: 'Drima Zede'
+method: coldbrew
 
-time: '24 hrs'
-water: '170 ml'
-coffeeWeight: '10 gr'
+properties:
+  time: '24 hrs'
+  water: '170 ml'
+  coffeeWeight: '10 gr'
+
+linkRecipe: 'https://www.instagram.com/tv/CE9PX3QBh2E/'
+tags: ['coldbrew']
+
 author: 'Ninety Plus'
 authorImg: 'ninety-plus'
-linkRecipe: 'https://www.instagram.com/tv/CE9PX3QBh2E/'
 ---
 
 ## Recipe

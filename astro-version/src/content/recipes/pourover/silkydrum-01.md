@@ -2,18 +2,20 @@
 title: Recipe for coffee filter Universal (Silky Drum | Ruslan Shulgi)
 description: Recipe V60 (Universal) | 250 ml | 15 gr
 
+name: Universal
+method: pourover
+
+properties:
+  time: '2:30'
+  water: '250 ml'
+  temperature: '97'
+  coffeeWeight: '15 gr'
+
+recipeLink: 'https://www.silkydrum.ru/recipes'
 tags: ['pourover']
 
-
-name: Universal
-
-time: '2:30'
-water: '250 ml'
-temperature: '97'
-coffeeWeight: '15 gr'
 author: 'Silky Drum (Ruslan Shulgi)'
 authorImg: 'silky'
-recipeLink: 'https://www.silkydrum.ru/recipes'
 ---
 
 ## Recipe

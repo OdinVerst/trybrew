@@ -2,17 +2,20 @@
 title: Recipe for coffee filter Universal (Blue Bottle)
 description: Recipe V60 (Universal) | 350 ml | 22 gr
 
+name: Universal
+method: pourover
+
+properties:
+  time: '2:30'
+  water: '350 ml'
+  temperature: '~95'
+  coffeeWeight: '22 gr'
+
+link: 'https://bluebottlecoffee.com/us/eng/brew-guides/pour-over'
 tags: ['pourover']
 
-name: Universal
-
-time: '2:30'
-water: '350 ml'
-temperature: '~95'
-coffeeWeight: '22 gr'
 author: 'Blue Bottle'
 authorImg: 'bluebottle'
-recipeLink: 'https://bluebottlecoffee.com/us/eng/brew-guides/pour-over'
 ---
 
 ## Recipe

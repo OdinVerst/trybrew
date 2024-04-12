@@ -1,54 +1,89 @@
 ---
-import "../styles/main.css";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import Footer from '../components/Footer.astro'
+import Header from '../components/Header.astro'
+import '../styles/main.css'
+
 interface Props {
-	title: string;
+  // TODO: make it required
+  description?: string
+  title?: string
 }
 
-const {title, description} = Astro.props;
+const { description, title } = Astro.props
 ---
 
 <!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8"/>
-	<meta name="description" content={description ?? 'Try brew'}>
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-	<meta name="generator" content={Astro.generator}/>
-	<title>{title}</title>
-	<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
+    <meta content={description ?? 'Try brew'} name="description" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+    <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+    <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+    <link href="/favicon.svg" rel="icon" type="image/svg+xml" />
+    <meta content={Astro.generator} name="generator" />
+    <title>{title}</title>
 
-	<!-- {% if page.url | locale_links %}
-	// {% for link in page.url | locale_links %}
-	//
-	<link rel="alternate" hreflang="{{link.lang}}" href="{{site.url}}{{link.url}}">
-	// {% endfor %}
-	// {% endif %}
-	-->
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="{{site.name_site}}">
-	<meta property="og:site_name" content="{{languages[page.lang].description}}">
-	<meta property="og:url" content="{{site.url}}">
+    <!-- {% if page.url | locale_links %}
+    // {% for link in page.url | locale_links %}
+    //
+    <link rel="alternate" hreflang="{{link.lang}}" href="{{site.url}}{{link.url}}">
+    // {% endfor %}
+    // {% endif %}
+    -->
+    <meta content="website" property="og:type" />
+    <meta content="{{site.name_site}}" property="og:title" />
+    <meta
+      content="{{languages[page.lang].description}}"
+      property="og:site_name"
+    />
+    <meta content="{{site.url}}" property="og:url" />
 
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="{{site.name_site}}">
-	<meta name="twitter:description" content="{{languages[page.lang].description}}">
-	<meta name="twitter:site" content="{{site.url}}">
-</head>
-<body>
-<Header/>
-<main>
-	<slot/>
-</main>
-<Footer/>
-</body>
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="{{site.name_site}}" name="twitter:title" />
+    <meta
+      content="{{languages[page.lang].description}}"
+      name="twitter:description"
+    />
+    <meta content="{{site.url}}" name="twitter:site" />
+
+    <script is:inline>
+      const selectedTheme = localStorage.getItem('theme') || 'auto'
+      const matchIsDark = window.matchMedia('(prefers-color-scheme: dark)')
+      const systemTheme = matchIsDark.matches ? 'dark' : 'light'
+      const theme = selectedTheme === 'auto' ? systemTheme : selectedTheme
+      document.documentElement.setAttribute('data-theme', theme)
+
+      matchIsDark.addEventListener('change', event => {
+        const selectedTheme = localStorage.getItem('theme') || 'auto'
+        if (selectedTheme === 'auto') {
+          document.documentElement.setAttribute('data-theme', event.matches ? 'dark' : 'light')
+        }
+      })
+    </script>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
 </html>
 
 <style>
+  body {
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+  }
 
+  main {
+    flex-grow: 1;
+    padding: 0 16px;
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+  }
 </style>

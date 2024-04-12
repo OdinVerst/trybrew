@@ -2,18 +2,20 @@
 title: Guatemala "La Senda" coffee filter recipe (Submarine)
 description: Recipe V60 (Guatemala "La Senda") | 260 ml | 17 gr
 
+name: Guatemala (La Senda)
+method: pourover
+
+properties:
+  time: '3:10'
+  water: '260 ml'
+  temperature: '95'
+  coffeeWeight: '17 gr'
+
+link: 'https://sbmrne.ru/product-card/guatemala-la-senda'
 tags: ['pourover']
 
-
-name: Guatemala (La Senda)
-
-time: '3:10'
-water: '260 ml'
-temperature: '95'
-coffeeWeight: '17 gr'
 author: 'Submarine'
 authorImg: 'submarine'
-recipeLink: 'https://sbmrne.ru/product-card/guatemala-la-senda'
 ---
 
 ## Recipe

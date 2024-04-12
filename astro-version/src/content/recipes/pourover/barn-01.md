@@ -2,17 +2,20 @@
 title: Recipe for coffee filter Universal (The Barn)
 description: Recipe V60 (Universal) | 250 ml | 16 gr
 
+name: Universal
+method: pourover
+
+properties:
+  time: '2:30'
+  water: '250 ml'
+  temperature: '94'
+  coffeeWeight: '16 gr'
+
+link: 'https://thebarn.de/blogs/the-barn-blog/v60-drip'
 tags: ['pourover']
 
-name: Universal
-
-time: '2:30'
-water: '250 ml'
-temperature: '94'
-coffeeWeight: '16 gr'
 author: 'The Barn'
 authorImg: 'barn'
-recipeLink: 'https://thebarn.de/blogs/the-barn-blog/v60-drip'
 ---
 
 ## Recipe
