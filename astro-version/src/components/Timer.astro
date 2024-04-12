@@ -98,6 +98,13 @@ const { steps } = Astro.props
 </style>
 
 <script>
+
+type Step = {
+  description: null | string;
+  time: number;
+  water: number;
+}
+
 let startTime: number
 let elapsedTime = 0
 let isRunning = false
@@ -111,16 +118,18 @@ const totalWeightSlot = document.getElementById('totalWeight')
 const nextStepSlot = document.getElementById('nextStep')
 const progressArc = document.getElementById('progressArc')
 
-const steps = JSON.parse(root.dataset.steps).map(it => ({
+
+const steps: Step[] = root?.dataset.steps ? JSON.parse(root.dataset.steps).map((it: Step) => ({
   ...it,
   time: it.time * 1000
-}))
+})) : [];
 
 let step = steps[stepIndex]
 let nextStep = steps[stepIndex + 1]
 let timeLeft = 0
 
 function updateStep (index: number) {
+  if (!descriptionSlot || !totalWeightSlot) return;
   stepIndex = index
   step = steps[stepIndex]
   nextStep = steps[stepIndex + 1]
@@ -130,6 +139,7 @@ function updateStep (index: number) {
 }
 
 function updateTime (time: number) {
+  if (!timeSlot || !progressArc) return;
   elapsedTime = time
   timeLeft = step.time - time
   const displayTime = reverseTimer ? timeLeft : elapsedTime
@@ -181,7 +191,7 @@ function formatTime (time: number) {
   // + ":" + milliseconds.toString().padStart(3, "0");
 }
 
-function getDashArray (percent) {
+function getDashArray (percent: number) {
   const circumference = 2 * Math.PI * 90
   const dashArray = circumference * (percent / 100)
   return `${dashArray} ${circumference}`
@@ -196,21 +206,23 @@ function stopBrew () {
   resetTimer()
 }
 
-const startTimerBtn = document.getElementById('startTimer')
-const stopTimerBtn = document.getElementById('stopTimer')
-const stopBrewBtn = document.getElementById('stopBrew')
+const startTimerBtn = document.getElementById('startTimer');
+const stopTimerBtn = document.getElementById('stopTimer');
+const stopBrewBtn = document.getElementById('stopBrew');
 
-startTimerBtn.addEventListener('click', () => {
-  startTimer()
-})
+if (startTimerBtn && stopBrewBtn && stopTimerBtn) {
+  startTimerBtn.addEventListener('click', () => {
+    startTimer()
+  })
 
-stopTimerBtn.addEventListener('click', () => {
-  stopTimer()
-})
+  stopTimerBtn.addEventListener('click', () => {
+    stopTimer()
+  })
 
-stopBrewBtn.addEventListener('click', () => {
-  stopBrew()
-})
+  stopBrewBtn.addEventListener('click', () => {
+    stopBrew()
+  })
+}
 
 stopBrew()
 </script>
