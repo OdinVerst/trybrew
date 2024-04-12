@@ -1,22 +1,38 @@
 ---
+import type { GetStaticPaths } from 'astro'
+import type { CollectionEntry } from 'astro:content'
+
 import RecipeCard from '../../components/RecipeCard.astro'
 import Section from '../../components/Section.astro'
 import { commonMessages } from '../../i18n/locales/common/en'
 import Layout from '../../layouts/Layout.astro'
-import { getRecipesByMethod } from '../../utils'
+import { getCollectionByLocale } from '../../utils'
 
-// TODO: move to i18n
-const title = 'Try brew'
+const locale = Astro.currentLocale || 'en'
+const recipes = await getCollectionByLocale('recipes', locale)
 
-const recipes = await getRecipesByMethod()
+const groupedRecipes = Object.entries(
+  recipes.reduce<Record<string, CollectionEntry<'recipes'>[]>>((methods, recipe) => {
+    const method = recipe.data.method
+    if (method) {
+      methods[method] = methods[method] || []
+      methods[method].push(recipe)
+    }
+    return methods
+  }, {})
+)
 
-const locale = Astro.currentLocale
 const messages = commonMessages(locale)
+
+export const getStaticPaths = (async () => ([
+  { params: { lang: 'ru' } },
+  { params: { lang: 'en' } }
+])) satisfies GetStaticPaths
 ---
 
-<Layout title={title}>
+<Layout>
   {
-    recipes.map(([method, recipesList]) => {
+    groupedRecipes.map(([method, recipesList]) => {
       return (
         <div class="section">
           <Section baseId={`${method}-section`}>

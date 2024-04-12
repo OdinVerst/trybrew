@@ -17,7 +17,7 @@ const properties = [
 ] as const
 
 const locale = Astro.currentLocale || 'en'
-const href = getRelativeLocaleUrl(locale, `recipes/${recipe.slug}`)
+const href = getRelativeLocaleUrl(locale, `recipes/${recipe.slug.split(`${locale}/`)[1]}`)
 ---
 
 <article class="card">

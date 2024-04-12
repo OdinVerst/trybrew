@@ -1,0 +1,12 @@
+---
+import type { GetStaticPaths } from 'astro'
+
+import SettingsLayout from '../../layouts/Settings.astro'
+
+export const getStaticPaths = (async () => ([
+  { params: { lang: 'ru' } },
+  { params: { lang: 'en' } }
+])) satisfies GetStaticPaths
+---
+
+<SettingsLayout />
