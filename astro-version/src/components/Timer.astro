@@ -98,7 +98,6 @@ const { steps } = Astro.props
 </style>
 
 <script>
-
 type Step = {
   description: null | string;
   time: number;
@@ -118,18 +117,19 @@ const totalWeightSlot = document.getElementById('totalWeight')
 const nextStepSlot = document.getElementById('nextStep')
 const progressArc = document.getElementById('progressArc')
 
-
-const steps: Step[] = root?.dataset.steps ? JSON.parse(root.dataset.steps).map((it: Step) => ({
-  ...it,
-  time: it.time * 1000
-})) : [];
+const steps: Step[] = root?.dataset.steps
+  ? JSON.parse(root.dataset.steps).map((it: Step) => ({
+    ...it,
+    time: it.time * 1000
+  }))
+  : []
 
 let step = steps[stepIndex]
 let nextStep = steps[stepIndex + 1]
 let timeLeft = 0
 
 function updateStep (index: number) {
-  if (!descriptionSlot || !totalWeightSlot) return;
+  if (!descriptionSlot || !totalWeightSlot) return
   stepIndex = index
   step = steps[stepIndex]
   nextStep = steps[stepIndex + 1]
@@ -139,7 +139,7 @@ function updateStep (index: number) {
 }
 
 function updateTime (time: number) {
-  if (!timeSlot || !progressArc) return;
+  if (!timeSlot || !progressArc) return
   elapsedTime = time
   timeLeft = step.time - time
   const displayTime = reverseTimer ? timeLeft : elapsedTime
@@ -206,9 +206,9 @@ function stopBrew () {
   resetTimer()
 }
 
-const startTimerBtn = document.getElementById('startTimer');
-const stopTimerBtn = document.getElementById('stopTimer');
-const stopBrewBtn = document.getElementById('stopBrew');
+const startTimerBtn = document.getElementById('startTimer')
+const stopTimerBtn = document.getElementById('stopTimer')
+const stopBrewBtn = document.getElementById('stopBrew')
 
 if (startTimerBtn && stopBrewBtn && stopTimerBtn) {
   startTimerBtn.addEventListener('click', () => {
