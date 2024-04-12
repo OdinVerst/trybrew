@@ -9,7 +9,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "test:lint": "astro check && eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write . && eslint --fix ."
   },
   "dependencies": {
     "@astrojs/check": "^0.5.10",
