@@ -4,9 +4,9 @@ import type { CollectionEntry } from 'astro:content'
 import { getCollection } from 'astro:content'
 
 import RecipeCard from '../../../components/RecipeCard.astro'
+import { commonMessages } from '../../../i18n/locales/common/en'
 import Layout from '../../../layouts/Layout.astro'
 import { extractMethod, getRecipesByMethod } from '../../../utils'
-import { commonMessages } from '../../../i18n/locales/common/en'
 
 interface Props {
   entries: CollectionEntry<'recipes'>[]
