@@ -19,7 +19,7 @@ const contributors = (await response.json()) as OctokitReqRepoCollaboratorsList
             target="_blank"
           >
             <img
-              alt=""
+              alt={`Avatar ${contributor.login} on github`}
               class="img"
               decoding="async"
               height="40"
