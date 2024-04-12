@@ -11,6 +11,7 @@ const compat = new FlatCompat({
 export default defineFlatConfig([
   {
     ignores: [
+      'dist/',
       '.astro/',
       'src/env.d.ts'
     ]

@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "test:lint": "astro check && eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write . && eslint --fix .",
+    "postinstall": "npx simple-git-hooks"
   },
   "dependencies": {
     "@astrojs/check": "^0.5.10",
@@ -28,13 +29,17 @@
     "eslint-define-config": "^2.1.0",
     "eslint-plugin-astro": "^0.34.0",
     "eslint-plugin-perfectionist": "^2.8.0",
+    "nano-staged": "^0.8.0",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",
+    "simple-git-hooks": "^2.11.1",
     "typescript-eslint": "^7.6.0"
   },
   "pnpm": {
     "peerDependencyRules": {
-      "allowAny": ["eslint"]
+      "allowAny": [
+        "eslint"
+      ]
     }
   }
 }

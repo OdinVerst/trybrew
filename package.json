@@ -6,10 +6,13 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "@11ty/eleventy-plugin-vite": "^4.0.0",
     "@11ty/eleventy-fetch": "^4.0.0",
+    "@11ty/eleventy-plugin-vite": "^4.0.0",
     "eleventy-plugin-svg-sprite": "^2.4.2",
+    "eslint": "^9.0.0",
     "html-minifier": "^4.0.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0",
     "vite": "^4.5.0",
     "vite-plugin-svgr": "^4.1.0"
   },

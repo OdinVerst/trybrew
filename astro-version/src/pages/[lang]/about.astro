@@ -1,0 +1,12 @@
+---
+import type { GetStaticPaths } from 'astro'
+
+import AboutLayout from '../../layouts/About.astro'
+
+export const getStaticPaths = (async () => ([
+  { params: { lang: 'ru' } },
+  { params: { lang: 'en' } }
+])) satisfies GetStaticPaths
+---
+
+<AboutLayout />

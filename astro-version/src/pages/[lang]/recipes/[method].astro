@@ -1,0 +1,49 @@
+---
+import type { GetStaticPaths } from 'astro'
+import type { CollectionEntry } from 'astro:content'
+
+import { getCollection } from 'astro:content'
+
+import RecipeCard from '../../../components/RecipeCard.astro'
+import Layout from '../../../layouts/Layout.astro'
+
+interface Props {
+  entries: CollectionEntry<'recipes'>[]
+  method: string
+}
+
+const { entries, method } = Astro.props
+
+export const getStaticPaths = (async () => {
+  const recipes = await getCollection('recipes')
+  const groupedRecipes: Record<string, Record<string, CollectionEntry<'recipes'>[]>> = {}
+  recipes.forEach(recipe => {
+    const [lang, method] = recipe.slug.split('/')
+    if (!groupedRecipes[lang]) groupedRecipes[lang] = {}
+    if (!groupedRecipes[lang][method]) groupedRecipes[lang][method] = []
+    groupedRecipes[lang][method].push(recipe)
+  })
+
+  return Object.entries(groupedRecipes).flatMap(([lang, methods]) => {
+    return Object.keys(methods).map(method => ({
+      params: { lang, method },
+      props: { entries: methods[method], method }
+    }))
+  })
+}) satisfies GetStaticPaths
+---
+
+<Layout>
+  <h1 class="title">{method}</h1>
+    <div>
+      {entries.map(recipe => (
+        <RecipeCard {recipe} />
+      ))}
+  </div>
+</Layout>
+
+<style>
+  .wrapper {
+    display: flex;
+  }
+</style>
