@@ -1,0 +1,3 @@
+{
+  "pre-commit": "./astro-version/node_modules/.bin/nano-staged --config ./astro-version/nano-staged.json"
+}
