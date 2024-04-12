@@ -20,9 +20,9 @@ const messages = commonMessages(locale)
       return (
         <div class="section">
           <Section baseId={`${method}-section`}>
-            <div class="title" slot="title">
+            <h2 class="title" slot="title">
               {messages[method]}
-            </div>
+            </h2>
             <div class="recipes">
               {recipesList.map(recipe => (
                 <RecipeCard {recipe} />
@@ -41,9 +41,11 @@ const messages = commonMessages(locale)
   }
 
   .title {
-    font-size: 24px;
+    color: var(--color-text);
+    font-size: 18x;
     text-transform: capitalize;
     padding-inline-start: 16px;
+    margin: 0;
   }
 
   .recipes {

@@ -15,7 +15,7 @@ const buttonId = `${baseId}__btn`
     <button
       aria-controls={sectionId}
       aria-expanded="true"
-      class="btn"
+      class="accordion"
       data-accordion-toggle
       id={buttonId}
       type="button"
@@ -30,7 +30,8 @@ const buttonId = `${baseId}__btn`
 </div>
 
 <style>
-  .btn {
+  .accordion {
+    color: var(--color-text);
     appearance: none;
     border: none;
     background: none;
@@ -41,7 +42,7 @@ const buttonId = `${baseId}__btn`
     cursor: pointer;
   }
 
-  .btn[aria-expanded='false'] .chevron {
+  .accordion[aria-expanded='false'] .chevron {
     transform: rotate(180deg);
   }
 
