@@ -35,7 +35,7 @@ export const getStaticPaths = (async () => {
 
 <Layout>
   <h1 class="title">{method}</h1>
-    <div>
+  <div class="recipes">
       {entries.map(recipe => (
         <RecipeCard {recipe} />
       ))}
@@ -43,7 +43,16 @@ export const getStaticPaths = (async () => {
 </Layout>
 
 <style>
-  .wrapper {
-    display: flex;
+  .title {
+    margin-block: 0 28px;
+    font-size: 24px;
+    text-transform: capitalize;
+  }
+
+  .recipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 32px;
+    padding-block-end: 24px;
   }
 </style>
