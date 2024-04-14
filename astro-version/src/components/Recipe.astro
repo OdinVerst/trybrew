@@ -7,7 +7,7 @@ import { getRelativeLocaleUrl } from 'astro:i18n'
 import { commonMessages } from '../i18n/locales/common/en'
 
 type Entry = CollectionEntry<'recipes'>
-type Props = Entry['data']
+type Props = { recipe: Entry['data'] }
 
 const { recipe } = Astro.props
 
