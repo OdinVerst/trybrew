@@ -4,6 +4,7 @@ export function commonMessages (locale?: string) {
   return t<Record<string, string>>(locale, 'common', {
     about: 'About',
     aeropress: 'Aeropress',
+    author: 'Author',
     cezve: 'Cezve',
     chemex: 'Chemex',
     coldbrew: 'Cold brew',
@@ -11,6 +12,7 @@ export function commonMessages (locale?: string) {
     pourover: 'Pourover',
     sections: 'Sections',
     settings: 'Settings',
+    source: 'Source',
     summer: 'Summer'
   })
 }

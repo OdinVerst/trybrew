@@ -2,8 +2,6 @@
 title: Recipe for coffee filter Universal (Aeroplan.Coffee)
 description: Recipe V60 (Thailand Binspaer Doi Paghong) | 309 ml | 21 gr
 
-layout: ../../../../components/Recipe.astro
-
 name: Thailand Binspaer Doi Paghong
 method: pourover
 

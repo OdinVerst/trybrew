@@ -4,6 +4,7 @@ import type { CollectionEntry } from 'astro:content'
 
 import { getCollection } from 'astro:content'
 
+import Recipe from '../../../../components/Recipe.astro'
 import Layout from '../../../../layouts/Layout.astro'
 
 interface Props {
@@ -27,11 +28,7 @@ export const getStaticPaths = (async () => {
 ---
 
 <Layout>
-  <Content />
+  <Recipe recipe={entry.data}>
+    <Content/>
+  </Recipe>
 </Layout>
-
-<style>
-  .wrapper {
-    display: flex;
-  }
-</style>
