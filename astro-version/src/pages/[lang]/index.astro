@@ -10,6 +10,7 @@ import { getCollectionByLocale } from '../../utils'
 
 const locale = Astro.currentLocale || 'en'
 const recipes = await getCollectionByLocale('recipes', locale)
+const displayOrder = ['pourover', 'aeropress', 'cezve', 'chemex', 'coldbrew', 'summer']
 
 const groupedRecipes = Object.entries(
   recipes.reduce<Record<string, CollectionEntry<'recipes'>[]>>((methods, recipe) => {
@@ -20,7 +21,11 @@ const groupedRecipes = Object.entries(
     }
     return methods
   }, {})
-)
+).sort((a, b) => {
+  const orderA = displayOrder.indexOf(a[0])
+  const orderB = displayOrder.indexOf(b[0])
+  return orderA - orderB
+})
 
 const messages = commonMessages(locale)
 
@@ -36,9 +41,9 @@ export const getStaticPaths = (async () => ([
       return (
         <div class="section">
           <Section baseId={`${method}-section`}>
-            <h2 class="title" slot="title">
+            <div class="title" slot="title">
               {messages[method]}
-            </h2>
+            </div>
             <div class="recipes">
               {recipesList.map(recipe => (
                 <RecipeCard {recipe} />
@@ -57,8 +62,9 @@ export const getStaticPaths = (async () => ([
   }
 
   .title {
+    font-weight: bold;
     color: var(--color-text);
-    font-size: 18x;
+    font-size: 18px;
     text-transform: capitalize;
     padding-inline-start: 16px;
     margin: 0;
