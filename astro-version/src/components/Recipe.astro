@@ -1,14 +1,15 @@
 ---
-import type { MDXLayoutProps } from 'astro'
 import type { CollectionEntry } from 'astro:content'
 
 import { Icon } from 'astro-icon/components'
 import { getRelativeLocaleUrl } from 'astro:i18n'
 
-type Entry = CollectionEntry<'recipes'>
-type Props = MDXLayoutProps<Omit<Entry, 'data'> & Entry['data']>
+import { commonMessages } from '../i18n/locales/common/en'
 
-const { frontmatter: recipe } = Astro.props
+type Entry = CollectionEntry<'recipes'>
+type Props = { recipe: Entry['data'] }
+
+const { recipe } = Astro.props
 
 const locale = Astro.currentLocale || 'en'
 
@@ -18,11 +19,13 @@ const properties = [
   { icon: 'time', name: 'time' },
   { icon: 'temperature', name: 'temperature' }
 ] as const
+
+const messages = commonMessages(locale)
 ---
 
 <div class="root">
   <h1 class="title">
-    <a href={getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)}>{recipe.method}</a>
+    <a class="method-link" href={getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)}>{messages[recipe.method]}</a>
     / {recipe.name}
   </h1>
   <div class="properties">
@@ -69,11 +72,44 @@ const properties = [
     }
     <slot />
   </div>
+  <div class="source">
+    <span>{messages.source}:</span>
+    <a class="author" href={recipe.link} target="_blank">
+      {recipe.authorImg && (
+        <Icon class="author__icon" name={recipe.authorImg}/>
+      )
+      }
+      {recipe.author}
+      <Icon class="author__source-icon" name="source-link"/>
+    </a>
+  </div>
 </div>
 
 <style>
+  .root {
+    padding-block-end: 24px;
+  }
+
   .title {
+    margin-block: 0 28px;
+    font-size: 24px;
     text-transform: capitalize;
+  }
+
+  .method-link {
+    color: inherit;
+  }
+
+  .method-link:visited {
+    color: inherit;
+  }
+
+  .link {
+    color: inherit;
+  }
+
+  .link:visited {
+    color: inherit;
   }
 
   .properties {
@@ -85,5 +121,70 @@ const properties = [
   th,
   td {
     padding: 6px 12px;
+  }
+
+  .source {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .author {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .author__icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+  }
+
+  .author__source-icon {
+    width: 14px;
+    height: 14px;
+    color: var(--color-link-text);
+    flex-shrink: 0;
+  }
+</style>
+
+<!-- TODO: Drop thies styles, when we migrate new recipes ro MDX or frontmatter -->
+<style is:global>
+  .time-line {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    font-size: 18px;
+    margin-bottom: 1em;
+    max-width: 550px;
+  }
+
+  .time-line > * {
+    margin: 0;
+  }
+
+  .time-note {
+    margin-left: 8px;
+    opacity: 0.75;
+    margin-top: -5px;
+    font-size: 0.95em;
+  }
+
+  .info-warm {
+    background: var(--color-more-info);
+    padding: 1em;
+    margin-bottom: 1.5em;
+    line-height: 1.4;
+  }
+
+  .info-warm h2 {
+    margin: 0 0 0.5em;
+  }
+
+  .info-warm a {
+    color: var(--color-link-text);
   }
 </style>
