@@ -1,25 +1,27 @@
 {
   "rewrites": [
     {
-      "source": "/:path",
+      "source": "/(.*)",
       "has": [
         {
           "type": "header",
           "key": "Accept-Language",
-          "value": "en-US"
+          "value": "en"
         }
       ],
+      "statusCode": 404,
       "destination": "/en/not-found"
     },
     {
-      "source": "/:path",
+      "source": "/(.*)",
       "has": [
         {
           "type": "header",
           "key": "Accept-Language",
-          "value": "ru-RU"
+          "value": "ru"
         }
       ],
+      "statusCode": 404,
       "destination": "/ru/not-found"
     }
   ]
