@@ -1,8 +1,8 @@
 ---
 import type { GetStaticPaths } from 'astro'
 
-import { notFoundMessages } from '../../i18n/locales/not-found/en'
-import Layout from '../../layouts/Layout.astro'
+import { notFoundMessages } from '../i18n/locales/not-found/en'
+import Layout from '../layouts/Layout.astro'
 
 const messages = notFoundMessages(Astro.currentLocale)
 
