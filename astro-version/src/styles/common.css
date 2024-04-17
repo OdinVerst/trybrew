@@ -28,3 +28,7 @@ body {
   background: var(--color-background);
   color: var(--color-text);
 }
+
+a {
+  color: var(--color-link-text);
+}
