@@ -17,15 +17,13 @@ const messages = t(Astro.currentLocale, 'about', {
 })
 ---
 
-<Layout>
+<Layout description={messages.header} title={messages.header}>
   <h1>{messages.header}</h1>
   <p
     set:html={messages.about({
       platform: '<a href="https://astro.build" target="_blank">astro</a>',
-      source:
-        '<a href="https://github.com/OdinVerst/trybrew" target="_blank">GitHub</a>',
-      suggestions:
-        '<a href="mailto:trycoffee.app@gmail.com">trycoffee.app@gmail.com</a>'
+      source: '<a href="https://github.com/OdinVerst/trybrew" target="_blank">GitHub</a>',
+      suggestions: '<a href="mailto:trycoffee.app@gmail.com">trycoffee.app@gmail.com</a>'
     })}
   />
   <h2>{messages.contributors}</h2>
@@ -42,6 +40,5 @@ const messages = t(Astro.currentLocale, 'about', {
     data-slug="trybrew"
     data-text="Buy me a coffee"
     is:inline
-    src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
-  ></script>
+    src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"></script>
 </Layout>
