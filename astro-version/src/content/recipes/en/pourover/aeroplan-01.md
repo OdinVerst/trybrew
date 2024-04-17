@@ -33,8 +33,9 @@ tags:
   - pourover
 ---
 
-## Note
-The coffee has a very berry profile, reminiscent of Kenyan coffees, with a slight pleasant bitterness of tart cranberry, which can be traced from the hot cup, to cooling and is felt on the aftertaste.
-As it cools, notes of black tea, spices and lemon zest appear.
+<div class="info-warm">
 
-
+  ## Note
+  The coffee has a very berry profile, reminiscent of Kenyan coffees, with a slight pleasant bitterness of tart cranberry, which can be traced from the hot cup, to cooling and is felt on the aftertaste.
+  As it cools, notes of black tea, spices and lemon zest appear.
+</div>
