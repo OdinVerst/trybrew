@@ -29,19 +29,15 @@ export function t<BaseTranslation extends Translations> (
   return i18n(componentName, baseTranslation).get()
 }
 
-function format (locale: string = 'en'): StoreValue<ReadableAtom<Formatter>> {
-  return formatter(atom(locale)).get()
-}
-
-export type FormatPropertyReturn = {
+interface PropertyFormatters {
   temperature: (value: number | string) => string
   time: (value: string) => string
   volume: (value: number) => string
   weight: (value: number) => string
 }
 
-export function formatProperty (locale: string = 'en'): FormatPropertyReturn {
-  const formatters = format(locale)
+export function createPropertyFormatters (locale: string = 'en'): PropertyFormatters {
+  const formatters = formatter(atom(locale)).get()
   return {
     temperature: (value: number | string) => {
       if (typeof value === 'number') {

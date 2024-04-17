@@ -18,9 +18,7 @@ const href = getRelativeLocaleUrl(locale, `recipes/${recipe.slug.split(`${locale
 
 <article class="card">
   <a class="link" {href}>{recipe.data.name}</a>
-  <div class="properties">
-    <RecipeProperties properties={recipe.data.properties} />
-  </div>
+  <RecipeProperties properties={recipe.data.properties} />
   <div class="author">
     {recipe.data.authorImg && <Icon class="author__icon" name={recipe.data.authorImg} />}
     {recipe.data.author}
@@ -54,11 +52,6 @@ const href = getRelativeLocaleUrl(locale, `recipes/${recipe.slug.split(`${locale
     position: absolute;
     inset: 0;
     content: '';
-  }
-
-  .properties {
-    display: flex;
-    gap: 8px;
   }
 
   .author {

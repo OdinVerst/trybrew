@@ -23,9 +23,7 @@ const messages = commonMessages(locale)
     </a>
     / {recipe.name}
   </h1>
-  <div class="properties">
-    <RecipeProperties properties={recipe.properties} />
-  </div>
+  <RecipeProperties properties={recipe.properties} />
   <div>
     {
       recipe.steps
@@ -93,12 +91,6 @@ const messages = commonMessages(locale)
 
   .link:visited {
     color: inherit;
-  }
-
-  .properties {
-    display: flex;
-    align-items: center;
-    gap: 12px;
   }
 
   th,

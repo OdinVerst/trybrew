@@ -3,7 +3,7 @@ import type { CollectionEntry } from 'astro:content'
 
 import { Icon } from 'astro-icon/components'
 
-import { formatProperty } from '../i18n/utils'
+import { createPropertyFormatters } from '../i18n/utils'
 
 interface Props {
   properties: CollectionEntry<'recipes'>['data']['properties']
@@ -11,51 +11,41 @@ interface Props {
 
 const { properties } = Astro.props
 
-const { temperature, time, volume, weight } = formatProperty(Astro.currentLocale)
+const { temperature, time, volume, weight } = createPropertyFormatters(Astro.currentLocale)
+
+const propertiesConfig = [
+  { format: weight, name: 'coffeeWeight' },
+  { format: volume, name: 'water' },
+  { format: time, name: 'time' },
+  { format: temperature, name: 'temperature' },
+  { format: weight, name: 'ice' }
+] as const
+
+const formattedProperties = propertiesConfig
+  .filter(it => properties[it.name])
+  .map(it => ({
+    name: it.name,
+    value: it.format(properties[it.name] as never)
+  }))
 ---
 
-{
-  properties.coffeeWeight && (
-    <div class="property">
-      <Icon name="coffee" />
-      {weight(properties.coffeeWeight)}
-    </div>
-  )
-}
-{
-  properties.water && (
-    <div class="property">
-      <Icon name="water" />
-      {volume(properties.water)}
-    </div>
-  )
-}
-{
-  properties.time && (
-    <div class="property">
-      <Icon name="time" />
-      {time(properties.time)}
-    </div>
-  )
-}
-{
-  properties.temperature && (
-    <div class="property">
-      <Icon name="temperature" />
-      {temperature(properties.temperature)}
-    </div>
-  )
-}
-{
-  properties.ice && (
-    <div class="property">
-      <Icon name="ice" />
-      {weight(properties.ice)}
-    </div>
-  )
-}
+<div class="properties">
+  {
+    formattedProperties.map(({ name, value }) => (
+      <div class="property">
+        <Icon {name} />
+        {value}
+      </div>
+    ))
+  }
+</div>
 
 <style>
+  .properties {
+    display: flex;
+    gap: 9px;
+  }
+
   .property {
     display: flex;
     align-items: center;
