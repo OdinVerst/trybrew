@@ -6,15 +6,16 @@ name: Colombia El Paraíso
 method: pourover
 
 properties:
+  coffeeWeight: 15
+  water: 260
   time: '3:00'
-  water: '260 ml'
-  temperature: '96'
-  coffeeWeight: '15 gr'
+  temperature: 96
 
-link: 'https://nomadcoffee.es/en/producto/red-plum/'
-tags: ['pourover']
+author: Nomad
 
-author: 'Nomad'
+link: https://nomadcoffee.es/en/producto/red-plum/
+tags:
+  - pourover
 ---
 
 ## Recipe

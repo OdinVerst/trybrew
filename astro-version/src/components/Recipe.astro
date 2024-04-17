@@ -5,6 +5,7 @@ import { Icon } from 'astro-icon/components'
 import { getRelativeLocaleUrl } from 'astro:i18n'
 
 import { commonMessages } from '../i18n/locales/common/en'
+import RecipeProperties from './RecipeProperties.astro'
 
 type Entry = CollectionEntry<'recipes'>
 type Props = { recipe: Entry['data'] }
@@ -12,34 +13,17 @@ type Props = { recipe: Entry['data'] }
 const { recipe } = Astro.props
 
 const locale = Astro.currentLocale || 'en'
-
-const properties = [
-  { icon: 'coffee', name: 'coffeeWeight' },
-  { icon: 'water', name: 'water' },
-  { icon: 'time', name: 'time' },
-  { icon: 'temperature', name: 'temperature' }
-] as const
-
 const messages = commonMessages(locale)
 ---
 
 <div class="root">
   <h1 class="title">
-    <a class="method-link" href={getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)}>{messages[recipe.method]}</a>
+    <a class="method-link" href={getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)}>
+      {messages[recipe.method]}
+    </a>
     / {recipe.name}
   </h1>
-  <div class="properties">
-    {
-      properties
-        .filter(it => recipe.properties[it.name])
-        .map(it => (
-          <div class="property">
-            <Icon name={it.icon} />
-            {recipe.properties[it.name]}
-          </div>
-        ))
-    }
-  </div>
+  <RecipeProperties properties={recipe.properties} />
   <div>
     {
       recipe.steps
@@ -75,12 +59,9 @@ const messages = commonMessages(locale)
   <div class="source">
     <span>{messages.source}:</span>
     <a class="author" href={recipe.link} target="_blank">
-      {recipe.authorImg && (
-        <Icon class="author__icon" name={recipe.authorImg}/>
-      )
-      }
+      {recipe.authorImg && <Icon class="author__icon" name={recipe.authorImg} />}
       {recipe.author}
-      <Icon class="author__source-icon" name="source-link"/>
+      <Icon class="author__source-icon" name="source-link" />
     </a>
   </div>
 </div>
@@ -110,12 +91,6 @@ const messages = commonMessages(locale)
 
   .link:visited {
     color: inherit;
-  }
-
-  .properties {
-    display: flex;
-    align-items: center;
-    gap: 12px;
   }
 
   th,

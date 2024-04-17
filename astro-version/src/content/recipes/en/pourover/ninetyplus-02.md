@@ -6,16 +6,17 @@ name: Universal
 method: pourover
 
 properties:
+  coffeeWeight: 10
+  water: 160
   time: '1:50'
-  water: '160 ml'
-  temperature: '93'
-  coffeeWeight: '10 gr'
+  temperature: 93
 
-link: 'https://www.instagram.com/tv/CGPivSzHbez/'
-tags: ['pourover']
+author: Ninety Plus
+authorImg: ninety-plus
 
-author: 'Ninety Plus'
-authorImg: 'ninety-plus'
+link: https://www.instagram.com/tv/CGPivSzHbez/
+tags:
+  - pourover
 ---
 
 ## Recipe

@@ -1,18 +1,22 @@
 ---
+title: Рецепт AeroPress (Tasty Coffee)
+description: Рецепт AeroPress | Универсальный | 180 мл | 18 г
+
+name: Универсальный
+method: aeropress
+
+properties:
+  coffeeWeight: 18
+  water: 180
+  time: '1:40'
+  temperature: 90
+
 author: Tasty Coffee
 authorImg: tastycoffee
-description: Рецепт AeroPress | Универсальный | 180 мл | 18 г
+
 link: https://shop.tastycoffee.ru/blog/guide-aeropress
-method: aeropress
-name: Универсальный
-properties:
-  coffeeWeight: 18 г
-  temperature: '90'
-  time: '1:40'
-  water: 180 мл
 tags:
-- aeropress
-title: Рецепт AeroPress (Tasty Coffee)
+  - aeropress
 ---
 
 __Приготовление: (Способ прямой)__

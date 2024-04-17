@@ -6,17 +6,17 @@ name: Универсальный
 method: aeropress
 
 properties:
-  coffeeWeight: 16 г
-  temperature: '93'
+  coffeeWeight: 16
+  water: 230
   time: '1:00'
-  water: 230 мл
-
-tags:
-  - aeropress
-link: https://coffeecollective.dk/brew-guides/aeropress/
+  temperature: 93
 
 author: Coffee Collective
 authorImg: cc
+
+link: https://coffeecollective.dk/brew-guides/aeropress/
+tags:
+  - aeropress
 ---
 
 __Приготовление: (Способ прямой)__

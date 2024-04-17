@@ -1,18 +1,22 @@
 ---
+title: Рецепт фильтр кофе Бразилия "Эль Дорадо катукай" (Submarine)
+description: Рецепт V60 (Бразилия "Эль Дорадо катукай") | 250 мл | 15.5 г
+
+name: Бразилия (Эль Дорадо катукай)
+method: pourover
+
+properties:
+  coffeeWeight: 15.5
+  water: 250
+  time: '3:10'
+  temperature: 95
+
 author: Submarine
 authorImg: submarine
-description: Рецепт V60 (Бразилия "Эль Дорадо катукай") | 250 мл | 15.5 г
+
 link: https://sbmrne.ru/product-card/Brazil_El_Dorado_catucai
-method: pourover
-name: Бразилия (Эль Дорадо катукай)
-properties:
-  coffeeWeight: 15.5 г
-  temperature: '95'
-  time: '3:10'
-  water: 250 мл
 tags:
-- pourover
-title: Рецепт фильтр кофе Бразилия "Эль Дорадо катукай" (Submarine)
+  - pourover
 ---
 
 ## Рецепт

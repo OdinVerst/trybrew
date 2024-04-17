@@ -1,0 +1,54 @@
+---
+import type { CollectionEntry } from 'astro:content'
+
+import { Icon } from 'astro-icon/components'
+
+import { createPropertyFormatters } from '../i18n/utils'
+
+interface Props {
+  properties: CollectionEntry<'recipes'>['data']['properties']
+}
+
+const { properties } = Astro.props
+
+const { temperature, time, volume, weight } = createPropertyFormatters(Astro.currentLocale)
+
+const propertiesConfig = [
+  { format: weight, name: 'coffeeWeight' },
+  { format: volume, name: 'water' },
+  { format: time, name: 'time' },
+  { format: temperature, name: 'temperature' },
+  { format: weight, name: 'ice' }
+] as const
+
+const formattedProperties = propertiesConfig
+  .filter(it => properties[it.name])
+  .map(it => ({
+    name: it.name,
+    value: it.format(properties[it.name] as never)
+  }))
+---
+
+<div class="properties">
+  {
+    formattedProperties.map(({ name, value }) => (
+      <div class="property">
+        <Icon {name} />
+        {value}
+      </div>
+    ))
+  }
+</div>
+
+<style>
+  .properties {
+    display: flex;
+    gap: 9px;
+  }
+
+  .property {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+</style>

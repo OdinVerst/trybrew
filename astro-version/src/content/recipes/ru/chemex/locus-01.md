@@ -1,18 +1,21 @@
 ---
+title: Рецепт chemex Эфиопия натуральной обработки (Locus)
+description: Рецепт chemex (Эфиопия натуральной обработки) | 450 мл | 30.5 г
+
+name: Эфиопия натуральной обработки
+method: chemex
+
+properties:
+  coffeeWeight: 30.5
+  water: 450
+  temperature: 85
+
 author: Locus
 authorImg: locus
-description: Рецепт chemex (Эфиопия натуральной обработки) | 450 мл | 30.5 г
+
 link: https://www.instagram.com/locus.coffee/
-method: chemex
-name: Эфиопия натуральной обработки
-properties:
-  coffeeWeight: 30,5 г
-  temperature: '85'
-  time: ''
-  water: 450 мл
 tags:
-- chemex
-title: Рецепт chemex Эфиопия натуральной обработки (Locus)
+  - chemex
 ---
 
 ## Рецепт

@@ -1,18 +1,22 @@
 ---
+title: Рецепт AeroPress (the Welder Catherine)
+description: Рецепт AeroPress | Руанда Убумве Виски | 210 мл | 16.5 г
+
+name: Руанда Убумве Виски
+method: aeropress
+
+properties:
+  coffeeWeight: 16.5
+  water: 210
+  time: '1:25'
+  temperature: 91
+
 author: the Welder Catherine
 authorImg: thewelder
-description: Рецепт AeroPress | Руанда Убумве Виски | 210 мл | 16.5 г
+
 link: https://theweldercatherine.ru/catalog/dlya_filtra/ruanda_ubumve_viski/
-method: aeropress
-name: Руанда Убумве Виски
-properties:
-  coffeeWeight: 16.5 г
-  temperature: '91'
-  time: '1:25'
-  water: 210 мл
 tags:
-- aeropress
-title: Рецепт AeroPress (the Welder Catherine)
+  - aeropress
 ---
 
 __Приготовление: (Способ перевернутый)__

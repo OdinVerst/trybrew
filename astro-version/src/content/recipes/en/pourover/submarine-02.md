@@ -6,16 +6,17 @@ name: Brazil (El Dorado Catucay)
 method: pourover
 
 properties:
+  coffeeWeight: 15.5
+  water: 250
   time: '3:10'
-  water: '250 ml'
-  temperature: '95'
-  coffeeWeight: '15.5 gr'
+  temperature: 95
 
-link: 'https://sbmrne.ru/product-card/Brazil_El_Dorado_catucai'
-tags: ['pourover']
+author: Submarine
+authorImg: submarine
 
-author: 'Submarine'
-authorImg: 'submarine'
+link: https://sbmrne.ru/product-card/Brazil_El_Dorado_catucai
+tags:
+  - pourover
 ---
 
 ## Recipe

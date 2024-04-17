@@ -1,16 +1,20 @@
 ---
+title: Рецепт джезва с малиновым вареньем и специями (Сергей Блинников)
+description: Рецепт джезва с малиновым вареньем и специями | 110 мл | 11 г
+
+name: С малиновым вареньем и специями
+method: cezve
+
+properties:
+  coffeeWeight: 11
+  water: 110
+
 author: the Welder Catherine (Сергей Блинников)
 authorImg: thewelder
-description: Рецепт джезва с малиновым вареньем и специями | 110 мл | 11 г
+
 link: https://www.youtube.com/watch?v=3kyp0cDkOWU
-method: cezve
-name: С малиновым вареньем и специями
-properties:
-  coffeeWeight: 11 г
-  water: 110 мл
 tags:
-- cezve
-title: Рецепт джезва с малиновым вареньем и специями (Сергей Блинников)
+  - cezve
 ---
 
 ## Рецепт

@@ -6,16 +6,16 @@ name: Ethiopia natural processing
 method: chemex
 
 properties:
-  time: ''
-  water: '450 ml'
-  temperature: '85'
-  coffeeWeight: '30,5 gr.'
+  coffeeWeight: 30.5
+  water: 450
+  temperature: 85
 
-tags: ['chemex']
-link: 'https://www.instagram.com/locus.coffee/'
+author: Locus
+authorImg: locus
 
-author: 'Locus'
-authorImg: 'locus'
+link: https://www.instagram.com/locus.coffee/
+tags:
+  - chemex
 ---
 
 ## Recipe

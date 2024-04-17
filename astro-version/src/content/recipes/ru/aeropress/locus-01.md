@@ -1,18 +1,21 @@
 ---
+title: Рецепт AeroPress Эфиопия натуральной обработки (Locus)
+description: Рецепт AeroPress (Эфиопия натуральной обработки) | 220 мл | 30.5 г
+
+name: Эфиопия натуральной обработки
+method: aeropress
+
+properties:
+  coffeeWeight: 30.5
+  water: 220
+  temperature: 85
+
 author: Locus
 authorImg: locus
-description: Рецепт AeroPress (Эфиопия натуральной обработки) | 220 мл | 30.5 г
+
 link: https://www.instagram.com/locus.coffee/
-method: aeropress
-name: Эфиопия натуральной обработки
-properties:
-  coffeeWeight: 30,5 г
-  temperature: '85'
-  time: ''
-  water: 220 мл
 tags:
-- aeropress
-title: Рецепт AeroPress Эфиопия натуральной обработки (Locus)
+  - aeropress
 ---
 
 ## Рецепт

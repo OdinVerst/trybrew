@@ -1,21 +1,22 @@
 ---
 title: Rwanda Ubumwe Whiskey filter coffee recipe (the Welder Catherine)
-description: Recipe V60 (Rwanda Ubumwe Whiskey) | 270 ml | 17,5 gr
+description: Recipe V60 (Rwanda Ubumwe Whiskey) | 270 ml | 17.5 gr
 
-name: 'Rwanda Ubumwe Whiskey'
+name: Rwanda Ubumwe Whiskey
 method: pourover
 
 properties:
+  coffeeWeight: 17.5
+  water: 270
   time: '2:45'
-  water: '270 ml'
-  temperature: '96'
-  coffeeWeight: '17,5 gr'
+  temperature: 96
 
-link: 'https://theweldercatherine.ru/catalog/dlya_filtra/ruanda_ubumve_viski/'
-tags: ['pourover']
+author: the Welder Catherine
+authorImg: thewelder
 
-author: 'the Welder Catherine'
-authorImg: 'thewelder'
+link: https://theweldercatherine.ru/catalog/dlya_filtra/ruanda_ubumve_viski/
+tags:
+  - pourover
 ---
 
 ## Recipe

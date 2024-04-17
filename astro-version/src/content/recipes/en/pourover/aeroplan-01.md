@@ -6,23 +6,31 @@ name: Thailand Binspaer Doi Paghong
 method: pourover
 
 properties:
+  coffeeWeight: 21
+  water: 309
   time: '3:25'
-  water: '309 ml'
-  temperature: '95'
-  coffeeWeight: '21 gr'
+  temperature: 95
 
-steps: [
-	{ description: "Pre-wetting in a spiral and intensely", water: 50, time: 50 },
-	{ description: "From the center to the edges of the coffee tablet", water: 120, time: 30 },
-	{ description: "To the center and back to spiral brewing", water: 180, time: 40 },
-	{ description: "Into the center of the funnel", water: 309, time: 85 }
-]
+steps:
+  - description: Pre-wetting in a spiral and intensely
+    water: 50
+    time: 50
+  - description: From the center to the edges of the coffee tablet
+    water: 120
+    time: 30
+  - description: To the center and back to spiral brewing
+    water: 180
+    time: 40
+  - description: Into the center of the funnel
+    water: 309
+    time: 85
 
-link: 'https://www.instagram.com/aeroplancoffee/'
-tags: ['pourover']
+author: Aeroplan.Coffee
+authorImg: aeroplan
 
-author: 'Aeroplan.Coffee'
-authorImg: 'aeroplan'
+link: https://www.instagram.com/aeroplancoffee/
+tags:
+  - pourover
 ---
 
 ## Note

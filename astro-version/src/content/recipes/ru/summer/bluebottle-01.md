@@ -6,16 +6,17 @@ name: Кофе со льдом в новоорлеанском стиле
 method: summer
 
 properties:
-  time: 12 ч
-  water: 2 л
+  coffeeWeight: 340
+  water: 2000
+  time: '12:00:00'
   temperature: холодная
-  coffeeWeight: 340 г
-
-link: https://bluebottlecoffee.com/us/eng/brew-guides/new-orleans-style-iced-coffee
-tags: [ 'summer' ]
 
 author: Blue Bottle
 authorImg: bluebottle
+
+link: https://bluebottlecoffee.com/us/eng/brew-guides/new-orleans-style-iced-coffee
+tags:
+  - summer
 ---
 
 ## Рецепт

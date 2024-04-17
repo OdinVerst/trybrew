@@ -1,18 +1,22 @@
 ---
+title: Рецепт фильтр кофе Гватемала "Ла Сенда" (Submarine)
+description: Рецепт V60 (Гватемала "Ла Сенда") | 260 мл | 17 г
+
+name: Гватемала (Ла Сенда)
+method: pourover
+
+properties:
+  coffeeWeight: 17
+  water: 260
+  time: '3:10'
+  temperature: 95
+
 author: Submarine
 authorImg: submarine
-description: Рецепт V60 (Гватемала "Ла Сенда") | 260 мл | 17 г
+
 link: https://sbmrne.ru/product-card/guatemala-la-senda
-method: pourover
-name: Гватемала (Ла Сенда)
-properties:
-  coffeeWeight: 17 г
-  temperature: '95'
-  time: '3:10'
-  water: 260 мл
 tags:
-- pourover
-title: Рецепт фильтр кофе Гватемала "Ла Сенда" (Submarine)
+  - pourover
 ---
 
 ## Рецепт

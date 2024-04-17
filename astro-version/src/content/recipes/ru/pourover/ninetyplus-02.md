@@ -1,18 +1,22 @@
 ---
+title: Рецепт фильтр кофе Универсальный (Ninety Plus)
+description: Рецепт V60 (Универсальный) | 160 мл | 10 г
+
+name: Универсальный
+method: pourover
+
+properties:
+  coffeeWeight: 10
+  water: 160
+  time: '1:50'
+  temperature: 93
+
 author: Ninety Plus
 authorImg: ninety-plus
-description: Рецепт V60 (Универсальный) | 160 мл | 10 г
+
 link: https://www.instagram.com/tv/CGPivSzHbez/
-method: pourover
-name: Универсальный
-properties:
-  coffeeWeight: 10 г
-  temperature: '93'
-  time: '1:50'
-  water: 160 мл
 tags:
-- pourover
-title: Рецепт фильтр кофе Универсальный (Ninety Plus)
+  - pourover
 ---
 
 ## Рецепт

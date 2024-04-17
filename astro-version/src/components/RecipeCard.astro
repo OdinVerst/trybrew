@@ -3,18 +3,14 @@ import type { CollectionEntry } from 'astro:content'
 
 import { Icon } from 'astro-icon/components'
 import { getRelativeLocaleUrl } from 'astro:i18n'
+
+import RecipeProperties from './RecipeProperties.astro'
+
 interface Props {
   recipe: CollectionEntry<'recipes'>
 }
 
 const { recipe } = Astro.props
-// TODO: try to use the same values for icon and name
-const properties = [
-  { icon: 'coffee', name: 'coffeeWeight' },
-  { icon: 'water', name: 'water' },
-  { icon: 'time', name: 'time' },
-  { icon: 'temperature', name: 'temperature' }
-] as const
 
 const locale = Astro.currentLocale || 'en'
 const href = getRelativeLocaleUrl(locale, `recipes/${recipe.slug.split(`${locale}/`)[1]}`)
@@ -22,24 +18,9 @@ const href = getRelativeLocaleUrl(locale, `recipes/${recipe.slug.split(`${locale
 
 <article class="card">
   <a class="link" {href}>{recipe.data.name}</a>
-  <div class="properties">
-    {
-      properties
-        .filter(it => recipe.data.properties[it.name])
-        .map(it => (
-          <div class="property">
-            <Icon name={it.icon} />
-            {recipe.data.properties[it.name]}
-          </div>
-        ))
-    }
-  </div>
+  <RecipeProperties properties={recipe.data.properties} />
   <div class="author">
-    {
-      recipe.data.authorImg && (
-        <Icon class="author__icon" name={recipe.data.authorImg} />
-      )
-    }
+    {recipe.data.authorImg && <Icon class="author__icon" name={recipe.data.authorImg} />}
     {recipe.data.author}
   </div>
 </article>
@@ -71,17 +52,6 @@ const href = getRelativeLocaleUrl(locale, `recipes/${recipe.slug.split(`${locale
     position: absolute;
     inset: 0;
     content: '';
-  }
-
-  .properties {
-    display: flex;
-    gap: 8px;
-  }
-
-  .property {
-    display: flex;
-    align-items: center;
-    gap: 4px;
   }
 
   .author {

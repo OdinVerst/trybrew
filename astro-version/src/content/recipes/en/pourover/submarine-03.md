@@ -6,16 +6,17 @@ name: Guatemala (La Senda)
 method: pourover
 
 properties:
+  coffeeWeight: 17
+  water: 260
   time: '3:10'
-  water: '260 ml'
-  temperature: '95'
-  coffeeWeight: '17 gr'
+  temperature: 95
 
-link: 'https://sbmrne.ru/product-card/guatemala-la-senda'
-tags: ['pourover']
+author: Submarine
+authorImg: submarine
 
-author: 'Submarine'
-authorImg: 'submarine'
+link: https://sbmrne.ru/product-card/guatemala-la-senda
+tags:
+  - pourover
 ---
 
 ## Recipe

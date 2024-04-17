@@ -1,18 +1,22 @@
 ---
+title: Рецепт фильтр кофе Универсальный (The Barn)
+description: Рецепт V60 (Универсальный) | 250 мл | 16 г
+
+name: Универсальный
+method: pourover
+
+properties:
+  coffeeWeight: 16
+  water: 250
+  time: '2:30'
+  temperature: 94
+
 author: The Barn
 authorImg: barn
-description: Рецепт V60 (Универсальный) | 250 мл | 16 г
+
 link: https://thebarn.de/blogs/the-barn-blog/v60-drip
-method: pourover
-name: Универсальный
-properties:
-  coffeeWeight: 16 г
-  temperature: '94'
-  time: '2:30'
-  water: 250 мл
 tags:
-- pourover
-title: Рецепт фильтр кофе Универсальный (The Barn)
+  - pourover
 ---
 
 ## Рецепт

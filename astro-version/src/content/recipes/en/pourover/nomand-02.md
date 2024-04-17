@@ -6,15 +6,16 @@ name: Rwanda Ngororero
 method: pourover
 
 properties:
+  coffeeWeight: 17
+  water: 250
   time: '3:10'
-  water: '250 ml'
-  temperature: '96'
-  coffeeWeight: '17 gr'
+  temperature: 96
 
-link: 'https://nomadcoffee.es/en/producto/ngororero/'
-tags: ['pourover']
+author: Nomad
 
-author: 'Nomad'
+link: https://nomadcoffee.es/en/producto/ngororero/
+tags:
+  - pourover
 ---
 
 ## Recipe

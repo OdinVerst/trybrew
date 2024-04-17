@@ -1,20 +1,20 @@
 ---
-title: 'Recipe for cezve with orange juice and spices (Sergey Blinnikov)'
-description: 'Recipe for orange juice and spices jesvah | 110 ml | 11 gr.'
+title: Recipe for cezve with orange juice and spices (Sergey Blinnikov)
+description: Recipe for orange juice and spices jesvah | 110 ml | 11 gr.
 
-
-name: 'With orange juice and spices'
+name: With orange juice and spices
 method: cezve
 
 properties:
-  water: '110 ml'
-  coffeeWeight: '11 gr.'
+  coffeeWeight: 11
+  water: 110
 
-link: 'https://www.youtube.com/watch?v=H2WI9vpwOWA'
-tags: ['cezve']
+author: the Welder Catherine (Sergey Blinnikov)
+authorImg: thewelder
 
-author: 'the Welder Catherine (Sergey Blinnikov)'
-authorImg: 'thewelder'
+link: https://www.youtube.com/watch?v=H2WI9vpwOWA
+tags:
+  - cezve
 ---
 
 ## Recipe

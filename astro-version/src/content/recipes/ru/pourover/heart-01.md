@@ -1,18 +1,22 @@
 ---
+title: Рецепт фильтр кофе Универсальный (Heart roasters)
+description: Рецепт V60 (Универсальный) | 360 мл | 22 г
+
+name: Универсальный
+method: pourover
+
+properties:
+  coffeeWeight: 22
+  water: 360
+  time: '2:30'
+  temperature: 96
+
 author: Heart roasters
 authorImg: heart
-description: Рецепт V60 (Универсальный) | 360 мл | 22 г
+
 link: https://www.heartroasters.com/pages/v60
-method: pourover
-name: Универсальный
-properties:
-  coffeeWeight: 22 г
-  temperature: '96'
-  time: '2:30'
-  water: 360 мл
 tags:
-- pourover
-title: Рецепт фильтр кофе Универсальный (Heart roasters)
+  - pourover
 ---
 
 ## Рецепт

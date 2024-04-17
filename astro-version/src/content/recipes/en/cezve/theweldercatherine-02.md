@@ -1,20 +1,20 @@
 ---
-title: 'Recipe for cezve with raspberry jam and spices (Sergey Blinnikov)'
-description: 'Recipe for cezve with raspberry jam and spices | 110 ml | 11 gr.'
+title: Recipe for cezve with raspberry jam and spices (Sergey Blinnikov)
+description: Recipe for cezve with raspberry jam and spices | 110 ml | 11 gr.
 
-
-name: 'With raspberry jam and spices'
+name: With raspberry jam and spices
 method: cezve
 
 properties:
-  water: '110 ml'
-  coffeeWeight: '11 gr.'
+  coffeeWeight: 11
+  water: 110
 
-link: 'https://www.youtube.com/watch?v=3kyp0cDkOWU'
-tags: ['cezve']
+author: the Welder Catherine (Sergey Blinnikov)
+authorImg: thewelder
 
-author: 'the Welder Catherine (Sergey Blinnikov)'
-authorImg: 'thewelder'
+link: https://www.youtube.com/watch?v=3kyp0cDkOWU
+tags:
+  - cezve
 ---
 
 ## Recipe

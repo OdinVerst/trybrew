@@ -6,16 +6,17 @@ name: Kenya (Gatomboya)
 method: pourover
 
 properties:
+  coffeeWeight: 17
+  water: 250
   time: '2:50'
-  water: '250 ml'
-  temperature: '95'
-  coffeeWeight: '17 gr'
+  temperature: 95
 
-link: 'https://sbmrne.ru/product-card/kenya_gatomboya'
-tags: ['pourover']
+author: Submarine
+authorImg: submarine
 
-author: 'Submarine'
-authorImg: 'submarine'
+link: https://sbmrne.ru/product-card/kenya_gatomboya
+tags:
+  - pourover
 ---
 
 ## Recipe

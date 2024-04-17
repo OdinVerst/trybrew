@@ -1,18 +1,22 @@
 ---
+title: Рецепт фильтр кофе Универсальный (Aeroplan.Coffee)
+description: Рецепт V60 (Тайланд Бинспаер Дои Пагхонг) | 309 мл | 21 г
+
+name: Тайланд Бинспаер Дои Пагхонг
+method: pourover
+
+properties:
+  coffeeWeight: 21
+  water: 309
+  time: '3:25'
+  temperature: 95
+
 author: Aeroplan.Coffee
 authorImg: aeroplan
-description: Рецепт V60 (Тайланд Бинспаер Дои Пагхонг) | 309 мл | 21 г
+
 link: https://www.instagram.com/aeroplancoffee/
-method: pourover
-name: Тайланд Бинспаер Дои Пагхонг
-properties:
-  coffeeWeight: 21 г
-  temperature: '95'
-  time: '3:25'
-  water: 309 мл
 tags:
-- pourover
-title: Рецепт фильтр кофе Универсальный (Aeroplan.Coffee)
+  - pourover
 ---
 
 ## Рецепт

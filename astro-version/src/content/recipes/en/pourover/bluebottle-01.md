@@ -6,16 +6,17 @@ name: Universal
 method: pourover
 
 properties:
+  coffeeWeight: 22
+  water: 350
   time: '2:30'
-  water: '350 ml'
-  temperature: '~95'
-  coffeeWeight: '22 gr'
+  temperature: ~95
 
-link: 'https://bluebottlecoffee.com/us/eng/brew-guides/pour-over'
-tags: ['pourover']
+author: Blue Bottle
+authorImg: bluebottle
 
-author: 'Blue Bottle'
-authorImg: 'bluebottle'
+link: https://bluebottlecoffee.com/us/eng/brew-guides/pour-over
+tags:
+  - pourover
 ---
 
 ## Recipe

@@ -1,18 +1,22 @@
 ---
+title: Рецепт фильтр кофе Универсальный (Blue Bottle)
+description: Рецепт V60 (Универсальный) | 350 мл | 22 г
+
+name: Универсальный
+method: pourover
+
+properties:
+  coffeeWeight: 22
+  water: 350
+  time: '2:30'
+  temperature: ~95
+
 author: Blue Bottle
 authorImg: bluebottle
-description: Рецепт V60 (Универсальный) | 350 мл | 22 г
+
 link: https://bluebottlecoffee.com/us/eng/brew-guides/pour-over
-method: pourover
-name: Универсальный
-properties:
-  coffeeWeight: 22 г
-  temperature: ~95
-  time: '2:30'
-  water: 350 мл
 tags:
-- pourover
-title: Рецепт фильтр кофе Универсальный (Blue Bottle)
+  - pourover
 ---
 
 ## Рецепт

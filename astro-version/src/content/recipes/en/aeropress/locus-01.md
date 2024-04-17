@@ -6,16 +6,16 @@ name: Ethiopia natural processing
 method: aeropress
 
 properties:
-  coffeeWeight: '30,5 gr.'
-  water: '220 ml'
-  time: ''
-  temperature: '85'
+  coffeeWeight: 30.5
+  water: 220
+  temperature: 85
 
-link: 'https://www.instagram.com/locus.coffee/'
-tags: ['aeropress']
+author: Locus
+authorImg: locus
 
-author: 'Locus'
-authorImg: 'locus'
+link: https://www.instagram.com/locus.coffee/
+tags:
+  - aeropress
 ---
 
 ## Recipe
