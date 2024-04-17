@@ -14,6 +14,7 @@ export default defineConfig({
       redirectToDefaultLocale: true
     }
   },
+  site: 'https://trybrew.app',
   integrations: [
     icon(),
     mdx()

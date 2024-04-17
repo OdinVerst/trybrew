@@ -9,13 +9,15 @@ interface Props {
 }
 
 const { description, title } = Astro.props
+const siteName = 'Try brew'
+const siteUrl = Astro.site.origin
 ---
 
 <!doctype html>
 <html lang={Astro.currentLocale}>
   <head>
     <meta charset="utf-8" />
-    <meta content={description ?? 'Try brew'} name="description" />
+    <meta content={description ?? siteName} name="description" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
     <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
@@ -24,14 +26,14 @@ const { description, title } = Astro.props
     <meta content={Astro.generator} name="generator" />
     <title>{title}</title>
     <meta content="website" property="og:type" />
-    <meta content="{{site.name_site}}" property="og:title" />
-    <meta content="{{languages[page.lang].description}}" property="og:site_name" />
-    <meta content={Astro.url.href} property="og:url" />
+    <meta content={title} property="og:title" />
+    <meta content={siteName} property="og:site_name" />
+    <meta content={siteUrl} property="og:url" />
 
     <meta content="summary_large_image" name="twitter:card" />
-    <meta content="{{site.name_site}}" name="twitter:title" />
-    <meta content="{{languages[page.lang].description}}" name="twitter:description" />
-    <meta content="{{site.url}}" name="twitter:site" />
+    <meta content={siteName} name="twitter:title" />
+    <meta content={description ?? siteName} name="twitter:description" />
+    <meta content={siteUrl} name="twitter:site" />
 
     <script is:inline>
       const selectedTheme = localStorage.getItem('theme') || 'auto'
