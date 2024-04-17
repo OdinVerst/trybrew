@@ -10,7 +10,7 @@ interface Props {
 
 const { description, title } = Astro.props
 const siteName = 'Try brew'
-const siteUrl = Astro.site.origin
+const siteUrl = Astro.site?.origin ?? ''
 ---
 
 <!doctype html>

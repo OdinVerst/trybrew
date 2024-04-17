@@ -14,10 +14,10 @@ export default defineConfig({
       redirectToDefaultLocale: true
     }
   },
-  site: 'https://trybrew.app',
   integrations: [
     icon(),
     mdx()
   ],
+  site: 'https://trybrew.app',
   output: 'static'
 })
