@@ -18,8 +18,9 @@ const messages = commonMessages(locale)
 
 <div class="root">
   <h1 class="title">
-    <a class="method-link" href={getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)}>{messages[recipe.method]}</a
-    >
+    <a class="method-link" href={getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)}>
+      {messages[recipe.method]}
+    </a>
     / {recipe.name}
   </h1>
   <div class="properties">
