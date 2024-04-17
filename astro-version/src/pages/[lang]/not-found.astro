@@ -1,0 +1,19 @@
+---
+import type { GetStaticPaths } from 'astro'
+
+import { notFoundMessages } from '../../i18n/locales/not-found/en'
+import Layout from '../../layouts/Layout.astro'
+
+const messages = notFoundMessages(Astro.currentLocale)
+
+export const getStaticPaths = (async () => [
+  { params: { lang: 'ru' } },
+  { params: { lang: 'en' } }
+]) satisfies GetStaticPaths
+---
+
+<Layout>
+  <h1>{messages.title}</h1>
+  <p>{messages.subtitle}</p>
+  <a href="/">{messages.link}</a>
+</Layout>
