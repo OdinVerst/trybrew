@@ -13,28 +13,19 @@ const messages = t(Astro.currentLocale, 'settings', {
 })
 ---
 
-<Layout title={messages.title}>
+<Layout description={messages.title} title={messages.title}>
   <h1>{messages.header}</h1>
   <div class="settings">
     <label class="setting">
       <span>{messages.theme}</span>
       <select class="select" id="theme-select" name="theme">
-        <option
-          class="selectOption"
-          value="auto"
-        >
+        <option class="selectOption" value="auto">
           {messages['theme.system']}
         </option>
-        <option
-          class="selectOption"
-          value="dark"
-        >
+        <option class="selectOption" value="dark">
           {messages['theme.dark']}
         </option>
-        <option
-          class="selectOption"
-          value="light"
-        >
+        <option class="selectOption" value="light">
           {messages['theme.light']}
         </option>
       </select>
@@ -42,20 +33,8 @@ const messages = t(Astro.currentLocale, 'settings', {
     <label class="setting">
       <span>{messages.language}</span>
       <select class="select" id="language-select" name="language">
-        <option
-          class="selectOption"
-          selected={Astro.currentLocale === 'ru'}
-          value="ru"
-        >
-          Русский
-        </option>
-        <option
-          class="selectOption"
-          selected={Astro.currentLocale === 'en'}
-          value="en"
-        >
-          English
-        </option>
+        <option class="selectOption" selected={Astro.currentLocale === 'ru'} value="ru"> Русский </option>
+        <option class="selectOption" selected={Astro.currentLocale === 'en'} value="en"> English </option>
       </select>
     </label>
   </div>

@@ -33,12 +33,10 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths
 ---
 
-<Layout>
+<Layout description={method} title={method}>
   <h1 class="title">{method}</h1>
   <div class="recipes">
-      {entries.map(recipe => (
-        <RecipeCard {recipe} />
-      ))}
+    {entries.map(recipe => <RecipeCard {recipe} />)}
   </div>
 </Layout>
 

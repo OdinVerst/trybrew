@@ -12,12 +12,13 @@ const messages = t(Astro.currentLocale, 'about', {
     <br/><br/> Wishes and suggestions can be sent to: {suggestions}`
   ),
   contributors: 'Contributors',
+  description: 'Information about the Try Brew project',
   header: 'About',
   support: 'Support'
 })
 ---
 
-<Layout description={messages.header} title={messages.header}>
+<Layout description={messages.description} title={messages.header}>
   <h1>{messages.header}</h1>
   <p
     set:html={messages.about({

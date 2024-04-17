@@ -13,6 +13,7 @@ export function commonMessages (locale?: string) {
     sections: 'Sections',
     settings: 'Settings',
     source: 'Source',
-    summer: 'Summer'
+    summer: 'Summer',
+    title: 'TryBrew'
   })
 }
