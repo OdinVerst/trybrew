@@ -1,0 +1,26 @@
+{
+  "rewrites": [
+    {
+      "source": "/:path",
+      "has": [
+        {
+          "type": "header",
+          "key": "Accept-Language",
+          "value": "en-US"
+        }
+      ],
+      "destination": "/en/not-found"
+    },
+    {
+      "source": "/:path",
+      "has": [
+        {
+          "type": "header",
+          "key": "Accept-Language",
+          "value": "ru-RU"
+        }
+      ],
+      "destination": "/ru/not-found"
+    }
+  ]
+}
