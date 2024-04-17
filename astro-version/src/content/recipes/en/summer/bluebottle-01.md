@@ -6,16 +6,17 @@ name: New Orleans-Style Iced Coffee
 method: summer
 
 properties:
-  time: '12 h'
-  water: '2 l'
-  temperature: 'cold'
-  coffeeWeight: '340 gr'
+  coffeeWeight: 340
+  water: 2000
+  time: '12:00:00'
+  temperature: cold
 
-link: 'https://bluebottlecoffee.com/us/eng/brew-guides/new-orleans-style-iced-coffee'
-tags: ['summer']
+author: Blue Bottle
+authorImg: bluebottle
 
-author: 'Blue Bottle'
-authorImg: 'bluebottle'
+link: https://bluebottlecoffee.com/us/eng/brew-guides/new-orleans-style-iced-coffee
+tags:
+  - summer
 ---
 
 ## Recipe

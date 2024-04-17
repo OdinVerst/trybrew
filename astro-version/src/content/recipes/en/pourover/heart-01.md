@@ -6,16 +6,17 @@ name: Universal
 method: pourover
 
 properties:
+  coffeeWeight: 22
+  water: 360
   time: '2:30'
-  water: '360 ml'
-  temperature: '96'
-  coffeeWeight: '22 gr'
+  temperature: 96
 
-link: 'https://www.heartroasters.com/pages/v60'
-tags: ['pourover']
+author: Heart roasters
+authorImg: heart
 
-author: 'Heart roasters'
-authorImg: 'heart'
+link: https://www.heartroasters.com/pages/v60
+tags:
+  - pourover
 ---
 
 ## Recipe

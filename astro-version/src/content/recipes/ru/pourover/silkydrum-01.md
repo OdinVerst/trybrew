@@ -1,18 +1,22 @@
 ---
+title: Рецепт фильтр кофе Универсальный (Silky Drum | Руслан Шульги)
+description: Рецепт V60 (Универсальный) | 250 мл | 15 г
+
+name: Универсальный
+method: pourover
+
+properties:
+  coffeeWeight: 15
+  water: 250
+  time: '2:30'
+  temperature: 97
+
 author: Silky Drum (Руслан Шульги)
 authorImg: silky
-description: Рецепт V60 (Универсальный) | 250 мл | 15 г
+
 link: https://www.silkydrum.ru/recipes
-method: pourover
-name: Универсальный
-properties:
-  coffeeWeight: 15 г
-  temperature: '97'
-  time: '2:30'
-  water: 250 мл
 tags:
-- pourover
-title: Рецепт фильтр кофе Универсальный (Silky Drum | Руслан Шульги)
+  - pourover
 ---
 
 ## Рецепт

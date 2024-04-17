@@ -6,16 +6,17 @@ name: Universal
 method: pourover
 
 properties:
+  coffeeWeight: 15
+  water: 250
   time: '2:30'
-  water: '250 ml'
-  temperature: '97'
-  coffeeWeight: '15 gr'
+  temperature: 97
 
-recipeLink: 'https://www.silkydrum.ru/recipes'
-tags: ['pourover']
+author: Silky Drum (Ruslan Shulgi)
+authorImg: silky
 
-author: 'Silky Drum (Ruslan Shulgi)'
-authorImg: 'silky'
+link: https://www.silkydrum.ru/recipes
+tags:
+  - pourover
 ---
 
 ## Recipe

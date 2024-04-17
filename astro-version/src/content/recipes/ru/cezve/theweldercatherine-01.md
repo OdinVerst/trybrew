@@ -1,16 +1,20 @@
 ---
+title: Рецепт джезва с апельсиновым соком и специями (Сергей Блинников)
+description: Рецепт джезва с апельсиновым соком и специями | 110 мл | 11 г
+
+name: C апельсиновым соком и специями
+method: cezve
+
+properties:
+  coffeeWeight: 11
+  water: 110
+
 author: the Welder Catherine (Сергей Блинников)
 authorImg: thewelder
-description: Рецепт джезва с апельсиновым соком и специями | 110 мл | 11 г
+
 link: https://www.youtube.com/watch?v=H2WI9vpwOWA
-method: cezve
-name: C апельсиновым соком и специями
-properties:
-  coffeeWeight: 11 г
-  water: 110 мл
 tags:
-- cezve
-title: Рецепт джезва с апельсиновым соком и специями (Сергей Блинников)
+  - cezve
 ---
 
 ## Рецепт

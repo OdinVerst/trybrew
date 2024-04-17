@@ -1,18 +1,22 @@
 ---
+title: Рецепт Cold Brew (Tasty coffee)
+description: Рецепт Cold Brew | 1500 мл | Эфиопия Ненсебо | 8 часов
+
+name: Эфиопия Ненсебо
+method: coldbrew
+
+properties:
+  coffeeWeight: 150
+  water: 1500
+  time: '08:00:00'
+  ice: 1500
+
 author: Tasty Coffee
 authorImg: tastycoffee
-description: Рецепт Cold Brew | 1500 мл | Эфиопия Ненсебо | 8 часов
+
 link: https://shop.tastycoffee.ru/blog/cold-brew-recepti
-method: coldbrew
-name: Эфиопия Ненсебо
-properties:
-  coffeeWeight: 150 г
-  temperature: ''
-  time: 8 hrs
-  water: 1500 мл
 tags:
-- coldbrew
-title: Рецепт Cold Brew (Tasty coffee)
+  - coldbrew
 ---
 
 ## Рецепт

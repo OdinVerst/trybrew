@@ -1,21 +1,22 @@
 ---
-title: 'Recipe AeroPress (the Welder Catherine)'
-description: 'Recipe AeroPress | Rwanda Ubumwe Whisky | 210 ml | 16.5 gr'
+title: Recipe AeroPress (the Welder Catherine)
+description: Recipe AeroPress | Rwanda Ubumwe Whisky | 210 ml | 16.5 gr
 
-name: 'Rwanda Ubumwe Whisky'
+name: Rwanda Ubumwe Whisky
 method: aeropress
 
 properties:
-  water: '210 ml'
-  coffeeWeight: '16.5 gr.'
+  coffeeWeight: 16.5
+  water: 210
   time: '1:25'
-  temperature: '91'
+  temperature: 91
 
-link: 'https://theweldercatherine.ru/catalog/dlya_filtra/ruanda_ubumve_viski/'
-tags: ['aeropress']
+author: the Welder Catherine
+authorImg: thewelder
 
-author: 'the Welder Catherine'
-authorImg: 'thewelder'
+link: https://theweldercatherine.ru/catalog/dlya_filtra/ruanda_ubumve_viski/
+tags:
+  - aeropress
 ---
 
 __Preparation: (Method reversed)__

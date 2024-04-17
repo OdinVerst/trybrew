@@ -6,15 +6,16 @@ name: Universal
 method: pourover
 
 properties:
+  coffeeWeight: 14.5
+  water: 210
   time: '3:30'
-  water: '210 ml'
-  temperature: '96'
-  coffeeWeight: '14,5 gr'
+  temperature: 96
 
-link: 'https://www.lacabra.dk/pages/v60-brew-guide'
-tags: ['pourover']
+author: La Cabra
 
-author: 'La Cabra'
+link: https://www.lacabra.dk/pages/v60-brew-guide
+tags:
+  - pourover
 ---
 
 ## Recipe

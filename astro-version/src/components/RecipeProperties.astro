@@ -1,0 +1,64 @@
+---
+import type { CollectionEntry } from 'astro:content'
+
+import { Icon } from 'astro-icon/components'
+
+import { formatProperty } from '../i18n/utils'
+
+interface Props {
+  properties: CollectionEntry<'recipes'>['data']['properties']
+}
+
+const { properties } = Astro.props
+
+const { temperature, time, volume, weight } = formatProperty(Astro.currentLocale)
+---
+
+{
+  properties.coffeeWeight && (
+    <div class="property">
+      <Icon name="coffee" />
+      {weight(properties.coffeeWeight)}
+    </div>
+  )
+}
+{
+  properties.water && (
+    <div class="property">
+      <Icon name="water" />
+      {volume(properties.water)}
+    </div>
+  )
+}
+{
+  properties.time && (
+    <div class="property">
+      <Icon name="time" />
+      {time(properties.time)}
+    </div>
+  )
+}
+{
+  properties.temperature && (
+    <div class="property">
+      <Icon name="temperature" />
+      {temperature(properties.temperature)}
+    </div>
+  )
+}
+{
+  properties.ice && (
+    <div class="property">
+      <Icon name="ice" />
+      {weight(properties.ice)}
+    </div>
+  )
+}
+
+<style>
+  .property {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+</style>

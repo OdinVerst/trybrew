@@ -1,21 +1,22 @@
 ---
 title: Burundi Buziraguhindwa coffee filter recipe (the Welder Catherine)
-description: Recipe V60 (Burundi Buziraguhindwa) | 250 ml | 16,5 gr
+description: Recipe V60 (Burundi Buziraguhindwa) | 250 ml | 16.5 gr
 
 name: Burundi Buziraguhindwa (Barrels)
 method: pourover
 
 properties:
+  coffeeWeight: 16.5
+  water: 250
   time: '2:00'
-  water: '250 ml'
-  temperature: '95'
-  coffeeWeight: '16.5 gr'
+  temperature: 95
 
-link: 'https://www.youtube.com/watch?v=-msoGbvpr7U'
-tags: ['pourover']
+author: the Welder Catherine
+authorImg: thewelder
 
-author: 'the Welder Catherine'
-authorImg: 'thewelder'
+link: https://www.youtube.com/watch?v=-msoGbvpr7U
+tags:
+  - pourover
 ---
 
 ## Recipe

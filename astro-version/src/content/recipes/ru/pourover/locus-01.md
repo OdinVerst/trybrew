@@ -1,18 +1,21 @@
 ---
+title: Рецепт фильтр кофе Эфиопия натуральной обработки (Locus)
+description: Рецепт V60 (Эфиопия натуральной обработки) | 220 ml | 20.5 г
+
+name: Эфиопия натуральной обработки
+method: pourover
+
+properties:
+  coffeeWeight: 20.5
+  water: 220
+  temperature: 85
+
 author: Locus
 authorImg: locus
-description: Рецепт V60 (Эфиопия натуральной обработки) | 220 ml | 20.5 г
+
 link: https://www.instagram.com/locus.coffee/
-method: pourover
-name: Эфиопия натуральной обработки
-properties:
-  coffeeWeight: 20,5 г
-  temperature: '85'
-  time: ''
-  water: 220 мл
 tags:
-- pourover
-title: Рецепт фильтр кофе Эфиопия натуральной обработки (Locus)
+  - pourover
 ---
 
 ## Рецепт

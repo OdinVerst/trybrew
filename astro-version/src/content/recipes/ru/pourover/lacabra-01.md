@@ -1,18 +1,21 @@
 ---
-author: La Cabra
-authorImg: ''
-description: Рецепт V60 (Универсальный) | 210 мл | 14.5 г
-link: https://www.lacabra.dk/pages/v60-brew-guide
-method: pourover
-name: Универсальный
-properties:
-  coffeeWeight: 14,5 г
-  temperature: '96'
-  time: '3:30'
-  water: 210 мл
-tags:
-- pourover
 title: Рецепт фильтр кофе Универсальный (La Cabra)
+description: Рецепт V60 (Универсальный) | 210 мл | 14.5 г
+
+name: Универсальный
+method: pourover
+
+properties:
+  coffeeWeight: 14.5
+  water: 210
+  time: '3:30'
+  temperature: 96
+
+author: La Cabra
+
+link: https://www.lacabra.dk/pages/v60-brew-guide
+tags:
+  - pourover
 ---
 
 ## Рецепт

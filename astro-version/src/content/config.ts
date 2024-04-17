@@ -8,16 +8,18 @@ const recipesCollection = defineCollection({
     name: z.string(),
     method: z.string(),
     properties: z.object({
-      coffeeWeight: z.string(),
-      water: z.string(),
+      coffeeWeight: z.number(),
+      water: z.number(),
       time: z.string().optional(),
-      temperature: z.string().optional()
+      temperature: z.union([z.string(), z.number()]).optional(),
+      ice: z.number().optional()
     }),
-    tags: z.array(z.string()).or(z.string()),
-    link: z.string().optional(),
+    // TODO: describe schema for steps
     steps: z.array(z.any()).optional(),
     author: z.string(),
-    authorImg: z.string().optional()
+    authorImg: z.string().optional(),
+    link: z.string().optional(),
+    tags: z.array(z.string()).or(z.string())
   }),
   type: 'content'
 })

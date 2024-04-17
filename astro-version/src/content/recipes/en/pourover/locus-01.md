@@ -6,17 +6,16 @@ name: Ethiopia Natural Processing
 method: pourover
 
 properties:
-  time: ''
-  water: '220 ml'
-  temperature: '85'
-  coffeeWeight: '20,5 gr'
+  coffeeWeight: 20.5
+  water: 220
+  temperature: 85
 
-link: 'https://www.instagram.com/locus.coffee/'
-tags: ['pourover']
+author: Locus
+authorImg: locus
 
-author: 'Locus'
-authorImg: 'locus'
-
+link: https://www.instagram.com/locus.coffee/
+tags:
+  - pourover
 ---
 
 ## Recipe

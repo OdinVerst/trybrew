@@ -1,7 +1,7 @@
-import type { Messages, Translations } from '@nanostores/i18n'
-import type { StoreValue } from 'nanostores'
+import type { Formatter, Messages, Translations } from '@nanostores/i18n'
+import type { ReadableAtom, StoreValue } from 'nanostores'
 
-import { createI18n } from '@nanostores/i18n'
+import { createI18n, formatter } from '@nanostores/i18n'
 import { atom } from 'nanostores'
 
 import aboutRu from './locales/about/ru.json'
@@ -27,4 +27,80 @@ export function t<BaseTranslation extends Translations> (
   })
 
   return i18n(componentName, baseTranslation).get()
+}
+
+function format (locale: string = 'en'): StoreValue<ReadableAtom<Formatter>> {
+  return formatter(atom(locale)).get()
+}
+
+export type FormatPropertyReturn = {
+  temperature: (value: number | string) => string
+  time: (value: string) => string
+  volume: (value: number) => string
+  weight: (value: number) => string
+}
+
+export function formatProperty (locale: string = 'en'): FormatPropertyReturn {
+  const formatters = format(locale)
+  return {
+    temperature: (value: number | string) => {
+      if (typeof value === 'number') {
+        return formatters.number(value, {
+          style: 'unit',
+          unit: 'celsius'
+        })
+      }
+      if (typeof value === 'string' && value.startsWith('~')) {
+        return (
+          '~' +
+          formatters.number(Number(value.slice(1)), {
+            style: 'unit',
+            unit: 'celsius'
+          })
+        )
+      }
+      return value
+    },
+    time: (value: string) => {
+      const parts = value.split(':')
+      if (parts.length === 3) {
+        const [hours, minutes] = parts.map(Number)
+        let duration = ''
+        if (hours) {
+          duration += formatters.number(hours, {
+            style: 'unit',
+            unit: 'hour'
+          })
+        }
+        if (minutes) {
+          duration +=
+            ' ' +
+            formatters.number(minutes, {
+              style: 'unit',
+              unit: 'minute'
+            })
+        }
+        return duration
+      }
+      return value
+    },
+    volume: (value: number) => {
+      const isLiters = value >= 1000
+      const opts: Intl.NumberFormatOptions = {
+        style: 'unit',
+        unit: isLiters ? 'liter' : 'milliliter'
+      }
+      value = isLiters ? value / 1000 : value
+      return formatters.number(value, opts)
+    },
+    weight: (value: number) => {
+      const isKilograms = value >= 1000
+      const opts: Intl.NumberFormatOptions = {
+        style: 'unit',
+        unit: isKilograms ? 'kilogram' : 'gram'
+      }
+      value = isKilograms ? value / 1000 : value
+      return formatters.number(value, opts)
+    }
+  }
 }

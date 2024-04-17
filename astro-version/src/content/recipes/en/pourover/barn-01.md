@@ -6,16 +6,17 @@ name: Universal
 method: pourover
 
 properties:
+  coffeeWeight: 16
+  water: 250
   time: '2:30'
-  water: '250 ml'
-  temperature: '94'
-  coffeeWeight: '16 gr'
+  temperature: 94
 
-link: 'https://thebarn.de/blogs/the-barn-blog/v60-drip'
-tags: ['pourover']
+author: The Barn
+authorImg: barn
 
-author: 'The Barn'
-authorImg: 'barn'
+link: https://thebarn.de/blogs/the-barn-blog/v60-drip
+tags:
+  - pourover
 ---
 
 ## Recipe

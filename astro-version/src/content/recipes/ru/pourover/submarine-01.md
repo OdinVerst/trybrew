@@ -1,18 +1,22 @@
 ---
+title: Рецепт фильтр кофе Кения "Гатомбойя" (Submarine)
+description: Рецепт V60 (Кения "Гатомбойя") | 250 мл | 17 г
+
+name: Кения (Гатомбойя)
+method: pourover
+
+properties:
+  coffeeWeight: 17
+  water: 250
+  time: '2:50'
+  temperature: 95
+
 author: Submarine
 authorImg: submarine
-description: Рецепт V60 (Кения "Гатомбойя") | 250 мл | 17 г
+
 link: https://sbmrne.ru/product-card/kenya_gatomboya
-method: pourover
-name: Кения (Гатомбойя)
-properties:
-  coffeeWeight: 17 г
-  temperature: '95'
-  time: '2:50'
-  water: 250 мл
 tags:
-- pourover
-title: Рецепт фильтр кофе Кения "Гатомбойя" (Submarine)
+  - pourover
 ---
 
 ## Рецепт
