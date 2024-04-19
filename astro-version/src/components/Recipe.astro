@@ -14,14 +14,13 @@ const { recipe } = Astro.props
 
 const locale = Astro.currentLocale || 'en'
 const messages = commonMessages(locale)
+
+const href = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
 ---
 
 <div class="root">
   <h1 class="title">
-    <a class="method-link" href={getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)}>
-      {messages[recipe.method]}
-    </a>
-    / {recipe.name}
+    <a class="method-link" {href}>{messages[recipe.method]}</a> / {recipe.name}
   </h1>
   <RecipeProperties properties={recipe.properties} />
   <div>
