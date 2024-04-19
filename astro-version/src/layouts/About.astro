@@ -2,20 +2,11 @@
 import { params } from '@nanostores/i18n'
 
 import Contributors from '../components/Contributors.astro'
+import { aboutMessages } from '../i18n/locales/about/en'
 import { t } from '../i18n/utils'
 import Layout from './Layout.astro'
 
-const messages = t(Astro.currentLocale, 'about', {
-  about: params(
-    `Try brew - open source project created by coffee lovers to get new taste emotions. Works on {platform}.
-    <br/><br/> Source code is on {source}.
-    <br/><br/> Wishes and suggestions can be sent to: {suggestions}`
-  ),
-  contributors: 'Contributors',
-  description: 'Information about the Try Brew project',
-  header: 'About',
-  support: 'Support'
-})
+const messages = aboutMessages(Astro.currentLocale)
 ---
 
 <Layout description={messages.description} title={messages.header}>
