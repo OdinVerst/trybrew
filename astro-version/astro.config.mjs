@@ -1,6 +1,7 @@
 import mdx from '@astrojs/mdx'
 import icon from 'astro-icon'
 import { defineConfig } from 'astro/config'
+import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   devToolbar: {
@@ -16,7 +17,8 @@ export default defineConfig({
   },
   integrations: [
     icon(),
-    mdx()
+    mdx(),
+    sitemap()
   ],
   site: 'https://trybrew.app',
   output: 'static'
