@@ -5,6 +5,7 @@ import type { CollectionEntry } from 'astro:content'
 import { getCollection } from 'astro:content'
 
 import RecipeCard from '../../../components/RecipeCard.astro'
+import { commonMessages } from '../../../i18n/locales/common/en'
 import Layout from '../../../layouts/Layout.astro'
 
 interface Props {
@@ -12,7 +13,9 @@ interface Props {
   method: string
 }
 
+const locale = Astro.currentLocale || 'en'
 const { entries, method } = Astro.props
+const messages = commonMessages(locale)
 
 export const getStaticPaths = (async () => {
   const recipes = await getCollection('recipes')
@@ -33,8 +36,8 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths
 ---
 
-<Layout description={method} title={method}>
-  <h1 class="title">{method}</h1>
+<Layout description={method} title={messages[method]}>
+  <h1 class="title">{messages[method]}</h1>
   <div class="recipes">
     {entries.map(recipe => <RecipeCard {recipe} />)}
   </div>
@@ -44,7 +47,6 @@ export const getStaticPaths = (async () => {
   .title {
     margin-block: 0 28px;
     font-size: 24px;
-    text-transform: capitalize;
   }
 
   .recipes {
