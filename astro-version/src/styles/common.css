@@ -29,6 +29,10 @@ body {
   color: var(--color-text);
 }
 
+button {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
 a {
   color: var(--color-link-text);
 }
