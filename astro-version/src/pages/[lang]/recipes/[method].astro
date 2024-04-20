@@ -19,6 +19,9 @@ const { entries, method } = Astro.props
 const messages = commonMessages(locale)
 const seoTags = methodsMessages(locale)
 
+const title = seoTags[`${method}Title`]
+const description = seoTags[`${method}Description`]
+
 export const getStaticPaths = (async () => {
   const recipes = await getCollection('recipes')
   const groupedRecipes: Record<string, Record<string, CollectionEntry<'recipes'>[]>> = {}
@@ -36,11 +39,9 @@ export const getStaticPaths = (async () => {
     }))
   })
 }) satisfies GetStaticPaths
-
-console.log(seoTags, `${method}Description`, seoTags[`${method}Description`])
 ---
 
-<Layout description={seoTags[`${method}Description`]} title={seoTags[`${method}Title`]}>
+<Layout description={description} title={title}>
   <h1 class="title">{messages[method]}</h1>
   <div class="recipes">
     {entries.map(recipe => <RecipeCard {recipe} />)}
