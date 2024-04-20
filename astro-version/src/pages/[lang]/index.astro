@@ -35,7 +35,7 @@ export const getStaticPaths = (async () => [
 ]) satisfies GetStaticPaths
 ---
 
-<Layout title={messages.title} description={messages.title}>
+<Layout title={messages.title} description={messages.description}>
   {
     groupedRecipes.map(([method, recipesList]) => {
       return (

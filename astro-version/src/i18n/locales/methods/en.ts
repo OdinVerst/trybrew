@@ -6,7 +6,7 @@ export function methodsMessages (locale?: string) {
     aeropressTitle: 'Recipes AeroPress',
     cezveDescription: 'Recipes cezve - classic and unusual recipes.',
     cezveTitle: 'Recipes cezve',
-    chemexDescription: 'Recipes Chemex - direct and inverted brewing methods.',
+    chemexDescription: 'Recipes Chemex - classic and unusual recipes.',
     chemexTitle: 'Recipes Chemex',
     coldbrewDescription: 'Recipes Cold Brew - classic and unusual recipes.',
     coldbrewTitle: 'Recipes Cold Brew',
