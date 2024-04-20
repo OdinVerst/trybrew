@@ -5,6 +5,7 @@ import { Icon } from 'astro-icon/components'
 import { getRelativeLocaleUrl } from 'astro:i18n'
 
 import { commonMessages } from '../i18n/locales/common/en'
+import Author from './Author.astro'
 import RecipeProperties from './RecipeProperties.astro'
 
 type Entry = CollectionEntry<'recipes'>
@@ -57,11 +58,7 @@ const href = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
   </div>
   <div class="source">
     <span>{messages.source}:</span>
-    <a class="author" href={recipe.link} target="_blank">
-      {recipe.authorImg && <Icon class="author__icon" name={recipe.authorImg} />}
-      {recipe.author}
-      <Icon class="author__source-icon" name="source-link" />
-    </a>
+    <Author image={recipe.authorImg} link={recipe.link} name={recipe.author} />
   </div>
 </div>
 
@@ -102,27 +99,6 @@ const href = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
     display: flex;
     align-items: center;
     gap: 12px;
-  }
-
-  .author {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .author__icon {
-    flex-shrink: 0;
-    width: 24px;
-    height: 24px;
-  }
-
-  .author__source-icon {
-    width: 14px;
-    height: 14px;
-    color: var(--color-link-text);
-    flex-shrink: 0;
   }
 </style>
 

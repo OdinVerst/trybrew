@@ -4,6 +4,7 @@ import type { CollectionEntry } from 'astro:content'
 import { Icon } from 'astro-icon/components'
 import { getRelativeLocaleUrl } from 'astro:i18n'
 
+import Author from './Author.astro'
 import RecipeProperties from './RecipeProperties.astro'
 
 interface Props {
@@ -19,10 +20,7 @@ const href = getRelativeLocaleUrl(locale, `recipes/${recipe.slug.split(`${locale
 <article class="card">
   <a class="link" {href}>{recipe.data.name}</a>
   <RecipeProperties properties={recipe.data.properties} />
-  <div class="author">
-    {recipe.data.authorImg && <Icon class="author__icon" name={recipe.data.authorImg} />}
-    {recipe.data.author}
-  </div>
+  <Author image={recipe.data.authorImg} name={recipe.data.author} />
 </article>
 
 <style>
@@ -34,12 +32,12 @@ const href = getRelativeLocaleUrl(locale, `recipes/${recipe.slug.split(`${locale
     background: var(--color-secondary-background);
     display: flex;
     flex-flow: column;
+    gap: 16px;
   }
 
   .link {
     font-size: 18px;
     font-weight: 600;
-    margin-block-end: 16px;
     color: inherit;
     text-decoration: none;
   }
@@ -52,17 +50,5 @@ const href = getRelativeLocaleUrl(locale, `recipes/${recipe.slug.split(`${locale
     position: absolute;
     inset: 0;
     content: '';
-  }
-
-  .author {
-    margin-block-start: 12px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .author__icon {
-    width: 24px;
-    height: 24px;
   }
 </style>

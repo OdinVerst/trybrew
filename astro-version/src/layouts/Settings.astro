@@ -66,16 +66,20 @@ const messages = settingsMessages(Astro.currentLocale)
 
 <style>
   .settings {
-    display: flex;
-    gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 1em;
+    margin-bottom: 2em;
   }
 
   .setting {
     padding: 1.5rem;
     border-radius: 1.5rem;
+    background-color: var(--color-secondary-background);
     box-shadow: var(--common-box-shadow);
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 8px;
   }
 

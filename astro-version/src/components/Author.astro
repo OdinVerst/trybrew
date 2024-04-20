@@ -1,0 +1,56 @@
+---
+import { Icon } from 'astro-icon/components'
+
+interface Props {
+  image?: string
+  link?: string
+  name: string
+}
+
+const { image, link, name } = Astro.props
+---
+
+{
+  link
+    ? (
+    <a class="author" href={link} target="_blank">
+      {image && <Icon class="author__icon" name={image} />}
+      {name}
+      <Icon class="author__source-icon" name="source-link" />
+    </a>
+      )
+    : (
+    <div class="author">
+      {image && <Icon class="author__icon" name={image} />}
+      {name}
+    </div>
+      )
+}
+
+<style>
+  // TODO: Add visited styles
+  .author {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .author__icon {
+    color: black;
+    width: 25px;
+    height: 25px;
+    background: var(--color-author-icon-background);
+    padding: 2px;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  .author__source-icon {
+    width: 14px;
+    height: 14px;
+    color: var(--color-link-text);
+    flex-shrink: 0;
+  }
+</style>
