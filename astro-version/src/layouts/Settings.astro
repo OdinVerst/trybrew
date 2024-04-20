@@ -19,22 +19,13 @@ const messages = t(Astro.currentLocale, 'settings', {
     <label class="setting">
       <span>{messages.theme}</span>
       <select class="select" id="theme-select" name="theme">
-        <option
-          class="selectOption"
-          value="auto"
-        >
+        <option class="selectOption" value="auto">
           {messages['theme.system']}
         </option>
-        <option
-          class="selectOption"
-          value="dark"
-        >
+        <option class="selectOption" value="dark">
           {messages['theme.dark']}
         </option>
-        <option
-          class="selectOption"
-          value="light"
-        >
+        <option class="selectOption" value="light">
           {messages['theme.light']}
         </option>
       </select>
@@ -42,20 +33,8 @@ const messages = t(Astro.currentLocale, 'settings', {
     <label class="setting">
       <span>{messages.language}</span>
       <select class="select" id="language-select" name="language">
-        <option
-          class="selectOption"
-          selected={Astro.currentLocale === 'ru'}
-          value="ru"
-        >
-          Русский
-        </option>
-        <option
-          class="selectOption"
-          selected={Astro.currentLocale === 'en'}
-          value="en"
-        >
-          English
-        </option>
+        <option class="selectOption" selected={Astro.currentLocale === 'ru'} value="ru"> Русский </option>
+        <option class="selectOption" selected={Astro.currentLocale === 'en'} value="en"> English </option>
       </select>
     </label>
   </div>
@@ -94,16 +73,20 @@ const messages = t(Astro.currentLocale, 'settings', {
 
 <style>
   .settings {
-    display: flex;
-    gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 1em;
+    margin-bottom: 2em;
   }
 
   .setting {
     padding: 1.5rem;
     border-radius: 1.5rem;
+    background-color: var(--color-secondary-background);
     box-shadow: var(--common-box-shadow);
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 8px;
   }
 
