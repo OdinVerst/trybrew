@@ -6,7 +6,7 @@ import Layout from './Layout.astro'
 const messages = settingsMessages(Astro.currentLocale)
 ---
 
-<Layout description={messages.title} title={messages.title}>
+<Layout title={messages.title} description={messages.title}>
   <h1>{messages.header}</h1>
   <div class="settings">
     <label class="setting">
