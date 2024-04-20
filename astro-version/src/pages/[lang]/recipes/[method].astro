@@ -6,6 +6,7 @@ import { getCollection } from 'astro:content'
 
 import RecipeCard from '../../../components/RecipeCard.astro'
 import { commonMessages } from '../../../i18n/locales/common/en'
+import { methodsMessages } from '../../../i18n/locales/methods/en'
 import Layout from '../../../layouts/Layout.astro'
 
 interface Props {
@@ -16,6 +17,7 @@ interface Props {
 const locale = Astro.currentLocale || 'en'
 const { entries, method } = Astro.props
 const messages = commonMessages(locale)
+const seoTags = methodsMessages(locale)
 
 export const getStaticPaths = (async () => {
   const recipes = await getCollection('recipes')
@@ -34,9 +36,11 @@ export const getStaticPaths = (async () => {
     }))
   })
 }) satisfies GetStaticPaths
+
+console.log(seoTags, `${method}Description`, seoTags[`${method}Description`])
 ---
 
-<Layout description={method} title={messages[method]}>
+<Layout description={seoTags[`${method}Description`]} title={seoTags[`${method}Title`]}>
   <h1 class="title">{messages[method]}</h1>
   <div class="recipes">
     {entries.map(recipe => <RecipeCard {recipe} />)}
