@@ -15,6 +15,7 @@
   "dependencies": {
     "@astrojs/check": "^0.5.10",
     "@astrojs/mdx": "^2.2.2",
+    "@astrojs/sitemap": "^3.1.4",
     "@nanostores/i18n": "^0.12.1",
     "astro": "^4.5.12",
     "astro-icon": "^1.1.0",

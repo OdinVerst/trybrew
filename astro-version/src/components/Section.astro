@@ -16,9 +16,9 @@ const buttonId = `${baseId}__btn`
       aria-controls={sectionId}
       aria-expanded="true"
       class="accordion"
-      data-accordion-toggle
       id={buttonId}
       type="button"
+      data-accordion-toggle
     >
       <slot name="title" />
       <Icon class="chevron" name="chevron-down" />
@@ -53,18 +53,18 @@ const buttonId = `${baseId}__btn`
 </style>
 
 <script>
-const buttons = document.querySelectorAll('button[data-accordion-toggle]')
-buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    const el = document.querySelector(`#${button.getAttribute('aria-controls')}`)
-    if (!el) return
-    const isOpen = button.getAttribute('aria-expanded') === 'true'
-    button.setAttribute('aria-expanded', isOpen ? 'false' : 'true')
-    if (isOpen) {
-      el.setAttribute('hidden', '')
-    } else {
-      el.removeAttribute('hidden')
-    }
+  const buttons = document.querySelectorAll('button[data-accordion-toggle]')
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const el = document.querySelector(`#${button.getAttribute('aria-controls')}`)
+      if (!el) return
+      const isOpen = button.getAttribute('aria-expanded') === 'true'
+      button.setAttribute('aria-expanded', isOpen ? 'false' : 'true')
+      if (isOpen) {
+        el.setAttribute('hidden', '')
+      } else {
+        el.removeAttribute('hidden')
+      }
+    })
   })
-})
 </script>

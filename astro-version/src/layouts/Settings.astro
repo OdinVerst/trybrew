@@ -1,19 +1,12 @@
 ---
+import { settingsMessages } from '../i18n/locales/settings/en'
 import { t } from '../i18n/utils'
 import Layout from './Layout.astro'
 
-const messages = t(Astro.currentLocale, 'settings', {
-  header: 'Settings',
-  language: 'Language',
-  theme: 'Theme',
-  'theme.dark': 'Dark',
-  'theme.light': 'Light',
-  'theme.system': 'System',
-  title: 'Settings - Try brew'
-})
+const messages = settingsMessages(Astro.currentLocale)
 ---
 
-<Layout title={messages.title}>
+<Layout title={messages.title} description={messages.description}>
   <h1>{messages.header}</h1>
   <div class="settings">
     <label class="setting">
