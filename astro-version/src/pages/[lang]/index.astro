@@ -29,13 +29,13 @@ const groupedRecipes = Object.entries(
 
 const messages = commonMessages(locale)
 
-export const getStaticPaths = (async () => ([
+export const getStaticPaths = (async () => [
   { params: { lang: 'ru' } },
   { params: { lang: 'en' } }
-])) satisfies GetStaticPaths
+]) satisfies GetStaticPaths
 ---
 
-<Layout>
+<Layout title={messages.title} description={messages.description}>
   {
     groupedRecipes.map(([method, recipesList]) => {
       return (

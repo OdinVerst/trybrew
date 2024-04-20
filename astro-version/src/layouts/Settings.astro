@@ -1,40 +1,24 @@
 ---
+import { settingsMessages } from '../i18n/locales/settings/en'
 import { t } from '../i18n/utils'
 import Layout from './Layout.astro'
 
-const messages = t(Astro.currentLocale, 'settings', {
-  header: 'Settings',
-  language: 'Language',
-  theme: 'Theme',
-  'theme.dark': 'Dark',
-  'theme.light': 'Light',
-  'theme.system': 'System',
-  title: 'Settings - Try brew'
-})
+const messages = settingsMessages(Astro.currentLocale)
 ---
 
-<Layout title={messages.title}>
+<Layout title={messages.title} description={messages.description}>
   <h1>{messages.header}</h1>
   <div class="settings">
     <label class="setting">
       <span>{messages.theme}</span>
       <select class="select" id="theme-select" name="theme">
-        <option
-          class="selectOption"
-          value="auto"
-        >
+        <option class="selectOption" value="auto">
           {messages['theme.system']}
         </option>
-        <option
-          class="selectOption"
-          value="dark"
-        >
+        <option class="selectOption" value="dark">
           {messages['theme.dark']}
         </option>
-        <option
-          class="selectOption"
-          value="light"
-        >
+        <option class="selectOption" value="light">
           {messages['theme.light']}
         </option>
       </select>
@@ -42,20 +26,8 @@ const messages = t(Astro.currentLocale, 'settings', {
     <label class="setting">
       <span>{messages.language}</span>
       <select class="select" id="language-select" name="language">
-        <option
-          class="selectOption"
-          selected={Astro.currentLocale === 'ru'}
-          value="ru"
-        >
-          Русский
-        </option>
-        <option
-          class="selectOption"
-          selected={Astro.currentLocale === 'en'}
-          value="en"
-        >
-          English
-        </option>
+        <option class="selectOption" selected={Astro.currentLocale === 'ru'} value="ru"> Русский </option>
+        <option class="selectOption" selected={Astro.currentLocale === 'en'} value="en"> English </option>
       </select>
     </label>
   </div>

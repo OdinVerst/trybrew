@@ -8,11 +8,13 @@ export function commonMessages (locale?: string) {
     cezve: 'Cezve',
     chemex: 'Chemex',
     coldbrew: 'Cold brew',
+    description: 'Recipes for brewing alternatives',
     menu: 'Menu',
     pourover: 'Pourover',
     sections: 'Sections',
     settings: 'Settings',
     source: 'Source',
-    summer: 'Summer'
+    summer: 'Summer',
+    title: 'Recipes'
   })
 }

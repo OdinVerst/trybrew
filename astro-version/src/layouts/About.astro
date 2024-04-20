@@ -2,30 +2,20 @@
 import { params } from '@nanostores/i18n'
 
 import Contributors from '../components/Contributors.astro'
+import { aboutMessages } from '../i18n/locales/about/en'
 import { t } from '../i18n/utils'
 import Layout from './Layout.astro'
 
-const messages = t(Astro.currentLocale, 'about', {
-  about: params(
-    `Try brew - open source project created by coffee lovers to get new taste emotions. Works on {platform}.
-    <br/><br/> Source code is on {source}.
-    <br/><br/> Wishes and suggestions can be sent to: {suggestions}`
-  ),
-  contributors: 'Contributors',
-  header: 'About',
-  support: 'Support'
-})
+const messages = aboutMessages(Astro.currentLocale)
 ---
 
-<Layout>
+<Layout title={messages.header} description={messages.description}>
   <h1>{messages.header}</h1>
   <p
     set:html={messages.about({
       platform: '<a href="https://astro.build" target="_blank">astro</a>',
-      source:
-        '<a href="https://github.com/OdinVerst/trybrew" target="_blank">GitHub</a>',
-      suggestions:
-        '<a href="mailto:trycoffee.app@gmail.com">trycoffee.app@gmail.com</a>'
+      source: '<a href="https://github.com/OdinVerst/trybrew" target="_blank">GitHub</a>',
+      suggestions: '<a href="mailto:trycoffee.app@gmail.com">trycoffee.app@gmail.com</a>'
     })}
   />
   <h2>{messages.contributors}</h2>
@@ -41,7 +31,6 @@ const messages = t(Astro.currentLocale, 'about', {
     data-outline-color="#000000"
     data-slug="trybrew"
     data-text="Buy me a coffee"
-    is:inline
     src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
-  ></script>
+    is:inline></script>
 </Layout>

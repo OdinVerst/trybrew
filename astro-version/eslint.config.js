@@ -19,7 +19,16 @@ export default defineFlatConfig([
       perfectionist: eslintPluginPerfectionist
     },
     rules: {
-      ...eslintPluginPerfectionist.configs['recommended-alphabetical'].rules
+      ...eslintPluginPerfectionist.configs['recommended-alphabetical'].rules,
+      'perfectionist/sort-astro-attributes': [
+        'error',
+        {
+          'custom-groups': { description: 'description', title: 'title' },
+          groups: ['title', 'description', 'multiline', 'unknown', ['shorthand', 'astro-shorthand']],
+          order: 'asc',
+          type: 'alphabetical'
+        }
+      ]
     }
   },
   {
