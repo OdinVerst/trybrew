@@ -1,4 +1,6 @@
 {
+  "trailingSlash": false,
+  "cleanUrls": true,
   "redirects": [
     {
       "source": "/(aeropress|cezve|chemex|coldbrew|pourover|summer)/(.*)",
