@@ -1,7 +1,11 @@
 ---
 import type { GetStaticPaths } from 'astro'
 
-import AboutLayout from '../../layouts/About.astro'
+import Contributors from '../../components/Contributors.astro'
+import { aboutMessages } from '../../i18n/locales/about/en'
+import Layout from '../../layouts/Layout.astro'
+
+const messages = aboutMessages(Astro.currentLocale)
 
 export const getStaticPaths = (async () => ([
   { params: { lang: 'ru' } },
@@ -9,4 +13,28 @@ export const getStaticPaths = (async () => ([
 ])) satisfies GetStaticPaths
 ---
 
-<AboutLayout />
+<Layout title={messages.header} description={messages.description}>
+  <h1>{messages.header}</h1>
+  <p
+    set:html={messages.about({
+      platform: '<a href="https://astro.build" target="_blank">astro</a>',
+      source: '<a href="https://github.com/OdinVerst/trybrew" target="_blank">GitHub</a>',
+      suggestions: '<a href="mailto:trycoffee.app@gmail.com">trycoffee.app@gmail.com</a>'
+    })}
+  />
+  <h2>{messages.contributors}</h2>
+  <Contributors />
+  <h2>{messages.support}</h2>
+  <script
+    data-coffee-color="#ffffff"
+    data-color="#FFDD00"
+    data-emoji=""
+    data-font="Cookie"
+    data-font-color="#000000"
+    data-name="bmc-button"
+    data-outline-color="#000000"
+    data-slug="trybrew"
+    data-text="Buy me a coffee"
+    src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+    is:inline></script>
+</Layout>

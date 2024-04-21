@@ -1,5 +1,9 @@
 ---
-import type { OctokitReqRepoCollaboratorsList } from '../types'
+type OctokitReqRepoCollaboratorsList = {
+  avatar_url: string
+  html_url: string
+  login: string
+}[]
 
 const response = await fetch('https://api.github.com/repos/OdinVerst/trybrew/contributors')
 const contributors = (await response.json()) as OctokitReqRepoCollaboratorsList
