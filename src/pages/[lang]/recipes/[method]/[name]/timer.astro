@@ -1,0 +1,75 @@
+---
+import type { GetStaticPaths } from 'astro'
+import type { CollectionEntry } from 'astro:content'
+
+import { getCollection } from 'astro:content'
+import { getRelativeLocaleUrl } from 'astro:i18n'
+
+import Timer from '../../../../../components/Timer.astro'
+import { commonMessages } from '../../../../../i18n/locales/common/en'
+import { createPropertyFormatters } from '../../../../../i18n/utils'
+import Layout from '../../../../../layouts/Layout.astro'
+
+interface Props {
+  entry: CollectionEntry<'recipes'>
+}
+
+const { entry } = Astro.props
+const { method, name } = Astro.params
+const locale = Astro.currentLocale || 'en'
+const messages = commonMessages(locale)
+
+export const getStaticPaths = (async () => {
+  const recipes = await getCollection('recipes')
+  return recipes
+    .filter(entry => entry.data.steps !== undefined)
+    .map(entry => {
+      const [lang, method, name] = entry.slug.split('/')
+
+      return {
+        params: { lang, method, name },
+        props: { entry }
+      }
+    })
+}) satisfies GetStaticPaths
+const { weight } = createPropertyFormatters(Astro.currentLocale)
+
+function timeToSeconds (s: string) {
+  const coefficients = [1, 60, 24 * 60]
+  return s.split(':').map(Number).reverse().reduce((acc, cur, index) => acc + cur * coefficients[index], 0)
+}
+
+const methodHref = getRelativeLocaleUrl(locale, `/recipes/${method}`)
+const recipeHref = getRelativeLocaleUrl(locale, `/recipes/${method}/${name}`)
+const formattedSteps = entry.data.steps.map(step => ({
+  ...step,
+  time: timeToSeconds(step.time),
+  water: weight(step.water)
+}))
+---
+
+<Layout title={entry.data.title} description={entry.data.description} author={entry.data.author}>
+  <h1 class="title">
+    <a class="link" {methodHref}>{messages[entry.data.method]}</a>
+    / <a class="link" href={recipeHref}>{entry.data.name}</a>
+    / Timer
+  </h1>
+  <Timer steps={formattedSteps} />
+</Layout>
+
+<style>
+  .title {
+    margin-block: 0 28px;
+    font-size: 24px;
+    text-transform: capitalize;
+  }
+
+  .link {
+    display: inline-block;
+    color: inherit;
+  }
+
+  .link:visited {
+    color: inherit;
+  }
+</style>

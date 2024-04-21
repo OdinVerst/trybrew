@@ -4,6 +4,7 @@ import type { CollectionEntry } from 'astro:content'
 import { getRelativeLocaleUrl } from 'astro:i18n'
 
 import { commonMessages } from '../i18n/locales/common/en'
+import { createPropertyFormatters } from '../i18n/utils'
 import Author from './Author.astro'
 import RecipeProperties from './RecipeProperties.astro'
 
@@ -11,16 +12,19 @@ type Entry = CollectionEntry<'recipes'>
 type Props = { recipe: Entry['data'] }
 
 const { recipe } = Astro.props
+const { name } = Astro.params
 
 const locale = Astro.currentLocale || 'en'
 const messages = commonMessages(locale)
+const { time, weight } = createPropertyFormatters(Astro.currentLocale)
 
-const href = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
+const methodHref = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
+const timerHref = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}/${name}/timer`)
 ---
 
 <div class="root">
   <h1 class="title">
-    <a class="method-link" {href}>{messages[recipe.method]}</a> / {recipe.name}
+    <a class="method-link" {methodHref}>{messages[recipe.method]}</a> / {recipe.name}
   </h1>
   <RecipeProperties properties={recipe.properties} />
   <div>
@@ -41,8 +45,8 @@ const href = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
               {recipe.steps.map(it => {
                 return (
                   <tr>
-                    <td>{it.time}</td>
-                    <td>{it.water} gr.</td>
+                    <td>{time(it.time)}</td>
+                    <td>{weight(it.water)}</td>
                     <td>{it.description}</td>
                   </tr>
                 )
@@ -59,6 +63,9 @@ const href = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
     <span>{messages.source}:</span>
     <Author image={recipe.authorImg} link={recipe.link} name={recipe.author} />
   </div>
+  {recipe.steps
+    ? <a class="timer-link" href={timerHref}>Open timer</a>
+    : null}
 </div>
 
 <style>
@@ -112,6 +119,12 @@ const href = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
     display: flex;
     align-items: center;
     gap: 12px;
+  }
+
+  .timer-link {
+    display: inline-block;
+    margin-block-start: 24px;
+    color: inherit;
   }
 </style>
 
