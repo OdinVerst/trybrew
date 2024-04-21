@@ -42,7 +42,7 @@ export const getStaticPaths = (async () => [
         <div class="section">
           <Section baseId={`${method}-section`}>
             <div class="title" slot="title">
-              {messages[method]}
+              {messages[method as keyof typeof messages]}
             </div>
             <div class="recipes">
               {recipesList.map(recipe => (

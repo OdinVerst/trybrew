@@ -42,7 +42,7 @@ const messages = commonMessages(locale)
           categories.map(category => (
             <li>
               <a href={`/${locale}/recipes/${category}/`}>
-                {messages[category]}
+                {messages[category as keyof typeof messages]}
               </a>
             </li>
           ))

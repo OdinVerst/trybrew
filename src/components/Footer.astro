@@ -1,7 +1,23 @@
+---
+import { commonMessages } from '../i18n/locales/common/en'
+
+const messages = commonMessages(Astro.currentLocale)
+
+const currentLocale = Astro.currentLocale || 'en'
+const altLocale = currentLocale === 'ru' ? 'en' : 'ru'
+const altMessages = commonMessages(altLocale)
+
+const altLangLink = Astro.url.pathname.replace(currentLocale, altLocale)
+const altLangHTMLLink = `<a href="${altLangLink}">${altMessages.languageName}</a>`
+---
+
 <footer class="footer">
-  <p>
-    Source code <a href="https://github.com/OdinVerst/trybrew" target="_blank">GitHub</a>
-  </p>
+  <p set:html={altMessages.switchTo({ link: altLangHTMLLink })} />
+  <p
+    set:html={messages.sourceCode({
+      link: '<a href="https://github.com/OdinVerst/trybrew" target="_blank">GitHub</a>'
+    })}
+  />
 </footer>
 
 <style>
