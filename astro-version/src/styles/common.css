@@ -4,6 +4,8 @@
   --space-s: 16;
   --space-m: 24;
   --space-l: 48;
+
+  --card-width: minmax(min(100%, 360px), 1fr);
 }
 
 *,

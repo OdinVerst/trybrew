@@ -56,7 +56,7 @@ export const getStaticPaths = (async () => {
 
   .recipes {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fill, var(--card-width));
     gap: 32px;
     padding-block-end: 24px;
   }

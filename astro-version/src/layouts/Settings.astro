@@ -67,7 +67,7 @@ const messages = settingsMessages(Astro.currentLocale)
 <style>
   .settings {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fill, var(--card-width));
     gap: 1em;
     margin-bottom: 2em;
   }
