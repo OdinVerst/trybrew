@@ -33,7 +33,7 @@ const formattedProperties = propertiesConfig
   {
     formattedProperties.map(({ name, value }) => (
       <div class="property">
-        <Icon {name} />
+        <Icon class="icon" {name} />
         {value}
       </div>
     ))
@@ -44,11 +44,16 @@ const formattedProperties = propertiesConfig
   .properties {
     display: flex;
     gap: 9px;
+    flex-wrap: wrap;
   }
 
   .property {
     display: flex;
     align-items: center;
     gap: 4px;
+  }
+
+  .icon {
+    flex-shrink: 0;
   }
 </style>
