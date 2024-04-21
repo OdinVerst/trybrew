@@ -1,7 +1,6 @@
 ---
 import Footer from '../components/Footer.astro'
 import Header from '../components/Header.astro'
-import { siteName } from '../constans'
 import '../styles/main.css'
 
 interface Props {
@@ -12,6 +11,7 @@ interface Props {
 
 const { author, description, title } = Astro.props
 const siteUrl = Astro.site
+const siteName = 'TryBrew'
 ---
 
 <!doctype html>
