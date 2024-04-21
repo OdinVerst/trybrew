@@ -11,6 +11,11 @@
       "status": 308
     },
     {
+      "src": "/(ru|en)/recipes/",
+      "headers": { "Location": "/$1/" },
+      "status": 308
+    },
+    {
       "src": "/",
       "headers": {
         "Location": "/ru/"
