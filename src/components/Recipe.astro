@@ -4,7 +4,8 @@ import type { CollectionEntry } from 'astro:content'
 import { getRelativeLocaleUrl } from 'astro:i18n'
 
 import { commonMessages } from '@/i18n/locales/common/en'
-
+import { createPropertyFormatters } from '@/i18n/utils'
+import { humanTimeToSeconds, secondsTimeToHuman } from '../utils'
 import Author from './Author.astro'
 import RecipeProperties from './RecipeProperties.astro'
 
@@ -15,8 +16,21 @@ const { recipe } = Astro.props
 
 const locale = Astro.currentLocale || 'en'
 const messages = commonMessages(locale)
+const { time, weight } = createPropertyFormatters(Astro.currentLocale)
 
 const href = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
+
+const formattedSteps = recipe.steps
+  ?.reduce((acc, step, index) => {
+    acc.push({ ...step, totalTime: humanTimeToSeconds(step.time) + (index > 0 ? acc[index - 1].totalTime : 0) })
+    return acc
+  }, [] as { description?: string; time: string; totalTime: number; water: number }[])
+  .map(step => ({
+    ...step,
+    time: time(step.time),
+    totalTime: time(secondsTimeToHuman(step.totalTime)),
+    water: weight(step.water)
+  }))
 ---
 
 <div class="root">
@@ -26,24 +40,26 @@ const href = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
   <RecipeProperties properties={recipe.properties} />
   <div>
     {
-      recipe.steps
+      formattedSteps
         ? (
         <>
           <h2>Recipe</h2>
           <table>
             <thead>
               <tr>
+                <th>Total time</th>
                 <th>Time</th>
                 <th>Weight</th>
                 <th>Notes</th>
               </tr>
             </thead>
             <tbody>
-              {recipe.steps.map(it => {
+              {formattedSteps.map(it => {
                 return (
                   <tr>
+                    <td>{it.totalTime}</td>
                     <td>{it.time}</td>
-                    <td>{it.water} gr.</td>
+                    <td>{it.water}</td>
                     <td>{it.description}</td>
                   </tr>
                 )
