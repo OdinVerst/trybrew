@@ -1,9 +1,9 @@
 ---
 interface Props {
   steps: {
-    description: null | string;
-    time: number;
-    water: number;
+    description: null | string
+    time: number
+    water: number
   }
 }
 
@@ -16,9 +16,15 @@ const { steps } = Astro.props
       <!-- Background Circle -->
       <circle class="baseArc" cx="100" cy="100" fill="none" r="90" stroke-width="8"></circle>
       <!-- Progress Arc -->
-      <circle class="progressArc" cx="100" cy="100" fill="none" id="progressArc" r="90" stroke-linecap="round"
-          stroke-width="8"
-      ></circle>
+      <circle
+        class="progressArc"
+        cx="100"
+        cy="100"
+        fill="none"
+        id="progressArc"
+        r="90"
+        stroke-linecap="round"
+        stroke-width="8"></circle>
     </svg>
     <div class="time segmented-1" id="time"></div>
     <div class="steps">
@@ -56,14 +62,19 @@ const { steps } = Astro.props
 
   @font-palette-values --segmented-1 {
     font-family: Segmented;
-    override-colors: 0 oklch(0 0 0), 1 oklch(0 0 0 / 0.08);
+    override-colors:
+      0 oklch(0 0 0),
+      1 oklch(0 0 0 / 0.08);
   }
 
   .segmented-1 {
-    font-family: Segmented;
+    font-family: Segmented, system-ui;
     font-palette: --segmented-1;
     /*font-feature-settings: 'ss${formattedCurrentStyleNumber}' on;*/
-    font-variation-settings: 'wght' 600, 'wdth' 100, 'slnt' 5;
+    font-variation-settings:
+      'wght' 600,
+      'wdth' 100,
+      'slnt' 5;
   }
 
   .steps {
@@ -98,131 +109,131 @@ const { steps } = Astro.props
 </style>
 
 <script>
-type Step = {
-  description: null | string;
-  time: number;
-  water: number;
-}
-
-let startTime: number
-let elapsedTime = 0
-let isRunning = false
-let stepIndex = 0
-const reverseTimer = true
-
-const root = document.getElementById('timer-root')
-const timeSlot = document.getElementById('time')
-const descriptionSlot = document.getElementById('description')
-const totalWeightSlot = document.getElementById('totalWeight')
-const nextStepSlot = document.getElementById('nextStep')
-const progressArc = document.getElementById('progressArc')
-
-const steps: Step[] = root?.dataset.steps
-  ? JSON.parse(root.dataset.steps).map((it: Step) => ({
-    ...it,
-    time: it.time * 1000
-  }))
-  : []
-
-let step = steps[stepIndex]
-let nextStep = steps[stepIndex + 1]
-let timeLeft = 0
-
-function updateStep (index: number) {
-  if (!descriptionSlot || !totalWeightSlot) return
-  stepIndex = index
-  step = steps[stepIndex]
-  nextStep = steps[stepIndex + 1]
-  descriptionSlot.textContent = step.description
-  totalWeightSlot.textContent = `${step.water}g`
-  // nextStepSlot.textContent = nextStep ? nextStep.description : "";
-}
-
-function updateTime (time: number) {
-  if (!timeSlot || !progressArc) return
-  elapsedTime = time
-  timeLeft = step.time - time
-  const displayTime = reverseTimer ? timeLeft : elapsedTime
-  timeSlot.textContent = formatTime(displayTime)
-  progressArc.setAttribute('stroke-dasharray', getDashArray((displayTime / step.time) * 100))
-}
-
-function startTimer () {
-  isRunning = true
-  startTime = performance.now() - elapsedTime
-  requestAnimationFrame(updateTimer)
-}
-
-function stopTimer () {
-  isRunning = false
-}
-
-function resetTimer () {
-  stopTimer()
-  updateTime(0)
-}
-
-function updateTimer (currentTime: number) {
-  if (!isRunning) return
-
-  updateTime(currentTime - startTime)
-
-  if (elapsedTime > step.time) {
-    resetTimer()
-    if (stepIndex + 1 >= steps.length) {
-      console.debug('stopping brew', stepIndex, steps.length)
-      stopBrew()
-    } else {
-      updateStep(stepIndex + 1)
-      startTimer()
-    }
+  type Step = {
+    description: null | string
+    time: number
+    water: number
   }
 
-  requestAnimationFrame(updateTimer)
-}
+  let startTime: number
+  let elapsedTime = 0
+  let isRunning = false
+  let stepIndex = 0
+  const reverseTimer = true
 
-function formatTime (time: number) {
-  const totalMilliseconds = Math.floor(time)
-  const minutes = Math.floor((totalMilliseconds % 3600_000) / 60_000)
-  const seconds = Math.floor((totalMilliseconds % 60_000) / 1000)
-  // const milliseconds = totalMilliseconds % 1000;
+  const root = document.getElementById('timer-root')
+  const timeSlot = document.getElementById('time')
+  const descriptionSlot = document.getElementById('description')
+  const totalWeightSlot = document.getElementById('totalWeight')
+  const nextStepSlot = document.getElementById('nextStep')
+  const progressArc = document.getElementById('progressArc')
 
-  return pad(minutes) + ':' + pad(seconds)
-  // + ":" + milliseconds.toString().padStart(3, "0");
-}
+  const steps: Step[] = root?.dataset.steps
+    ? JSON.parse(root.dataset.steps).map((it: Step) => ({
+        ...it,
+        time: it.time * 1000
+      }))
+    : []
 
-function getDashArray (percent: number) {
-  const circumference = 2 * Math.PI * 90
-  const dashArray = circumference * (percent / 100)
-  return `${dashArray} ${circumference}`
-}
+  let step = steps[stepIndex]
+  let nextStep = steps[stepIndex + 1]
+  let timeLeft = 0
 
-function pad (value: number) {
-  return value < 10 ? '0' + value : value
-}
+  function updateStep(index: number) {
+    if (!descriptionSlot || !totalWeightSlot) return
+    stepIndex = index
+    step = steps[stepIndex]
+    nextStep = steps[stepIndex + 1]
+    descriptionSlot.textContent = step.description
+    totalWeightSlot.textContent = `${step.water}g`
+    // nextStepSlot.textContent = nextStep ? nextStep.description : "";
+  }
 
-function stopBrew () {
-  updateStep(0)
-  resetTimer()
-}
+  function updateTime(time: number) {
+    if (!timeSlot || !progressArc) return
+    elapsedTime = time
+    timeLeft = step.time - time
+    const displayTime = reverseTimer ? timeLeft : elapsedTime
+    timeSlot.textContent = formatTime(displayTime)
+    progressArc.setAttribute('stroke-dasharray', getDashArray((displayTime / step.time) * 100))
+  }
 
-const startTimerBtn = document.getElementById('startTimer')
-const stopTimerBtn = document.getElementById('stopTimer')
-const stopBrewBtn = document.getElementById('stopBrew')
+  function startTimer() {
+    isRunning = true
+    startTime = performance.now() - elapsedTime
+    requestAnimationFrame(updateTimer)
+  }
 
-if (startTimerBtn && stopBrewBtn && stopTimerBtn) {
-  startTimerBtn.addEventListener('click', () => {
-    startTimer()
-  })
+  function stopTimer() {
+    isRunning = false
+  }
 
-  stopTimerBtn.addEventListener('click', () => {
+  function resetTimer() {
     stopTimer()
-  })
+    updateTime(0)
+  }
 
-  stopBrewBtn.addEventListener('click', () => {
-    stopBrew()
-  })
-}
+  function updateTimer(currentTime: number) {
+    if (!isRunning) return
 
-stopBrew()
+    updateTime(currentTime - startTime)
+
+    if (elapsedTime > step.time) {
+      resetTimer()
+      if (stepIndex + 1 >= steps.length) {
+        console.debug('stopping brew', stepIndex, steps.length)
+        stopBrew()
+      } else {
+        updateStep(stepIndex + 1)
+        startTimer()
+      }
+    }
+
+    requestAnimationFrame(updateTimer)
+  }
+
+  function formatTime(time: number) {
+    const totalMilliseconds = Math.floor(time)
+    const minutes = Math.floor((totalMilliseconds % 3600_000) / 60_000)
+    const seconds = Math.floor((totalMilliseconds % 60_000) / 1000)
+    // const milliseconds = totalMilliseconds % 1000;
+
+    return pad(minutes) + ':' + pad(seconds)
+    // + ":" + milliseconds.toString().padStart(3, "0");
+  }
+
+  function getDashArray(percent: number) {
+    const circumference = 2 * Math.PI * 90
+    const dashArray = circumference * (percent / 100)
+    return `${dashArray} ${circumference}`
+  }
+
+  function pad(value: number) {
+    return value < 10 ? '0' + value : value
+  }
+
+  function stopBrew() {
+    updateStep(0)
+    resetTimer()
+  }
+
+  const startTimerBtn = document.getElementById('startTimer')
+  const stopTimerBtn = document.getElementById('stopTimer')
+  const stopBrewBtn = document.getElementById('stopBrew')
+
+  if (startTimerBtn && stopBrewBtn && stopTimerBtn) {
+    startTimerBtn.addEventListener('click', () => {
+      startTimer()
+    })
+
+    stopTimerBtn.addEventListener('click', () => {
+      stopTimer()
+    })
+
+    stopBrewBtn.addEventListener('click', () => {
+      stopBrew()
+    })
+  }
+
+  stopBrew()
 </script>
