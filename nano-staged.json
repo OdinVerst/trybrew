@@ -1,0 +1,6 @@
+{
+  "*.{js,ts,astro}": [
+    "prettier --write",
+    "eslint --fix --config ./eslint.config.js"
+  ]
+}

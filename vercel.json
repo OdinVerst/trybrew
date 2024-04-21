@@ -1,38 +1,22 @@
 {
-  "routes": [
+  "trailingSlash": false,
+  "cleanUrls": true,
+  "redirects": [
     {
-      "src": "/aeropress/(.*)",
-      "headers": { "Location": "/ru/aeropress/$1" },
-      "status": 308
+      "source": "/(aeropress|cezve|chemex|coldbrew|pourover|summer)/(.*)",
+      "destination": "/ru/recipes/$1/$2"
     },
     {
-      "src": "/cezve/(.*)",
-      "headers": { "Location": "/ru/cezve/$1" },
-      "status": 308
+      "source": "/(ru|en)/(aeropress|cezve|chemex|coldbrew|pourover|summer)/(.*)",
+      "destination": "/$1/recipes/$2/$3"
     },
     {
-      "src": "/chemex/(.*)",
-      "headers": { "Location": "/ru/chemex/$1" },
-      "status": 308
+      "source": "/(ru|en)/recipes",
+      "destination": "/$1"
     },
     {
-      "src": "/coldbrew/(.*)",
-      "headers": { "Location": "/ru/coldbrew/$1" },
-      "status": 308
-    },
-    {
-      "src": "/pourover/(.*)",
-      "headers": { "Location": "/ru/pourover/$1" },
-      "status": 308
-    },
-    {
-      "src": "/",
-      "headers": {
-        "Location": "/ru/"
-      },
-      "status": 308
-    },
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "status": 404, "dest": "/404.html" }
+      "source": "/",
+      "destination": "/ru"
+    }
   ]
 }

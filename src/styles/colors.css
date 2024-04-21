@@ -1,41 +1,45 @@
 :root {
-    --color-background: white;
-    --color-text: black;
+  --color-background: white;
+  --color-text: black;
+  --text-primary: black;
+  --text-secondary: #505050;
 
-    --fill-icons: black;
+  --fill-icons: black;
 
-    --color-selet-border: #f2f2f2;
+  --color-selet-border: #f2f2f2;
 
-    --color-more-info: #e7e7e7;
-    --color-link-text: #27649e;
+  --color-more-info: #e7e7e7;
+  --color-link-text: #27649e;
 
-    --color-secondary-background: transparent;
+  --color-secondary-background: transparent;
 
-    --color-menu-tool: white;
+  --color-menu-tool: white;
 
-    --color-author-text: #505050;
+  --color-author-text: #505050;
 
-    --color-footer-boder: #c6c6c6;
+  --color-footer-boder: #c6c6c6;
 
-    --color-author-icon-background: transparent;
-    --color-focus: black;
+  --color-author-icon-background: transparent;
+  --color-focus: black;
 }
 
 html[data-theme='dark'] {
-    --color-background: #514f4f;
-    --color-text: white;
+  --color-background: #514f4f;
+  --color-text: white;
+  --text-primary: white;
+  --text-secondary: #cccccc;
 
-    --fill-icons: white;
+  --fill-icons: white;
 
-    --color-more-info: #3e3e3e;
-    --color-link-text: #b4daff;
-    --color-secondary-background: #3e3e3e;
+  --color-more-info: #3e3e3e;
+  --color-link-text: #b4daff;
+  --color-secondary-background: #3e3e3e;
 
-    --color-menu-tool: #7b7b7b;
+  --color-menu-tool: #7b7b7b;
 
-    --color-author-text: --color-text;
+  --color-author-text: --color-text;
 
-    --color-footer-boder: transparent;
-    --color-author-icon-background: white;
-    --color-focus: white;
+  --color-footer-boder: transparent;
+  --color-author-icon-background: white;
+  --color-focus: white;
 }

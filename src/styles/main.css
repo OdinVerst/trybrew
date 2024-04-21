@@ -1,18 +1,4 @@
-@import "colors.css";
-@import "box-shadow.css";
-@import "fonts.css";
-@import "common.css";
-/* Header */
-@import "components/header/header.css";
-@import "components/header/burger.css";
-@import "components/header/menu.css";
-
-@import "components/settings/settings.css";
-@import "components/heading.css";
-@import "components/category.css";
-@import "components/item.css";
-@import "components/author.css";
-@import "components/detail.css";
-@import "components/contributors/contributors.css";
-/* Footer */
-@import "components/footer/footer.css";
+@import 'colors.css';
+@import 'box-shadow.css';
+@import 'fonts.css';
+@import 'common.css';
