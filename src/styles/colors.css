@@ -21,6 +21,9 @@
 
   --color-author-icon-background: transparent;
   --color-focus: black;
+
+  --color-timer-progress-arc: oklch(0 0 0);
+  --color-timer-base-arc: oklch(0 0 0 / 0.08);
 }
 
 html[data-theme='dark'] {
@@ -42,4 +45,7 @@ html[data-theme='dark'] {
   --color-footer-boder: transparent;
   --color-author-icon-background: white;
   --color-focus: white;
+
+  --color-timer-progress-arc: oklch(100 0 0);
+  --color-timer-base-arc: oklch(100 0 0 / 0.08);
 }
