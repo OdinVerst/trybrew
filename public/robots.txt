@@ -1,4 +1,4 @@
-Sitemap: https://trybrew.app/sitemap.xml
-
 User-agent: *
-Disallow:
+Allow: /
+
+Sitemap: https://trybrew.app/sitemap-index.xml
