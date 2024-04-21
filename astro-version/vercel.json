@@ -12,11 +12,11 @@
     },
     {
       "source": "/(ru|en)/recipes",
-      "destination": "/$1/"
+      "destination": "/$1"
     },
     {
       "source": "/",
-      "destination": "/ru/"
+      "destination": "/ru"
     }
   ]
 }
