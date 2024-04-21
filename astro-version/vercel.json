@@ -6,6 +6,11 @@
       "status": 308
     },
     {
+      "src": "/(ru|en)/(aeropress|cezve|chemex|coldbrew|pourover|summer)/(.*)",
+      "headers": { "Location": "/$1/recipes/$2/$3" },
+      "status": 308
+    },
+    {
       "src": "/",
       "headers": {
         "Location": "/ru/"
