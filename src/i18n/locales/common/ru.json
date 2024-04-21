@@ -1,6 +1,7 @@
 {
   "title": "Рецепты",
   "description": "Рецепты для заваривания альтернативы",
+  "languageName": "Русский",
   "author": "Автор",
   "source": "Источник",
   "about": "О нас",
@@ -12,5 +13,7 @@
   "pourover": "Пуровер",
   "sections": "Разделы",
   "settings": "Настройки",
-  "summer": "Лето"
+  "sourceCode": "Исходный код на {link}",
+  "summer": "Лето",
+  "switchTo": "Переключиться на {link}"
 }
