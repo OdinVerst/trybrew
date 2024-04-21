@@ -1,5 +1,5 @@
-import type { Formatter, Messages, Translations } from '@nanostores/i18n'
-import type { ReadableAtom, StoreValue } from 'nanostores'
+import type { Messages, Translations } from '@nanostores/i18n'
+import type { StoreValue } from 'nanostores'
 
 import { createI18n, formatter } from '@nanostores/i18n'
 import { atom } from 'nanostores'
