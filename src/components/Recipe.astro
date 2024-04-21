@@ -90,9 +90,23 @@ const href = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
     color: inherit;
   }
 
+  table {
+    margin-block-end: 24px;
+  }
+
   th,
   td {
     padding: 6px 12px;
+  }
+
+  th:first-child,
+  td:first-child {
+    padding-inline-start: 0;
+  }
+
+  th:last-child,
+  td:last-child {
+    padding-inline-end: 0;
   }
 
   .source {
@@ -102,7 +116,7 @@ const href = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
   }
 </style>
 
-<!-- TODO: Drop thies styles, when we migrate new recipes ro MDX or frontmatter -->
+<!-- TODO: Drop these styles, when we migrate new recipes to MDX or frontmatter -->
 <style is:global>
   .time-line {
     display: grid;
