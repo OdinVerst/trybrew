@@ -24,7 +24,7 @@ const timerHref = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}/${name
 
 <div class="root">
   <h1 class="title">
-    <a class="method-link" {methodHref}>{messages[recipe.method]}</a> / {recipe.name}
+    <a class="method-link" href={methodHref}>{messages[recipe.method]}</a> / {recipe.name}
   </h1>
   <RecipeProperties properties={recipe.properties} />
   <div>

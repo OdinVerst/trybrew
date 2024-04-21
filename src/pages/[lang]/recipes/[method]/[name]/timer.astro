@@ -5,7 +5,7 @@ import type { CollectionEntry } from 'astro:content'
 import { getCollection } from 'astro:content'
 import { getRelativeLocaleUrl } from 'astro:i18n'
 
-import Timer from '../../../../../components/Timer.astro'
+import TimerComponent from '../../../../../components/Timer.astro'
 import { commonMessages } from '../../../../../i18n/locales/common/en'
 import { createPropertyFormatters } from '../../../../../i18n/utils'
 import Layout from '../../../../../layouts/Layout.astro'
@@ -41,7 +41,7 @@ function timeToSeconds (s: string) {
 
 const methodHref = getRelativeLocaleUrl(locale, `/recipes/${method}`)
 const recipeHref = getRelativeLocaleUrl(locale, `/recipes/${method}/${name}`)
-const formattedSteps = entry.data.steps.map(step => ({
+const formattedSteps = entry.data.steps!.map(step => ({
   ...step,
   time: timeToSeconds(step.time),
   water: weight(step.water)
@@ -50,11 +50,11 @@ const formattedSteps = entry.data.steps.map(step => ({
 
 <Layout title={entry.data.title} description={entry.data.description} author={entry.data.author}>
   <h1 class="title">
-    <a class="link" {methodHref}>{messages[entry.data.method]}</a>
+    <a class="link" href={methodHref}>{messages[entry.data.method]}</a>
     / <a class="link" href={recipeHref}>{entry.data.name}</a>
     / Timer
   </h1>
-  <Timer steps={formattedSteps} />
+  <TimerComponent steps={formattedSteps} />
 </Layout>
 
 <style>
