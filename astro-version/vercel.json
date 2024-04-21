@@ -1,4 +1,5 @@
 {
+  "trailingSlash": false,
   "redirects": [
     {
       "source": "/(aeropress|cezve|chemex|coldbrew|pourover|summer)/(.*)",
@@ -9,7 +10,7 @@
       "destination": "/$1/recipes/$2/$3"
     },
     {
-      "source": "/(ru|en)/recipes(/)?",
+      "source": "/(ru|en)/recipes",
       "destination": "/$1/"
     },
     {
