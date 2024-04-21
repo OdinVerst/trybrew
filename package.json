@@ -1,13 +1,10 @@
 {
-  "name": "new",
+  "private": true,
   "type": "module",
-  "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro",
     "test:lint": "astro check && eslint .",
     "format": "prettier --write . && eslint --fix .",
     "postinstall": "npx simple-git-hooks"
