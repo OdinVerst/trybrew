@@ -1,26 +1,20 @@
 {
-  "routes": [
+  "redirects": [
     {
-      "src": "/(aeropress|cezve|chemex|coldbrew|pourover|summer)/(.*)",
-      "headers": { "Location": "/ru/recipes/$1/$2" },
-      "status": 308
+      "source": "/(aeropress|cezve|chemex|coldbrew|pourover|summer)/(.*)",
+      "destination": "/ru/recipes/$1/$2"
     },
     {
-      "src": "/(ru|en)/(aeropress|cezve|chemex|coldbrew|pourover|summer)/(.*)",
-      "headers": { "Location": "/$1/recipes/$2/$3" },
-      "status": 308
+      "source": "/(ru|en)/(aeropress|cezve|chemex|coldbrew|pourover|summer)/(.*)",
+      "destination": "/$1/recipes/$2/$3"
     },
     {
-      "src": "/(ru|en)/recipes/",
-      "headers": { "Location": "/$1/" },
-      "status": 308
+      "source": "/(ru|en)/recipes(/)?",
+      "destination": "/$1/"
     },
     {
-      "src": "/",
-      "headers": {
-        "Location": "/ru/"
-      },
-      "status": 308
+      "source": "/",
+      "destination": "/ru/"
     }
   ]
 }
