@@ -2,7 +2,7 @@
   "routes": [
     {
       "src": "/(aeropress|cezve|chemex|coldbrew|pourover|summer)/(.*)",
-      "headers": { "Location": "/ru/$1/$2" },
+      "headers": { "Location": "/ru/recipes/$1/$2" },
       "status": 308
     },
     {
