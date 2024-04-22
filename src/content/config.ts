@@ -14,8 +14,11 @@ const recipesCollection = defineCollection({
       temperature: z.union([z.string(), z.number()]).optional(),
       ice: z.number().optional()
     }),
-    // TODO: describe schema for steps
-    steps: z.array(z.any()).optional(),
+    steps: z.array(z.object({
+      description: z.string().optional(),
+      time: z.string(),
+      water: z.number()
+    })).optional(),
     author: z.string(),
     authorImg: z.string().optional(),
     link: z.string().optional(),
