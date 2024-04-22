@@ -14,16 +14,16 @@ properties:
 steps:
   - description: Pre-wetting in a spiral and intensely
     water: 50
-    time: 50
+    time: "0:50"
   - description: From the center to the edges of the coffee tablet
     water: 120
-    time: 30
+    time: "0:30"
   - description: To the center and back to spiral brewing
     water: 180
-    time: 40
+    time: "0:40"
   - description: Into the center of the funnel
     water: 309
-    time: 85
+    time: "1:25"
 
 author: Aeroplan.Coffee
 authorImg: aeroplan
