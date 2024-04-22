@@ -19,7 +19,6 @@
       "destination": "/ru"
     }
   ],
-  "contentSecurityPolicy": "script-src 'none'; frame-src 'none'; sandbox;",
   "headers": [
     {
       "source": "/fonts/(.*).woff2",
