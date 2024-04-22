@@ -2,11 +2,11 @@
 import type { GetStaticPaths } from 'astro'
 import type { CollectionEntry } from 'astro:content'
 
-import RecipeCard from '../../components/RecipeCard.astro'
-import Section from '../../components/Section.astro'
-import { commonMessages } from '../../i18n/locales/common/en'
-import Layout from '../../layouts/Layout.astro'
-import { getCollectionByLocale } from '../../utils'
+import RecipeCard from '@/components/RecipeCard.astro'
+import Section from '@/components/Section.astro'
+import { commonMessages } from '@/i18n/locales/common/en'
+import Layout from '@/layouts/Layout.astro'
+import { getCollectionByLocale } from '@/utils'
 
 const locale = Astro.currentLocale || 'en'
 const recipes = await getCollectionByLocale('recipes', locale)

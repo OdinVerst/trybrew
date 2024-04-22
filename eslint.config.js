@@ -1,3 +1,4 @@
+/* eslint-disable perfectionist/sort-objects */
 import { FlatCompat } from '@eslint/eslintrc'
 import eslintParserAstro from 'astro-eslint-parser'
 import { defineFlatConfig } from 'eslint-define-config'
@@ -20,6 +21,26 @@ export default defineFlatConfig([
     },
     rules: {
       ...eslintPluginPerfectionist.configs['recommended-alphabetical'].rules,
+      'perfectionist/sort-imports': [
+        'error',
+        {
+          type: 'alphabetical',
+          order: 'asc',
+          groups: [
+            'side-effect',
+            'type',
+            ['builtin', 'external'],
+            'internal-type',
+            'internal',
+            ['parent-type', 'sibling-type', 'index-type'],
+            ['parent', 'sibling', 'index'],
+            'object',
+            'unknown'
+          ],
+          'newlines-between': 'always',
+          'internal-pattern': ['@/**']
+        }
+      ],
       'perfectionist/sort-astro-attributes': [
         'error',
         {

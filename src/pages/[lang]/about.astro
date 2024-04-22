@@ -1,9 +1,9 @@
 ---
 import type { GetStaticPaths } from 'astro'
 
-import Contributors from '../../components/Contributors.astro'
-import { aboutMessages } from '../../i18n/locales/about/en'
-import Layout from '../../layouts/Layout.astro'
+import Contributors from '@/components/Contributors.astro'
+import { aboutMessages } from '@/i18n/locales/about/en'
+import Layout from '@/layouts/Layout.astro'
 
 const messages = aboutMessages(Astro.currentLocale)
 
