@@ -22,14 +22,19 @@ const { time, weight } = createPropertyFormatters(Astro.currentLocale)
 const href = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
 
 const formattedSteps = recipe.steps
-  ?.reduce<({ totalTime: number } & Exclude<Entry['data']['steps'], undefined>[number])[]>((acc, step, index) => {
-    acc.push({ ...step, totalTime: humanTimeToSeconds(step.time) + (index > 0 ? acc[index - 1].totalTime : 0) })
+  ?.reduce<({ totalTime: number; totalWater: number } & Exclude<Entry['data']['steps'], undefined>[number])[]>((acc, step, index) => {
+    acc.push({
+      ...step,
+      totalTime: humanTimeToSeconds(step.time) + (index > 0 ? acc[index - 1].totalTime : 0),
+      totalWater: step.water + (index > 0 ? acc[index - 1].totalWater : 0)
+    })
     return acc
   }, [])
   .map(step => ({
     ...step,
     time: time(step.time),
     totalTime: time(secondsTimeToHuman(step.totalTime)),
+    totalWater: weight(step.totalWater),
     water: weight(step.water)
   }))
 ---
@@ -49,8 +54,8 @@ const formattedSteps = recipe.steps
             <thead>
               <tr>
                 <th>Total time</th>
-                <th>Time</th>
                 <th>Weight</th>
+                <th>Total weight</th>
                 <th>Notes</th>
               </tr>
             </thead>
@@ -59,8 +64,8 @@ const formattedSteps = recipe.steps
                 return (
                   <tr>
                     <td>{it.totalTime}</td>
-                    <td>{it.time}</td>
                     <td>{it.water}</td>
+                    <td>{it.totalWater}</td>
                     <td>{it.description}</td>
                   </tr>
                 )
