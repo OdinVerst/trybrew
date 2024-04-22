@@ -21,10 +21,10 @@ const { time, weight } = createPropertyFormatters(Astro.currentLocale)
 const href = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
 
 const formattedSteps = recipe.steps
-  ?.reduce((acc, step, index) => {
+  ?.reduce<{ description?: string; time: string; totalTime: number; water: number }[]>((acc, step, index) => {
     acc.push({ ...step, totalTime: humanTimeToSeconds(step.time) + (index > 0 ? acc[index - 1].totalTime : 0) })
     return acc
-  }, [] as { description?: string; time: string; totalTime: number; water: number }[])
+  }, [])
   .map(step => ({
     ...step,
     time: time(step.time),
