@@ -18,5 +18,16 @@
       "source": "/",
       "destination": "/ru"
     }
+  ],
+  "headers": [
+    {
+      "source": "/fonts/(.*).woff2",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=63072000, immutable"
+        }
+      ]
+    }
   ]
 }
