@@ -16,13 +16,13 @@ steps:
     water: 50
     time: "0:50"
   - description: From the center to the edges of the coffee tablet
-    water: 120
+    water: 70
     time: "0:30"
   - description: To the center and back to spiral brewing
-    water: 180
+    water: 60
     time: "0:40"
   - description: Into the center of the funnel
-    water: 309
+    water: 29
     time: "1:25"
 
 author: Aeroplan.Coffee
