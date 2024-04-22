@@ -13,7 +13,7 @@
     "@astrojs/mdx": "^2.3.1",
     "@astrojs/sitemap": "^3.1.4",
     "@nanostores/i18n": "^0.12.1",
-    "astro": "^4.6.3",
+    "astro": "4.5.18",
     "astro-icon": "^1.1.0",
     "nanostores": "^0.10.3",
     "typescript": "^5.4.5"
