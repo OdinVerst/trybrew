@@ -12,8 +12,7 @@ properties:
   temperature: 94
 
 steps:
-  - description: Pre-wetting
-    water: 35
+  - water: 35
     time: '0:30'
   - water: 65
     time: '0:30'
