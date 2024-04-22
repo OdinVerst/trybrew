@@ -5,6 +5,7 @@ import { getRelativeLocaleUrl } from 'astro:i18n'
 
 import { commonMessages } from '@/i18n/locales/common/en'
 import { createPropertyFormatters } from '@/i18n/utils'
+
 import { humanTimeToSeconds, secondsTimeToHuman } from '../utils'
 import Author from './Author.astro'
 import RecipeProperties from './RecipeProperties.astro'
@@ -21,7 +22,7 @@ const { time, weight } = createPropertyFormatters(Astro.currentLocale)
 const href = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
 
 const formattedSteps = recipe.steps
-  ?.reduce<{ description?: string; time: string; totalTime: number; water: number }[]>((acc, step, index) => {
+  ?.reduce<({ totalTime: number } & Exclude<Entry['data']['steps'], undefined>[number])[]>((acc, step, index) => {
     acc.push({ ...step, totalTime: humanTimeToSeconds(step.time) + (index > 0 ? acc[index - 1].totalTime : 0) })
     return acc
   }, [])
