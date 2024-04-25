@@ -6,6 +6,7 @@ import { getRelativeLocaleUrl } from 'astro:i18n'
 import { commonMessages } from '@/i18n/locales/common/en'
 import { createPropertyFormatters } from '@/i18n/utils'
 
+import { getRecipeMessages } from '../i18n/locales/recipe/en'
 import { humanTimeToSeconds, secondsTimeToHuman } from '../utils'
 import Author from './Author.astro'
 import RecipeProperties from './RecipeProperties.astro'
@@ -17,23 +18,28 @@ const { recipe } = Astro.props
 
 const locale = Astro.currentLocale || 'en'
 const messages = commonMessages(locale)
+const recipeMessages = getRecipeMessages(locale)
 const { time, weight } = createPropertyFormatters(Astro.currentLocale)
 
 const href = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
 
 const formattedSteps = recipe.steps
-  ?.reduce<({ totalTime: number; totalWater: number } & Exclude<Entry['data']['steps'], undefined>[number])[]>((acc, step, index) => {
+  ?.reduce<({ endTime: number; startTime: number; totalWater: number } & Exclude<Entry['data']['steps'], undefined>[number])[]>((acc, step, index) => {
+    const previousStepEndTime = index > 0 ? acc[index - 1].endTime : 0
+    const previousStepTotalWater = index > 0 ? acc[index - 1].totalWater : 0
     acc.push({
       ...step,
-      totalTime: humanTimeToSeconds(step.time) + (index > 0 ? acc[index - 1].totalTime : 0),
-      totalWater: step.water + (index > 0 ? acc[index - 1].totalWater : 0)
+      endTime: humanTimeToSeconds(step.time) + previousStepEndTime,
+      startTime: previousStepEndTime,
+      totalWater: step.water + previousStepTotalWater
     })
     return acc
   }, [])
   .map(step => ({
     ...step,
+    endTime: time(secondsTimeToHuman(step.endTime)),
+    startTime: time(secondsTimeToHuman(step.startTime)),
     time: time(step.time),
-    totalTime: time(secondsTimeToHuman(step.totalTime)),
     totalWater: weight(step.totalWater),
     water: weight(step.water)
   }))
@@ -51,20 +57,26 @@ const formattedSteps = recipe.steps
         <>
           <h2>Recipe</h2>
           <table>
-            <thead>
-              <tr>
-                <th>Total time</th>
-                <th>Weight</th>
-                <th>Total weight</th>
-                <th>Notes</th>
-              </tr>
-            </thead>
             <tbody>
-              {formattedSteps.map(it => {
+              <tr>
+                <td colspan="3">
+                  <span class="recipe-steps-subheader">{recipeMessages.prewetting}</span>
+                </td>
+              </tr>
+              <tr>
+                <td>{formattedSteps[0].startTime} &rArr; {formattedSteps[0].endTime}</td>
+                <td>{formattedSteps[0].totalWater}</td>
+                <td>{formattedSteps[0].description}</td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  <span class="recipe-steps-subheader">{recipeMessages.infusions}</span>
+                </td>
+              </tr>
+              {formattedSteps.slice(1).map(it => {
                 return (
                   <tr>
-                    <td>{it.totalTime}</td>
-                    <td>{it.water}</td>
+                    <td>{it.startTime} &rArr; {it.endTime}</td>
                     <td>{it.totalWater}</td>
                     <td>{it.description}</td>
                   </tr>
@@ -110,6 +122,13 @@ const formattedSteps = recipe.steps
 
   .link:visited {
     color: inherit;
+  }
+
+  .recipe-steps-subheader {
+    color: var(--text-secondary);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
   }
 
   table {
