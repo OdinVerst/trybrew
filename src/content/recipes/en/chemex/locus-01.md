@@ -24,7 +24,7 @@ tags:
 
 1. Put the kettle on 85.
 
-2. Put the filter in the Kemex.
+2. Put the filter in the Chemex.
 
 3. Weigh 30.5gr coffee, wet, grind for 7, remove excess.
 
@@ -35,6 +35,4 @@ tags:
 6. Pour in 80gr of water, stirring vigorously with a swirling motion.
 
 7. Then 120gr, then 100gr and 150gr.
-
-<br>
 
