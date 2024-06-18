@@ -6,6 +6,7 @@ import { atom } from 'nanostores'
 
 import aboutRu from './locales/about/ru.json'
 import commonRu from './locales/common/ru.json'
+import methodsRu from './locales/methods/ru.json'
 import notFoundRu from './locales/not-found/ru.json'
 import settingsRu from './locales/settings/ru.json'
 
@@ -19,6 +20,7 @@ export function t<BaseTranslation extends Translations> (
       ru: {
         about: aboutRu,
         common: commonRu,
+        methods: methodsRu,
         'not-found': notFoundRu,
         settings: settingsRu
       }
