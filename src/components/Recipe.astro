@@ -4,7 +4,10 @@ import type { CollectionEntry } from 'astro:content'
 import { getRelativeLocaleUrl } from 'astro:i18n'
 
 import { commonMessages } from '@/i18n/locales/common/en'
+import { createPropertyFormatters } from '@/i18n/utils'
 
+import { getRecipeMessages } from '../i18n/locales/recipe/en'
+import { humanTimeToSeconds, secondsTimeToHuman } from '../utils'
 import Author from './Author.astro'
 import RecipeProperties from './RecipeProperties.astro'
 
@@ -15,8 +18,31 @@ const { recipe } = Astro.props
 
 const locale = Astro.currentLocale || 'en'
 const messages = commonMessages(locale)
+const recipeMessages = getRecipeMessages(locale)
+const { time, weight } = createPropertyFormatters(Astro.currentLocale)
 
 const href = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
+
+const formattedSteps = recipe.steps
+  ?.reduce<({ endTime: number; startTime: number; totalWater: number } & Exclude<Entry['data']['steps'], undefined>[number])[]>((acc, step, index) => {
+    const previousStepEndTime = index > 0 ? acc[index - 1].endTime : 0
+    const previousStepTotalWater = index > 0 ? acc[index - 1].totalWater : 0
+    acc.push({
+      ...step,
+      endTime: humanTimeToSeconds(step.time) + previousStepEndTime,
+      startTime: previousStepEndTime,
+      totalWater: step.water + previousStepTotalWater
+    })
+    return acc
+  }, [])
+  .map(step => ({
+    ...step,
+    endTime: time(secondsTimeToHuman(step.endTime)),
+    startTime: time(secondsTimeToHuman(step.startTime)),
+    time: time(step.time),
+    totalWater: weight(step.totalWater),
+    water: weight(step.water)
+  }))
 ---
 
 <div class="root">
@@ -26,24 +52,32 @@ const href = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
   <RecipeProperties properties={recipe.properties} />
   <div>
     {
-      recipe.steps
+      formattedSteps
         ? (
         <>
           <h2>Recipe</h2>
           <table>
-            <thead>
-              <tr>
-                <th>Time</th>
-                <th>Weight</th>
-                <th>Notes</th>
-              </tr>
-            </thead>
             <tbody>
-              {recipe.steps.map(it => {
+              <tr>
+                <td colspan="3">
+                  <span class="recipe-steps-subheader">{recipeMessages.prewetting}</span>
+                </td>
+              </tr>
+              <tr>
+                <td>{formattedSteps[0].startTime} &rArr; {formattedSteps[0].endTime}</td>
+                <td>{formattedSteps[0].totalWater}</td>
+                <td>{formattedSteps[0].description}</td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  <span class="recipe-steps-subheader">{recipeMessages.infusions}</span>
+                </td>
+              </tr>
+              {formattedSteps.slice(1).map(it => {
                 return (
                   <tr>
-                    <td>{it.time}</td>
-                    <td>{it.water} gr.</td>
+                    <td>{it.startTime} &rArr; {it.endTime}</td>
+                    <td>{it.totalWater}</td>
                     <td>{it.description}</td>
                   </tr>
                 )
@@ -90,9 +124,30 @@ const href = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
     color: inherit;
   }
 
+  .recipe-steps-subheader {
+    color: var(--text-secondary);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  table {
+    margin-block-end: 24px;
+  }
+
   th,
   td {
     padding: 6px 12px;
+  }
+
+  th:first-child,
+  td:first-child {
+    padding-inline-start: 0;
+  }
+
+  th:last-child,
+  td:last-child {
+    padding-inline-end: 0;
   }
 
   .source {
@@ -102,7 +157,7 @@ const href = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
   }
 </style>
 
-<!-- TODO: Drop thies styles, when we migrate new recipes ro MDX or frontmatter -->
+<!-- TODO: Drop these styles, when we migrate new recipes to MDX or frontmatter -->
 <style is:global>
   .time-line {
     display: grid;
