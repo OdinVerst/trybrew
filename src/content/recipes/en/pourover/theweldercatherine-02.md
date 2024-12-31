@@ -44,6 +44,9 @@ Total
 
 </div>
 
+
+### Infusions
+
 <div class="time-line">
 
 0:30
@@ -53,9 +56,6 @@ Total
 100 gr
 
 </div>
-
-
-### Infusions
 
 <div class="time-line">
 
