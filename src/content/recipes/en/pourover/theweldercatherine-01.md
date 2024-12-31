@@ -36,7 +36,7 @@ Total
 
 <div class="time-line">
 
-0:00 по 0:10
+0:00 – 0:10
 
 40 gr
 
@@ -46,7 +46,7 @@ Total
 
 <div class="time-line">
 
-0:25 по 1:15
+0:25 – 1:15
 
 210 gr
 
