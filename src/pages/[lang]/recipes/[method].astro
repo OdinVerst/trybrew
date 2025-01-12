@@ -41,7 +41,7 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths
 ---
 
-<Layout title={title} description={description}>
+<Layout description={description} title={title}>
   <h1 class="title">{messages[method as keyof typeof messages]}</h1>
   <div class="recipes">
     {entries.map(recipe => <RecipeCard {recipe} />)}

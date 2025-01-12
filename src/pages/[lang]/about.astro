@@ -13,7 +13,7 @@ export const getStaticPaths = (async () => ([
 ])) satisfies GetStaticPaths
 ---
 
-<Layout title={messages.header} description={messages.description}>
+<Layout description={messages.description} title={messages.header}>
   <h1>{messages.header}</h1>
   <p
     set:html={messages.about({
@@ -35,6 +35,5 @@ export const getStaticPaths = (async () => ([
     data-outline-color="#000000"
     data-slug="trybrew"
     data-text="Buy me a coffee"
-    src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
-    is:inline></script>
+    is:inline src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"></script>
 </Layout>
