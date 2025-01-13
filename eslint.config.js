@@ -37,17 +37,8 @@ export default defineFlatConfig([
             'object',
             'unknown'
           ],
-          'newlines-between': 'always',
-          'internal-pattern': ['@/**']
-        }
-      ],
-      'perfectionist/sort-astro-attributes': [
-        'error',
-        {
-          'custom-groups': { description: 'description', title: 'title' },
-          groups: ['title', 'description', 'multiline', 'unknown', ['shorthand', 'astro-shorthand']],
-          order: 'asc',
-          type: 'alphabetical'
+          newlinesBetween: 'always',
+          internalPattern: ['@/.*']
         }
       ]
     }
@@ -81,7 +72,14 @@ export default defineFlatConfig([
       astro: eslintPluginAstro
     },
     rules: {
-      ...eslintPluginAstro.configs['flat/recommended'].rules
+      ...eslintPluginAstro.configs['flat/recommended'].rules,
+      'astro/sort-attributes': [
+        'error',
+        {
+          order: 'asc',
+          type: 'alphabetical'
+        }
+      ]
     }
   }
 ])

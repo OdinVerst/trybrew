@@ -10,29 +10,6 @@ import methodsRu from './locales/methods/ru.json'
 import notFoundRu from './locales/not-found/ru.json'
 import settingsRu from './locales/settings/ru.json'
 
-export function t<BaseTranslation extends Translations> (
-  locale: string = 'en',
-  componentName: string,
-  baseTranslation: BaseTranslation
-): StoreValue<Messages<BaseTranslation>> {
-  const i18n = createI18n(atom(locale), {
-    cache: {
-      ru: {
-        about: aboutRu,
-        common: commonRu,
-        methods: methodsRu,
-        'not-found': notFoundRu,
-        settings: settingsRu
-      }
-    },
-    async get () {
-      return {}
-    }
-  })
-
-  return i18n(componentName, baseTranslation).get()
-}
-
 interface PropertyFormatters {
   temperature: (value: number | string) => string
   time: (value: string) => string
@@ -103,4 +80,27 @@ export function createPropertyFormatters (locale: string = 'en'): PropertyFormat
       return formatters.number(value, opts)
     }
   }
+}
+
+export function t<BaseTranslation extends Translations> (
+  locale: string = 'en',
+  componentName: string,
+  baseTranslation: BaseTranslation
+): StoreValue<Messages<BaseTranslation>> {
+  const i18n = createI18n(atom(locale), {
+    cache: {
+      ru: {
+        about: aboutRu,
+        common: commonRu,
+        methods: methodsRu,
+        'not-found': notFoundRu,
+        settings: settingsRu
+      }
+    },
+    async get () {
+      return {}
+    }
+  })
+
+  return i18n(componentName, baseTranslation).get()
 }

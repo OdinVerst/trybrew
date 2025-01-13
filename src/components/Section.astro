@@ -16,9 +16,9 @@ const buttonId = `${baseId}__btn`
       aria-controls={sectionId}
       aria-expanded="true"
       class="accordion"
+      data-accordion-toggle
       id={buttonId}
       type="button"
-      data-accordion-toggle
     >
       <slot name="title" />
       <Icon class="chevron" name="chevron-down" />

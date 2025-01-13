@@ -27,7 +27,7 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths
 ---
 
-<Layout title={entry.data.title} description={entry.data.description} author={entry.data.author}>
+<Layout author={entry.data.author} description={entry.data.description} title={entry.data.title}>
   <Recipe recipe={entry.data}>
     <Content />
   </Recipe>
