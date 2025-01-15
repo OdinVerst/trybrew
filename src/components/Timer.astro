@@ -1,4 +1,5 @@
 ---
+import { commonMessages } from '@/i18n/locales/common/en'
 interface Props {
   steps: {
     description: null | string
@@ -6,11 +7,13 @@ interface Props {
     water: number
   }[]
 }
+const locale = Astro.currentLocale || 'en'
+const messages = commonMessages(locale)
 
 const { steps } = Astro.props
 ---
 
-<div data-steps={JSON.stringify(steps)} id="timer-root">
+<div data-locale={locale} data-steps={JSON.stringify(steps)} id="timer-root">
   <div class="wrapper">
     <svg viewBox="0 0 200 200">
       <!-- Background Circle -->
@@ -37,8 +40,8 @@ const { steps } = Astro.props
     </div>
   </div>
   <div class="control-panel">
-    <button class="control-panel--btn" id="startTimer">Start</button>
-    <button class="control-panel--btn" id="stopBrew">Reset</button>
+    <button class="control-panel--btn" id="startTimer">{messages.start}</button>
+    <button class="control-panel--btn" id="stopBrew">{messages.reset}</button>
   </div>
 </div>
 
@@ -144,6 +147,8 @@ const { steps } = Astro.props
 </style>
 
 <script>
+  import { commonMessages } from '@/i18n/locales/common/en'
+
   type Step = {
     description: null | string
     time: number
@@ -163,6 +168,8 @@ const { steps } = Astro.props
   const nextStepSlot = document.getElementById('nextStep')
   const progressArc = document.getElementById('progressArc')
   const startTimerBtn = document.getElementById('startTimer')!
+
+  const messages = commonMessages(root?.dataset.locale)
 
   const steps: Step[] = root?.dataset.steps
     ? JSON.parse(root.dataset.steps).map((it: Step) => ({
@@ -206,12 +213,12 @@ const { steps } = Astro.props
     isRunning = true
     startTime = performance.now() - elapsedTime
     requestAnimationFrame(updateTimer)
-    startTimerBtn.textContent = 'Pause'
+    startTimerBtn.textContent = messages['pause']
   }
 
   function stopTimer() {
     isRunning = false
-    startTimerBtn.textContent = 'Start'
+    startTimerBtn.textContent = messages['start']
   }
 
   function resetTimer() {
