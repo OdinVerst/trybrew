@@ -55,7 +55,7 @@ tags:
 </div>
 
 
-<div class="info-warm">
+<div class="info-note">
 
 ## Примечание
 

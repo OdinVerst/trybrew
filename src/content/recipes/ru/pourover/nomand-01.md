@@ -61,7 +61,7 @@ tags:
 Общее время экстракции __2:30 - 3:00__
 
 <br>
-<div class="info-warm">
+<div class="info-note">
 
 ## Примечание
 
