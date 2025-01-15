@@ -91,7 +91,7 @@ Total
 Total extraction time  __3:10__
 
 <br>
-<div class="info-warm">
+<div class="info-note">
 
 ## Note
 

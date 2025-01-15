@@ -61,7 +61,7 @@ Total
 Total extraction time __2:20 - 2:30__
 
 <br>
-<div class="info-warm">
+<div class="info-note">
 
 ## Note
 After each infusion, stir with a spoon or stirring stick. This is to ensure that all the coffee is evenly saturated.

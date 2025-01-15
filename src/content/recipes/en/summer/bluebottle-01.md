@@ -38,7 +38,7 @@ Alternatively: Add just enough simple syrup to each serving to sweeten.</p>
 7. Serve over ice. <p class="time-note">Pouring equal amounts of sweetened coffee concentrate and milk or cream (or dairy alternative) into a glass.</p>
 
 <br>
-<div class="info-warm">
+<div class="info-note">
 
 ## Note
 

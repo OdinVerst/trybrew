@@ -29,7 +29,7 @@ Then screw in filter, invert aeropress and squeeze evenly until __1:25__.
 
 <br>
 
-<div class="info-warm">
+<div class="info-note">
 
 ## Note
 

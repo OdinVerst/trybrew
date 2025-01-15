@@ -78,7 +78,7 @@ Total
 </div>
 
 
-<div class="info-warm">
+<div class="info-note">
 
 ## Note
 

@@ -29,7 +29,7 @@ __2__ бумажных фильтра
 
 <br>
 
-<div class="info-warm">
+<div class="info-note">
 
 ## Примечание
 
