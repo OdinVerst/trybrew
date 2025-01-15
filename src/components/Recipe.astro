@@ -96,13 +96,13 @@ const groupedSteps = formattedSteps
     }
     <slot />
   </div>
+  {recipe.steps
+    ? <a class="timer-link" href={timerHref}>Open timer</a>
+    : null}
   <div class="source">
     <span>{messages.source}:</span>
     <Author image={recipe.authorImg} link={recipe.link} name={recipe.author} />
   </div>
-  {recipe.steps
-    ? <a class="timer-link" href={timerHref}>Open timer</a>
-    : null}
 </div>
 
 <style>
