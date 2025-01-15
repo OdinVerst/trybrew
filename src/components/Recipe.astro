@@ -63,7 +63,7 @@ const groupedSteps = formattedSteps
 
 <div class="root">
   <h1 class="title">
-    <a class="method-link" href={methodHref}>{messages[recipe.method as keyof typeof messages]}</a> / {recipe.name}
+    <a class="method-link" href={methodHref}>{messages[recipe.method]}</a> / {recipe.name}
   </h1>
   <RecipeProperties properties={recipe.properties} />
   <div>
