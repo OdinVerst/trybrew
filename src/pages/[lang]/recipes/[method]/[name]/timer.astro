@@ -5,10 +5,10 @@ import type { CollectionEntry } from 'astro:content'
 import { getCollection } from 'astro:content'
 import { getRelativeLocaleUrl } from 'astro:i18n'
 
-import TimerComponent from '../../../../../components/Timer.astro'
-import { commonMessages } from '../../../../../i18n/locales/common/en'
-import { createPropertyFormatters } from '../../../../../i18n/utils'
-import Layout from '../../../../../layouts/Layout.astro'
+import TimerComponent from '@/components/Timer.astro'
+import { commonMessages } from '@/i18n/locales/common/en'
+import { createPropertyFormatters } from '@/i18n/utils'
+import Layout from '@/layouts/Layout.astro'
 
 interface Props {
   entry: CollectionEntry<'recipes'>

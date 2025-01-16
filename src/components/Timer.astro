@@ -2,9 +2,10 @@
 import { commonMessages } from '@/i18n/locales/common/en'
 interface Props {
   steps: {
-    description: null | string
+    description?: string
+    group?: string
     time: number
-    water: number
+    water: string
   }[]
 }
 const locale = Astro.currentLocale || 'en'
@@ -32,11 +33,10 @@ const { steps } = Astro.props
     <div class="time segmented" id="time"></div>
     <div class="steps">
       <div class="step" id="step">
+        <div class="group" id="group"></div>
         <div id="description"></div>
         <div id="totalWeight"></div>
       </div>
-      <!--<div class="nextStep" id="nextStep">-->
-      <!--</div>-->
     </div>
   </div>
   <div class="control-panel">
@@ -50,6 +50,13 @@ const { steps } = Astro.props
     position: relative;
     max-width: 500px;
     margin-inline: auto;
+  }
+
+  .group {
+    color: var(--text-secondary);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
   }
 
   .time {
@@ -150,9 +157,10 @@ const { steps } = Astro.props
   import { commonMessages } from '@/i18n/locales/common/en'
 
   type Step = {
-    description: null | string
+    description?: string
     time: number
     water: string
+    group?: string
   }
 
   let startTime: number
@@ -163,9 +171,9 @@ const { steps } = Astro.props
 
   const root = document.getElementById('timer-root')
   const timeSlot = document.getElementById('time')
+  const groupSlot = document.getElementById('group')
   const descriptionSlot = document.getElementById('description')
   const totalWeightSlot = document.getElementById('totalWeight')
-  const nextStepSlot = document.getElementById('nextStep')
   const progressArc = document.getElementById('progressArc')
   const startTimerBtn = document.getElementById('startTimer')!
 
@@ -179,17 +187,15 @@ const { steps } = Astro.props
     : []
 
   let step = steps[stepIndex]
-  let nextStep = steps[stepIndex + 1]
   let timeLeft = 0
 
   function updateStep(index: number) {
-    if (!descriptionSlot || !totalWeightSlot) return
+    if (!descriptionSlot || !totalWeightSlot || !groupSlot) return
     stepIndex = index
     step = steps[stepIndex]
-    nextStep = steps[stepIndex + 1]
-    descriptionSlot.textContent = step.description
+    groupSlot.textContent = step.group ?? null
+    descriptionSlot.textContent = step.description ?? null
     totalWeightSlot.textContent = step.water
-    // nextStepSlot.textContent = nextStep ? nextStep.description : "";
   }
 
   function updateTime(time: number) {
