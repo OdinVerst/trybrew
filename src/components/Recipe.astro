@@ -4,7 +4,10 @@ import type { CollectionEntry } from 'astro:content'
 import { getRelativeLocaleUrl } from 'astro:i18n'
 
 import { commonMessages } from '@/i18n/locales/common/en'
+import { createPropertyFormatters } from '@/i18n/utils'
 
+import { getRecipeMessages } from '../i18n/locales/recipe/en'
+import { humanTimeToSeconds, secondsTimeToHuman } from '../utils'
 import Author from './Author.astro'
 import RecipeProperties from './RecipeProperties.astro'
 
@@ -15,8 +18,45 @@ const { recipe } = Astro.props
 
 const locale = Astro.currentLocale || 'en'
 const messages = commonMessages(locale)
+const recipeMessages = getRecipeMessages(locale)
+const { time, weight } = createPropertyFormatters(Astro.currentLocale)
 
 const href = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
+const DEFAULT_GROUP = Symbol('default')
+
+const formattedSteps = recipe.steps
+  ?.reduce<({ endTime: number; startTime: number; totalWater: number } & Exclude<Entry['data']['steps'], undefined>[number])[]>((acc, step, index) => {
+    const previousStepEndTime = index > 0 ? acc[index - 1].endTime : 0
+    const previousStepTotalWater = index > 0 ? acc[index - 1].totalWater : 0
+    acc.push({
+      ...step,
+      endTime: humanTimeToSeconds(step.time) + previousStepEndTime,
+      startTime: previousStepEndTime,
+      totalWater: step.water + previousStepTotalWater
+    })
+    return acc
+  }, [])
+  .map(step => ({
+    ...step,
+    endTime: time(secondsTimeToHuman(step.endTime)),
+    startTime: time(secondsTimeToHuman(step.startTime)),
+    time: time(step.time),
+    totalWater: weight(step.totalWater),
+    water: weight(step.water)
+  }))
+
+const groupedSteps = formattedSteps
+  ?.reduce((acc, step) => {
+    const lastGroup = acc[acc.length - 1]
+    const group = step.group ?? DEFAULT_GROUP
+
+    if (lastGroup && lastGroup[0] === group) {
+      lastGroup[1].push(step)
+    } else {
+      acc.push([group, [step]])
+    }
+    return acc
+  }, [] as [string | typeof DEFAULT_GROUP, typeof formattedSteps][])
 ---
 
 <div class="root">
@@ -26,31 +66,29 @@ const href = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
   <RecipeProperties properties={recipe.properties} />
   <div>
     {
-      recipe.steps
+      groupedSteps
         ? (
         <>
           <h2>Recipe</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Time</th>
-                <th>Weight</th>
-                <th>Notes</th>
-              </tr>
-            </thead>
-            <tbody>
-              {recipe.steps.map(it => {
-                return (
-                  <tr>
-                    <td>{it.time}</td>
-                    <td>{it.water} gr.</td>
-                    <td>{it.description}</td>
-                  </tr>
-                )
-              })}
-            </tbody>
-          </table>
-        </>
+          <div class="recipe-steps">
+              <div class="cell cell--header cell--first">{recipeMessages.startTime}</div>
+              <div class="cell cell--header cell--last">{recipeMessages.totalWeight}</div>
+            {groupedSteps.map(([group, steps]) =>
+              (
+                <>
+                  {group !== DEFAULT_GROUP
+                    ? <div class="recipe-steps-subheader">{group}</div>
+                    : null}
+                  {steps.map(step => (
+                    <>
+                      <div class="cell cell--first">{step.startTime}</div>
+                      <div class="cell">{step.totalWater}</div>
+                      <div class="cell cell--description">{step.description}</div>
+                    </>))}
+                </>
+              ))}
+          </div>
+          </>
           )
         : null
     }
@@ -90,9 +128,54 @@ const href = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
     color: inherit;
   }
 
-  th,
-  td {
+  .recipe-steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-block-end: 32px;
+  }
+
+  .recipe-steps-subheader {
+    margin-block-start: 24px;
+    color: var(--text-secondary);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    grid-column: 1 / -1;
+  }
+
+  .cell {
     padding: 6px 12px;
+  }
+
+  .cell--header {
+    font-weight: 600;
+  }
+
+  .cell--first {
+    padding-inline-start: 0;
+  }
+
+  /* Special case required only for the header of the last column to take the place of description column header if there are 3 columns. */
+  .cell--header.cell--last {
+    grid-column: 2 / -1;
+  }
+
+  /* These classes grouped under one query since changes are highly coupled */
+  @media screen and (max-width: 600px) {
+
+    .recipe-steps {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .cell--description {
+      grid-column: 1 / -1;
+      padding-inline: 0;
+      margin-block-end: 24px;
+    }
+
+    .cell--description:empty {
+      display: none;
+    }
   }
 
   .source {
@@ -102,7 +185,7 @@ const href = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
   }
 </style>
 
-<!-- TODO: Drop thies styles, when we migrate new recipes ro MDX or frontmatter -->
+<!-- TODO: Drop these styles, when we migrate new recipes to MDX or frontmatter -->
 <style is:global>
   .time-line {
     display: grid;
