@@ -12,29 +12,29 @@ properties:
   temperature: 95
 
 steps:
-- description: Интенсивно по спирали
-  water: 50
-  time: '0:50'
-  group: Предсмачивание
-- description: От центра к краям кофейной таблетки
-  water: 120
-  time: '0:30'
-  group: Вливания
-- description: В центр и возвращаемся к завариванию по спирали
-  water: 180
-  time: '0:40'
-  group: Вливания
-- description: В центр воронки
-  water: 309
-  time: '1:25'
-  group: Вливания
+  - description: Интенсивно по спирали
+    water: 50
+    time: '0:50'
+    group: Предсмачивание
+  - description: От центра к краям кофейной таблетки
+    water: 120
+    time: '0:30'
+    group: Вливания
+  - description: В центр и возвращаемся к завариванию по спирали
+    water: 180
+    time: '0:40'
+    group: Вливания
+  - description: В центр воронки
+    water: 309
+    time: '1:25'
+    group: Вливания
 
 author: Aeroplan.Coffee
 authorImg: aeroplan
 
 link: https://www.instagram.com/aeroplancoffee/
 tags:
-- pourover
+  - pourover
 ---
 
 <div class="info-note">
