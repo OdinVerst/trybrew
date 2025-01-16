@@ -4,7 +4,8 @@ import { defineCollection, z } from 'astro:content'
 const recipeStep = z.object({
   description: z.string().optional(),
   time: z.string(),
-  water: z.number()
+  water: z.number(),
+  group: z.string().optional()
 })
 
 const recipesCollection = defineCollection({

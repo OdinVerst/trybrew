@@ -14,14 +14,19 @@ properties:
 steps:
   - water: 35
     time: '0:30'
+    group: Pre-wetting
   - water: 65
     time: '0:30'
+    group: Infusions
   - water: 50
     time: '0:20'
+    group: Infusions
   - water: 50
     time: '0:25'
+    group: Infusions
   - water: 50
     time: '0:25'
+    group: Infusions
 
 author: The Barn
 authorImg: barn
