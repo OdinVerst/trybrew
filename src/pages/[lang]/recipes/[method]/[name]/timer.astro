@@ -9,7 +9,9 @@ import TimerComponent from '@/components/Timer.astro'
 import { commonMessages } from '@/i18n/locales/common/en'
 import { createPropertyFormatters } from '@/i18n/utils'
 import Layout from '@/layouts/Layout.astro'
+import { humanTimeToSeconds } from '@/utils'
 
+type Entry = CollectionEntry<'recipes'>
 interface Props {
   entry: CollectionEntry<'recipes'>
 }
@@ -34,18 +36,22 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths
 const { weight } = createPropertyFormatters(Astro.currentLocale)
 
-function timeToSeconds (s: string) {
-  const coefficients = [1, 60, 24 * 60]
-  return s.split(':').map(Number).reverse().reduce((acc, cur, index) => acc + cur * coefficients[index], 0)
-}
-
 const methodHref = getRelativeLocaleUrl(locale, `/recipes/${method}`)
 const recipeHref = getRelativeLocaleUrl(locale, `/recipes/${method}/${name}`)
-const formattedSteps = entry.data.steps!.map(step => ({
-  ...step,
-  time: timeToSeconds(step.time),
-  water: weight(step.water)
-}))
+const formattedSteps = entry.data.steps!
+  .reduce<({ totalWater: number } & Exclude<Entry['data']['steps'], undefined>[number])[]>((acc, step, index) => {
+    const previousStepTotalWater = index > 0 ? acc[index - 1].totalWater : 0
+    acc.push({
+      ...step,
+      totalWater: step.water + previousStepTotalWater
+    })
+    return acc
+  }, [])
+  .map(step => ({
+    ...step,
+    time: humanTimeToSeconds(step.time),
+    totalWater: weight(step.totalWater)
+  }))
 ---
 
 <Layout author={entry.data.author} description={entry.data.description} title={entry.data.title}>

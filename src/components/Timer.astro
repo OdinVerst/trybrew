@@ -5,7 +5,7 @@ interface Props {
     description?: string
     group?: string
     time: number
-    water: string
+    totalWater: string
   }[]
 }
 const locale = Astro.currentLocale || 'en'
@@ -158,7 +158,7 @@ const { steps } = Astro.props
   type Step = {
     description?: string
     time: number
-    water: string
+    totalWater: string
     group?: string
   }
 
@@ -194,7 +194,7 @@ const { steps } = Astro.props
     step = steps[stepIndex]
     groupSlot.textContent = step.group ?? null
     descriptionSlot.textContent = step.description ?? null
-    totalWeightSlot.textContent = step.water
+    totalWeightSlot.textContent = step.totalWater
   }
 
   function updateTime(time: number) {
