@@ -15,5 +15,8 @@
   "settings": "Настройки",
   "sourceCode": "Исходный код на {link}",
   "summer": "Лето",
-  "switchTo": "Переключиться на {link}"
+  "switchTo": "Переключиться на {link}",
+  "start": "Старт",
+  "pause": "Пауза",
+  "reset": "Сбросить"
 }

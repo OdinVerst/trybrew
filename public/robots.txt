@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /*/recipes/*/timer/
 
 Sitemap: https://trybrew.app/sitemap-index.xml

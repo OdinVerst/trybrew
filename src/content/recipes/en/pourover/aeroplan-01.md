@@ -12,18 +12,22 @@ properties:
   temperature: 95
 
 steps:
-  - description: Pre-wetting in a spiral and intensely
+  - description: In a spiral and intensely
     water: 50
     time: "0:50"
+    group: Pre-wetting
   - description: From the center to the edges of the coffee tablet
     water: 70
     time: "0:30"
+    group: Infusions
   - description: To the center and back to spiral brewing
     water: 60
     time: "0:40"
+    group: Infusions
   - description: Into the center of the funnel
     water: 29
     time: "1:25"
+    group: Infusions
 
 author: Aeroplan.Coffee
 authorImg: aeroplan

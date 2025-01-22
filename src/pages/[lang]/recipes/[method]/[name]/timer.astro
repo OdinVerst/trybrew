@@ -1,0 +1,81 @@
+---
+import type { GetStaticPaths } from 'astro'
+import type { CollectionEntry } from 'astro:content'
+
+import { getCollection } from 'astro:content'
+import { getRelativeLocaleUrl } from 'astro:i18n'
+
+import TimerComponent from '@/components/Timer.astro'
+import { commonMessages } from '@/i18n/locales/common/en'
+import { createPropertyFormatters } from '@/i18n/utils'
+import Layout from '@/layouts/Layout.astro'
+import { humanTimeToSeconds } from '@/utils'
+
+type Entry = CollectionEntry<'recipes'>
+interface Props {
+  entry: CollectionEntry<'recipes'>
+}
+
+const { entry } = Astro.props
+const { method, name } = Astro.params
+const locale = Astro.currentLocale || 'en'
+const messages = commonMessages(locale)
+
+export const getStaticPaths = (async () => {
+  const recipes = await getCollection('recipes')
+  return recipes
+    .filter(entry => entry.data.steps !== undefined)
+    .map(entry => {
+      const [lang, method, name] = entry.slug.split('/')
+
+      return {
+        params: { lang, method, name },
+        props: { entry }
+      }
+    })
+}) satisfies GetStaticPaths
+const { weight } = createPropertyFormatters(Astro.currentLocale)
+
+const methodHref = getRelativeLocaleUrl(locale, `/recipes/${method}`)
+const recipeHref = getRelativeLocaleUrl(locale, `/recipes/${method}/${name}`)
+const formattedSteps = entry.data.steps!
+  .reduce<({ totalWater: number } & Exclude<Entry['data']['steps'], undefined>[number])[]>((acc, step, index) => {
+    const previousStepTotalWater = index > 0 ? acc[index - 1].totalWater : 0
+    acc.push({
+      ...step,
+      totalWater: step.water + previousStepTotalWater
+    })
+    return acc
+  }, [])
+  .map(step => ({
+    ...step,
+    time: humanTimeToSeconds(step.time),
+    totalWater: weight(step.totalWater)
+  }))
+---
+
+<Layout author={entry.data.author} description={entry.data.description} title={entry.data.title}>
+  <h1 class="title">
+    <a class="link" href={methodHref}>{messages[entry.data.method]}</a>
+    / <a class="link" href={recipeHref}>{entry.data.name}</a>
+    / Timer
+  </h1>
+  <TimerComponent steps={formattedSteps} />
+</Layout>
+
+<style>
+  .title {
+    margin-block: 0 28px;
+    font-size: 24px;
+    text-transform: capitalize;
+  }
+
+  .link {
+    display: inline-block;
+    color: inherit;
+  }
+
+  .link:visited {
+    color: inherit;
+  }
+</style>

@@ -1,6 +1,8 @@
 /* eslint-disable perfectionist/sort-objects */
 import { defineCollection, z } from 'astro:content'
 
+import { BREW_METHODS } from '@/constants/brewMethods.ts'
+
 const recipeStep = z.object({
   description: z.string().optional(),
   time: z.string(),
@@ -13,7 +15,7 @@ const recipesCollection = defineCollection({
     title: z.string(),
     description: z.string(),
     name: z.string(),
-    method: z.string(),
+    method: z.enum(BREW_METHODS),
     properties: z.object({
       coffeeWeight: z.number(),
       water: z.number(),

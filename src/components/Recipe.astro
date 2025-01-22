@@ -15,13 +15,15 @@ type Entry = CollectionEntry<'recipes'>
 type Props = { recipe: Entry['data'] }
 
 const { recipe } = Astro.props
+const { name } = Astro.params
 
 const locale = Astro.currentLocale || 'en'
 const messages = commonMessages(locale)
 const recipeMessages = getRecipeMessages(locale)
 const { time, weight } = createPropertyFormatters(Astro.currentLocale)
 
-const href = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
+const methodHref = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}`)
+const timerHref = getRelativeLocaleUrl(locale, `/recipes/${recipe.method}/${name}/timer`)
 const DEFAULT_GROUP = Symbol('default')
 
 const formattedSteps = recipe.steps
@@ -61,7 +63,7 @@ const groupedSteps = formattedSteps
 
 <div class="root">
   <h1 class="title">
-    <a class="method-link" {href}>{messages[recipe.method as keyof typeof messages]}</a> / {recipe.name}
+    <a class="method-link" href={methodHref}>{messages[recipe.method]}</a> / {recipe.name}
   </h1>
   <RecipeProperties properties={recipe.properties} />
   <div>
@@ -94,6 +96,9 @@ const groupedSteps = formattedSteps
     }
     <slot />
   </div>
+  {recipe.steps
+    ? <a class="timer-link" href={timerHref}>Open timer</a>
+    : null}
   <div class="source">
     <span>{messages.source}:</span>
     <Author image={recipe.authorImg} link={recipe.link} name={recipe.author} />
@@ -182,6 +187,12 @@ const groupedSteps = formattedSteps
     display: flex;
     align-items: center;
     gap: 12px;
+  }
+
+  .timer-link {
+    display: inline-block;
+    margin-block: 24px;
+    color: inherit;
   }
 </style>
 

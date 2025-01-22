@@ -11,6 +11,24 @@ properties:
   time: '3:25'
   temperature: 95
 
+steps:
+  - description: Интенсивно по спирали
+    water: 50
+    time: '0:50'
+    group: Предсмачивание
+  - description: От центра к краям кофейной таблетки
+    water: 120
+    time: '0:30'
+    group: Вливания
+  - description: В центр и возвращаемся к завариванию по спирали
+    water: 180
+    time: '0:40'
+    group: Вливания
+  - description: В центр воронки
+    water: 309
+    time: '1:25'
+    group: Вливания
+
 author: Aeroplan.Coffee
 authorImg: aeroplan
 
@@ -18,78 +36,6 @@ link: https://www.instagram.com/aeroplancoffee/
 tags:
   - pourover
 ---
-
-## Рецепт
-
-
-<div class="time-line">
-
-Время
-
-Вес
-
-Итого
-
-</div>
-
-### Предсмачивание
-
-<div class="time-line">
-
-0:00
-
-50 г
-
-50 г
-
-</div>
-
-<p class="time-note">по спирали и интенсивно</p>
-
-### Вливания
-
-<div class="time-line">
-
-0:50
-
-70 г
-
-120 г
-
-</div>
-
-<p class="time-note">от центра к краям кофейной таблетки</p>
-
-
-<div class="time-line">
-
-1:20
-
-60 г
-
-180 г
-
-</div>
-
-<p class="time-note">в центр и возвращаемся к завариванию по спирали</p>
-
-<div class="time-line">
-
-2:00
-
-129 г
-
-309 г
-
-</div>
-
-<p class="time-note">в центр воронки</p>
-
-<br>
-
-Общее время экстракции __3:25__
-
-<br>
 
 <div class="info-note">
 
