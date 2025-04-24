@@ -2,7 +2,7 @@
 import type { GetStaticPaths } from 'astro'
 import type { CollectionEntry } from 'astro:content'
 
-import { getCollection } from 'astro:content'
+import { getCollection, render } from 'astro:content'
 
 import Recipe from '@/components/Recipe.astro'
 import Layout from '@/layouts/Layout.astro'
@@ -13,12 +13,12 @@ interface Props {
 
 const { entry } = Astro.props
 
-const { Content } = await entry.render()
+const { Content } = await render(entry)
 
 export const getStaticPaths = (async () => {
   const recipes = await getCollection('recipes')
   return recipes.map(entry => {
-    const [lang, method, name] = entry.slug.split('/')
+    const [lang, method, name] = entry.id.split('/')
     return {
       params: { lang, method, name },
       props: { entry }

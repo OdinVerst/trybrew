@@ -11,8 +11,7 @@ properties:
   time: '2:30'
   temperature: ~95
 
-author: Blue Bottle
-authorImg: bluebottle
+author: blue-bottle
 
 link: https://bluebottlecoffee.com/us/eng/brew-guides/pour-over
 tags:

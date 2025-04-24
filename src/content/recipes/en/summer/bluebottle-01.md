@@ -11,8 +11,7 @@ properties:
   time: '12:00:00'
   temperature: cold
 
-author: Blue Bottle
-authorImg: bluebottle
+author: blue-bottle
 
 link: https://bluebottlecoffee.com/us/eng/brew-guides/new-orleans-style-iced-coffee
 tags:

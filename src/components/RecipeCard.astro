@@ -13,13 +13,13 @@ interface Props {
 const { recipe } = Astro.props
 
 const locale = Astro.currentLocale || 'en'
-const href = getRelativeLocaleUrl(locale, `recipes/${recipe.slug.split(`${locale}/`)[1]}`)
+const href = getRelativeLocaleUrl(locale, `recipes/${recipe.id.split(`${locale}/`)[1]}`)
 ---
 
 <article class="card">
   <a class="link" {href}>{recipe.data.name}</a>
   <RecipeProperties properties={recipe.data.properties} />
-  <Author image={recipe.data.authorImg} name={recipe.data.author} />
+  <Author authorName={recipe.data.authorName} authorRef={recipe.data.author} />
 </article>
 
 <style>

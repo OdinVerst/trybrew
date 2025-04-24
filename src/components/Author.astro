@@ -1,28 +1,38 @@
 ---
+import type { ReferenceDataEntry } from 'astro:content'
+
 import { Icon } from 'astro-icon/components'
+import { getEntry } from 'astro:content'
+
+import { checkIconExists } from '@/utils'
 
 interface Props {
-  image?: string
+  authorName?: string
+  authorRef: ReferenceDataEntry<'authors'>
   link?: string
-  name: string
 }
 
-const { image, link, name } = Astro.props
+const { authorName, authorRef, link } = Astro.props
+
+const author = await getEntry(authorRef)
+const { data: { name }, id } = author
+
+const iconExists = await checkIconExists(id)
 ---
 
 {
   link
     ? (
     <a class="author" href={link} target="_blank">
-      {image && <Icon class="author__icon" name={image} />}
-      {name}
+      {iconExists && <Icon class="author__icon" name={id} />}
+      {name} {authorName && ` (${authorName})`}
       <Icon class="author__source-icon" name="source-link" />
     </a>
       )
     : (
     <div class="author">
-      {image && <Icon class="author__icon" name={image} />}
-      {name}
+      {iconExists && <Icon class="author__icon" name={id} />}
+      {name} {authorName && ` (${authorName})`}
     </div>
       )
 }

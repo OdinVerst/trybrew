@@ -1,15 +1,24 @@
 import type { AnyEntryMap, CollectionEntry } from 'astro:content'
 
 import { getCollection } from 'astro:content'
+import fs, { access } from 'node:fs/promises'
+import path from 'node:path'
 
-export async function getCollectionByLocale (
-  collectionName: keyof AnyEntryMap,
+export async function checkIconExists (id: string) {
+  const iconPath = path.resolve(process.cwd(), `src/icons/${id}.svg`)
+  return await access(iconPath, fs.constants.R_OK)
+    .then(() => true)
+    .catch(() => false)
+}
+
+export async function getCollectionByLocale<T extends keyof AnyEntryMap> (
+  collectionName: T,
   lang: string
-): Promise<CollectionEntry<'recipes'>[]> {
-  const recipes = await getCollection(collectionName, entry => {
-    return entry.slug.startsWith(`${lang}/`)
+): Promise<CollectionEntry<T>[]> {
+  const entries = await getCollection(collectionName, entry => {
+    return entry.id.startsWith(`${lang}/`)
   })
-  return recipes
+  return entries
 }
 
 export function humanTimeToSeconds (time: string) {

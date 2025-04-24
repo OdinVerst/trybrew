@@ -10,8 +10,7 @@ properties:
   water: 450
   temperature: 85
 
-author: Locus
-authorImg: locus
+author: locus
 
 link: https://www.instagram.com/locus.coffee/
 tags:

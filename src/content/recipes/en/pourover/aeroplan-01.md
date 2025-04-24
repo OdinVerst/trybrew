@@ -25,8 +25,7 @@ steps:
     water: 29
     time: "1:25"
 
-author: Aeroplan.Coffee
-authorImg: aeroplan
+author: aeroplan-coffee
 
 link: https://www.instagram.com/aeroplancoffee/
 tags:

@@ -28,8 +28,7 @@ steps:
     time: '0:25'
     group: Infusions
 
-author: The Barn
-authorImg: barn
+author: the-barn
 
 link: https://thebarn.de/blogs/the-barn-blog/v60-drip
 tags:

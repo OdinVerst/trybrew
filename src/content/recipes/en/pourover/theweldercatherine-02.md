@@ -11,8 +11,7 @@ properties:
   time: '2:45'
   temperature: 96
 
-author: the Welder Catherine
-authorImg: thewelder
+author: the-welder
 
 link: https://theweldercatherine.ru/catalog/dlya_filtra/ruanda_ubumve_viski/
 tags:

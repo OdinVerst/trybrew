@@ -11,8 +11,7 @@ properties:
   time: '2:30'
   temperature: 96
 
-author: Heart roasters
-authorImg: heart
+author: heart-roasters
 
 link: https://www.heartroasters.com/pages/v60
 tags:

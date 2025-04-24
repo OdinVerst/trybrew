@@ -9,8 +9,8 @@ properties:
   coffeeWeight: 11
   water: 110
 
-author: the Welder Catherine (Сергей Блинников)
-authorImg: thewelder
+author: the-welder
+authorName: Сергей Блинников
 
 link: https://www.youtube.com/watch?v=3kyp0cDkOWU
 tags:

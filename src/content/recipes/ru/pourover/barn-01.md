@@ -11,8 +11,7 @@ properties:
   time: '2:30'
   temperature: 94
 
-author: The Barn
-authorImg: barn
+author: the-barn
 
 link: https://thebarn.de/blogs/the-barn-blog/v60-drip
 tags:
