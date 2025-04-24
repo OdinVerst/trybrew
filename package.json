@@ -28,7 +28,10 @@
     "eslint-config-standard": "^17.1.0",
     "eslint-define-config": "^2.1.0",
     "eslint-plugin-astro": "^1.3.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-n": "^17.17.0",
     "eslint-plugin-perfectionist": "^4.6.0",
+    "eslint-plugin-promise": "^7.2.1",
     "nano-staged": "^0.8.0",
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
@@ -38,7 +41,9 @@
   "pnpm": {
     "peerDependencyRules": {
       "allowAny": [
-        "eslint"
+        "eslint",
+        "eslint-plugin-n",
+        "eslint-plugin-promise"
       ]
     }
   }
