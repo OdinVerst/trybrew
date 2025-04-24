@@ -1,0 +1,48 @@
+---
+import { Icon } from 'astro-icon/components'
+import { getEntry } from 'astro:content'
+
+import { checkIconExists } from '@/utils'
+
+interface Props {
+  authorId: string
+}
+
+const { authorId } = Astro.props
+
+const author = await getEntry('authors', authorId)
+if (!author) {
+  throw new Error(`Author with id ${authorId} not found`)
+}
+
+const { data: { name }, id } = author
+
+const iconExists = await checkIconExists(id)
+---
+
+<div class="author-title">
+  {iconExists && <Icon class="author-icon" name={id} />}
+  {author.data.name}
+</div>
+
+<style>
+  .author-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+    color: var(--color-text);
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .author-icon {
+    color: black;
+    width: 25px;
+    height: 25px;
+    background: var(--color-author-icon-background);
+    padding: 2px;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+</style>

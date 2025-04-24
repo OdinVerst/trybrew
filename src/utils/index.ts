@@ -32,3 +32,16 @@ export function secondsTimeToHuman (time: number) {
 
   return minutes.toString().padStart(2, '0') + ':' + seconds.toString().padStart(2, '0')
 }
+
+const BREWING_METHOD_ORDER = ['pourover', 'aeropress', 'cezve', 'chemex', 'coldbrew', 'summer']
+
+export function sortByBrewingMethod<T> (
+  entries: T[],
+  methodGetter: (entry: T) => string
+) {
+  return entries.sort((a, b) => {
+    const orderA = BREWING_METHOD_ORDER.indexOf(methodGetter(a))
+    const orderB = BREWING_METHOD_ORDER.indexOf(methodGetter(b))
+    return orderA - orderB
+  })
+}

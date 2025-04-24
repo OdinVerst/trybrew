@@ -1,18 +1,26 @@
 ---
 import '@/styles/main.css'
 
+import type { ReferenceDataEntry } from 'astro:content'
+
+import { getEntry } from 'astro:content'
+
 import Footer from '@/components/Footer.astro'
 import Header from '@/components/Header.astro'
 
 interface Props {
-  author?: string
+  authorName?: string
+  authorRef?: ReferenceDataEntry<'authors'>
   description: string
   title: string
 }
 
-const { author, description, title } = Astro.props
+const { authorName, authorRef, description, title } = Astro.props
 const siteUrl = Astro.site
 const siteName = 'TryBrew'
+
+const authorEntry = authorRef ? await getEntry(authorRef) : undefined
+const author = authorEntry?.data.name + (authorName ? ` (${authorName})` : '')
 ---
 
 <!doctype html>
