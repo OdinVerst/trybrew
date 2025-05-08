@@ -11,8 +11,7 @@ properties:
   time: '2:00'
   temperature: 95
 
-author: the Welder Catherine
-authorImg: thewelder
+author: the-welder
 
 link: https://www.youtube.com/watch?v=-msoGbvpr7U
 tags:

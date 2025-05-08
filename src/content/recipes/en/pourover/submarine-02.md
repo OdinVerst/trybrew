@@ -11,8 +11,7 @@ properties:
   time: '3:10'
   temperature: 95
 
-author: Submarine
-authorImg: submarine
+author: submarine
 
 link: https://sbmrne.ru/product-card/Brazil_El_Dorado_catucai
 tags:

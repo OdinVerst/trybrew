@@ -11,7 +11,7 @@ properties:
   time: '3:10'
   temperature: 96
 
-author: Nomad
+author: nomad
 
 link: https://nomadcoffee.es/en/producto/ngororero/
 tags:

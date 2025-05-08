@@ -1,8 +1,12 @@
 ---
 import type { GetStaticPaths } from 'astro'
 
+import { getRelativeLocaleUrl } from 'astro:i18n'
+
 import { notFoundMessages } from '@/i18n/locales/not-found/en'
 import Layout from '@/layouts/Layout.astro'
+
+const locale = Astro.currentLocale || 'en'
 
 const messages = notFoundMessages(Astro.currentLocale)
 
@@ -15,5 +19,5 @@ export const getStaticPaths = (async () => [
 <Layout description={messages.title} title={messages.title}>
   <h1>{messages.title}</h1>
   <p>{messages.subtitle}</p>
-  <a href="/">{messages.link}</a>
+  <a href={getRelativeLocaleUrl(locale, '/')}>{messages.link}</a>
 </Layout>

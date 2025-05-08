@@ -1,5 +1,5 @@
 ---
-title: Рецепт фильтр кофе Универсальный (La Cabra)
+title: Рецепт фильтр кофе Универсальный
 description: Рецепт V60 (Универсальный) | 210 мл | 14.5 г
 
 name: Универсальный
@@ -11,7 +11,7 @@ properties:
   time: '3:30'
   temperature: 96
 
-author: La Cabra
+author: la-cabra
 
 link: https://www.lacabra.dk/pages/v60-brew-guide
 tags:

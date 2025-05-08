@@ -11,7 +11,7 @@ properties:
   time: '3:00'
   temperature: 96
 
-author: Nomad
+author: nomad
 
 link: https://nomadcoffee.es/en/producto/red-plum/
 tags:

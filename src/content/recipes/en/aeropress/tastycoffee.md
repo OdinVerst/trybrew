@@ -11,8 +11,7 @@ properties:
   time: '1:40'
   temperature: 90
 
-author: Tasty Coffee
-authorImg: tastycoffee
+author: tasty-coffee
 
 link: https://shop.tastycoffee.ru/blog/guide-aeropress
 tags:

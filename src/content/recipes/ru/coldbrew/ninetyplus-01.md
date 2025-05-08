@@ -10,8 +10,7 @@ properties:
   water: 170
   time: '24:00:00'
 
-author: Ninety Plus
-authorImg: ninety-plus
+author: ninety-plus
 
 link: https://www.instagram.com/tv/CE9PX3QBh2E/
 tags:

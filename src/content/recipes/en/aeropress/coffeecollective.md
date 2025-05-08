@@ -11,8 +11,7 @@ properties:
   time: '1:00'
   temperature: 93
 
-author: Coffee Collective
-authorImg: cc
+author: coffee-collective
 
 link: https://coffeecollective.dk/brew-guides/aeropress/
 tags:

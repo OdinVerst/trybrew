@@ -11,8 +11,7 @@ properties:
   time: '08:00:00'
   ice: 1500
 
-author: Tasty Coffee
-authorImg: tastycoffee
+author: tasty-coffee
 
 link: https://shop.tastycoffee.ru/blog/cold-brew-recepti
 tags:

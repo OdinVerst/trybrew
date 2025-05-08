@@ -11,8 +11,7 @@ properties:
   time: '3:25'
   temperature: 95
 
-author: Aeroplan.Coffee
-authorImg: aeroplan
+author: aeroplan-coffee
 
 link: https://www.instagram.com/aeroplancoffee/
 tags:

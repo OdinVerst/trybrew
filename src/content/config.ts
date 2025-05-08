@@ -1,5 +1,6 @@
 /* eslint-disable perfectionist/sort-objects */
-import { defineCollection, z } from 'astro:content'
+import { defineCollection, reference, z } from 'astro:content'
+import { file, glob } from 'astro/loaders'
 
 const recipeStep = z.object({
   description: z.string().optional(),
@@ -9,6 +10,7 @@ const recipeStep = z.object({
 })
 
 const recipesCollection = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/recipes' }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -22,14 +24,21 @@ const recipesCollection = defineCollection({
       ice: z.number().optional()
     }),
     steps: z.array(recipeStep).optional(),
-    author: z.string(),
-    authorImg: z.string().optional(),
+    author: reference('authors'),
+    authorName: z.string().optional(),
     link: z.string().optional(),
     tags: z.array(z.string()).or(z.string())
-  }),
-  type: 'content'
+  })
+})
+
+const authorsCollection = defineCollection({
+  loader: file('src/content/authors.json'),
+  schema: z.object({
+    name: z.string()
+  })
 })
 
 export const collections = {
-  recipes: recipesCollection
+  recipes: recipesCollection,
+  authors: authorsCollection
 }

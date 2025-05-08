@@ -11,8 +11,8 @@ properties:
   time: '2:30'
   temperature: 97
 
-author: Silky Drum (Руслан Шульги)
-authorImg: silky
+author: silky-drum
+authorName: Руслан Шульги
 
 link: https://www.silkydrum.ru/recipes
 tags:

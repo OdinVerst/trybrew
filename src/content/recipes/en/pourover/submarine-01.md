@@ -11,8 +11,7 @@ properties:
   time: '2:50'
   temperature: 95
 
-author: Submarine
-authorImg: submarine
+author: submarine
 
 link: https://sbmrne.ru/product-card/kenya_gatomboya
 tags:

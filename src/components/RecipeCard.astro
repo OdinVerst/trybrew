@@ -3,23 +3,32 @@ import type { CollectionEntry } from 'astro:content'
 
 import { getRelativeLocaleUrl } from 'astro:i18n'
 
+import { commonMessages } from '@/i18n/locales/common/en'
+
 import Author from './Author.astro'
 import RecipeProperties from './RecipeProperties.astro'
 
 interface Props {
+  hideAuthor?: boolean
   recipe: CollectionEntry<'recipes'>
 }
 
-const { recipe } = Astro.props
+const { hideAuthor, recipe } = Astro.props
 
 const locale = Astro.currentLocale || 'en'
-const href = getRelativeLocaleUrl(locale, `recipes/${recipe.slug.split(`${locale}/`)[1]}`)
+const messages = commonMessages(locale)
+const href = getRelativeLocaleUrl(locale, `recipes/${recipe.id.split(`${locale}/`)[1]}`)
 ---
 
 <article class="card">
-  <a class="link" {href}>{recipe.data.name}</a>
+  <div class="header">
+    {hideAuthor && (
+      <h2 class="subtitle">{messages[recipe.data.method as keyof typeof messages]}</h2>
+    )}
+    <a class="link" {href}>{recipe.data.name}</a>
+  </div>
   <RecipeProperties properties={recipe.data.properties} />
-  <Author image={recipe.data.authorImg} name={recipe.data.author} />
+  {!hideAuthor && <Author authorName={recipe.data.authorName} authorRef={recipe.data.author} />}
 </article>
 
 <style>
@@ -32,6 +41,20 @@ const href = getRelativeLocaleUrl(locale, `recipes/${recipe.slug.split(`${locale
     display: flex;
     flex-flow: column;
     gap: 16px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .subtitle {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--text-secondary);
   }
 
   .link {

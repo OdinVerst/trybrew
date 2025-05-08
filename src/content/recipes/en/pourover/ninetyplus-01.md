@@ -11,8 +11,7 @@ properties:
   time: '1:30'
   temperature: 92
 
-author: Ninety Plus
-authorImg: ninety-plus
+author: ninety-plus
 
 link: https://www.instagram.com/tv/CJ6E3gznh39/
 tags:
