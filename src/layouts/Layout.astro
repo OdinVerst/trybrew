@@ -20,7 +20,9 @@ const siteUrl = Astro.site
 const siteName = 'TryBrew'
 
 const authorEntry = authorRef ? await getEntry(authorRef) : undefined
-const author = authorEntry?.data.name + (authorName ? ` (${authorName})` : '')
+const author = authorEntry?.data.name
+  ? authorEntry.data.name + (authorName ? ` (${authorName})` : '')
+  : undefined
 ---
 
 <!doctype html>
